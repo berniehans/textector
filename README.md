@@ -88,12 +88,29 @@ tools/textector_core.py   # normalize_text / tokenize / split_sentences (puras, 
 tools/checks/             # CheckResult + protocolo Check + los 5 checks F2
 tools/scoring.py          # pesos, topes de grupo, compute_indice (congelado en F2)
 tools/lexicon.py          # parser YAML-min fail-closed
+tools/estructura.py       # eje estructural (secciones, párrafos, diálogo)
+tools/diagnostico.py      # categorías prosa × estructura (--diagnostico)
 tools/cli.py              # CLI F4: subcomando analyze
 tools/calibrate.py        # split por grupos + barrido + holdout (F3)
 config/cliches_es.yaml    # léxico YAML-min completo (fuente de la verdad)
 corpus/                   # corpus + manifest.csv (procedencia)
-docs/                     # auditorías de los referenciales + methodology.md
+docs/                     # guía, arquitectura, checks, método, calibración, corpus
 ```
+
+## Documentación
+
+| Documento | Contenido |
+|---|---|
+| [`docs/guia-uso.md`](docs/guia-uso.md) | Instalación, comandos, flags, códigos de error |
+| [`docs/arquitectura.md`](docs/arquitectura.md) | Módulos, flujo, contrato de checks, decisiones |
+| [`docs/checks.md`](docs/checks.md) | Qué mide cada check, pesos, fronteras, topes |
+| [`docs/methodology.md`](docs/methodology.md) | Método congelado F2 (rangos, orientación, límites) |
+| [`docs/calibration.md`](docs/calibration.md) | Corpus, split, matriz real v1/v2 y límites |
+| [`docs/corpus.md`](docs/corpus.md) | Composición, procedencia, licencias, semillas |
+| [`docs/diagnostico-hibrido.md`](docs/diagnostico-hibrido.md) | Dos ejes y tabla de categorías |
+| [`docs/analisis-manual-llm.md`](docs/analisis-manual-llm.md) | Análisis forense manual asistido por LLM |
+| [`docs/audit_aifingerprint.md`](docs/audit_aifingerprint.md) · [`docs/audit_zippy.md`](docs/audit_zippy.md) | Auditoría de los ports MIT |
+| [`NOTICE`](NOTICE) | Atribuciones de licencia |
 
 Solo stdlib de Python 3.11. Gestión con uv (`pyproject.toml` + `uv.lock` +
 `.python-version`), pero uv no es dependencia en runtime.
