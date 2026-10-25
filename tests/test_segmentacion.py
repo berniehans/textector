@@ -4,7 +4,13 @@ from __future__ import annotations
 
 import unittest
 
-from tools.textector_core import Span, normalize_text, split_sentences, tokenize
+from tools.textector_core import (
+    Span,
+    _ABBREV_TOKENS,
+    normalize_text,
+    split_sentences,
+    tokenize,
+)
 
 
 class TestNormalize(unittest.TestCase):
@@ -124,6 +130,18 @@ class TestSegmentacion(unittest.TestCase):
         )
         for s in spans:
             self.assertEqual(text[s.start : s.end], s.text)
+
+    def test_split_dijo_que_no_corta(self):
+        # F5.4: «no» es palabra común, no abreviatura; su punto corta.
+        spans = split_sentences("Dijo que no. Luego se fue.")
+        self.assertEqual([s.text for s in spans], ["Dijo que no.", "Luego se fue."])
+
+    def test_entrada_rej_muerta_no_regresa(self):
+        # F5.4, afirmación estructural: ninguna entrada del set lleva
+        # espacios (el typo " rej" nunca matcheaba: el token previo sale
+        # de \w+, que no contiene espacios).
+        for tok in _ABBREV_TOKENS:
+            self.assertNotIn(" ", tok)
 
 
 if __name__ == "__main__":

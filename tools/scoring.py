@@ -28,7 +28,7 @@ __all__ = ["PESOS", "TOPES_GRUPO", "VERSION_METODO", "compute_indice"]
 if TYPE_CHECKING:  # pragma: no cover
     from tools.checks import CheckResult
 
-VERSION_METODO = "f2"
+VERSION_METODO = "f3-semillas"
 
 #: Pesos de categoría CONGELADOS en F2 (transformaciones en cada check).
 PESOS: dict[str, float] = {

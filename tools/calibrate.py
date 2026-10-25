@@ -33,10 +33,10 @@
 # ``\\n\\n``) de los textos de TRAIN de su clase. El holdout NO aporta
 # semillas. Con el holdout_v2 la semilla IA fue reconstruida: se retiró
 # el bloque de a07 (ahora holdout); a05 ya estaba fuera y el resto de
-# bloques corresponde a TRAIN v2. Nota honesta: el check ``compression``
-# está congelado en F2 con fixtures sintéticas; estas semillas ES reales
-# quedan construidas y verificadas por checksum para el wiring posterior
-# (sin retazar el check).
+# bloques corresponde a TRAIN v2. Estado F5: el check ``compression``
+# recibe estas semillas ES reales inyectadas por ``puntuar`` (una carga
+# por proceso, vía ``_semillas_reales``); el reporte del check etiqueta
+# ``semillas: reales-es`` con el sha256 de cada semilla cruda.
 
 # Determinista, stdlib, sin red. Reporte JSON con claves ordenadas.
 
@@ -56,6 +56,13 @@ __all__ = [
 ROOT = Path(__file__).resolve().parents[1]
 CORPUS = ROOT / "corpus"
 MANIFEST = CORPUS / "manifest.csv"
+CONFIG = ROOT / "config" / "cliches_es.yaml"
+SEED_IA = CORPUS / "seeds" / "seed_ia_es.txt"
+SEED_HUM = CORPUS / "seeds" / "seed_hum_es.txt"
+
+# Cargas únicas por proceso (semillas reales y léxico completo del config).
+_SEMILLAS_REALES: tuple[str, str] | None = None
+_LEXICON_COMPLETO: list[Any] | None = None
 
 # Holdout v2: FIJO (elegido de una sola vez; no cambia después).
 HOLDOUT_V2: frozenset[str] = frozenset({"h08", "h16", "h19", "a05", "a07", "b03"})
@@ -154,17 +161,56 @@ def cargar_corpus() -> dict[str, dict[str, str]]:
     return filas
 
 
+def _semillas_reales() -> tuple[str, str]:
+    """Semillas ES reales (una carga por proceso; falla clara si faltan)."""
+    global _SEMILLAS_REALES
+    if _SEMILLAS_REALES is None:
+        if not SEED_IA.is_file() or not SEED_HUM.is_file():
+            faltan = SEED_IA.name if not SEED_IA.is_file() else SEED_HUM.name
+            raise FileNotFoundError(
+                f"semilla no encontrada: corpus/seeds/{faltan} (se exige para puntuar)"
+            )
+        _SEMILLAS_REALES = (
+            SEED_IA.read_text(encoding="utf-8"),
+            SEED_HUM.read_text(encoding="utf-8"),
+        )
+    return _SEMILLAS_REALES
+
+
+def _lexicon_completo() -> list[Any]:
+    """Léxico completo de config/cliches_es.yaml (misma fuente que el CLI).
+
+    Antes ``puntuar`` usaba el mínimo embebido de ``build_lexicon()``, que
+    NO es la señal que emite el CLI (léxico completo del config): la
+    equivalencia CLI/calibrate exige la misma fuente.
+    """
+    global _LEXICON_COMPLETO
+    if _LEXICON_COMPLETO is None:
+        from tools.checks.cliches_es import phrases_from_parsed
+        from tools.lexicon import parse_yaml_min
+
+        _LEXICON_COMPLETO = phrases_from_parsed(
+            parse_yaml_min(CONFIG.read_text(encoding="utf-8"))
+        )
+    return _LEXICON_COMPLETO
+
+
 def puntuar(texto: str) -> dict[str, Any]:
-    """Pipeline F2 congelado: los 5 checks + compute_indice (sin I/O extra)."""
+    """Pipeline congelado con semillas ES reales y léxico completo del config.
+
+    Misma señal que el CLI (misma fuente de semillas y de léxico); las
+    semillas se cargan una vez por proceso y se reutilizan en las 40 piezas.
+    """
     from tools.checks import burstiness, cliches_es, compression, mattr, uniformity
     from tools.scoring import compute_indice
 
+    seed_ia, seed_hum = _semillas_reales()
     resultados = {
         "burstiness": burstiness.check(texto),
         "mattr": mattr.check(texto),
         "uniformity": uniformity.check(texto),
-        "cliches_es": cliches_es.check(texto),
-        "compression": compression.check(texto),
+        "cliches_es": cliches_es.check(texto, lexicon=_lexicon_completo()),
+        "compression": compression.check(texto, seed_ia=seed_ia, seed_hum=seed_hum),
     }
     return compute_indice(resultados)
 

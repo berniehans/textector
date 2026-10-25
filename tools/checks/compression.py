@@ -5,10 +5,11 @@ de su código ni de su semilla EN:
 
 - Deflate REAL: ``zlib.compressobj(level=6, wbits=-15)`` (raw DEFLATE,
   stdlib, determinista).
-- Semillas: en F2 son fixtures sintéticas deterministas construidas en el
-  propio módulo (``semilla_ia`` / ``semilla_humana``). Las semillas ES
-  reales llegan en F3 (solo del subconjunto IA de train). Validar el
-  MECANISMO, no el desempeño.
+- Semillas: las fixtures sintéticas F2 viven en el propio módulo
+  (``semilla_ia`` / ``semilla_humana``, mecánica). Desde F5 el check
+  acepta semillas ES reales inyectadas como str (``seed_ia=``/
+  ``seed_hum=``: ambas o ninguna); quien orquesta (CLI/calibrate) las
+  carga de ``corpus/seeds/``. Validar el MECANISMO, no el desempeño.
 - Limpieza ES conservadora (diferencia deliberada frente a zippy, que
   destruye tildes y ñ): el texto se reduce a tokens casefold unidos por
   espacio — conserva a-z con diacríticos; pierde puntuación, que es ruido
@@ -24,6 +25,7 @@ sin red, sin azar.
 
 from __future__ import annotations
 
+import hashlib
 import zlib
 
 from tools.checks import CheckResult
@@ -47,7 +49,8 @@ _LEVEL = 6
 _WBITS = -15
 
 # -----------------------------------------------------------------------------
-# Semillas sintéticas deterministas (fixtures de mecánica; ES reales en F3)
+# Semillas sintéticas deterministas (fixtures de mecánica; las ES reales
+# entran inyectadas desde F5)
 # -----------------------------------------------------------------------------
 
 _CONECTORES = ("Además", "Por otra parte", "Sin embargo", "A su vez")
@@ -160,10 +163,41 @@ def _marginal(seed_clean: str, sample_clean: str) -> float:
     return float(_raw_deflate(completo) - _raw_deflate(base)) / float(n_bytes)
 
 
-def check(text: str) -> CheckResult:
-    """Señal de compresión sembrada en [0, 1] (puro, determinista)."""
+def check(
+    text: str,
+    seed_ia: str | None = None,
+    seed_hum: str | None = None,
+) -> CheckResult:
+    """Señal de compresión sembrada en [0, 1] (puro, determinista).
+
+    Sin inyección usa las fixtures sintéticas F2 (retrocompatibilidad de
+    mecánica). Con semillas reales inyectadas (AMBAS, como str crudos) las
+    limpia una vez por llamada y reporta trazabilidad: etiqueta
+    ``reales-es`` y sha256 de cada semilla cruda. La inyección mixta (una
+    sola semilla) se rechaza: mezclar real con sintética bajo una etiqueta
+    única contaminaría el reporte. Sin I/O: las semillas entran como str.
+    """
     if not isinstance(text, str):
         raise TypeError("compression.check espera str")
+    if seed_ia is None and seed_hum is None:
+        etiqueta = "sinteticas-f2"
+        trazabilidad: dict[str, str] = {}
+        seed_ia_cruda = semilla_ia()
+        seed_h_cruda = semilla_humana()
+    else:
+        if seed_ia is None or seed_hum is None:
+            raise ValueError(
+                "inyección mixta: seed_ia y seed_hum deben inyectarse juntas o ausentes"
+            )
+        if not isinstance(seed_ia, str) or not isinstance(seed_hum, str):
+            raise TypeError("las semillas inyectadas deben ser str")
+        etiqueta = "reales-es"
+        trazabilidad = {
+            "sha256_seed_ia": hashlib.sha256(seed_ia.encode("utf-8")).hexdigest(),
+            "sha256_seed_hum": hashlib.sha256(seed_hum.encode("utf-8")).hexdigest(),
+        }
+        seed_ia_cruda = seed_ia
+        seed_h_cruda = seed_hum
     sample = " ".join(tokenize(normalize_text(text)))
     n_bytes = len(sample.encode("utf-8"))
     coverage = min(1.0, n_bytes / MIN_BYTES_MUESTRA)
@@ -180,23 +214,24 @@ def check(text: str) -> CheckResult:
         sample = " ".join(toks[:MAX_TOKENS])
         truncado = True
         n_bytes = len(sample.encode("utf-8"))
-    seed_ia = _limpiar(semilla_ia())
-    seed_h = _limpiar(semilla_humana())
-    m_ia = _marginal(seed_ia, sample)
-    m_h = _marginal(seed_h, sample)
+    seed_ia_limpia = _limpiar(seed_ia_cruda)
+    seed_h_limpia = _limpiar(seed_h_cruda)
+    m_ia = _marginal(seed_ia_limpia, sample)
+    m_h = _marginal(seed_h_limpia, sample)
     delta = m_ia - m_h
     q = max(0.0, min(1.0, 0.5 - delta / ESCALA_DELTA))
     return CheckResult(
         valor_bruto={
             "n_bytes_muestra": n_bytes,
-            "n_seed_ia": len(seed_ia.encode("utf-8")),
-            "n_seed_h": len(seed_h.encode("utf-8")),
+            "n_seed_ia": len(seed_ia_limpia.encode("utf-8")),
+            "n_seed_h": len(seed_h_limpia.encode("utf-8")),
             "m_ia": round(m_ia, 4),
             "m_h": round(m_h, 4),
             "delta": round(delta, 4),
             "escala": ESCALA_DELTA,
-            "semillas": "sinteticas-f2",
+            "semillas": etiqueta,
             "nivel": "mecanica" if not truncado else "muestra-truncada",
+            **trazabilidad,
         },
         normalizado=q,
         coverage=1.0,

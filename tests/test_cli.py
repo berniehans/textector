@@ -4,6 +4,9 @@ Casos: (a) JSON válido parseable; (b) archivo inexistente; (c) config/YAML
 invalido; (d) texto muy corto; (e) --detallado con las claves del desglose.
 Los archivos temporales viven en ``tempfile.mkdtemp()`` (fuera del árbol del
 proyecto) y se limpian en ``tearDown``. Solo stdlib.
+
+F5.3: la clase TestSemillasRealesCli verifica el wiring de las semillas ES
+reales (carga por defecto, error limpio si faltan y paridad CLI/calibrate).
 """
 
 from __future__ import annotations
@@ -16,9 +19,12 @@ import tempfile
 import unittest
 from pathlib import Path
 
+from tools import calibrate, cli
+
 ROOT = Path(__file__).resolve().parents[1]
 CLI_PATH = ROOT / "tools" / "cli.py"
 CONFIG = ROOT / "config" / "cliches_es.yaml"
+A01 = ROOT / "corpus" / "llm" / "a01.txt"  # TRAIN (no es holdout)
 
 # Prosa de prueba: > 50 tokens (minimo de clichés_es) y suficientes oraciones
 # de longitudes variadas para que los 5 checks del pipeline congelado corran.
@@ -124,6 +130,63 @@ class TestCli(unittest.TestCase):
         self.assertEqual(res.returncode, 0, res.stderr)
         for clave in ("valor_bruto", "normalizado", "peso", "contribucion", "coverage"):
             self.assertIn(clave, res.stdout)
+
+
+class TestSemillasRealesCli(unittest.TestCase):
+    """F5.3: el CLI de producción inyecta las semillas ES reales (fail-closed)."""
+
+    def _run_cli(self, *args: str) -> subprocess.CompletedProcess[str]:
+        tmp = Path(tempfile.mkdtemp(prefix="textector-seeds-cli-"))
+        try:
+            cmd = [sys.executable, str(CLI_PATH), "analyze", *args]
+            return subprocess.run(
+                cmd,
+                capture_output=True,
+                text=True,
+                encoding="utf-8",
+                errors="replace",
+                cwd=str(tmp),
+            )
+        finally:
+            shutil.rmtree(tmp, ignore_errors=True)
+
+    def test_cli_carga_semillas_reales_por_defecto(self) -> None:
+        """a01 (TRAIN) por CLI: el JSON reporta semillas reales-es."""
+        res = self._run_cli("--archivo", str(A01), "--json")
+        self.assertEqual(res.returncode, 0, res.stderr)
+        data = json.loads(res.stdout)
+        self.assertEqual(
+            data["resultado"]["compression"]["valor_bruto"]["semillas"],
+            "reales-es",
+        )
+
+    def test_cli_error_limpio_si_faltan_semillas(self) -> None:
+        """Unitario de la carga: sin semillas → ErrorCLI de UNA línea."""
+        tmp = Path(tempfile.mkdtemp(prefix="textector-seeds-faltan-"))
+        try:
+            with self.assertRaises(cli.ErrorCLI) as ctx:
+                cli._cargar_semillas(tmp / "seed_ia_es.txt", tmp / "seed_hum_es.txt")
+            self.assertNotIn("\n", str(ctx.exception))
+            # Ilegible / no UTF-8: mismo contrato (una línea, sin volcado).
+            (tmp / "seed_ia_es.txt").write_bytes(b"\xff\xfe\x00no-utf8")
+            with self.assertRaises(cli.ErrorCLI) as ctx2:
+                cli._cargar_semillas(tmp / "seed_ia_es.txt", tmp / "seed_hum_es.txt")
+            self.assertNotIn("\n", str(ctx2.exception))
+        finally:
+            shutil.rmtree(tmp, ignore_errors=True)
+
+    def test_cli_y_calibrate_coinciden_en_indice_por_pieza(self) -> None:
+        """Misma señal en CLI y calibrate sobre a01 (TRAIN): índice igual."""
+        res = self._run_cli("--archivo", str(A01), "--json")
+        self.assertEqual(res.returncode, 0, res.stderr)
+        data = json.loads(res.stdout)
+        texto = A01.read_text(encoding="utf-8")
+        informe = calibrate.puntuar(texto)
+        self.assertEqual(data["indice_llm"], informe["indice_llm"])
+        self.assertEqual(
+            data["resultado"]["compression"]["valor_bruto"]["semillas"],
+            "reales-es",
+        )
 
 
 if __name__ == "__main__":

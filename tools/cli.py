@@ -39,6 +39,8 @@ from tools.scoring import compute_indice  # noqa: E402
 from tools.textector_core import tokenize  # noqa: E402
 
 CONFIG_DEFECTO = ROOT / "config" / "cliches_es.yaml"
+SEED_IA_DEFECTO = ROOT / "corpus" / "seeds" / "seed_ia_es.txt"
+SEED_HUM_DEFECTO = ROOT / "corpus" / "seeds" / "seed_hum_es.txt"
 
 MINIMO_CONGELADO = 5  # los 5 checks del pipeline F2 congelado deben correr
 
@@ -94,19 +96,52 @@ def _cargar_lexicon(path: Path) -> list[Any]:
         raise ErrorCLI("config YAML invalido: entradas de léxico con formato inesperado") from exc
 
 
+def _cargar_semillas(
+    ruta_ia: Path = SEED_IA_DEFECTO,
+    ruta_hum: Path = SEED_HUM_DEFECTO,
+) -> tuple[str, str]:
+    """Textos semilla (IA, humana) desde ``ROOT/corpus/seeds/``, UTF-8.
+
+    Falla con ``ErrorCLI`` de UNA línea si falta o es ilegible cualquiera de
+    las dos; nunca reenvía el contenido leído.
+    """
+    textos: list[str] = []
+    for etiqueta, ruta in (("IA", ruta_ia), ("humana", ruta_hum)):
+        if not ruta.is_file():
+            raise ErrorCLI(f"semillas ({etiqueta}): archivo no encontrado: {ruta}")
+        try:
+            textos.append(ruta.read_text(encoding="utf-8"))
+        except (OSError, UnicodeDecodeError) as exc:
+            raise ErrorCLI(
+                f"semillas ({etiqueta}): archivo ilegible o no UTF-8 "
+                f"({type(exc).__name__}): {ruta}"
+            ) from exc
+    return textos[0], textos[1]
+
+
 # ---------------------------------------------------------------------------
 # Pipeline congelado (delegado: scoring + checks, sin duplicar lógica)
 # ---------------------------------------------------------------------------
 
-def _puntuar(texto: str, lexicon: list[Any]) -> dict[str, Any]:
-    """Pipeline F2 congelado con el léxico completo del config."""
+def _puntuar(
+    texto: str,
+    lexicon: list[Any],
+    semillas: tuple[str, str],
+) -> dict[str, Any]:
+    """Pipeline F2 congelado con el léxico completo y las semillas reales.
+
+    ``compression`` recibe las semillas (seed_ia, seed_hum) cargadas una vez
+    por proceso, igual que ``tools/calibrate.py:puntuar``: misma señal, mismo
+    índice por pieza.
+    """
+    seed_ia, seed_hum = semillas
     return compute_indice(
         {
             "burstiness": burstiness.check(texto),
             "mattr": mattr.check(texto),
             "uniformity": uniformity.check(texto),
             "cliches_es": cliches_es.check(texto, lexicon=lexicon),
-            "compression": compression.check(texto),
+            "compression": compression.check(texto, seed_ia=seed_ia, seed_hum=seed_hum),
         }
     )
 
@@ -193,7 +228,8 @@ def main(argv: list[str] | None = None) -> int:
     try:
         texto = _leer_entrada(args)
         lexicon = _cargar_lexicon(args.config or CONFIG_DEFECTO)
-        informe = _puntuar(texto, lexicon)
+        semillas = _cargar_semillas()  # carga ÚNICA por proceso
+        informe = _puntuar(texto, lexicon, semillas)
         if (
             informe["indice_llm"] is None
             or informe["n_disponibles"] != MINIMO_CONGELADO
@@ -202,6 +238,7 @@ def main(argv: list[str] | None = None) -> int:
                 "texto muy corto: el pipeline congelado no alcanzó la cobertura "
                 "mínima para puntuar"
             )
+        informe = {**informe, "semillas": "reales-es"}
     except ErrorCLI as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 1

@@ -86,13 +86,23 @@ _ABBREV_TOKENS = frozenset(
         "sr", "sra", "srta", "dr", "dra", "lic", "prof", "profa", "ing",
         "mtro", "mtra", "psic", "ab", "ram", "cpa", "gen", "col", "cap",
         # Lugar / tiempo
-        "av", "avda", "sta", "sto", "ste", "ctra", " rej", "no", "nro",
+        # F5.4: fuera " rej" (entrada muerta: el token previo sale de \w+,
+        # nunca con espacio) y "no" (palabra común, no abreviatura).
+        "av", "avda", "sta", "sto", "ste", "ctra", "nro",
         # Técnicos / escritura académica
         "etc", "cf", "véase", "vs", "aprox", "fig", "lám", "pág", "pp",
-        "vol", "núm", "ed", "op", "cap", "pt", "a", "h", "ib", "s", "ss",
-        "iva", "igv", "km", "cm", "mm", "kg", "g", "m", "l",
+        "vol", "núm", "ed", "op", "cap",
+        # F5.4: fuera "pt", "a", "h", "ib", "s", "ss", "g", "m", "l" —
+        # redundantes: el centinela _SINGLE_LETTER_DOT_RE ya cubre tokens
+        # de 1-2 letras (misma conducta, sin cambiarla).
+        "iva", "igv", "km", "cm", "mm", "kg",
     }
 )
+
+# F5.4: palabras comunes cuyo punto SÍ corta oración (no son abreviaturas
+# ni iniciales): p. ej. «Dijo que no. Luego se fue.». Excepción deliberada
+# al centinela de 1-2 letras, que si no las tragaría como dudosas.
+_PALABRAS_CORTE = frozenset({"no"})
 
 _ABBREV_RANGE = (
     # compuestos con punto interno en minúscula: "p. ej.", "s. f.", "n. del a."
@@ -124,6 +134,8 @@ def _is_abbrev_breakage(text: str, end: int) -> bool:
         tok = prev.group(1).casefold()
         if tok in _ABBREV_TOKENS:
             return True
+        if tok in _PALABRAS_CORTE:
+            return False
         # dudoso: "Sr.", "vs." vienen arriba; "X. N." iniciales → no cortar
         if _SINGLE_LETTER_DOT_RE.match(tok + "."):
             return True
