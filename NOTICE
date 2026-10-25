@@ -22,11 +22,16 @@ obligación moral/legal de las licencias MIT de las fuentes.
 
 2) AStoryHub Corpus of AI Cliches (v1.7, 758 entradas EN) — MIT —
    Semilla TEMÁTICA del léxico ES de clichés (config/cliches_es.yaml):
-   frases narrativas de ficción derivadas/adaptadas manualmente al
-   español (no traducción 1:1; el cotejo entrada por entrada del corpus
-   queda como mejora opcional pendiente, F8). Los PESOS de cada frase son
-   provisionales F2, no heredados del corpus, y no se recalibraron en F3
-   ni F6 (la calibración solo ajusta umbral y margen).
+   frases narrativas de ficción adaptadas manualmente al español a partir
+   de las categorías del corpus. NO es traducción 1:1. Cotejo real
+   ejecutado el 2026-10-25 (ver docs/cotejo-aistoryhub.md): de las 14
+   entradas etiquetadas `aich::`, solo 3 tienen correspondencia verificable
+   con un término del corpus; 8 no existen en él y 3 solo coinciden por
+   parecido superficial. Por tanto la relación es INSPIRACIÓN TEMÁTICA, no
+   derivación entrada por entrada; el re-etiquetado fino queda como mejora
+   opcional (F8c). Los PESOS de cada frase son provisionales F2, no
+   heredados del corpus, y no se recalibraron en F3 ni F6 (la calibración
+   solo ajusta umbral y margen).
 
 3) thinkst/zippy 0.1.3 — MIT — Thinkst Applied Research, 2023
    Porte: concepto de "LLM-detect por compresión sembrada" — delta con

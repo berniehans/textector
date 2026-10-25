@@ -109,6 +109,7 @@ docs/                     # guía, arquitectura, checks, método, calibración, 
 | [`docs/corpus.md`](docs/corpus.md) | Composición, procedencia, licencias, semillas |
 | [`docs/diagnostico-hibrido.md`](docs/diagnostico-hibrido.md) | Dos ejes y tabla de categorías |
 | [`docs/analisis-manual-llm.md`](docs/analisis-manual-llm.md) | Análisis forense manual asistido por LLM |
+| [`docs/cotejo-aistoryhub.md`](docs/cotejo-aistoryhub.md) | Cotejo real del léxico contra el corpus AIStoryHub v1.7 (F8c) |
 | [`docs/audit_aifingerprint.md`](docs/audit_aifingerprint.md) · [`docs/audit_zippy.md`](docs/audit_zippy.md) | Auditoría de los ports MIT |
 | [`NOTICE`](NOTICE) | Atribuciones de licencia |
 
