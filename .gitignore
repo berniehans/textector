@@ -1,6 +1,10 @@
 # Entorno / virtualenv
 .venv/
 venv/
+/.uv-cache-ci/
+/.uv-python-ci/
+/.uv-python-bin-ci/
+/.tmp-ci/
 
 # Cache de Python
 __pycache__/
@@ -40,3 +44,7 @@ desktop.ini
 /validation/external-v1/texts/
 /validation/external-v1/cache/
 /validation/reserved-f5-v1/texts/
+/validation/narrative-v1/cache/
+/validation/narrative-v1/development/texts/
+/validation/narrative-v1/reserved/
+/validation/narrative-v1/results.json

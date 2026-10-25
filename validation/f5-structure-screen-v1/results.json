@@ -1,0 +1,281 @@
+{
+  "cluster_bootstrap": {
+    "ai_detection_delta_M2_minus_M1": {
+      "clusters": 68,
+      "estimate": 0.641690993620932,
+      "lower_95": 0.5523117764506373,
+      "status": "descriptive_cluster_bootstrap_not_certifying",
+      "upper_95": 0.7396079289040881
+    },
+    "ai_detection_weighted_all": {
+      "M0_B0": {
+        "clusters": 68,
+        "lower_95": 0.07574597862874444,
+        "status": "descriptive_cluster_bootstrap_not_certifying",
+        "upper_95": 0.2148708333617036
+      },
+      "M1_B0_length": {
+        "clusters": 68,
+        "lower_95": 0.0888343072290002,
+        "status": "descriptive_cluster_bootstrap_not_certifying",
+        "upper_95": 0.21773445059012228
+      },
+      "M2_B0_length_structure": {
+        "clusters": 68,
+        "lower_95": 0.7134770590717887,
+        "status": "descriptive_cluster_bootstrap_not_certifying",
+        "upper_95": 0.876076475163553
+      }
+    },
+    "human_fp_all": {
+      "M0_B0": {
+        "clusters": 15,
+        "lower_95": 0.008333333333333333,
+        "status": "descriptive_cluster_bootstrap_not_certifying",
+        "upper_95": 0.05
+      },
+      "M1_B0_length": {
+        "clusters": 15,
+        "lower_95": 0.016666666666666666,
+        "status": "descriptive_cluster_bootstrap_not_certifying",
+        "upper_95": 0.06666666666666667
+      },
+      "M2_B0_length_structure": {
+        "clusters": 15,
+        "lower_95": 0.016666666666666666,
+        "status": "descriptive_cluster_bootstrap_not_certifying",
+        "upper_95": 0.075
+      }
+    }
+  },
+  "created_utc": "2026-10-25",
+  "delta_detection_M2_minus_M1_weighted": 0.641690993620932,
+  "exclusions": {
+    "ai_without_manual_spanish": 1619
+  },
+  "f5_margin": 4,
+  "f5_threshold": 15,
+  "limitations": [
+    "15 autores humanos y 68 prompts IA producen intervalos amplios.",
+    "Las predicciones anidadas son cribado de desarrollo, no confirmación externa.",
+    "Los cortes se estiman dentro del desarrollo; no modifican el umbral/margen de F5.",
+    "Los pesos de IA corrigen el muestreo lingüístico estratificado; la extrapolación sigue limitada."
+  ],
+  "n_ai_manual_spanish": 157,
+  "n_ai_prompts": 68,
+  "n_checkpoints": 8,
+  "n_human_authors": 15,
+  "n_rows": 277,
+  "operational_verdict": "candidate_for_independent_confirmation",
+  "original_b0_fixed_decision_reference": {
+    "f5_decision_rule": "unchanged; classifier screen is separate",
+    "f5_margin": 4,
+    "f5_threshold": 15,
+    "original_b0_coverage_human": 0.925,
+    "original_b0_detection_ai_manual_spanish_weighted": 0.003081414206941291,
+    "original_b0_fp_human": 0.0
+  },
+  "profiles": {
+    "M0_B0": {
+      "ai_detection_weighted_all": 0.1366634230727646,
+      "ai_n_manual_spanish": 157,
+      "ai_prompts": 68,
+      "fold_cutoffs": {
+        "0": 0.8811326415383413,
+        "1": 0.8244138190728661,
+        "2": 0.8679801709508841,
+        "3": 0.888504315128266,
+        "4": 0.9255941366883107
+      },
+      "human_authors": 15,
+      "human_coverage": 1.0,
+      "human_fp_all": 0.025,
+      "human_n": 120,
+      "n": 277,
+      "per_checkpoint": {
+        "arcee-ai/Arcee-Blitz-AWQ": {
+          "detection": 0.10342261904761905,
+          "n": 21,
+          "prompts": 18
+        },
+        "casperhansen/mistral-nemo-instruct-2407-awq": {
+          "detection": 0.25721784776902884,
+          "n": 17,
+          "prompts": 12
+        },
+        "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": {
+          "detection": 0.0,
+          "n": 19,
+          "prompts": 14
+        },
+        "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": {
+          "detection": 0.39732142857142855,
+          "n": 21,
+          "prompts": 18
+        },
+        "solidrust/Gemma-2-Ataraxy-9B-AWQ": {
+          "detection": 0.01201923076923077,
+          "n": 19,
+          "prompts": 14
+        },
+        "solidrust/Hermes-3-Llama-3.1-8B-AWQ": {
+          "detection": 0.2265625,
+          "n": 20,
+          "prompts": 17
+        },
+        "solidrust/gemma-2-9b-it-AWQ": {
+          "detection": 0.09895833333333333,
+          "n": 20,
+          "prompts": 17
+        },
+        "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": {
+          "detection": 0.045,
+          "n": 20,
+          "prompts": 15
+        }
+      },
+      "weighted_auc_oof": 0.7801142916351317
+    },
+    "M1_B0_length": {
+      "ai_detection_weighted_all": 0.14942155908746893,
+      "ai_n_manual_spanish": 157,
+      "ai_prompts": 68,
+      "fold_cutoffs": {
+        "0": 0.8923181607201855,
+        "1": 0.862310930902898,
+        "2": 0.8739449899812376,
+        "3": 0.8869470479598442,
+        "4": 0.886350539058934
+      },
+      "human_authors": 15,
+      "human_coverage": 1.0,
+      "human_fp_all": 0.041666666666666664,
+      "human_n": 120,
+      "n": 277,
+      "per_checkpoint": {
+        "arcee-ai/Arcee-Blitz-AWQ": {
+          "detection": 0.22098214285714285,
+          "n": 21,
+          "prompts": 18
+        },
+        "casperhansen/mistral-nemo-instruct-2407-awq": {
+          "detection": 0.07349081364829395,
+          "n": 17,
+          "prompts": 12
+        },
+        "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": {
+          "detection": 0.0,
+          "n": 19,
+          "prompts": 14
+        },
+        "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": {
+          "detection": 0.40513392857142855,
+          "n": 21,
+          "prompts": 18
+        },
+        "solidrust/Gemma-2-Ataraxy-9B-AWQ": {
+          "detection": 0.019230769230769232,
+          "n": 19,
+          "prompts": 14
+        },
+        "solidrust/Hermes-3-Llama-3.1-8B-AWQ": {
+          "detection": 0.234375,
+          "n": 20,
+          "prompts": 17
+        },
+        "solidrust/gemma-2-9b-it-AWQ": {
+          "detection": 0.09895833333333333,
+          "n": 20,
+          "prompts": 17
+        },
+        "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": {
+          "detection": 0.045,
+          "n": 20,
+          "prompts": 15
+        }
+      },
+      "weighted_auc_oof": 0.7953107543157818
+    },
+    "M2_B0_length_structure": {
+      "ai_detection_weighted_all": 0.7911125527084009,
+      "ai_n_manual_spanish": 157,
+      "ai_prompts": 68,
+      "fold_cutoffs": {
+        "0": 0.7223545757896969,
+        "1": 0.8742654926544541,
+        "2": 0.8248343919214848,
+        "3": 0.8954837209603148,
+        "4": 0.86269858989863
+      },
+      "human_authors": 15,
+      "human_coverage": 1.0,
+      "human_fp_all": 0.041666666666666664,
+      "human_n": 120,
+      "n": 277,
+      "per_checkpoint": {
+        "arcee-ai/Arcee-Blitz-AWQ": {
+          "detection": 0.45163690476190477,
+          "n": 21,
+          "prompts": 18
+        },
+        "casperhansen/mistral-nemo-instruct-2407-awq": {
+          "detection": 0.7900262467191601,
+          "n": 17,
+          "prompts": 12
+        },
+        "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": {
+          "detection": 0.8675595238095237,
+          "n": 19,
+          "prompts": 14
+        },
+        "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": {
+          "detection": 0.7321428571428571,
+          "n": 21,
+          "prompts": 18
+        },
+        "solidrust/Gemma-2-Ataraxy-9B-AWQ": {
+          "detection": 0.7996794871794872,
+          "n": 19,
+          "prompts": 14
+        },
+        "solidrust/Hermes-3-Llama-3.1-8B-AWQ": {
+          "detection": 0.8980654761904762,
+          "n": 20,
+          "prompts": 17
+        },
+        "solidrust/gemma-2-9b-it-AWQ": {
+          "detection": 1.0,
+          "n": 20,
+          "prompts": 17
+        },
+        "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": {
+          "detection": 0.7888888888888889,
+          "n": 20,
+          "prompts": 15
+        }
+      },
+      "weighted_auc_oof": 0.9817209968645259
+    }
+  },
+  "protocol_id": "f5-structure-screen-v1",
+  "source_delta_detection_M2_minus_M1": {
+    "arcee-ai/Arcee-Blitz-AWQ": 0.23065476190476192,
+    "casperhansen/mistral-nemo-instruct-2407-awq": 0.7165354330708662,
+    "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": 0.8675595238095237,
+    "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": 0.32700892857142855,
+    "solidrust/Gemma-2-Ataraxy-9B-AWQ": 0.780448717948718,
+    "solidrust/Hermes-3-Llama-3.1-8B-AWQ": 0.6636904761904762,
+    "solidrust/gemma-2-9b-it-AWQ": 0.9010416666666666,
+    "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": 0.7438888888888888
+  },
+  "source_hashes": {
+    "language_labels": "cc058127233d0ed8b41d7fe45a003bd5ba8d15e178e072c8a3dbf2890d6f6e88",
+    "manifest": "a729ec52da37a1e3ac86d2db08de81de817c2a96108723470f9f501edad50b5e",
+    "protocol": "16b9070282e69be6a01dca864df92b5f0e476cd1880f5cac7cb404262f2514e9",
+    "runner": "3e78e49334c136de6b4e116c12a44e19fc0370cdf98fa06b4756c17016c8b780"
+  },
+  "sources_improving_by_at_least_5pp": 8,
+  "status": "development_screen_not_confirmatory",
+  "threshold_or_margin_changed": false,
+  "uses_reserved_data": false
+}

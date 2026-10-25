@@ -1,0 +1,88 @@
+{
+  "created_utc": "2026-10-25T23:34:32.934085+00:00",
+  "id": "wildchat-spanish-fiction-preflight-v1",
+  "license": "ODC-BY",
+  "method": "metadata and safe-text heuristic preflight; no F5 scoring",
+  "models": {
+    "gpt-3.5-turbo": {
+      "candidate_fingerprint_sha256": "75cd485554f86986d3a49435f7d35fc66a72413ac9715c90d342e50011f47c34",
+      "counts": {
+        "duplicate_normalized_prompt": 47,
+        "explicit_fiction_request": 173,
+        "message_structure_or_language_excluded": 471,
+        "model_disclaimer_excluded": 258,
+        "model_rows": 471017,
+        "not_explicit_fiction_request": 3810,
+        "not_single_turn": 5581,
+        "personal_or_real_world_prompt_excluded": 683,
+        "pii_pattern_excluded": 328,
+        "privacy_screen_pass": 3983,
+        "response_not_eligible_length_or_sentence_count": 22,
+        "row_redacted": 28,
+        "sensitive_content_excluded": 32,
+        "spanish_rows": 11364,
+        "unique_candidate_prompts": 104
+      },
+      "privacy_review_status": "automated preflight only; candidate set is not approved for scoring",
+      "unique_candidate_prompt_count": 104
+    },
+    "gpt-4": {
+      "candidate_fingerprint_sha256": "b0acb4103410fac43453712a90497ed171856de5a3b6808dc3fd56ca0cc2ac1b",
+      "counts": {
+        "duplicate_normalized_prompt": 2,
+        "explicit_fiction_request": 29,
+        "message_structure_or_language_excluded": 58,
+        "model_disclaimer_excluded": 7,
+        "model_rows": 58038,
+        "not_explicit_fiction_request": 414,
+        "not_single_turn": 479,
+        "personal_or_real_world_prompt_excluded": 65,
+        "pii_pattern_excluded": 77,
+        "privacy_screen_pass": 443,
+        "row_redacted": 11,
+        "sensitive_content_excluded": 2,
+        "spanish_rows": 1142,
+        "unique_candidate_prompts": 27
+      },
+      "privacy_review_status": "automated preflight only; candidate set is not approved for scoring",
+      "unique_candidate_prompt_count": 27
+    },
+    "gpt-4-1106-preview": {
+      "candidate_fingerprint_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "counts": {
+        "message_structure_or_language_excluded": 1,
+        "model_rows": 457,
+        "pii_pattern_excluded": 1,
+        "spanish_rows": 2
+      },
+      "privacy_review_status": "automated preflight only; candidate set is not approved for scoring",
+      "unique_candidate_prompt_count": 0
+    }
+  },
+  "privacy": {
+    "filters": [
+      "row not redacted and not toxic",
+      "one user/assistant exchange only",
+      "both utterances detected as Spanish and neither utterance redacted/toxic",
+      "exclude PII-pattern matches, personal/real-world requests, sensitive content, and model disclaimers"
+    ],
+    "limitation": "Regex filters cannot guarantee removal of all sensitive personal information; this output is only a size/provenance preflight.",
+    "raw_conversation_ids_written": false,
+    "raw_prompts_or_responses_written": false
+  },
+  "revision": "475fa490b5e28692362af7a6ec66810caf4a9847",
+  "shard_sha256": {
+    "data/train-00000-of-00006.parquet": "391daf660b679d902f5b4164872bef124f2e38197f68ef24a8225da475ce4d7a",
+    "data/train-00001-of-00006.parquet": "095bdee8cff3604b67a156e48858bc8038a9f8110aa2297806f79121f5f19842",
+    "data/train-00002-of-00006.parquet": "e456fe6dfc84f3ec0e9582f3f178d4038f1b4bbb9c0c61eddba2282d45ba6d18",
+    "data/train-00003-of-00006.parquet": "7349b4cef233a68d909ba4fddfcb5b9b248ee43c7c4222fb1d86b075130e75e2",
+    "data/train-00004-of-00006.parquet": "b19cf2434e5aa54f33214e9b7c22bf7d07b7fb3daba6c5efd719adb7ab345d45",
+    "data/train-00005-of-00006.parquet": "7296daa966165e04d2113678d6853e7aaf2d50e9025cc624bd5f5e09c895838b"
+  },
+  "source": "allenai/WildChat",
+  "threshold_for_next_gate": {
+    "minimum_unique_prompts_per_model": 150
+  },
+  "total_rows_scanned": 529512,
+  "unit": "one conversation with one exact-normalized unique Spanish fiction prompt; user-level independence is unavailable"
+}

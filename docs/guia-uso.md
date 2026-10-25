@@ -30,6 +30,13 @@ No requiere el checkout ni el corpus completo: los recursos están incluidos.
 `version=f4-integridad` conserva la señal histórica. Para el perfil portable experimental, elija `--metodo f5`; el CLI sigue usando F4 si no se especifica.
 El JSON incluye SHA256 de las semillas y una huella del contenido del léxico.
 
+Use el resultado únicamente como señal de apoyo para revisión humana. En la
+evaluación externa limitada de F4 hubo 8 falsos positivos entre 90 fragmentos
+humanos (8,9%); además, F4 se abstuvo en 300 textos narrativos aplanados por
+insuficiencia de formato. La evaluación no valida uso automático ni prueba
+autoría. Consulte el [informe externo](validacion-externa-v1.md) y la
+[revisión de preparación de lanzamiento](revision-lanzamiento-0.3.1.md).
+
 F5 pondera MATTR (0,45), densidad de clichés (0,25) y evidencia positiva de
 compresión (0,30), con denominador fijo 1. Los checks de ritmo y párrafos se
 devuelven como auxiliares fuera del índice. Si cualquiera de los tres checks

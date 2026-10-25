@@ -1,0 +1,197 @@
+{
+  "delta_M2_minus_M1_by_heldout_source": {
+    "arcee-ai/Arcee-Blitz-AWQ": 0.6257440476190476,
+    "casperhansen/mistral-nemo-instruct-2407-awq": 0.5997375328083988,
+    "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": 0.8597470238095237,
+    "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": 0.1830357142857142,
+    "solidrust/Gemma-2-Ataraxy-9B-AWQ": 0.7852564102564102,
+    "solidrust/Hermes-3-Llama-3.1-8B-AWQ": 0.5773809523809523,
+    "solidrust/gemma-2-9b-it-AWQ": 0.9010416666666666,
+    "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": 0.9316666666666666
+  },
+  "deviation_note": "Added after primary screen at Astra review; features, classifier, and all thresholds frozen by primary protocol.",
+  "f5_threshold_margin_changed": false,
+  "limitations": [
+    "Only eight held-out checkpoints, each with 12–18 prompts.",
+    "Human false-positive calibration is inner-OOF within development, not independent confirmation.",
+    "Macro source average is descriptive; no aggregate promotion claim."
+  ],
+  "macro_delta": 0.6829512518116725,
+  "macro_detection_M1": 0.22629953595043406,
+  "macro_detection_M2": 0.9092507877621067,
+  "models": {
+    "M1_B0_length": {
+      "arcee-ai/Arcee-Blitz-AWQ": {
+        "heldout_ai_n": 21,
+        "heldout_detection_weighted": 0.22767857142857142,
+        "heldout_prompts": 18,
+        "threshold_from_inner_group_oof": 0.8055986596146169,
+        "training_ai_n": 136,
+        "training_human_authors": 15,
+        "training_human_fp_inner_oof": 0.05,
+        "training_sources": 7
+      },
+      "casperhansen/mistral-nemo-instruct-2407-awq": {
+        "heldout_ai_n": 17,
+        "heldout_detection_weighted": 0.34251968503937014,
+        "heldout_prompts": 12,
+        "threshold_from_inner_group_oof": 0.837650182528448,
+        "training_ai_n": 140,
+        "training_human_authors": 15,
+        "training_human_fp_inner_oof": 0.05,
+        "training_sources": 7
+      },
+      "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": {
+        "heldout_ai_n": 19,
+        "heldout_detection_weighted": 0.1324404761904762,
+        "heldout_prompts": 14,
+        "threshold_from_inner_group_oof": 0.8281213278895404,
+        "training_ai_n": 138,
+        "training_human_authors": 15,
+        "training_human_fp_inner_oof": 0.05,
+        "training_sources": 7
+      },
+      "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": {
+        "heldout_ai_n": 21,
+        "heldout_detection_weighted": 0.6194196428571429,
+        "heldout_prompts": 18,
+        "threshold_from_inner_group_oof": 0.8154620425431798,
+        "training_ai_n": 136,
+        "training_human_authors": 15,
+        "training_human_fp_inner_oof": 0.05,
+        "training_sources": 7
+      },
+      "solidrust/Gemma-2-Ataraxy-9B-AWQ": {
+        "heldout_ai_n": 19,
+        "heldout_detection_weighted": 0.019230769230769232,
+        "heldout_prompts": 14,
+        "threshold_from_inner_group_oof": 0.8700426465857614,
+        "training_ai_n": 138,
+        "training_human_authors": 15,
+        "training_human_fp_inner_oof": 0.041666666666666664,
+        "training_sources": 7
+      },
+      "solidrust/Hermes-3-Llama-3.1-8B-AWQ": {
+        "heldout_ai_n": 20,
+        "heldout_detection_weighted": 0.3251488095238095,
+        "heldout_prompts": 17,
+        "threshold_from_inner_group_oof": 0.8034102614081338,
+        "training_ai_n": 137,
+        "training_human_authors": 15,
+        "training_human_fp_inner_oof": 0.05,
+        "training_sources": 7
+      },
+      "solidrust/gemma-2-9b-it-AWQ": {
+        "heldout_ai_n": 20,
+        "heldout_detection_weighted": 0.09895833333333333,
+        "heldout_prompts": 17,
+        "threshold_from_inner_group_oof": 0.8083886822955689,
+        "training_ai_n": 137,
+        "training_human_authors": 15,
+        "training_human_fp_inner_oof": 0.05,
+        "training_sources": 7
+      },
+      "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": {
+        "heldout_ai_n": 20,
+        "heldout_detection_weighted": 0.045,
+        "heldout_prompts": 15,
+        "threshold_from_inner_group_oof": 0.8291313229541403,
+        "training_ai_n": 137,
+        "training_human_authors": 15,
+        "training_human_fp_inner_oof": 0.05,
+        "training_sources": 7
+      }
+    },
+    "M2_B0_length_structure": {
+      "arcee-ai/Arcee-Blitz-AWQ": {
+        "heldout_ai_n": 21,
+        "heldout_detection_weighted": 0.853422619047619,
+        "heldout_prompts": 18,
+        "threshold_from_inner_group_oof": 0.6118077238570145,
+        "training_ai_n": 136,
+        "training_human_authors": 15,
+        "training_human_fp_inner_oof": 0.05,
+        "training_sources": 7
+      },
+      "casperhansen/mistral-nemo-instruct-2407-awq": {
+        "heldout_ai_n": 17,
+        "heldout_detection_weighted": 0.942257217847769,
+        "heldout_prompts": 12,
+        "threshold_from_inner_group_oof": 0.8227684472103708,
+        "training_ai_n": 140,
+        "training_human_authors": 15,
+        "training_human_fp_inner_oof": 0.05,
+        "training_sources": 7
+      },
+      "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": {
+        "heldout_ai_n": 19,
+        "heldout_detection_weighted": 0.9921874999999999,
+        "heldout_prompts": 14,
+        "threshold_from_inner_group_oof": 0.7706883639082308,
+        "training_ai_n": 138,
+        "training_human_authors": 15,
+        "training_human_fp_inner_oof": 0.05,
+        "training_sources": 7
+      },
+      "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": {
+        "heldout_ai_n": 21,
+        "heldout_detection_weighted": 0.8024553571428571,
+        "heldout_prompts": 18,
+        "threshold_from_inner_group_oof": 0.8271280202939579,
+        "training_ai_n": 136,
+        "training_human_authors": 15,
+        "training_human_fp_inner_oof": 0.05,
+        "training_sources": 7
+      },
+      "solidrust/Gemma-2-Ataraxy-9B-AWQ": {
+        "heldout_ai_n": 19,
+        "heldout_detection_weighted": 0.8044871794871795,
+        "heldout_prompts": 14,
+        "threshold_from_inner_group_oof": 0.6617295979199899,
+        "training_ai_n": 138,
+        "training_human_authors": 15,
+        "training_human_fp_inner_oof": 0.05,
+        "training_sources": 7
+      },
+      "solidrust/Hermes-3-Llama-3.1-8B-AWQ": {
+        "heldout_ai_n": 20,
+        "heldout_detection_weighted": 0.9025297619047619,
+        "heldout_prompts": 17,
+        "threshold_from_inner_group_oof": 0.7358668589080669,
+        "training_ai_n": 137,
+        "training_human_authors": 15,
+        "training_human_fp_inner_oof": 0.05,
+        "training_sources": 7
+      },
+      "solidrust/gemma-2-9b-it-AWQ": {
+        "heldout_ai_n": 20,
+        "heldout_detection_weighted": 1.0,
+        "heldout_prompts": 17,
+        "threshold_from_inner_group_oof": 0.786975566720727,
+        "training_ai_n": 137,
+        "training_human_authors": 15,
+        "training_human_fp_inner_oof": 0.05,
+        "training_sources": 7
+      },
+      "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": {
+        "heldout_ai_n": 20,
+        "heldout_detection_weighted": 0.9766666666666667,
+        "heldout_prompts": 15,
+        "threshold_from_inner_group_oof": 0.700385209035807,
+        "training_ai_n": 137,
+        "training_human_authors": 15,
+        "training_human_fp_inner_oof": 0.041666666666666664,
+        "training_sources": 7
+      }
+    }
+  },
+  "sha256": {
+    "language_labels": "cc058127233d0ed8b41d7fe45a003bd5ba8d15e178e072c8a3dbf2890d6f6e88",
+    "primary_oof_predictions": "f4ae5ab4a8ed95f02305b1a096ebb06b0cae51a6f1af3b8b39cb7f0e92f63a7f",
+    "runner": "c262d2006706084e69303e116f87e00fc8c97c7f3c52fc99c80eca62ab142d29"
+  },
+  "source_count": 8,
+  "sources_with_at_least_5pp_gain": 8,
+  "status": "secondary_source_holdout_sensitivity_not_confirmatory",
+  "uses_reserved_data": false
+}

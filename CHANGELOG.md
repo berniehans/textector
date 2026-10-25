@@ -1,5 +1,14 @@
 # Cambios
 
+## 0.3.1 — 2026-10-25
+
+- Cierre de la investigación de F5 para narrativa española: no se promueve una
+  variante y no se ejecuta confirmación por falta de corpus independiente apto.
+  Se conserva `f5-portable-v1` sin cambios como perfil optativo experimental;
+  F4 sigue siendo el predeterminado. No cambia el scoring ni se tocan 15/4.
+- Alinea metadatos de paquete y CLI con el uso de prefiltro humano; añade
+  advertencias visibles sobre la evaluación externa limitada de F4.
+
 ## 0.3.0 — 2026-10-25
 
 - Añade el perfil optativo `f5-portable-v1` (`--metodo f5`) con pesos fijos,

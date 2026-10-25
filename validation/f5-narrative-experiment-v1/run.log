@@ -1,0 +1,91 @@
+{
+  "status": "development_experiment_complete_not_confirmatory",
+  "data": {
+    "full_development_n": 1912,
+    "factorial_n": 1896,
+    "c2_seed_prompts_removed": 8,
+    "c2_seed_rows_removed_from_ai_panel": 16,
+    "manual_language_reviewed_n": 404,
+    "manual_language_label_counts": {
+      "espanol": 157,
+      "mixto": 8,
+      "ingles": 239
+    },
+    "manually_verified_spanish_ai_rows_in_factorial": 157,
+    "provisional_ai_rows_in_factorial": 1372,
+    "english_or_mixed_ai_rows_in_factorial": 247,
+    "human_author_clusters": 15,
+    "verified_spanish_ai_prompt_clusters": 68
+  },
+  "controls": {
+    "b0_full_development": {
+      "human_fp_on_all_humans": 0.0,
+      "human_decision_coverage": 0.925,
+      "ai_detection_on_all_ai": 0.020089285714285716,
+      "ai_decision_coverage": 0.6551339285714286
+    },
+    "f4_full_development": {
+      "human_fp_on_all_humans": 0.09166666666666666,
+      "human_decision_coverage": 0.9166666666666666,
+      "ai_detection_on_all_ai": 0.6372767857142857,
+      "ai_decision_coverage": 0.83984375
+    },
+    "factorial_f4_reference": {
+      "human_fp_on_all_humans": 0.09166666666666666,
+      "human_decision_coverage": 0.9166666666666666,
+      "ai_detection_on_all_ai": 0.6373873873873874,
+      "ai_decision_coverage": 0.8406531531531531
+    }
+  },
+  "point_gate_screen": {
+    "P000": {
+      "point_estimates_pass_all_gates": false,
+      "confidence_bound_pass": false,
+      "decision": "datos_insuficientes_para_promocion",
+      "reason": "development data, 15 human author clusters, small weighted manual Spanish AI sample, no independent confirmation"
+    },
+    "P100": {
+      "point_estimates_pass_all_gates": false,
+      "confidence_bound_pass": false,
+      "decision": "datos_insuficientes_para_promocion",
+      "reason": "development data, 15 human author clusters, small weighted manual Spanish AI sample, no independent confirmation"
+    },
+    "P010": {
+      "point_estimates_pass_all_gates": false,
+      "confidence_bound_pass": false,
+      "decision": "datos_insuficientes_para_promocion",
+      "reason": "development data, 15 human author clusters, small weighted manual Spanish AI sample, no independent confirmation"
+    },
+    "P001": {
+      "point_estimates_pass_all_gates": false,
+      "confidence_bound_pass": false,
+      "decision": "datos_insuficientes_para_promocion",
+      "reason": "development data, 15 human author clusters, small weighted manual Spanish AI sample, no independent confirmation"
+    },
+    "P110": {
+      "point_estimates_pass_all_gates": false,
+      "confidence_bound_pass": false,
+      "decision": "datos_insuficientes_para_promocion",
+      "reason": "development data, 15 human author clusters, small weighted manual Spanish AI sample, no independent confirmation"
+    },
+    "P101": {
+      "point_estimates_pass_all_gates": false,
+      "confidence_bound_pass": false,
+      "decision": "datos_insuficientes_para_promocion",
+      "reason": "development data, 15 human author clusters, small weighted manual Spanish AI sample, no independent confirmation"
+    },
+    "P011": {
+      "point_estimates_pass_all_gates": false,
+      "confidence_bound_pass": false,
+      "decision": "datos_insuficientes_para_promocion",
+      "reason": "development data, 15 human author clusters, small weighted manual Spanish AI sample, no independent confirmation"
+    },
+    "P111": {
+      "point_estimates_pass_all_gates": false,
+      "confidence_bound_pass": false,
+      "decision": "datos_insuficientes_para_promocion",
+      "reason": "development data, 15 human author clusters, small weighted manual Spanish AI sample, no independent confirmation"
+    }
+  },
+  "uses_reserved_data": false
+}

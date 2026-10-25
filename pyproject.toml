@@ -1,12 +1,12 @@
 [project]
 name = "textector"
-version = "0.3.0"
+version = "0.3.1"
 description = "Índice heurístico explicable (indice_llm) de señales asociadas a texto generado por LLM, en español. Indicio, no probabilidad ni prueba de autoría."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { file = "LICENSE" }
 authors = [{ name = "Bernie Hans Benitez Altamirano" }]
-keywords = ["deteccion-ia", "texto", "espanol", "cli", "stdlib", "forense"]
+keywords = ["texto", "espanol", "cli", "stdlib", "prefiltro", "analisis-textual"]
 classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3.11",
