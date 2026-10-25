@@ -32,6 +32,8 @@ if str(ROOT) not in sys.path:
 
 from tools.checks import burstiness, cliches_es, compression, mattr, uniformity  # noqa: E402
 from tools.checks.cliches_es import phrases_from_parsed  # noqa: E402
+from tools.diagnostico import diagnostico_hibrido  # noqa: E402
+from tools.estructura import eje_estructura  # noqa: E402
 from tools.lexicon import MarkerError, parse_yaml_min  # noqa: E402
 from tools.scoring import compute_indice  # noqa: E402
 from tools.textector_core import tokenize  # noqa: E402
@@ -177,6 +179,11 @@ def _construir_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="desglose por check (valor bruto, normalizado, peso, contribución, coverage)",
     )
+    analyze.add_argument(
+        "--diagnostico",
+        action="store_true",
+        help="diagnóstico de dos ejes (prosa vs estructura) con categoría y nota",
+    )
     return parser
 
 
@@ -198,10 +205,25 @@ def main(argv: list[str] | None = None) -> int:
     except ErrorCLI as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 1
+    diag = None
+    if getattr(args, "diagnostico", False):
+        diag = diagnostico_hibrido(informe, eje_estructura(texto))
+        informe = {**informe, "diagnostico": diag}
     if args.json:
         print(json.dumps(informe, sort_keys=True, ensure_ascii=False))
     else:
         _imprimir_humano(informe, detallado=args.detallado)
+        if diag is not None:
+            print(
+                "diagnostico: categoria=%s prosa=%s estructura=%s no_concluyente=%s"
+                % (
+                    diag.get("categoria"),
+                    diag.get("prosa", {}).get("indice_llm"),
+                    diag.get("estructura", {}).get("valor"),
+                    diag.get("no_concluyente"),
+                )
+            )
+            print("nota: " + str(diag.get("nota", "")))
     return 0
 
 
