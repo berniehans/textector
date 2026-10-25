@@ -1,0 +1,248 @@
+{
+  "ai_seed_rows": [
+    {
+      "checkpoint": "arcee-ai/Arcee-Blitz-AWQ",
+      "clean_bytes": 3453,
+      "family": "mistral",
+      "generation_type": "scene_continuation",
+      "id": "ai-09174ac444496a9ebf75",
+      "language": "espanol",
+      "language_review_method": "manual-language-review-v1",
+      "language_review_scope": "Lectura manual de fragmentos de inicio, zona media y final; los tres fragmentos son prosa española. Nombres propios en inglés no cambian la etiqueta.",
+      "path": "development/texts/ai-09174ac444496a9ebf75.txt",
+      "prompt_id": "p3b19a6ab39",
+      "sha256": "5a3f9f69e92ab5898e3b928ed1143f662a049f2a43c4cf4a588db7e89659e1cf"
+    },
+    {
+      "checkpoint": "casperhansen/mistral-nemo-instruct-2407-awq",
+      "clean_bytes": 4790,
+      "family": "mistral",
+      "generation_type": "scene_continuation",
+      "id": "ai-5142ba3c0fe2e905f017",
+      "language": "espanol",
+      "language_review_method": "manual-language-review-v1",
+      "language_review_scope": "Lectura manual de fragmentos de inicio, zona media y final; los tres fragmentos son prosa española. Nombres propios en inglés no cambian la etiqueta.",
+      "path": "development/texts/ai-5142ba3c0fe2e905f017.txt",
+      "prompt_id": "p2e3ff981ab",
+      "sha256": "c90d06c2d0bd870f682e639cafca5f3ffaaf9ec10920dfe17099a109b1d07b3d"
+    },
+    {
+      "checkpoint": "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ",
+      "clean_bytes": 3120,
+      "family": "gemma2",
+      "generation_type": "scene_continuation",
+      "id": "ai-af618ad6d0285b6b0e9a",
+      "language": "espanol",
+      "language_review_method": "manual-language-review-v1",
+      "language_review_scope": "Lectura manual de fragmentos de inicio, zona media y final; los tres fragmentos son prosa española. Nombres propios en inglés no cambian la etiqueta.",
+      "path": "development/texts/ai-af618ad6d0285b6b0e9a.txt",
+      "prompt_id": "pcabd70149b",
+      "sha256": "d08a8baf82ae68a5ad31bc7231b40e70c3c2eb1b6ddd2a2dcccac276b8db672b"
+    },
+    {
+      "checkpoint": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+      "clean_bytes": 3314,
+      "family": "llama3.1",
+      "generation_type": "scene_continuation",
+      "id": "ai-1d4625c76cab419249a9",
+      "language": "espanol",
+      "language_review_method": "manual-language-review-v1",
+      "language_review_scope": "Lectura manual de fragmentos de inicio, zona media y final; los tres fragmentos son prosa española. Nombres propios en inglés no cambian la etiqueta.",
+      "path": "development/texts/ai-1d4625c76cab419249a9.txt",
+      "prompt_id": "p5776ca4433",
+      "sha256": "929a9ef342fcdb37643e9b154d95685c768bf91b6545da1b01ac7c1073c07b33"
+    },
+    {
+      "checkpoint": "solidrust/Gemma-2-Ataraxy-9B-AWQ",
+      "clean_bytes": 4807,
+      "family": "gemma2",
+      "generation_type": "scene_continuation",
+      "id": "ai-7e7d575287fdef453a33",
+      "language": "espanol",
+      "language_review_method": "manual-language-review-v1",
+      "language_review_scope": "Lectura manual de fragmentos de inicio, zona media y final; los tres fragmentos son prosa española; se observó markup HTML aislado al final.",
+      "path": "development/texts/ai-7e7d575287fdef453a33.txt",
+      "prompt_id": "p3f93281497",
+      "sha256": "9889089894d6d3e48e9313d93cb81b219b90158cf67537ef9155d7ead7030d01"
+    },
+    {
+      "checkpoint": "solidrust/Hermes-3-Llama-3.1-8B-AWQ",
+      "clean_bytes": 4368,
+      "family": "llama3.1",
+      "generation_type": "scene_continuation",
+      "id": "ai-43ddca0b6e0d6eea38b1",
+      "language": "espanol",
+      "language_review_method": "manual-language-review-v1",
+      "language_review_scope": "Lectura manual de fragmentos de inicio, zona media y final; los tres fragmentos son prosa española. Nombres propios en inglés no cambian la etiqueta.",
+      "path": "development/texts/ai-43ddca0b6e0d6eea38b1.txt",
+      "prompt_id": "p8f6d973ca7",
+      "sha256": "2ac107470a665104dbe8cf12c317cba90048b42afa93249096ad5bdcf2b43747"
+    },
+    {
+      "checkpoint": "solidrust/gemma-2-9b-it-AWQ",
+      "clean_bytes": 2888,
+      "family": "gemma2",
+      "generation_type": "scene_continuation",
+      "id": "ai-f4bb242e54f046fe6390",
+      "language": "espanol",
+      "language_review_method": "manual-language-review-v1",
+      "language_review_scope": "Lectura manual de fragmentos de inicio, zona media y final; los tres fragmentos son prosa española. Nombres propios en inglés no cambian la etiqueta.",
+      "path": "development/texts/ai-f4bb242e54f046fe6390.txt",
+      "prompt_id": "pdd7b4d42e5",
+      "sha256": "3a2e9c222b4af84dbffd6b082e457e6271128b78d4e45b94f3bf6b6b5b9f620a"
+    },
+    {
+      "checkpoint": "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ",
+      "clean_bytes": 4787,
+      "family": "mistral",
+      "generation_type": "scene_continuation",
+      "id": "ai-6ff1e1d6d1de2cdda7fa",
+      "language": "espanol",
+      "language_review_method": "manual-language-review-v1",
+      "language_review_scope": "Lectura manual de fragmentos de inicio, zona media y final; los tres fragmentos son prosa española. Nombres propios en inglés no cambian la etiqueta.",
+      "path": "development/texts/ai-6ff1e1d6d1de2cdda7fa.txt",
+      "prompt_id": "pd8b2b7360f",
+      "sha256": "686f137770c0ab74c6a9171e4843877f640e8e37f542fc2a198865c1ec77bfe0"
+    }
+  ],
+  "ai_seed_source": "public story_writing_benchmark development examples; one manually verified Spanish text per checkpoint; prompts withheld from every scored method",
+  "development_root": "validation/narrative-v1/development",
+  "evaluation_cases": 1896,
+  "evaluation_manifest_sha256": "a729ec52da37a1e3ac86d2db08de81de817c2a96108723470f9f501edad50b5e",
+  "human_seed_rows": [
+    {
+      "author": "Francisco de Quevedo",
+      "clean_bytes": 3200,
+      "id": "h03",
+      "license": "dominio publico (redistribucion libre)",
+      "path": "corpus/human/h03.txt",
+      "sha256": "fe5e81f666c3bf997714647d4f55edb6efef895e390b5ea04bcb0f8f389953ea",
+      "source": "Project Gutenberg (pg32315)",
+      "work": "La vida del Buscon"
+    },
+    {
+      "author": "Ricardo Palma",
+      "clean_bytes": 3308,
+      "id": "h04",
+      "license": "dominio publico (redistribucion libre)",
+      "path": "corpus/human/h04.txt",
+      "sha256": "d534dfcf6d69a34a645d7466ace177d5287ad9450050efa2d0920035abf5507f",
+      "source": "Project Gutenberg (pg21282)",
+      "work": "Tradiciones peruanas"
+    },
+    {
+      "author": "Leopoldo Alas (Clarín)",
+      "clean_bytes": 3154,
+      "id": "h08",
+      "license": "dominio publico (redistribucion libre)",
+      "path": "corpus/human/h08.txt",
+      "sha256": "0a553201af81330c5d54bd1cc18cc3eedf5f6db76e9be0a8007e1945faabef54",
+      "source": "Project Gutenberg (pg17073)",
+      "work": "La Regenta"
+    },
+    {
+      "author": "P. A. de Alarcon",
+      "clean_bytes": 1445,
+      "id": "h11",
+      "license": "dominio publico (redistribucion libre)",
+      "path": "corpus/human/h11.txt",
+      "sha256": "ed03f43a567844a15d0185d1685ac0cc2d9ce4d379390de869ce1ed612ceaec7",
+      "source": "Project Gutenberg (pg15532)",
+      "work": "Novelas cortas"
+    },
+    {
+      "author": "J. M. de Pereda",
+      "clean_bytes": 3623,
+      "id": "h14",
+      "license": "dominio publico (redistribucion libre)",
+      "path": "corpus/human/h14.txt",
+      "sha256": "b8b7d0afb0990a629c18867246335dca4a137ee43e1514109c88198f5238153a",
+      "source": "Project Gutenberg (pg24127)",
+      "work": "Penas arriba"
+    },
+    {
+      "author": "J. Ruiz de Alarcon",
+      "clean_bytes": 1709,
+      "id": "h18",
+      "license": "dominio publico (redistribucion libre)",
+      "path": "corpus/human/h18.txt",
+      "sha256": "c71a1df10f874de7f9d7ffe9eedcd7f27356e7997b01eba708386006bbf75677",
+      "source": "Project Gutenberg (pg77445)",
+      "work": "Las paredes oyen"
+    },
+    {
+      "author": "Jose Zorrilla",
+      "clean_bytes": 4220,
+      "id": "h19",
+      "license": "dominio publico (redistribucion libre)",
+      "path": "corpus/human/h19.txt",
+      "sha256": "46045490feed705504616f93270dc6812b2d687608b5c62acce3ad1d9df9f71c",
+      "source": "Project Gutenberg (pg53294)",
+      "work": "Recuerdos del tiempo viejo"
+    },
+    {
+      "author": "P. de la Escosura",
+      "clean_bytes": 3165,
+      "id": "h20",
+      "license": "dominio publico (redistribucion libre)",
+      "path": "corpus/human/h20.txt",
+      "sha256": "feeb3ff8c5df98b575a2f39160854e07a8e6bf10287bcb9928d752b4544130dc",
+      "source": "Project Gutenberg (pg75133)",
+      "work": "El conde de Candespina"
+    }
+  ],
+  "human_seed_source": "eight distinct pre-2020 Project Gutenberg source excerpts from the predeclared local allowlist",
+  "id": "f5-narrative-experiment-v1-c2-seeds",
+  "language_audit": {
+    "manual_ai_seed_reviews": "228feca608ce528d7e129316d6b48923c61a549f36869f46356bc8ad95e6ad2c",
+    "manual_language_labels_sha256": "cc058127233d0ed8b41d7fe45a003bd5ba8d15e178e072c8a3dbf2890d6f6e88",
+    "manual_reviewed_n": 404,
+    "provisional_ai_rows_remain_unverified": 1388,
+    "sampling_design": "244 certainty-reviewed heuristic positives plus 160 stratified negative sample from a 1548-item frame; negative rows carry inverse inclusion-probability weights"
+  },
+  "scoring_started": false,
+  "seed_pairing": {
+    "aggregation": "median of 64 paired q values; q and score are also summarized for the two sensitivity lengths, which do not enter the factorial selection",
+    "ai_documents": 8,
+    "block_rule": "normalized UTF-8 prefixes; for each AI-human pair and target length, truncate both to the same largest valid UTF-8 prefix length not exceeding the target",
+    "human_documents": 8,
+    "pairing": "all 8x8 AI-human source combinations",
+    "primary_clean_bytes": 1024,
+    "sensitivity_clean_bytes": [
+      512,
+      1280
+    ]
+  },
+  "seed_prompt_ids_excluded_from_evaluation": [
+    "p2e3ff981ab",
+    "p3b19a6ab39",
+    "p3f93281497",
+    "p5776ca4433",
+    "p8f6d973ca7",
+    "pcabd70149b",
+    "pd8b2b7360f",
+    "pdd7b4d42e5"
+  ],
+  "seed_prompt_rows_removed": 16,
+  "source_hashes": {
+    "config/cliches_es.yaml": "ecef4feda29531c3a4057170490837a34eab259029e1cc2b5edc5a274d739cc3",
+    "config/f5-portable.json": "fc1d828a825a0a4cb058b1080dc2c7c195f024610ea21d3e095fc3216bf9c797",
+    "corpus/manifest.csv": "01e2b08b2a9f8369c60c8b7207e3c2481f1500d7bb725758a7fe0add633a4473",
+    "corpus/seeds/manifest.json": "69b87c326b3b2244224d04f89834fd8ac03229bd9bceb30480185b32d33201c1",
+    "tools/checks/cliches_es.py": "7b6b2e650422248f52f1a8357239d80c53f87a82d890a6227a52f52976087d8f",
+    "tools/checks/compression.py": "ba753dbb2fbc0326e7f0b9f95c548fb7ffc8688025d090e85d704a9863e0b035",
+    "tools/checks/mattr.py": "3fe0cdbe01d759fc16fec65762b47d33e7d95fdf394eae8b9a13df8ee93c3205",
+    "tools/decision.py": "ff027ed861713abe77b3df2eba2a508eae3277186ab825cf9a2912092d9b84fa",
+    "tools/f5.py": "66f4ba45f917558ff695d469e8a5c2834aa1642750b6cca4dd3153355fa5f3c8",
+    "tools/pipeline.py": "ce7820fba2cefab6d2867aa53ccba426b96bc34e720a28f4fe530a56c97e2167",
+    "tools/scoring.py": "0aada3b7c4fdc423b56624ada31f22dd6521825b0665efe33f6a6a8370cf7e54",
+    "validation/f5-narrative-experiment-v1/c2-seed-candidates.json": "0095b741f333310ef6c1720deb1de4fd17bac5f2be68699f7551f11d9150e776",
+    "validation/f5-narrative-experiment-v1/c2-seed-language-review.jsonl": "228feca608ce528d7e129316d6b48923c61a549f36869f46356bc8ad95e6ad2c",
+    "validation/f5-narrative-experiment-v1/language-audit-labels.jsonl": "cc058127233d0ed8b41d7fe45a003bd5ba8d15e178e072c8a3dbf2890d6f6e88",
+    "validation/narrative-v1/development/manifest-ai.jsonl": "2bd3fbf9e121fa3ebed26d77d7980bc7d05fd13cdeb4ab7c0657250d7ed578c5",
+    "validation/narrative-v1/development/manifest-human.jsonl": "8dad22ab9735a6e860d7587b8f3810c1af130b7906731793915d634cfda67fdf",
+    "validation/narrative-v1/development/manifest.jsonl": "2169fca8057987e9abfda5b2bd334f3d1a5c3d3d38b3a5113a7d827be876e92d"
+  },
+  "status": "data_locked_before_scoring",
+  "uses_reserved_data": false
+}

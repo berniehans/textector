@@ -1,0 +1,435 @@
+{
+  "ai_manually_verified_spanish_sampling_weighted": {
+    "by_source": {
+      "arcee-ai/Arcee-Blitz-AWQ": {
+        "n_prompt_clusters": 18,
+        "n_rows": 21,
+        "sampling_weighted_exploratory": {
+          "C2-v2": {
+            "ci95_high": 5.551115123125783e-17,
+            "ci95_low": 0.0,
+            "estimate": 0.0
+          },
+          "C2-v2 × M100-fallback50": {
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "estimate": 0.0
+          },
+          "L2": {
+            "ci95_high": 0.2563218390804597,
+            "ci95_low": 0.009461009174311918,
+            "estimate": 0.09598214285714288
+          },
+          "L2 × C2-v2": {
+            "ci95_high": 2.7755575615628914e-17,
+            "ci95_low": -5.551115123125783e-17,
+            "estimate": 0.0
+          },
+          "L2 × C2-v2 × M100-fallback50": {
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "estimate": 0.0
+          },
+          "L2 × M100-fallback50": {
+            "ci95_high": 0.009202453987730036,
+            "ci95_low": -0.23510638297872333,
+            "estimate": -0.08035714285714285
+          },
+          "M100-fallback50": {
+            "ci95_high": 0.9805788271134805,
+            "ci95_low": 0.7175834970530452,
+            "estimate": 0.8883928571428572
+          }
+        }
+      },
+      "casperhansen/mistral-nemo-instruct-2407-awq": {
+        "n_prompt_clusters": 12,
+        "n_rows": 17,
+        "sampling_weighted_exploratory": {
+          "C2-v2": {
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "estimate": 0.0
+          },
+          "C2-v2 × M100-fallback50": {
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "estimate": 0.0
+          },
+          "L2": {
+            "ci95_high": 0.08322824716267341,
+            "ci95_low": 0.0,
+            "estimate": 0.02165354330708663
+          },
+          "L2 × C2-v2": {
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "estimate": 0.0
+          },
+          "L2 × C2-v2 × M100-fallback50": {
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "estimate": 0.0
+          },
+          "L2 × M100-fallback50": {
+            "ci95_high": 0.08322824716267341,
+            "ci95_low": 0.0,
+            "estimate": 0.02165354330708663
+          },
+          "M100-fallback50": {
+            "ci95_high": 1.0,
+            "ci95_low": 0.9163851351351351,
+            "estimate": 0.9783464566929134
+          }
+        }
+      },
+      "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": {
+        "n_prompt_clusters": 14,
+        "n_rows": 19,
+        "sampling_weighted_exploratory": {
+          "C2-v2": {
+            "ci95_high": 0.012195121951219495,
+            "ci95_low": 0.0,
+            "estimate": 0.0033482142857143016
+          },
+          "C2-v2 × M100-fallback50": {
+            "ci95_high": 0.012195121951219495,
+            "ci95_low": 0.0,
+            "estimate": 0.0033482142857143016
+          },
+          "L2": {
+            "ci95_high": 0.01814516129032262,
+            "ci95_low": 0.0,
+            "estimate": 0.005580357142857123
+          },
+          "L2 × C2-v2": {
+            "ci95_high": 2.7755575615628914e-17,
+            "ci95_low": -0.004885993485342022,
+            "estimate": -0.0011160714285714524
+          },
+          "L2 × C2-v2 × M100-fallback50": {
+            "ci95_high": 2.7755575615628914e-17,
+            "ci95_low": -0.004885993485342022,
+            "estimate": -0.0011160714285714524
+          },
+          "L2 × M100-fallback50": {
+            "ci95_high": 0.01814516129032262,
+            "ci95_low": 0.0,
+            "estimate": 0.005580357142857123
+          },
+          "M100-fallback50": {
+            "ci95_high": 0.9947033898305084,
+            "ci95_low": 0.5676229508196722,
+            "estimate": 0.8552827380952381
+          }
+        }
+      },
+      "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": {
+        "n_prompt_clusters": 18,
+        "n_rows": 21,
+        "sampling_weighted_exploratory": {
+          "C2-v2": {
+            "ci95_high": 2.7755575615628914e-17,
+            "ci95_low": 0.0,
+            "estimate": 0.0
+          },
+          "C2-v2 × M100-fallback50": {
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "estimate": 0.0
+          },
+          "L2": {
+            "ci95_high": 0.2762619372442019,
+            "ci95_low": 0.016560509554140124,
+            "estimate": 0.15011160714285718
+          },
+          "L2 × C2-v2": {
+            "ci95_high": 2.7755575615628914e-17,
+            "ci95_low": 0.0,
+            "estimate": 0.0
+          },
+          "L2 × C2-v2 × M100-fallback50": {
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "estimate": 0.0
+          },
+          "L2 × M100-fallback50": {
+            "ci95_high": -0.019061583577712593,
+            "ci95_low": -0.27670527670527667,
+            "estimate": -0.1501116071428572
+          },
+          "M100-fallback50": {
+            "ci95_high": 0.9809384164222874,
+            "ci95_low": 0.7232947232947233,
+            "estimate": 0.8498883928571428
+          }
+        }
+      },
+      "solidrust/Gemma-2-Ataraxy-9B-AWQ": {
+        "n_prompt_clusters": 14,
+        "n_rows": 19,
+        "sampling_weighted_exploratory": {
+          "C2-v2": {
+            "ci95_high": 1.3877787807814457e-17,
+            "ci95_low": 0.0,
+            "estimate": 0.0
+          },
+          "C2-v2 × M100-fallback50": {
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "estimate": 0.0
+          },
+          "L2": {
+            "ci95_high": 0.02718006795016989,
+            "ci95_low": 0.0,
+            "estimate": 0.009615384615384609
+          },
+          "L2 × C2-v2": {
+            "ci95_high": 1.3877787807814457e-17,
+            "ci95_low": 0.0,
+            "estimate": 0.0
+          },
+          "L2 × C2-v2 × M100-fallback50": {
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "estimate": 0.0
+          },
+          "L2 × M100-fallback50": {
+            "ci95_high": 0.0,
+            "ci95_low": -0.027190332326283984,
+            "estimate": -0.009615384615384609
+          },
+          "M100-fallback50": {
+            "ci95_high": 0.9849874895746455,
+            "ci95_low": 0.3925189393939394,
+            "estimate": 0.701923076923077
+          }
+        }
+      },
+      "solidrust/Hermes-3-Llama-3.1-8B-AWQ": {
+        "n_prompt_clusters": 17,
+        "n_rows": 20,
+        "sampling_weighted_exploratory": {
+          "C2-v2": {
+            "ci95_high": 0.07739307535641549,
+            "ci95_low": 0.0,
+            "estimate": 0.02120535714285715
+          },
+          "C2-v2 × M100-fallback50": {
+            "ci95_high": 0.0,
+            "ci95_low": -0.0782967032967033,
+            "estimate": -0.02120535714285715
+          },
+          "L2": {
+            "ci95_high": 0.17770034843205582,
+            "ci95_low": 0.0,
+            "estimate": 0.0881696428571428
+          },
+          "L2 × C2-v2": {
+            "ci95_high": 2.7755575615628914e-17,
+            "ci95_low": -0.0782967032967033,
+            "estimate": -0.02120535714285715
+          },
+          "L2 × C2-v2 × M100-fallback50": {
+            "ci95_high": 0.07739307535641549,
+            "ci95_low": 0.0,
+            "estimate": 0.02120535714285715
+          },
+          "L2 × M100-fallback50": {
+            "ci95_high": 0.0,
+            "ci95_low": -0.17874875868917578,
+            "estimate": -0.0881696428571428
+          },
+          "M100-fallback50": {
+            "ci95_high": 1.0,
+            "ci95_low": 0.71875,
+            "estimate": 0.8694196428571428
+          }
+        }
+      },
+      "solidrust/gemma-2-9b-it-AWQ": {
+        "n_prompt_clusters": 17,
+        "n_rows": 20,
+        "sampling_weighted_exploratory": {
+          "C2-v2": {
+            "ci95_high": 0.10472133475328363,
+            "ci95_low": 0.0,
+            "estimate": 0.043898809523809534
+          },
+          "C2-v2 × M100-fallback50": {
+            "ci95_high": 0.0,
+            "ci95_low": -0.10541989279332936,
+            "estimate": -0.04389880952380956
+          },
+          "L2": {
+            "ci95_high": 0.2610258868648131,
+            "ci95_low": 0.02702702702702703,
+            "estimate": 0.1352306547619048
+          },
+          "L2 × C2-v2": {
+            "ci95_high": 0.10472133475328363,
+            "ci95_low": -2.7755575615628914e-17,
+            "estimate": 0.043898809523809534
+          },
+          "L2 × C2-v2 × M100-fallback50": {
+            "ci95_high": 0.0,
+            "ci95_low": -0.10541989279332936,
+            "estimate": -0.04389880952380956
+          },
+          "L2 × M100-fallback50": {
+            "ci95_high": -0.027064220183486254,
+            "ci95_low": -0.2614443567482242,
+            "estimate": -0.13523065476190468
+          },
+          "M100-fallback50": {
+            "ci95_high": 0.9603293413173652,
+            "ci95_low": 0.720635775862069,
+            "estimate": 0.8547247023809524
+          }
+        }
+      },
+      "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": {
+        "n_prompt_clusters": 15,
+        "n_rows": 20,
+        "sampling_weighted_exploratory": {
+          "C2-v2": {
+            "ci95_high": 2.7755575615628914e-17,
+            "ci95_low": -2.7755575615628914e-17,
+            "estimate": -2.7755575615628914e-17
+          },
+          "C2-v2 × M100-fallback50": {
+            "ci95_high": 2.7755575615628914e-17,
+            "ci95_low": -2.7755575615628914e-17,
+            "estimate": 0.0
+          },
+          "L2": {
+            "ci95_high": 0.22587354409317806,
+            "ci95_low": 0.02347299343765774,
+            "estimate": 0.0986111111111111
+          },
+          "L2 × C2-v2": {
+            "ci95_high": 2.7755575615628914e-17,
+            "ci95_low": -2.7755575615628914e-17,
+            "estimate": -2.7755575615628914e-17
+          },
+          "L2 × C2-v2 × M100-fallback50": {
+            "ci95_high": 2.7755575615628914e-17,
+            "ci95_low": -2.7755575615628914e-17,
+            "estimate": 0.0
+          },
+          "L2 × M100-fallback50": {
+            "ci95_high": -0.023675496688741665,
+            "ci95_low": -0.2265725288831835,
+            "estimate": -0.09861111111111112
+          },
+          "M100-fallback50": {
+            "ci95_high": 0.9618805590851335,
+            "ci95_low": 0.719360568383659,
+            "estimate": 0.8780555555555555
+          }
+        }
+      }
+    },
+    "n_prompt_clusters": 68,
+    "n_rows": 157,
+    "overall": {
+      "C2-v2": {
+        "ci95_high": 0.024626209322779258,
+        "ci95_low": 0.0005157075937942956,
+        "estimate": 0.009947021299599929
+      },
+      "C2-v2 × M100-fallback50": {
+        "ci95_high": 0.0004554771122751433,
+        "ci95_low": -0.02346843699044962,
+        "estimate": -0.008973943128986916
+      },
+      "L2": {
+        "ci95_high": 0.12430532465681847,
+        "ci95_low": 0.040946024376088214,
+        "estimate": 0.08081954805924965
+      },
+      "L2 × C2-v2": {
+        "ci95_high": 0.01594810109474254,
+        "ci95_low": -0.007706868577609521,
+        "estimate": 0.0031354741053085944
+      },
+      "L2 × C2-v2 × M100-fallback50": {
+        "ci95_high": 0.007053969521527925,
+        "ci95_low": -0.016353061922682155,
+        "estimate": -0.0034598334955130428
+      },
+      "L2 × M100-fallback50": {
+        "ci95_high": -0.03535891968727789,
+        "ci95_low": -0.11801755585955312,
+        "estimate": -0.0751432587306736
+      },
+      "M100-fallback50": {
+        "ci95_high": 0.9128179592514212,
+        "ci95_low": 0.7716458973944005,
+        "estimate": 0.8478754459941614
+      }
+    }
+  },
+  "analysis_id": "f5-narrative-experiment-v1-factorial-interactions",
+  "bootstrap": {
+    "ai_clusters": "prompt_id; unequal language-audit sampling weights retained",
+    "human_clusters": "author_or_model",
+    "replicates": 2000,
+    "seed": 25102027
+  },
+  "design": "2x2x2; contrast is sum(y*product(signs))/4 on the detection-proportion scale",
+  "evaluated_utc": "2026-10-25T21:44:50.334279+00:00",
+  "human_false_positive_rate": {
+    "n_author_clusters": 15,
+    "n_rows": 120,
+    "overall": {
+      "C2-v2": {
+        "ci95_high": 0.0,
+        "ci95_low": 0.0,
+        "estimate": 0.0
+      },
+      "C2-v2 × M100-fallback50": {
+        "ci95_high": 0.0,
+        "ci95_low": 0.0,
+        "estimate": 0.0
+      },
+      "L2": {
+        "ci95_high": 0.05833333333333335,
+        "ci95_low": 0.016666666666666663,
+        "estimate": 0.0375
+      },
+      "L2 × C2-v2": {
+        "ci95_high": 0.0,
+        "ci95_low": 0.0,
+        "estimate": 0.0
+      },
+      "L2 × C2-v2 × M100-fallback50": {
+        "ci95_high": 0.0,
+        "ci95_low": 0.0,
+        "estimate": 0.0
+      },
+      "L2 × M100-fallback50": {
+        "ci95_high": 0.02916666666666666,
+        "ci95_low": -0.004166666666666666,
+        "estimate": 0.012499999999999983
+      },
+      "M100-fallback50": {
+        "ci95_high": 0.4333333333333333,
+        "ci95_low": 0.24583333333333335,
+        "estimate": 0.3375
+      }
+    }
+  },
+  "interaction_hypotheses": {
+    "H0": "the factor effects are additive on detection proportions",
+    "H1": "at least one predeclared factorial interaction differs from zero",
+    "interpretation": "two-sided 95% cluster-bootstrap intervals are exploratory; exclusion of zero is not confirmatory and does not override human-error gates"
+  },
+  "limitations": [
+    "Development-only analysis; no confirmatory inference.",
+    "The language-audit design is stratified with unequal inclusion probabilities; retaining weights does not replace a design-specific confirmatory analysis.",
+    "Small numbers of prompt and author clusters make the bootstrap intervals exploratory."
+  ],
+  "source_result_sha256": "91d1dd1cb565cc7f7a77c2d31728683054779ca88748e55c0924bb99157c6a60",
+  "uses_reserved_data": false
+}

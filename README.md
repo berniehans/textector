@@ -7,7 +7,7 @@ bajo tampoco demuestra que un texto sea humano.
 
 ## Estado actual
 
-Versión del paquete **0.3.0**; F4 **`f4-integridad`** se mantiene por compatibilidad y F5 **`f5-portable-v1`** es un perfil portable experimental. Python
+Versión del paquete **0.3.1**; F4 **`f4-integridad`** se mantiene por compatibilidad y F5 **`f5-portable-v1`** es un perfil portable experimental. Python
 3.11 o posterior, biblioteca estándar en ejecución y sin llamadas de red.
 
 F4 es el perfil predeterminado y usa cinco checks. F5 (`--metodo f5`) usa tres
@@ -15,6 +15,14 @@ checks léxicos con pesos fijos, se abstiene cuando falta cualquiera y deja el
 ritmo y los párrafos fuera del índice. No inventa segmentación cuando el texto
 está aplanado. Su validación independiente está documentada en
 [`docs/validacion-f5-portable.md`](docs/validacion-f5-portable.md).
+
+La línea de investigación de F5 para narrativa española se cerró sin promoción:
+el cribado de desarrollo no encontró una variante que cumpla todas las puertas,
+y no se encontró un corpus nuevo apto para confirmación independiente. F5 se
+conserva congelado y optativo, solo experimental; estos resultados no validan
+autoría ni cambian el perfil, el umbral 15 o el margen 4. Véanse el
+[`informe factorial`](validation/f5-narrative-experiment-v1/factorial-report.md)
+y la [auditoría de corpus confirmatorio](docs/auditoria-busqueda-corpus-confirmatorio-f5.md).
 
 La reparación de integridad corrige recursos del wheel, segmentación, Unicode,
 entradas insuficientes, configuración, estructura, hashes y evaluación por folds.
@@ -63,7 +71,7 @@ exige MATTR, densidad léxica y compresión; si falta cualquiera, entrega
 
 ```bash
 uv build --wheel
-python -m pip install dist/textector-0.3.0-py3-none-any.whl
+python -m pip install dist/textector-0.3.1-py3-none-any.whl
 textector analyze --archivo texto.txt --json
 ```
 
@@ -75,7 +83,7 @@ fuera del checkout; el corpus completo solo es necesario para la evaluación.
 ```bash
 uv run python -B -m unittest discover -s tests -p "test_*.py" -v
 uv build --wheel
-uv run python -B tests/verify_wheel.py dist/textector-0.3.0-py3-none-any.whl
+uv run python -B tests/verify_wheel.py dist/textector-0.3.1-py3-none-any.whl
 uv run python -B -m tools.calibrate
 ```
 
@@ -100,6 +108,7 @@ El historial de cambios está en [`CHANGELOG.md`](CHANGELOG.md).
 | `tools/calibrate.py` | Integridad del corpus y LOGO-CV |
 | `tools/f5.py`, `tools/calibrate_f5.py` | Perfil portable y calibración solo en desarrollo |
 | [`docs/guia-uso.md`](docs/guia-uso.md) | Comandos, errores e interpretación |
+| [`docs/revision-lanzamiento-0.3.1.md`](docs/revision-lanzamiento-0.3.1.md) | Alcance y preparación de lanzamiento |
 | [`docs/checks.md`](docs/checks.md) | Señales y constantes |
 | [`docs/corpus.md`](docs/corpus.md) | Procedencia, hashes y semillas |
 | [`docs/diagnostico-hibrido.md`](docs/diagnostico-hibrido.md) | Dos ejes y límites |

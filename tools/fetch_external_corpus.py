@@ -27,7 +27,7 @@ def _download(url, path, expected, prefix_bytes=None):
     if path.exists():
         raw = path.read_bytes()
     else:
-        headers = {"User-Agent": "textector-research/0.3.0"}
+        headers = {"User-Agent": "textector-research/0.3.1"}
         if prefix_bytes:
             headers["Range"] = f"bytes=0-{prefix_bytes - 1}"
         with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=120) as response:

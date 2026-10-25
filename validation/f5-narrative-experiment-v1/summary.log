@@ -1,0 +1,1237 @@
+{
+  "status": "development_experiment_complete_not_confirmatory",
+  "data": {
+    "c2_seed_prompts_removed": 8,
+    "c2_seed_rows_removed_from_ai_panel": 16,
+    "english_or_mixed_ai_rows_in_factorial": 247,
+    "factorial_n": 1896,
+    "full_development_n": 1912,
+    "human_author_clusters": 15,
+    "manual_language_label_counts": {
+      "espanol": 157,
+      "ingles": 239,
+      "mixto": 8
+    },
+    "manual_language_reviewed_n": 404,
+    "manually_verified_spanish_ai_rows_in_factorial": 157,
+    "provisional_ai_rows_in_factorial": 1372,
+    "verified_spanish_ai_prompt_clusters": 68
+  },
+  "controls": {
+    "b0_full_development": {
+      "ai_decision_coverage": 0.6551339285714286,
+      "ai_detection_on_all_ai": 0.020089285714285716,
+      "human_decision_coverage": 0.925,
+      "human_fp_on_all_humans": 0.0
+    },
+    "f4_full_development": {
+      "ai_decision_coverage": 0.83984375,
+      "ai_detection_on_all_ai": 0.6372767857142857,
+      "human_decision_coverage": 0.9166666666666666,
+      "human_fp_on_all_humans": 0.09166666666666666
+    },
+    "factorial_f4_reference": {
+      "ai_decision_coverage": 0.8406531531531531,
+      "ai_detection_on_all_ai": 0.6373873873873874,
+      "human_decision_coverage": 0.9166666666666666,
+      "human_fp_on_all_humans": 0.09166666666666666
+    }
+  },
+  "profiles": {
+    "P000": {
+      "factors": {
+        "C2-v2": false,
+        "L2": false,
+        "M100-fallback50": false
+      },
+      "human": {
+        "ai_decision_coverage": null,
+        "ai_detection_on_all_ai": null,
+        "human_decision_coverage": 0.925,
+        "human_fp_on_all_humans": 0.0
+      },
+      "ai_es_by_source": {
+        "arcee-ai/Arcee-Blitz-AWQ": {
+          "ai_decision_coverage": 0.6770833333333333,
+          "ai_detection_on_all_ai": 0.015625,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "casperhansen/mistral-nemo-instruct-2407-awq": {
+          "ai_decision_coverage": 0.5944881889763779,
+          "ai_detection_on_all_ai": 0.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": {
+          "ai_decision_coverage": 0.8675595238095238,
+          "ai_detection_on_all_ai": 0.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": {
+          "ai_decision_coverage": 0.37276785714285715,
+          "ai_detection_on_all_ai": 0.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/Gemma-2-Ataraxy-9B-AWQ": {
+          "ai_decision_coverage": 0.9807692307692307,
+          "ai_detection_on_all_ai": 0.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/Hermes-3-Llama-3.1-8B-AWQ": {
+          "ai_decision_coverage": 0.590029761904762,
+          "ai_detection_on_all_ai": 0.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/gemma-2-9b-it-AWQ": {
+          "ai_decision_coverage": 0.7473958333333333,
+          "ai_detection_on_all_ai": 0.005580357142857144,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": {
+          "ai_decision_coverage": 0.955,
+          "ai_detection_on_all_ai": 0.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        }
+      },
+      "human_fp_ci": {
+        "lower_95": 0.0,
+        "n_clusters": 15,
+        "status": "exploratory_cluster_bootstrap_not_certifying",
+        "upper_95": 0.0
+      },
+      "human_coverage_ci": {
+        "lower_95": 0.8916666666666667,
+        "n_clusters": 15,
+        "status": "exploratory_cluster_bootstrap_not_certifying",
+        "upper_95": 0.9583333333333334
+      }
+    },
+    "P001": {
+      "factors": {
+        "C2-v2": false,
+        "L2": false,
+        "M100-fallback50": true
+      },
+      "human": {
+        "ai_decision_coverage": null,
+        "ai_detection_on_all_ai": null,
+        "human_decision_coverage": 0.3416666666666667,
+        "human_fp_on_all_humans": 0.325
+      },
+      "ai_es_by_source": {
+        "arcee-ai/Arcee-Blitz-AWQ": {
+          "ai_decision_coverage": 0.984375,
+          "ai_detection_on_all_ai": 0.984375,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "casperhansen/mistral-nemo-instruct-2407-awq": {
+          "ai_decision_coverage": 0.9566929133858267,
+          "ai_detection_on_all_ai": 0.9566929133858267,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": {
+          "ai_decision_coverage": 0.8452380952380952,
+          "ai_detection_on_all_ai": 0.845238095238095,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": {
+          "ai_decision_coverage": 1.0,
+          "ai_detection_on_all_ai": 1.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/Gemma-2-Ataraxy-9B-AWQ": {
+          "ai_decision_coverage": 0.7115384615384616,
+          "ai_detection_on_all_ai": 0.7115384615384615,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/Hermes-3-Llama-3.1-8B-AWQ": {
+          "ai_decision_coverage": 1.0,
+          "ai_detection_on_all_ai": 1.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/gemma-2-9b-it-AWQ": {
+          "ai_decision_coverage": 0.9955357142857143,
+          "ai_detection_on_all_ai": 0.9955357142857143,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": {
+          "ai_decision_coverage": 0.9766666666666667,
+          "ai_detection_on_all_ai": 0.9766666666666667,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        }
+      },
+      "human_fp_ci": {
+        "lower_95": 0.24166666666666667,
+        "n_clusters": 15,
+        "status": "exploratory_cluster_bootstrap_not_certifying",
+        "upper_95": 0.4083333333333333
+      },
+      "human_coverage_ci": {
+        "lower_95": 0.25833333333333336,
+        "n_clusters": 15,
+        "status": "exploratory_cluster_bootstrap_not_certifying",
+        "upper_95": 0.425
+      }
+    },
+    "P010": {
+      "factors": {
+        "C2-v2": true,
+        "L2": false,
+        "M100-fallback50": false
+      },
+      "human": {
+        "ai_decision_coverage": null,
+        "ai_detection_on_all_ai": null,
+        "human_decision_coverage": 0.925,
+        "human_fp_on_all_humans": 0.0
+      },
+      "ai_es_by_source": {
+        "arcee-ai/Arcee-Blitz-AWQ": {
+          "ai_decision_coverage": 0.5840773809523808,
+          "ai_detection_on_all_ai": 0.015625,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "casperhansen/mistral-nemo-instruct-2407-awq": {
+          "ai_decision_coverage": 0.410761154855643,
+          "ai_detection_on_all_ai": 0.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": {
+          "ai_decision_coverage": 0.8675595238095238,
+          "ai_detection_on_all_ai": 0.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": {
+          "ai_decision_coverage": 0.37276785714285715,
+          "ai_detection_on_all_ai": 0.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/Gemma-2-Ataraxy-9B-AWQ": {
+          "ai_decision_coverage": 0.9166666666666666,
+          "ai_detection_on_all_ai": 0.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/Hermes-3-Llama-3.1-8B-AWQ": {
+          "ai_decision_coverage": 0.6670386904761906,
+          "ai_detection_on_all_ai": 0.08482142857142858,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/gemma-2-9b-it-AWQ": {
+          "ai_decision_coverage": 0.658110119047619,
+          "ai_detection_on_all_ai": 0.005580357142857144,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": {
+          "ai_decision_coverage": 0.9016666666666666,
+          "ai_detection_on_all_ai": 0.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        }
+      },
+      "human_fp_ci": {
+        "lower_95": 0.0,
+        "n_clusters": 15,
+        "status": "exploratory_cluster_bootstrap_not_certifying",
+        "upper_95": 0.0
+      },
+      "human_coverage_ci": {
+        "lower_95": 0.8916666666666667,
+        "n_clusters": 15,
+        "status": "exploratory_cluster_bootstrap_not_certifying",
+        "upper_95": 0.9583333333333334
+      }
+    },
+    "P011": {
+      "factors": {
+        "C2-v2": true,
+        "L2": false,
+        "M100-fallback50": true
+      },
+      "human": {
+        "ai_decision_coverage": null,
+        "ai_detection_on_all_ai": null,
+        "human_decision_coverage": 0.3416666666666667,
+        "human_fp_on_all_humans": 0.325
+      },
+      "ai_es_by_source": {
+        "arcee-ai/Arcee-Blitz-AWQ": {
+          "ai_decision_coverage": 0.984375,
+          "ai_detection_on_all_ai": 0.984375,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "casperhansen/mistral-nemo-instruct-2407-awq": {
+          "ai_decision_coverage": 0.9566929133858267,
+          "ai_detection_on_all_ai": 0.9566929133858267,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": {
+          "ai_decision_coverage": 0.8541666666666666,
+          "ai_detection_on_all_ai": 0.8541666666666665,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": {
+          "ai_decision_coverage": 1.0,
+          "ai_detection_on_all_ai": 1.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/Gemma-2-Ataraxy-9B-AWQ": {
+          "ai_decision_coverage": 0.7115384615384616,
+          "ai_detection_on_all_ai": 0.7115384615384615,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/Hermes-3-Llama-3.1-8B-AWQ": {
+          "ai_decision_coverage": 1.0,
+          "ai_detection_on_all_ai": 1.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/gemma-2-9b-it-AWQ": {
+          "ai_decision_coverage": 0.9955357142857143,
+          "ai_detection_on_all_ai": 0.9955357142857143,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": {
+          "ai_decision_coverage": 0.9766666666666667,
+          "ai_detection_on_all_ai": 0.9766666666666667,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        }
+      },
+      "human_fp_ci": {
+        "lower_95": 0.24166666666666667,
+        "n_clusters": 15,
+        "status": "exploratory_cluster_bootstrap_not_certifying",
+        "upper_95": 0.4083333333333333
+      },
+      "human_coverage_ci": {
+        "lower_95": 0.25833333333333336,
+        "n_clusters": 15,
+        "status": "exploratory_cluster_bootstrap_not_certifying",
+        "upper_95": 0.425
+      }
+    },
+    "P100": {
+      "factors": {
+        "C2-v2": false,
+        "L2": true,
+        "M100-fallback50": false
+      },
+      "human": {
+        "ai_decision_coverage": null,
+        "ai_detection_on_all_ai": null,
+        "human_decision_coverage": 0.8833333333333333,
+        "human_fp_on_all_humans": 0.025
+      },
+      "ai_es_by_source": {
+        "arcee-ai/Arcee-Blitz-AWQ": {
+          "ai_decision_coverage": 0.7046130952380951,
+          "ai_detection_on_all_ai": 0.19196428571428573,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "casperhansen/mistral-nemo-instruct-2407-awq": {
+          "ai_decision_coverage": 0.5944881889763779,
+          "ai_detection_on_all_ai": 0.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": {
+          "ai_decision_coverage": 0.6569940476190478,
+          "ai_detection_on_all_ai": 0.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": {
+          "ai_decision_coverage": 0.5881696428571429,
+          "ai_detection_on_all_ai": 0.3002232142857143,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/Gemma-2-Ataraxy-9B-AWQ": {
+          "ai_decision_coverage": 0.8974358974358974,
+          "ai_detection_on_all_ai": 0.01923076923076923,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/Hermes-3-Llama-3.1-8B-AWQ": {
+          "ai_decision_coverage": 0.6625744047619049,
+          "ai_detection_on_all_ai": 0.21875,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/gemma-2-9b-it-AWQ": {
+          "ai_decision_coverage": 0.671502976190476,
+          "ai_detection_on_all_ai": 0.18824404761904764,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": {
+          "ai_decision_coverage": 0.865,
+          "ai_detection_on_all_ai": 0.1972222222222222,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        }
+      },
+      "human_fp_ci": {
+        "lower_95": 0.008333333333333333,
+        "n_clusters": 15,
+        "status": "exploratory_cluster_bootstrap_not_certifying",
+        "upper_95": 0.05
+      },
+      "human_coverage_ci": {
+        "lower_95": 0.85,
+        "n_clusters": 15,
+        "status": "exploratory_cluster_bootstrap_not_certifying",
+        "upper_95": 0.9166666666666666
+      }
+    },
+    "P101": {
+      "factors": {
+        "C2-v2": false,
+        "L2": true,
+        "M100-fallback50": true
+      },
+      "human": {
+        "ai_decision_coverage": null,
+        "ai_detection_on_all_ai": null,
+        "human_decision_coverage": 0.39166666666666666,
+        "human_fp_on_all_humans": 0.375
+      },
+      "ai_es_by_source": {
+        "arcee-ai/Arcee-Blitz-AWQ": {
+          "ai_decision_coverage": 1.0,
+          "ai_detection_on_all_ai": 1.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "casperhansen/mistral-nemo-instruct-2407-awq": {
+          "ai_decision_coverage": 1.0,
+          "ai_detection_on_all_ai": 1.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": {
+          "ai_decision_coverage": 0.8586309523809524,
+          "ai_detection_on_all_ai": 0.8586309523809522,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": {
+          "ai_decision_coverage": 1.0,
+          "ai_detection_on_all_ai": 1.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/Gemma-2-Ataraxy-9B-AWQ": {
+          "ai_decision_coverage": 0.7115384615384616,
+          "ai_detection_on_all_ai": 0.7115384615384615,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/Hermes-3-Llama-3.1-8B-AWQ": {
+          "ai_decision_coverage": 1.0,
+          "ai_detection_on_all_ai": 1.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/gemma-2-9b-it-AWQ": {
+          "ai_decision_coverage": 0.9955357142857143,
+          "ai_detection_on_all_ai": 0.9955357142857143,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": {
+          "ai_decision_coverage": 0.9766666666666667,
+          "ai_detection_on_all_ai": 0.9766666666666667,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        }
+      },
+      "human_fp_ci": {
+        "lower_95": 0.3,
+        "n_clusters": 15,
+        "status": "exploratory_cluster_bootstrap_not_certifying",
+        "upper_95": 0.45
+      },
+      "human_coverage_ci": {
+        "lower_95": 0.31666666666666665,
+        "n_clusters": 15,
+        "status": "exploratory_cluster_bootstrap_not_certifying",
+        "upper_95": 0.4666666666666667
+      }
+    },
+    "P110": {
+      "factors": {
+        "C2-v2": true,
+        "L2": true,
+        "M100-fallback50": false
+      },
+      "human": {
+        "ai_decision_coverage": null,
+        "ai_detection_on_all_ai": null,
+        "human_decision_coverage": 0.8833333333333333,
+        "human_fp_on_all_humans": 0.025
+      },
+      "ai_es_by_source": {
+        "arcee-ai/Arcee-Blitz-AWQ": {
+          "ai_decision_coverage": 0.5959821428571429,
+          "ai_detection_on_all_ai": 0.19196428571428573,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "casperhansen/mistral-nemo-instruct-2407-awq": {
+          "ai_decision_coverage": 0.39501312335958,
+          "ai_detection_on_all_ai": 0.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": {
+          "ai_decision_coverage": 0.6569940476190478,
+          "ai_detection_on_all_ai": 0.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": {
+          "ai_decision_coverage": 0.5881696428571429,
+          "ai_detection_on_all_ai": 0.3002232142857143,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/Gemma-2-Ataraxy-9B-AWQ": {
+          "ai_decision_coverage": 0.8333333333333334,
+          "ai_detection_on_all_ai": 0.01923076923076923,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/Hermes-3-Llama-3.1-8B-AWQ": {
+          "ai_decision_coverage": 0.6625744047619049,
+          "ai_detection_on_all_ai": 0.21875,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/gemma-2-9b-it-AWQ": {
+          "ai_decision_coverage": 0.8470982142857143,
+          "ai_detection_on_all_ai": 0.36383928571428575,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": {
+          "ai_decision_coverage": 0.865,
+          "ai_detection_on_all_ai": 0.1972222222222222,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        }
+      },
+      "human_fp_ci": {
+        "lower_95": 0.008333333333333333,
+        "n_clusters": 15,
+        "status": "exploratory_cluster_bootstrap_not_certifying",
+        "upper_95": 0.05
+      },
+      "human_coverage_ci": {
+        "lower_95": 0.85,
+        "n_clusters": 15,
+        "status": "exploratory_cluster_bootstrap_not_certifying",
+        "upper_95": 0.9166666666666666
+      }
+    },
+    "P111": {
+      "factors": {
+        "C2-v2": true,
+        "L2": true,
+        "M100-fallback50": true
+      },
+      "human": {
+        "ai_decision_coverage": null,
+        "ai_detection_on_all_ai": null,
+        "human_decision_coverage": 0.39166666666666666,
+        "human_fp_on_all_humans": 0.375
+      },
+      "ai_es_by_source": {
+        "arcee-ai/Arcee-Blitz-AWQ": {
+          "ai_decision_coverage": 1.0,
+          "ai_detection_on_all_ai": 1.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "casperhansen/mistral-nemo-instruct-2407-awq": {
+          "ai_decision_coverage": 1.0,
+          "ai_detection_on_all_ai": 1.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": {
+          "ai_decision_coverage": 0.8630952380952381,
+          "ai_detection_on_all_ai": 0.8630952380952379,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": {
+          "ai_decision_coverage": 1.0,
+          "ai_detection_on_all_ai": 1.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/Gemma-2-Ataraxy-9B-AWQ": {
+          "ai_decision_coverage": 0.7115384615384616,
+          "ai_detection_on_all_ai": 0.7115384615384615,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/Hermes-3-Llama-3.1-8B-AWQ": {
+          "ai_decision_coverage": 1.0,
+          "ai_detection_on_all_ai": 1.0,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "solidrust/gemma-2-9b-it-AWQ": {
+          "ai_decision_coverage": 0.9955357142857143,
+          "ai_detection_on_all_ai": 0.9955357142857143,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        },
+        "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": {
+          "ai_decision_coverage": 0.9766666666666667,
+          "ai_detection_on_all_ai": 0.9766666666666667,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        }
+      },
+      "human_fp_ci": {
+        "lower_95": 0.3,
+        "n_clusters": 15,
+        "status": "exploratory_cluster_bootstrap_not_certifying",
+        "upper_95": 0.45
+      },
+      "human_coverage_ci": {
+        "lower_95": 0.31666666666666665,
+        "n_clusters": 15,
+        "status": "exploratory_cluster_bootstrap_not_certifying",
+        "upper_95": 0.4666666666666667
+      }
+    }
+  },
+  "improvement": {
+    "P001": {
+      "H0": "no >=5 percentage-point increase in every checkpoint",
+      "H1": ">=5 percentage-point increase in every checkpoint",
+      "delta_detection_by_checkpoint": {
+        "arcee-ai/Arcee-Blitz-AWQ": 0.96875,
+        "casperhansen/mistral-nemo-instruct-2407-awq": 0.9566929133858267,
+        "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": 0.845238095238095,
+        "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": 1.0,
+        "solidrust/Gemma-2-Ataraxy-9B-AWQ": 0.7115384615384615,
+        "solidrust/Hermes-3-Llama-3.1-8B-AWQ": 1.0,
+        "solidrust/gemma-2-9b-it-AWQ": 0.9899553571428572,
+        "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": 0.9766666666666667
+      },
+      "inferential_status": "exploratory; no confirmatory claim",
+      "point_estimate_supports_H1": true
+    },
+    "P010": {
+      "H0": "no >=5 percentage-point increase in every checkpoint",
+      "H1": ">=5 percentage-point increase in every checkpoint",
+      "delta_detection_by_checkpoint": {
+        "arcee-ai/Arcee-Blitz-AWQ": 0.0,
+        "casperhansen/mistral-nemo-instruct-2407-awq": 0.0,
+        "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": 0.0,
+        "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": 0.0,
+        "solidrust/Gemma-2-Ataraxy-9B-AWQ": 0.0,
+        "solidrust/Hermes-3-Llama-3.1-8B-AWQ": 0.08482142857142858,
+        "solidrust/gemma-2-9b-it-AWQ": 0.0,
+        "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": 0.0
+      },
+      "inferential_status": "exploratory; no confirmatory claim",
+      "point_estimate_supports_H1": false
+    },
+    "P011": {
+      "H0": "no >=5 percentage-point increase in every checkpoint",
+      "H1": ">=5 percentage-point increase in every checkpoint",
+      "delta_detection_by_checkpoint": {
+        "arcee-ai/Arcee-Blitz-AWQ": 0.96875,
+        "casperhansen/mistral-nemo-instruct-2407-awq": 0.9566929133858267,
+        "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": 0.8541666666666665,
+        "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": 1.0,
+        "solidrust/Gemma-2-Ataraxy-9B-AWQ": 0.7115384615384615,
+        "solidrust/Hermes-3-Llama-3.1-8B-AWQ": 1.0,
+        "solidrust/gemma-2-9b-it-AWQ": 0.9899553571428572,
+        "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": 0.9766666666666667
+      },
+      "inferential_status": "exploratory; no confirmatory claim",
+      "point_estimate_supports_H1": true
+    },
+    "P100": {
+      "H0": "no >=5 percentage-point increase in every checkpoint",
+      "H1": ">=5 percentage-point increase in every checkpoint",
+      "delta_detection_by_checkpoint": {
+        "arcee-ai/Arcee-Blitz-AWQ": 0.17633928571428573,
+        "casperhansen/mistral-nemo-instruct-2407-awq": 0.0,
+        "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": 0.0,
+        "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": 0.3002232142857143,
+        "solidrust/Gemma-2-Ataraxy-9B-AWQ": 0.01923076923076923,
+        "solidrust/Hermes-3-Llama-3.1-8B-AWQ": 0.21875,
+        "solidrust/gemma-2-9b-it-AWQ": 0.1826636904761905,
+        "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": 0.1972222222222222
+      },
+      "inferential_status": "exploratory; no confirmatory claim",
+      "point_estimate_supports_H1": false
+    },
+    "P101": {
+      "H0": "no >=5 percentage-point increase in every checkpoint",
+      "H1": ">=5 percentage-point increase in every checkpoint",
+      "delta_detection_by_checkpoint": {
+        "arcee-ai/Arcee-Blitz-AWQ": 0.984375,
+        "casperhansen/mistral-nemo-instruct-2407-awq": 1.0,
+        "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": 0.8586309523809522,
+        "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": 1.0,
+        "solidrust/Gemma-2-Ataraxy-9B-AWQ": 0.7115384615384615,
+        "solidrust/Hermes-3-Llama-3.1-8B-AWQ": 1.0,
+        "solidrust/gemma-2-9b-it-AWQ": 0.9899553571428572,
+        "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": 0.9766666666666667
+      },
+      "inferential_status": "exploratory; no confirmatory claim",
+      "point_estimate_supports_H1": true
+    },
+    "P110": {
+      "H0": "no >=5 percentage-point increase in every checkpoint",
+      "H1": ">=5 percentage-point increase in every checkpoint",
+      "delta_detection_by_checkpoint": {
+        "arcee-ai/Arcee-Blitz-AWQ": 0.17633928571428573,
+        "casperhansen/mistral-nemo-instruct-2407-awq": 0.0,
+        "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": 0.0,
+        "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": 0.3002232142857143,
+        "solidrust/Gemma-2-Ataraxy-9B-AWQ": 0.01923076923076923,
+        "solidrust/Hermes-3-Llama-3.1-8B-AWQ": 0.21875,
+        "solidrust/gemma-2-9b-it-AWQ": 0.3582589285714286,
+        "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": 0.1972222222222222
+      },
+      "inferential_status": "exploratory; no confirmatory claim",
+      "point_estimate_supports_H1": false
+    },
+    "P111": {
+      "H0": "no >=5 percentage-point increase in every checkpoint",
+      "H1": ">=5 percentage-point increase in every checkpoint",
+      "delta_detection_by_checkpoint": {
+        "arcee-ai/Arcee-Blitz-AWQ": 0.984375,
+        "casperhansen/mistral-nemo-instruct-2407-awq": 1.0,
+        "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": 0.8630952380952379,
+        "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": 1.0,
+        "solidrust/Gemma-2-Ataraxy-9B-AWQ": 0.7115384615384615,
+        "solidrust/Hermes-3-Llama-3.1-8B-AWQ": 1.0,
+        "solidrust/gemma-2-9b-it-AWQ": 0.9899553571428572,
+        "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": 0.9766666666666667
+      },
+      "inferential_status": "exploratory; no confirmatory claim",
+      "point_estimate_supports_H1": true
+    }
+  },
+  "gates": {
+    "P000": {
+      "confidence_bound_pass": false,
+      "decision": "datos_insuficientes_para_promocion",
+      "point_estimates_pass_all_gates": false,
+      "reason": "development data, 15 human author clusters, small weighted manual Spanish AI sample, no independent confirmation"
+    },
+    "P001": {
+      "confidence_bound_pass": false,
+      "decision": "datos_insuficientes_para_promocion",
+      "point_estimates_pass_all_gates": false,
+      "reason": "development data, 15 human author clusters, small weighted manual Spanish AI sample, no independent confirmation"
+    },
+    "P010": {
+      "confidence_bound_pass": false,
+      "decision": "datos_insuficientes_para_promocion",
+      "point_estimates_pass_all_gates": false,
+      "reason": "development data, 15 human author clusters, small weighted manual Spanish AI sample, no independent confirmation"
+    },
+    "P011": {
+      "confidence_bound_pass": false,
+      "decision": "datos_insuficientes_para_promocion",
+      "point_estimates_pass_all_gates": false,
+      "reason": "development data, 15 human author clusters, small weighted manual Spanish AI sample, no independent confirmation"
+    },
+    "P100": {
+      "confidence_bound_pass": false,
+      "decision": "datos_insuficientes_para_promocion",
+      "point_estimates_pass_all_gates": false,
+      "reason": "development data, 15 human author clusters, small weighted manual Spanish AI sample, no independent confirmation"
+    },
+    "P101": {
+      "confidence_bound_pass": false,
+      "decision": "datos_insuficientes_para_promocion",
+      "point_estimates_pass_all_gates": false,
+      "reason": "development data, 15 human author clusters, small weighted manual Spanish AI sample, no independent confirmation"
+    },
+    "P110": {
+      "confidence_bound_pass": false,
+      "decision": "datos_insuficientes_para_promocion",
+      "point_estimates_pass_all_gates": false,
+      "reason": "development data, 15 human author clusters, small weighted manual Spanish AI sample, no independent confirmation"
+    },
+    "P111": {
+      "confidence_bound_pass": false,
+      "decision": "datos_insuficientes_para_promocion",
+      "point_estimates_pass_all_gates": false,
+      "reason": "development data, 15 human author clusters, small weighted manual Spanish AI sample, no independent confirmation"
+    }
+  },
+  "sensitivity": {
+    "1280": {
+      "ai_manually_verified_spanish_by_checkpoint_weighted": {
+        "arcee-ai/Arcee-Blitz-AWQ": {
+          "counts": {
+            "abstain_ai": 93.16666666666667,
+            "abstain_band": 93.16666666666667,
+            "abstain_human": 0.0,
+            "abstain_insufficient": 0.0,
+            "fn": 127.33333333333334,
+            "fp": 0.0,
+            "n_ai": 224.0,
+            "n_human": 0.0,
+            "tn": 0.0,
+            "tp": 3.5
+          },
+          "metrics": {
+            "ai_decision_coverage": 0.5840773809523808,
+            "ai_detection_on_all_ai": 0.015625,
+            "human_decision_coverage": null,
+            "human_fp_on_all_humans": null
+          }
+        },
+        "casperhansen/mistral-nemo-instruct-2407-awq": {
+          "counts": {
+            "abstain_ai": 37.416666666666664,
+            "abstain_band": 37.416666666666664,
+            "abstain_human": 0.0,
+            "abstain_insufficient": 0.0,
+            "fn": 26.083333333333336,
+            "fp": 0.0,
+            "n_ai": 63.49999999999999,
+            "n_human": 0.0,
+            "tn": 0.0,
+            "tp": 0.0
+          },
+          "metrics": {
+            "ai_decision_coverage": 0.410761154855643,
+            "ai_detection_on_all_ai": 0.0,
+            "human_decision_coverage": null,
+            "human_fp_on_all_humans": null
+          }
+        },
+        "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": {
+          "counts": {
+            "abstain_ai": 29.666666666666668,
+            "abstain_band": 29.666666666666668,
+            "abstain_human": 0.0,
+            "abstain_insufficient": 0.0,
+            "fn": 194.33333333333334,
+            "fp": 0.0,
+            "n_ai": 224.00000000000006,
+            "n_human": 0.0,
+            "tn": 0.0,
+            "tp": 0.0
+          },
+          "metrics": {
+            "ai_decision_coverage": 0.8675595238095238,
+            "ai_detection_on_all_ai": 0.0,
+            "human_decision_coverage": null,
+            "human_fp_on_all_humans": null
+          }
+        },
+        "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": {
+          "counts": {
+            "abstain_ai": 121.5,
+            "abstain_band": 121.5,
+            "abstain_human": 0.0,
+            "abstain_insufficient": 0.0,
+            "fn": 83.5,
+            "fp": 0.0,
+            "n_ai": 224.0,
+            "n_human": 0.0,
+            "tn": 0.0,
+            "tp": 19.0
+          },
+          "metrics": {
+            "ai_decision_coverage": 0.4575892857142857,
+            "ai_detection_on_all_ai": 0.08482142857142858,
+            "human_decision_coverage": null,
+            "human_fp_on_all_humans": null
+          }
+        },
+        "solidrust/Gemma-2-Ataraxy-9B-AWQ": {
+          "counts": {
+            "abstain_ai": 17.333333333333336,
+            "abstain_band": 17.333333333333336,
+            "abstain_human": 0.0,
+            "abstain_insufficient": 0.0,
+            "fn": 190.66666666666669,
+            "fp": 0.0,
+            "n_ai": 208.00000000000003,
+            "n_human": 0.0,
+            "tn": 0.0,
+            "tp": 0.0
+          },
+          "metrics": {
+            "ai_decision_coverage": 0.9166666666666666,
+            "ai_detection_on_all_ai": 0.0,
+            "human_decision_coverage": null,
+            "human_fp_on_all_humans": null
+          }
+        },
+        "solidrust/Hermes-3-Llama-3.1-8B-AWQ": {
+          "counts": {
+            "abstain_ai": 74.58333333333333,
+            "abstain_band": 74.58333333333333,
+            "abstain_human": 0.0,
+            "abstain_insufficient": 0.0,
+            "fn": 130.41666666666666,
+            "fp": 0.0,
+            "n_ai": 224.0,
+            "n_human": 0.0,
+            "tn": 0.0,
+            "tp": 19.0
+          },
+          "metrics": {
+            "ai_decision_coverage": 0.6670386904761906,
+            "ai_detection_on_all_ai": 0.08482142857142858,
+            "human_decision_coverage": null,
+            "human_fp_on_all_humans": null
+          }
+        },
+        "solidrust/gemma-2-9b-it-AWQ": {
+          "counts": {
+            "abstain_ai": 92.58333333333331,
+            "abstain_band": 92.58333333333331,
+            "abstain_human": 0.0,
+            "abstain_insufficient": 0.0,
+            "fn": 130.16666666666666,
+            "fp": 0.0,
+            "n_ai": 223.99999999999997,
+            "n_human": 0.0,
+            "tn": 0.0,
+            "tp": 1.25
+          },
+          "metrics": {
+            "ai_decision_coverage": 0.5866815476190477,
+            "ai_detection_on_all_ai": 0.005580357142857144,
+            "human_decision_coverage": null,
+            "human_fp_on_all_humans": null
+          }
+        },
+        "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": {
+          "counts": {
+            "abstain_ai": 14.75,
+            "abstain_band": 14.75,
+            "abstain_human": 0.0,
+            "abstain_insufficient": 0.0,
+            "fn": 135.25,
+            "fp": 0.0,
+            "n_ai": 150.0,
+            "n_human": 0.0,
+            "tn": 0.0,
+            "tp": 0.0
+          },
+          "metrics": {
+            "ai_decision_coverage": 0.9016666666666666,
+            "ai_detection_on_all_ai": 0.0,
+            "human_decision_coverage": null,
+            "human_fp_on_all_humans": null
+          }
+        }
+      },
+      "ai_manually_verified_spanish_sampling_weighted": {
+        "counts": {
+          "abstain_ai": 480.9999999999999,
+          "abstain_band": 480.9999999999999,
+          "abstain_human": 0.0,
+          "abstain_insufficient": 0.0,
+          "fn": 1017.7500000000001,
+          "fp": 0.0,
+          "n_ai": 1541.4999999999995,
+          "n_human": 0.0,
+          "tn": 0.0,
+          "tp": 42.75
+        },
+        "metrics": {
+          "ai_decision_coverage": 0.6879662666234186,
+          "ai_detection_on_all_ai": 0.027732727862471628,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        }
+      },
+      "human_development": {
+        "counts": {
+          "abstain_ai": 0.0,
+          "abstain_band": 9.0,
+          "abstain_human": 9.0,
+          "abstain_insufficient": 0.0,
+          "fn": 0.0,
+          "fp": 0.0,
+          "n_ai": 0.0,
+          "n_human": 120.0,
+          "tn": 111.0,
+          "tp": 0.0
+        },
+        "metrics": {
+          "ai_decision_coverage": null,
+          "ai_detection_on_all_ai": null,
+          "human_decision_coverage": 0.925,
+          "human_fp_on_all_humans": 0.0
+        }
+      },
+      "q_delta_vs_1024_mean": 0.0016635204952635896,
+      "selection_use": "sensitivity_only; not a factorial candidate"
+    },
+    "512": {
+      "ai_manually_verified_spanish_by_checkpoint_weighted": {
+        "arcee-ai/Arcee-Blitz-AWQ": {
+          "counts": {
+            "abstain_ai": 93.16666666666667,
+            "abstain_band": 93.16666666666667,
+            "abstain_human": 0.0,
+            "abstain_insufficient": 0.0,
+            "fn": 127.33333333333334,
+            "fp": 0.0,
+            "n_ai": 224.0,
+            "n_human": 0.0,
+            "tn": 0.0,
+            "tp": 3.5
+          },
+          "metrics": {
+            "ai_decision_coverage": 0.5840773809523808,
+            "ai_detection_on_all_ai": 0.015625,
+            "human_decision_coverage": null,
+            "human_fp_on_all_humans": null
+          }
+        },
+        "casperhansen/mistral-nemo-instruct-2407-awq": {
+          "counts": {
+            "abstain_ai": 25.75,
+            "abstain_band": 25.75,
+            "abstain_human": 0.0,
+            "abstain_insufficient": 0.0,
+            "fn": 37.74999999999999,
+            "fp": 0.0,
+            "n_ai": 63.49999999999999,
+            "n_human": 0.0,
+            "tn": 0.0,
+            "tp": 0.0
+          },
+          "metrics": {
+            "ai_decision_coverage": 0.5944881889763779,
+            "ai_detection_on_all_ai": 0.0,
+            "human_decision_coverage": null,
+            "human_fp_on_all_humans": null
+          }
+        },
+        "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ": {
+          "counts": {
+            "abstain_ai": 29.666666666666668,
+            "abstain_band": 29.666666666666668,
+            "abstain_human": 0.0,
+            "abstain_insufficient": 0.0,
+            "fn": 194.33333333333334,
+            "fp": 0.0,
+            "n_ai": 224.00000000000006,
+            "n_human": 0.0,
+            "tn": 0.0,
+            "tp": 0.0
+          },
+          "metrics": {
+            "ai_decision_coverage": 0.8675595238095238,
+            "ai_detection_on_all_ai": 0.0,
+            "human_decision_coverage": null,
+            "human_fp_on_all_humans": null
+          }
+        },
+        "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4": {
+          "counts": {
+            "abstain_ai": 140.5,
+            "abstain_band": 140.5,
+            "abstain_human": 0.0,
+            "abstain_insufficient": 0.0,
+            "fn": 83.5,
+            "fp": 0.0,
+            "n_ai": 224.0,
+            "n_human": 0.0,
+            "tn": 0.0,
+            "tp": 0.0
+          },
+          "metrics": {
+            "ai_decision_coverage": 0.37276785714285715,
+            "ai_detection_on_all_ai": 0.0,
+            "human_decision_coverage": null,
+            "human_fp_on_all_humans": null
+          }
+        },
+        "solidrust/Gemma-2-Ataraxy-9B-AWQ": {
+          "counts": {
+            "abstain_ai": 17.333333333333336,
+            "abstain_band": 17.333333333333336,
+            "abstain_human": 0.0,
+            "abstain_insufficient": 0.0,
+            "fn": 190.66666666666669,
+            "fp": 0.0,
+            "n_ai": 208.00000000000003,
+            "n_human": 0.0,
+            "tn": 0.0,
+            "tp": 0.0
+          },
+          "metrics": {
+            "ai_decision_coverage": 0.9166666666666666,
+            "ai_detection_on_all_ai": 0.0,
+            "human_decision_coverage": null,
+            "human_fp_on_all_humans": null
+          }
+        },
+        "solidrust/Hermes-3-Llama-3.1-8B-AWQ": {
+          "counts": {
+            "abstain_ai": 74.58333333333333,
+            "abstain_band": 74.58333333333333,
+            "abstain_human": 0.0,
+            "abstain_insufficient": 0.0,
+            "fn": 130.41666666666666,
+            "fp": 0.0,
+            "n_ai": 224.0,
+            "n_human": 0.0,
+            "tn": 0.0,
+            "tp": 19.0
+          },
+          "metrics": {
+            "ai_decision_coverage": 0.6670386904761906,
+            "ai_detection_on_all_ai": 0.08482142857142858,
+            "human_decision_coverage": null,
+            "human_fp_on_all_humans": null
+          }
+        },
+        "solidrust/gemma-2-9b-it-AWQ": {
+          "counts": {
+            "abstain_ai": 76.58333333333333,
+            "abstain_band": 76.58333333333333,
+            "abstain_human": 0.0,
+            "abstain_insufficient": 0.0,
+            "fn": 146.16666666666666,
+            "fp": 0.0,
+            "n_ai": 223.99999999999997,
+            "n_human": 0.0,
+            "tn": 0.0,
+            "tp": 1.25
+          },
+          "metrics": {
+            "ai_decision_coverage": 0.658110119047619,
+            "ai_detection_on_all_ai": 0.005580357142857144,
+            "human_decision_coverage": null,
+            "human_fp_on_all_humans": null
+          }
+        },
+        "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ": {
+          "counts": {
+            "abstain_ai": 6.75,
+            "abstain_band": 6.75,
+            "abstain_human": 0.0,
+            "abstain_insufficient": 0.0,
+            "fn": 143.25,
+            "fp": 0.0,
+            "n_ai": 150.0,
+            "n_human": 0.0,
+            "tn": 0.0,
+            "tp": 0.0
+          },
+          "metrics": {
+            "ai_decision_coverage": 0.955,
+            "ai_detection_on_all_ai": 0.0,
+            "human_decision_coverage": null,
+            "human_fp_on_all_humans": null
+          }
+        }
+      },
+      "ai_manually_verified_spanish_sampling_weighted": {
+        "counts": {
+          "abstain_ai": 464.33333333333326,
+          "abstain_band": 464.33333333333326,
+          "abstain_human": 0.0,
+          "abstain_insufficient": 0.0,
+          "fn": 1053.4166666666667,
+          "fp": 0.0,
+          "n_ai": 1541.4999999999995,
+          "n_human": 0.0,
+          "tn": 0.0,
+          "tp": 23.75
+        },
+        "metrics": {
+          "ai_decision_coverage": 0.6987782462968969,
+          "ai_detection_on_all_ai": 0.01540707103470646,
+          "human_decision_coverage": null,
+          "human_fp_on_all_humans": null
+        }
+      },
+      "human_development": {
+        "counts": {
+          "abstain_ai": 0.0,
+          "abstain_band": 9.0,
+          "abstain_human": 9.0,
+          "abstain_insufficient": 0.0,
+          "fn": 0.0,
+          "fp": 0.0,
+          "n_ai": 0.0,
+          "n_human": 120.0,
+          "tn": 111.0,
+          "tp": 0.0
+        },
+        "metrics": {
+          "ai_decision_coverage": null,
+          "ai_detection_on_all_ai": null,
+          "human_decision_coverage": 0.925,
+          "human_fp_on_all_humans": 0.0
+        }
+      },
+      "q_delta_vs_1024_mean": -0.0045379825554182854,
+      "selection_use": "sensitivity_only; not a factorial candidate"
+    }
+  },
+  "reserved": false,
+  "lock": "775345e347d6f168a3638458cec64d12c0543ee993af1f2e4f3016b0ed4a1a35",
+  "manifest": "a729ec52da37a1e3ac86d2db08de81de817c2a96108723470f9f501edad50b5e",
+  "code_hashes": {
+    "config\\cliches_es.yaml": "ecef4feda29531c3a4057170490837a34eab259029e1cc2b5edc5a274d739cc3",
+    "config\\f5-portable.json": "fc1d828a825a0a4cb058b1080dc2c7c195f024610ea21d3e095fc3216bf9c797",
+    "tools\\checks\\cliches_es.py": "7b6b2e650422248f52f1a8357239d80c53f87a82d890a6227a52f52976087d8f",
+    "tools\\checks\\compression.py": "ba753dbb2fbc0326e7f0b9f95c548fb7ffc8688025d090e85d704a9863e0b035",
+    "tools\\checks\\mattr.py": "3fe0cdbe01d759fc16fec65762b47d33e7d95fdf394eae8b9a13df8ee93c3205",
+    "tools\\decision.py": "ff027ed861713abe77b3df2eba2a508eae3277186ab825cf9a2912092d9b84fa",
+    "tools\\f5.py": "66f4ba45f917558ff695d469e8a5c2834aa1642750b6cca4dd3153355fa5f3c8",
+    "tools\\f5_experiments\\freeze_seeds.py": "3bfed0587f444528c959c14ee58f9a594c0ea43ae705a6967a30ea23ae695639",
+    "tools\\f5_experiments\\prepare.py": "88ccac7f69d04c8102339a6db9538befc275b0d8deecf3c671e7e5eb6def0725",
+    "tools\\f5_experiments\\run.py": "b2dde5c1e30e70d6c30f2a4bc985671bbf7f293cf88632a51454cb409896a1d2",
+    "tools\\pipeline.py": "ce7820fba2cefab6d2867aa53ccba426b96bc34e720a28f4fe530a56c97e2167",
+    "tools\\scoring.py": "0aada3b7c4fdc423b56624ada31f22dd6521825b0665efe33f6a6a8370cf7e54"
+  }
+}

@@ -1,0 +1,2465 @@
+{
+  "candidate_cross_source_identity_overlap": {
+    "CoNSSA_free__ELTeC-spa": [
+      "alejandro sawa",
+      "angel ganivet",
+      "eduardo zamacois",
+      "gabriel miro",
+      "joaquin costa",
+      "jose ortega munilla",
+      "manuel ciges aparicio",
+      "ramiro de maeztu",
+      "rosalia de castro",
+      "salvador rueda"
+    ],
+    "CoNSSA_free__Gutendex_narrative_tags": [
+      "azorin jose martinez ruiz",
+      "eduardo zamacois"
+    ],
+    "ELTeC-spa__Gutendex_narrative_tags": [
+      "eduardo zamacois",
+      "gertrudis gomez de avellaneda",
+      "joaquin dicenta",
+      "maria del pilar sinues de marco"
+    ]
+  },
+  "candidate_new_identity_union_count_before_manual_review": 210,
+  "prior_exposure_canonical_count": 43,
+  "prior_reserved_authors_from_nonreserved_documentation": [
+    "Concha Espina",
+    "Armando Palacio Valdés",
+    "Rafael Delgado",
+    "Felipe Trigo"
+  ],
+  "scope": "metadata-only; no text contents read or scored",
+  "sources": {
+    "CoNSSA_free": {
+      "catalog_rows": 358,
+      "free_rows": 217,
+      "not_exactly_crossmatched": [
+        {
+          "canonical": "agustin espinosa",
+          "name": "Agustín Espinosa"
+        },
+        {
+          "canonical": "alejandro sawa",
+          "name": "Alejandro Sawa"
+        },
+        {
+          "canonical": "andres carranque de rios",
+          "name": "Andres Carranque de Ríos"
+        },
+        {
+          "canonical": "antonio machado",
+          "name": "Antonio Machado"
+        },
+        {
+          "canonical": "azorin jose martinez ruiz",
+          "name": "Azorín, José Martínez Ruiz"
+        },
+        {
+          "canonical": "carmen de burgos",
+          "name": "Carmen de Burgos"
+        },
+        {
+          "canonical": "ciro bayo",
+          "name": "Ciro Bayo"
+        },
+        {
+          "canonical": "corpus barga",
+          "name": "Corpus Barga"
+        },
+        {
+          "canonical": "eduardo zamacois",
+          "name": "Eduardo Zamacois"
+        },
+        {
+          "canonical": "eugenio noel",
+          "name": "Eugenio Noel"
+        },
+        {
+          "canonical": "federico garcia lorca",
+          "name": "Federico García Lorca"
+        },
+        {
+          "canonical": "gabriel miro",
+          "name": "Gabriel Miró"
+        },
+        {
+          "canonical": "joaquin costa",
+          "name": "Joaquín Costa"
+        },
+        {
+          "canonical": "jose ma salaverria",
+          "name": "José Mª Salaverría"
+        },
+        {
+          "canonical": "jose ortega munilla",
+          "name": "José Ortega Munilla"
+        },
+        {
+          "canonical": "jose selgas carrasco",
+          "name": "José Selgas Carrasco"
+        },
+        {
+          "canonical": "manuel azana",
+          "name": "Manuel Azaña"
+        },
+        {
+          "canonical": "manuel ciges aparicio",
+          "name": "Manuel Ciges Aparicio"
+        },
+        {
+          "canonical": "mauricio bacarisse",
+          "name": "Mauricio Bacarisse"
+        },
+        {
+          "canonical": "ramiro de maeztu",
+          "name": "Ramiro de Maeztu"
+        },
+        {
+          "canonical": "rosalia de castro",
+          "name": "Rosalía de Castro"
+        },
+        {
+          "canonical": "salvador rueda",
+          "name": "Salvador Rueda"
+        },
+        {
+          "canonical": "silverio lanza",
+          "name": "Silverio Lanza"
+        },
+        {
+          "canonical": "angel ganivet",
+          "name": "Ángel Ganivet"
+        }
+      ],
+      "prior_exposure": [
+        {
+          "canonical": "leopoldo alas",
+          "name": "Alas, Leopoldo"
+        },
+        {
+          "canonical": "antonio de hoyos y vinent",
+          "name": "Antonio de Hoyos y Vinent"
+        },
+        {
+          "canonical": "armando palacio valdes",
+          "name": "Armando Palacio Valdés"
+        },
+        {
+          "canonical": "benito perez galdos",
+          "name": "Benito Pérez Galdós"
+        },
+        {
+          "canonical": "emilia pardo bazan",
+          "name": "Emilia Pardo Bazán"
+        },
+        {
+          "canonical": "felipe trigo",
+          "name": "Felipe Trigo"
+        },
+        {
+          "canonical": "jacinto octavio picon",
+          "name": "Jacinto Octavio Picón"
+        },
+        {
+          "canonical": "jose maria de pereda",
+          "name": "José María de Pereda"
+        },
+        {
+          "canonical": "juan valera",
+          "name": "Juan Valera"
+        },
+        {
+          "canonical": "luis coloma",
+          "name": "Luis Coloma"
+        },
+        {
+          "canonical": "miguel de unamuno",
+          "name": "Miguel de Unamuno"
+        },
+        {
+          "canonical": "pedro antonio de alarcon",
+          "name": "Pedro Antonio de Alarcón"
+        },
+        {
+          "canonical": "ruben dario",
+          "name": "Rubén Darío"
+        },
+        {
+          "canonical": "ramon del valle inclan",
+          "name": "Valle-Inclán, Ramón del"
+        },
+        {
+          "canonical": "vicente blasco ibanez",
+          "name": "Vicente Blasco Ibáñez"
+        }
+      ],
+      "revision": "8fccf669ed1bdbad309ff190f5afb0d6066d70a3",
+      "total_identities_raw": 39
+    },
+    "Conha19_free_metadata_only": {
+      "author_short_keys": [
+        "AguilarV",
+        "AlmazanJP",
+        "AltamiranoIM",
+        "AlvarezJS",
+        "AnconaE",
+        "ArgerichJA",
+        "AuberNoyaVF",
+        "AzuelaM",
+        "BacardiMoreauE",
+        "BarraE",
+        "BarredaR",
+        "BetancourtR",
+        "BlancoCM",
+        "BobadillaE",
+        "BungeCO",
+        "CabralJV",
+        "CalcagnoF",
+        "CambaceresE",
+        "CampoE",
+        "CampoValleA",
+        "CamposRM",
+        "CaneMI",
+        "CantiloJL",
+        "CantiloJM",
+        "CastellanosJ",
+        "CasteraP",
+        "CastilloFM",
+        "CuellarJT",
+        "DelgadoR",
+        "DiazCovarrubiasJ",
+        "DiazOlazabalR",
+        "DominguezS",
+        "EchagueP",
+        "EchaizJ",
+        "EstradaS",
+        "FriasH",
+        "GamboaF",
+        "GarciaMerouM",
+        "GarciaVellosoE",
+        "GomezAvellanedaG",
+        "GorritiJM",
+        "GroussacP",
+        "GuadalajaraJR",
+        "GuerreroPallaresT",
+        "GuiterasFontE",
+        "GutierrezE",
+        "GutierrezJM",
+        "HerediaN",
+        "HolmbergEL",
+        "IglesiaA",
+        "LarrosaAnsaldoL",
+        "LlanosJ",
+        "LopezLV",
+        "LopezPortilloJ",
+        "LopezVF",
+        "LugonesL",
+        "MachaliR",
+        "MalpicaLaBarcaD",
+        "MansillaE",
+        "MansoJP",
+        "MarmolJ",
+        "MarquezJ",
+        "MartiJ",
+        "MartinezVillergasJ",
+        "MateosJA",
+        "MezaR",
+        "MiroJM",
+        "MitreB",
+        "MohrLA",
+        "MoralesV",
+        "MoranteP",
+        "MoruaDelgadoM",
+        "NajeraM",
+        "OcantosCM",
+        "OchagaviaMR",
+        "OlascoagaMJ",
+        "OlavarriaFerrariE",
+        "OteroR",
+        "PalmaPalmaE",
+        "ParraP",
+        "PaynoM",
+        "PayroR",
+        "PazI",
+        "PellizaSagastaJ",
+        "PichardoE",
+        "PinaR",
+        "PizarroN",
+        "PodestaMT",
+        "PortilloA",
+        "PuigPuenteF",
+        "RabasaE",
+        "RamirezJM",
+        "RivaPalacioV",
+        "RivarolaEE",
+        "RiveraYRioJ",
+        "RoaBarcenaJM",
+        "RoblesP",
+        "SaladoAlvarezV",
+        "SaldiasA",
+        "SanJuanM",
+        "SegaleA",
+        "SicardiF",
+        "SierraOReillyJ",
+        "SolarA",
+        "SuarezRomeroA",
+        "SylvaV",
+        "TovarP",
+        "VillafaneSI",
+        "VillaverdeC",
+        "ZamacoisN",
+        "ZambranaVazquezF",
+        "ZayasEnriquezR",
+        "ZayasGuarnerosP",
+        "ZentellaA"
+      ],
+      "free_rows": 237,
+      "identity_resolution": "unresolved; do not count as new authors until matched to full bibliographic names and text-level rights are verified",
+      "revision": "d5def0a3b5900fd37172714d1b8b91bfce0a267c"
+    },
+    "ELTeC-spa": {
+      "catalog_rows": 100,
+      "not_exactly_crossmatched": [
+        {
+          "canonical": "gines alberola",
+          "name": "Alberola, Ginés"
+        },
+        {
+          "canonical": "pablo alonso de la avecilla",
+          "name": "Alonso de la Avecilla, Pablo"
+        },
+        {
+          "canonical": "antonio altadill",
+          "name": "Altadill, Antonio"
+        },
+        {
+          "canonical": "jose maria amado salazar",
+          "name": "Amado Salazar, José María"
+        },
+        {
+          "canonical": "juan bautista amoros y vazquez de figueroa",
+          "name": "Amorós y Vázquez de Figueroa, Juan Bautista [Silverio Lanza]"
+        },
+        {
+          "canonical": "jose maria andueza",
+          "name": "Andueza, José María"
+        },
+        {
+          "canonical": "teresa arroriz y bosch",
+          "name": "Arróriz y Bosch, Teresa"
+        },
+        {
+          "canonical": "julia de asensi",
+          "name": "Asensi, Julia de,"
+        },
+        {
+          "canonical": "antonio barreras",
+          "name": "Barreras, Antonio"
+        },
+        {
+          "canonical": "ramiro blanco",
+          "name": "Blanco, Ramiro"
+        },
+        {
+          "canonical": "emilio bobadilla",
+          "name": "Bobadilla, Emilio"
+        },
+        {
+          "canonical": "carmen de burgos y segui",
+          "name": "Burgos y Seguí, Carmen de [Colombine]"
+        },
+        {
+          "canonical": "emilio castelar y ripoll",
+          "name": "Castelar y Ripoll, Emilio"
+        },
+        {
+          "canonical": "rafael del castillo",
+          "name": "Castillo, Rafael del"
+        },
+        {
+          "canonical": "rosalia de castro",
+          "name": "Castro, Rosalía de"
+        },
+        {
+          "canonical": "manuel ciges aparicio",
+          "name": "Ciges Aparicio, Manuel"
+        },
+        {
+          "canonical": "carolina coronado",
+          "name": "Coronado, Carolina"
+        },
+        {
+          "canonical": "joaquin costa",
+          "name": "Costa, Joaquín"
+        },
+        {
+          "canonical": "ramon de campoamor",
+          "name": "De Campoamor, Ramón"
+        },
+        {
+          "canonical": "joaquin dicenta",
+          "name": "Dicenta, Joaquín"
+        },
+        {
+          "canonical": "p j dominguez",
+          "name": "Domínguez, P. J."
+        },
+        {
+          "canonical": "braulio foz",
+          "name": "Foz, Braulio"
+        },
+        {
+          "canonical": "angel ganivet",
+          "name": "Ganivet, Ángel"
+        },
+        {
+          "canonical": "angela grassi de la cuenca",
+          "name": "Grassi de la Cuenca, Ángela"
+        },
+        {
+          "canonical": "teodoro guerrero",
+          "name": "Guerrero, Teodoro"
+        },
+        {
+          "canonical": "gertrudis gomez de avellaneda",
+          "name": "Gómez de Avellaneda, Gertrudis"
+        },
+        {
+          "canonical": "nicasio camilo jover",
+          "name": "Jover, Nicasio Camilo"
+        },
+        {
+          "canonical": "eleuterio llofriu y sagrera",
+          "name": "Llofriu y Sagrera, Eleuterio"
+        },
+        {
+          "canonical": "eduardo lopez bago",
+          "name": "López Bago, Eduardo"
+        },
+        {
+          "canonical": "ramiro de maeztu",
+          "name": "Maeztu, Ramiro de"
+        },
+        {
+          "canonical": "eusebio martinez de velasco",
+          "name": "Martínez de Velasco, Eusebio"
+        },
+        {
+          "canonical": "teresa mane miravet",
+          "name": "Mañé Miravet, Teresa [Soledad Gustavo]"
+        },
+        {
+          "canonical": "gabriel miro",
+          "name": "Miró, Gabriel"
+        },
+        {
+          "canonical": "juan de dios mora",
+          "name": "Mora, Juan de Dios"
+        },
+        {
+          "canonical": "francisco navarro villoslada",
+          "name": "Navarro Villoslada, Francisco"
+        },
+        {
+          "canonical": "jose ortega munilla",
+          "name": "Ortega Munilla, José"
+        },
+        {
+          "canonical": "pilar pascual de sanjuan",
+          "name": "Pascual de Sanjuán, Pilar"
+        },
+        {
+          "canonical": "jose pastor de la roca",
+          "name": "Pastor de la Roca, José"
+        },
+        {
+          "canonical": "antonio ros de olano",
+          "name": "Ros de Olano, Antonio"
+        },
+        {
+          "canonical": "salvador rueda",
+          "name": "Rueda, Salvador"
+        },
+        {
+          "canonical": "alejandro sawa",
+          "name": "Sawa, Alejandro"
+        },
+        {
+          "canonical": "jose selgas y carrasco",
+          "name": "Selgas y Carrasco, José"
+        },
+        {
+          "canonical": "maria del pilar sinues de marco",
+          "name": "Sinués de Marco, María del Pilar"
+        },
+        {
+          "canonical": "manuel torrijos",
+          "name": "Torrijos, Manuel"
+        },
+        {
+          "canonical": "juan valera y alcala galiano",
+          "name": "Valera y Alcalá-Galiano, Juan"
+        },
+        {
+          "canonical": "ramon maria del valle inclan",
+          "name": "Valle-Inclán, Ramón María del"
+        },
+        {
+          "canonical": "eduardo zamacois",
+          "name": "Zamacois, Eduardo"
+        }
+      ],
+      "prior_exposure": [
+        {
+          "canonical": "pedro antonio de alarcon",
+          "name": "Alarcón, Pedro Antonio de"
+        },
+        {
+          "canonical": "leopoldo alas",
+          "name": "Alas, Leopoldo [Clarín]"
+        },
+        {
+          "canonical": "vicente blasco ibanez",
+          "name": "Blasco Ibáñez, Vicente"
+        },
+        {
+          "canonical": "fernan caballero",
+          "name": "Böhl de Faber y Ruiz de Larrea, Cecilia [Fernán Caballero]"
+        },
+        {
+          "canonical": "luis coloma",
+          "name": "Coloma, Luis"
+        },
+        {
+          "canonical": "manuel fernandez y gonzalez",
+          "name": "Fernández y Gonzalez, Manuel"
+        },
+        {
+          "canonical": "enrique gil y carrasco",
+          "name": "Gil y Carrasco, Enrique"
+        },
+        {
+          "canonical": "jacinto octavio picon",
+          "name": "Octavio Picón, Jacinto"
+        },
+        {
+          "canonical": "ramon ortega y frias",
+          "name": "Ortega y Frías, Ramón"
+        },
+        {
+          "canonical": "armando palacio valdes",
+          "name": "Palacio Valdés, Armando"
+        },
+        {
+          "canonical": "emilia pardo bazan",
+          "name": "Pardo Bazán, Emilia"
+        },
+        {
+          "canonical": "jose maria de pereda",
+          "name": "Pereda, José María de"
+        },
+        {
+          "canonical": "benito perez galdos",
+          "name": "Pérez Galdós, Benito"
+        },
+        {
+          "canonical": "felipe trigo",
+          "name": "Trigo, Felipe"
+        },
+        {
+          "canonical": "miguel de unamuno",
+          "name": "Unamuno, Miguel de"
+        }
+      ],
+      "revision": "83e2a22d5ef66f96e59f47f7ef810358c4236322",
+      "total_identities_raw": 62
+    },
+    "Gutendex_Spanish_catalog_snapshot": {
+      "catalog_rows": 922,
+      "caveat": "Gutendex category/subject tags are a candidate filter, not human genre verification; author names, translation rights, publication dates, and per-book source snapshots need review.",
+      "narrative_tagged_author_count_raw": 192,
+      "narrative_tagged_not_exactly_crossmatched": [
+        "About, Edmond",
+        "Aeschylus",
+        "Aimard, Gustave",
+        "Altamirano, Ignacio Manuel",
+        "Alvarez, José S. (José Sixto)",
+        "Andreyev, Leonid",
+        "Anonymous",
+        "Apuleius",
+        "Aristophanes",
+        "Arniches y Barrera, Carlos",
+        "Azorín",
+        "Barberá, Joaquín",
+        "Barco Centenera, Martín del",
+        "Barranco, Mariano",
+        "Benavente, Jacinto",
+        "Blanco-Fombona, Rufino",
+        "Bolangero, Víctor África",
+        "Bretón de los Herreros, Manuel",
+        "Byron, George Gordon Byron, Baron",
+        "Calderón de la Barca, Pedro",
+        "Cancela, Arturo",
+        "Caro, Pauline",
+        "Carrere, Emilio",
+        "Chaves Nogales, Manuel",
+        "Cocat, Luis",
+        "Conscience, Hendrik",
+        "Criado y Baca, Heliodoro",
+        "Daudet, Alphonse",
+        "De Amicis, Edmondo",
+        "De Roberto, Federico",
+        "Deledda, Grazia",
+        "Delicado, Francisco",
+        "Dicenta, Joaquín",
+        "Dickens, Charles",
+        "Dostoyevsky, Fyodor",
+        "Dourliac, Arthur",
+        "Doyle, Arthur Conan",
+        "Dumas, Alexandre",
+        "Díaz-Caneja, Guillermo",
+        "Echegaray, José",
+        "Eliot, George",
+        "Erckmann-Chatrian",
+        "Escosura, Patricio de la",
+        "Espinel, Vicente",
+        "Euripides",
+        "Fabra, Nilo María",
+        "Fernández de Avellaneda, Alonso",
+        "Fernández de Moratín, Leandro",
+        "Feuillet, Octave",
+        "Flaubert, Gustave",
+        "Fromentin, Eugène",
+        "Fénelon, François de Salignac de La Mothe-",
+        "Gamero, Gutiérrez",
+        "García González, Manuel",
+        "García Gutiérrez, Antonio",
+        "Gaspar, Enrique",
+        "Goethe, Johann Wolfgang von",
+        "Gorostiza, Manuel Eduardo de",
+        "Gorriti, Juana Manuela",
+        "Gracián y Morales, Baltasar",
+        "Gálvez, Manuel",
+        "Gómez de Avellaneda, Gertrudis",
+        "Gómez de la Serna, Ramón",
+        "Hale, Edward Everett",
+        "Halévy, Ludovic",
+        "Harte, Bret",
+        "Hartzenbusch, Juan Eugenio",
+        "Hawthorne, Nathaniel",
+        "Hope, Anthony",
+        "Hugo, Victor",
+        "Irving, Washington",
+        "Isla, José Francisco de",
+        "Jarnés, Benjamín",
+        "Juan Manuel, Infante of Castile",
+        "Kafka, Franz",
+        "Kipling, Rudyard",
+        "La Brète, Jean de",
+        "Laboulaye, Édouard",
+        "Larra, Luis Mariano de",
+        "Laval, Ramón A. (Ramón Arminio)",
+        "Le Queux, William",
+        "Le Sage, Alain René",
+        "Lecomte du Noüy, Hermine Oudinot",
+        "Lemoine, Joaquín",
+        "Leumann, Carlos Alberto",
+        "León, Ricardo",
+        "Longus",
+        "Lugones, Leopoldo",
+        "Luther, Mark Lee",
+        "Mancey, Claude",
+        "Manzoni, Alessandro",
+        "Mata, Pedro",
+        "Maupassant, Guy de",
+        "Menéndez y Pelayo, Marcelino",
+        "Milán, Luis",
+        "Molina, Tirso de",
+        "Molière",
+        "Moreto, Agustín",
+        "Muñoz Seca, Pedro",
+        "Muñón, Sancho de, active 1542",
+        "Mérimée, Prosper",
+        "Nodier, Charles",
+        "Nogales, José",
+        "Ohnet, Georges",
+        "Ortega Munilla, J. (José)",
+        "Ortega y Gasset, José",
+        "Palma, Angélica",
+        "Payró, Roberto Jorge",
+        "Poe, Edgar Allan",
+        "Ponson du Terrail",
+        "Portillo, Andrés",
+        "Prévost, abbé",
+        "Pérez de Ayala, Ramón",
+        "Pérez de Hita, Ginés",
+        "Queirós, Eça de",
+        "Ramos Carrión, Miguel",
+        "Retana, Alvaro",
+        "Reyes, Arturo",
+        "Riva Palacio, Vicente",
+        "Rivas, Angel de Saavedra, duque de",
+        "Rizal, José",
+        "Rojas, Fernando de",
+        "Romero de Terreros, Manuel, marqués de San Francisco",
+        "Ruiz de Alarcón, Juan",
+        "Répide, Pedro de",
+        "Salgari, Emilio",
+        "San José, Diego",
+        "San Martín, Bernardo Morales",
+        "Sanz, Eulogio Florentino",
+        "Sardou, Victorien",
+        "Schack, Adolf Friedrich von",
+        "Scribe, Eugène",
+        "Shakespeare, William",
+        "Sinués de Marco, María del Pilar",
+        "Sophocles",
+        "Stevenson, Robert Louis",
+        "Sudermann, Hermann",
+        "Sue, Eugène",
+        "Tamayo y Baus, Manuel",
+        "Theuriet, André",
+        "Veber, Pierre",
+        "Vedia, Enrique de",
+        "Vega, Lope de",
+        "Verga, Giovanni",
+        "Viana, Javier de",
+        "Villaverde, Cirilo",
+        "Villegas, Alonso de",
+        "Voltaire",
+        "Vélez de Guevara, Luis",
+        "Wast, Hugo",
+        "Zamacois, Eduardo",
+        "Zayas y Sotomayor, María de",
+        "Álvarez Quintero, Joaquín",
+        "Álvarez Quintero, Serafín"
+      ],
+      "not_exactly_crossmatched": [
+        {
+          "canonical": "edmond about",
+          "name": "About, Edmond"
+        },
+        {
+          "canonical": "jose de acosta",
+          "name": "Acosta, José de"
+        },
+        {
+          "canonical": "maria raquel adler",
+          "name": "Adler, María Raquel"
+        },
+        {
+          "canonical": "aeschylus",
+          "name": "Aeschylus"
+        },
+        {
+          "canonical": "aesop",
+          "name": "Aesop"
+        },
+        {
+          "canonical": "pedro de active 16th century aguado",
+          "name": "Aguado, Pedro de, active 16th century"
+        },
+        {
+          "canonical": "emilio aguinaldo",
+          "name": "Aguinaldo, Emilio"
+        },
+        {
+          "canonical": "gustave aimard",
+          "name": "Aimard, Gustave"
+        },
+        {
+          "canonical": "leon battista alberti",
+          "name": "Alberti, Leon Battista"
+        },
+        {
+          "canonical": "antonio alcala galiano",
+          "name": "Alcalá Galiano, Antonio"
+        },
+        {
+          "canonical": "almafuerte",
+          "name": "Almafuerte"
+        },
+        {
+          "canonical": "manuel a alonso",
+          "name": "Alonso, Manuel A. (Manuel Antonio)"
+        },
+        {
+          "canonical": "ignacio manuel altamirano",
+          "name": "Altamirano, Ignacio Manuel"
+        },
+        {
+          "canonical": "juan alvarez guerra",
+          "name": "Alvarez Guerra, Juan"
+        },
+        {
+          "canonical": "luis prudencio alvarez y tejero",
+          "name": "Alvarez y Tejero, Luis Prudencio"
+        },
+        {
+          "canonical": "agustin alvarez",
+          "name": "Alvarez, Agustín"
+        },
+        {
+          "canonical": "jose s alvarez",
+          "name": "Alvarez, José S. (José Sixto)"
+        },
+        {
+          "canonical": "leonid andreyev",
+          "name": "Andreyev, Leonid"
+        },
+        {
+          "canonical": "anonymous",
+          "name": "Anonymous"
+        },
+        {
+          "canonical": "apuleius",
+          "name": "Apuleius"
+        },
+        {
+          "canonical": "agustin aragon",
+          "name": "Aragón, Agustín"
+        },
+        {
+          "canonical": "concepcion arenal de garcia carrasco",
+          "name": "Arenal de García Carrasco, Concepción"
+        },
+        {
+          "canonical": "argentina",
+          "name": "Argentina"
+        },
+        {
+          "canonical": "francisco gavino de arias",
+          "name": "Arias, Francisco Gavino de"
+        },
+        {
+          "canonical": "lodovico ariosto",
+          "name": "Ariosto, Lodovico"
+        },
+        {
+          "canonical": "aristophanes",
+          "name": "Aristophanes"
+        },
+        {
+          "canonical": "carlos arniches y barrera",
+          "name": "Arniches y Barrera, Carlos"
+        },
+        {
+          "canonical": "felipe arroyo de la cuesta",
+          "name": "Arroyo de la Cuesta, Felipe"
+        },
+        {
+          "canonical": "federico asenjo y arteaga",
+          "name": "Asenjo y Arteaga, Federico"
+        },
+        {
+          "canonical": "jose maria aviles",
+          "name": "Avilés, José María"
+        },
+        {
+          "canonical": "felix de azara",
+          "name": "Azara, Félix de"
+        },
+        {
+          "canonical": "azorin jose martinez ruiz",
+          "name": "Azorín"
+        },
+        {
+          "canonical": "francisco balagtas",
+          "name": "Balagtas, Francisco"
+        },
+        {
+          "canonical": "jaime luciano balmes",
+          "name": "Balmes, Jaime Luciano"
+        },
+        {
+          "canonical": "adolph francis alphonse bandelier",
+          "name": "Bandelier, Adolph Francis Alphonse"
+        },
+        {
+          "canonical": "joaquin barbera",
+          "name": "Barberá, Joaquín"
+        },
+        {
+          "canonical": "roque barcia",
+          "name": "Barcia, Roque"
+        },
+        {
+          "canonical": "martin del barco centenera",
+          "name": "Barco Centenera, Martín del"
+        },
+        {
+          "canonical": "mariano barranco",
+          "name": "Barranco, Mariano"
+        },
+        {
+          "canonical": "j j barthelemy",
+          "name": "Barthélemy, J.-J. (Jean-Jacques)"
+        },
+        {
+          "canonical": "antonio batres jauregui",
+          "name": "Batres Jáuregui, Antonio"
+        },
+        {
+          "canonical": "jacinto benavente",
+          "name": "Benavente, Jacinto"
+        },
+        {
+          "canonical": "a de beruete y moret",
+          "name": "Beruete y Moret, A. de (Aureliano)"
+        },
+        {
+          "canonical": "juan de betanzos",
+          "name": "Betanzos, Juan de"
+        },
+        {
+          "canonical": "alessandro bizzarri",
+          "name": "Bizzarri, Alessandro"
+        },
+        {
+          "canonical": "rufino blanco fombona",
+          "name": "Blanco-Fombona, Rufino"
+        },
+        {
+          "canonical": "cosme blasco",
+          "name": "Blasco, Cosme"
+        },
+        {
+          "canonical": "guillermo bodenbender",
+          "name": "Bodenbender, Guillermo"
+        },
+        {
+          "canonical": "victor africa bolangero",
+          "name": "Bolangero, Víctor África"
+        },
+        {
+          "canonical": "george borrow",
+          "name": "Borrow, George"
+        },
+        {
+          "canonical": "abbe brasseur de bourbourg",
+          "name": "Brasseur de Bourbourg, abbé"
+        },
+        {
+          "canonical": "salvador brau",
+          "name": "Brau, Salvador"
+        },
+        {
+          "canonical": "manuel breton de los herreros",
+          "name": "Bretón de los Herreros, Manuel"
+        },
+        {
+          "canonical": "edith j broomhall",
+          "name": "Broomhall, Edith J. (Edith Jane)"
+        },
+        {
+          "canonical": "george gordon byron baron byron",
+          "name": "Byron, George Gordon Byron, Baron"
+        },
+        {
+          "canonical": "francisco calcagno",
+          "name": "Calcagno, Francisco"
+        },
+        {
+          "canonical": "pedro calderon de la barca",
+          "name": "Calderón de la Barca, Pedro"
+        },
+        {
+          "canonical": "sofronio g calderon",
+          "name": "Calderón, Sofronio G."
+        },
+        {
+          "canonical": "maria lady callcott",
+          "name": "Callcott, Maria, Lady"
+        },
+        {
+          "canonical": "calleja",
+          "name": "Calleja (pseudonym)"
+        },
+        {
+          "canonical": "fernando callejo ferrer",
+          "name": "Callejo Ferrer, Fernando"
+        },
+        {
+          "canonical": "alejandro calvo",
+          "name": "Calvo, Alejandro"
+        },
+        {
+          "canonical": "julio camba",
+          "name": "Camba, Julio"
+        },
+        {
+          "canonical": "lorenzo campano",
+          "name": "Campano, Lorenzo"
+        },
+        {
+          "canonical": "jose campo arana",
+          "name": "Campo Arana, José"
+        },
+        {
+          "canonical": "luis de camoes",
+          "name": "Camões, Luís de"
+        },
+        {
+          "canonical": "arturo cancela",
+          "name": "Cancela, Arturo"
+        },
+        {
+          "canonical": "j g cantero",
+          "name": "Cantero, J. G. (Justo Germán)"
+        },
+        {
+          "canonical": "jose m capmany",
+          "name": "Capmany, José M."
+        },
+        {
+          "canonical": "pauline caro",
+          "name": "Caro, Pauline"
+        },
+        {
+          "canonical": "emilio carrere",
+          "name": "Carrere, Emilio"
+        },
+        {
+          "canonical": "bartolome de las casas",
+          "name": "Casas, Bartolomé de las"
+        },
+        {
+          "canonical": "emilio castelar",
+          "name": "Castelar, Emilio"
+        },
+        {
+          "canonical": "adolfo de castro",
+          "name": "Castro, Adolfo de"
+        },
+        {
+          "canonical": "cristobal de castro",
+          "name": "Castro, Cristóbal de"
+        },
+        {
+          "canonical": "rosalia de castro",
+          "name": "Castro, Rosalía de"
+        },
+        {
+          "canonical": "julio cejador y frauca",
+          "name": "Cejador y Frauca, Julio"
+        },
+        {
+          "canonical": "manuel chaves nogales",
+          "name": "Chaves Nogales, Manuel"
+        },
+        {
+          "canonical": "manuel chaves rey",
+          "name": "Chaves Rey, Manuel"
+        },
+        {
+          "canonical": "pedro de cieza de leon",
+          "name": "Cieza de León, Pedro de"
+        },
+        {
+          "canonical": "luis cocat",
+          "name": "Cocat, Luis"
+        },
+        {
+          "canonical": "cayetano coll y toste",
+          "name": "Coll y Toste, Cayetano"
+        },
+        {
+          "canonical": "hendrik conscience",
+          "name": "Conscience, Hendrik"
+        },
+        {
+          "canonical": "rafael conte",
+          "name": "Conte, Rafael"
+        },
+        {
+          "canonical": "rafael contreras",
+          "name": "Contreras, Rafael"
+        },
+        {
+          "canonical": "ambrosio cramer",
+          "name": "Cramer, Ambrosio"
+        },
+        {
+          "canonical": "heliodoro criado y baca",
+          "name": "Criado y Baca, Heliodoro"
+        },
+        {
+          "canonical": "ellen m cyr",
+          "name": "Cyr, Ellen M."
+        },
+        {
+          "canonical": "antonio canovas del castillo",
+          "name": "Cánovas del Castillo, Antonio"
+        },
+        {
+          "canonical": "raul de cardenas y echarte",
+          "name": "Cárdenas y Echarte, Raúl de"
+        },
+        {
+          "canonical": "dante alighieri",
+          "name": "Dante Alighieri"
+        },
+        {
+          "canonical": "alphonse daudet",
+          "name": "Daudet, Alphonse"
+        },
+        {
+          "canonical": "edmondo de amicis",
+          "name": "De Amicis, Edmondo"
+        },
+        {
+          "canonical": "federico de roberto",
+          "name": "De Roberto, Federico"
+        },
+        {
+          "canonical": "grazia deledda",
+          "name": "Deledda, Grazia"
+        },
+        {
+          "canonical": "francisco delicado",
+          "name": "Delicado, Francisco"
+        },
+        {
+          "canonical": "gabriel pierre deville",
+          "name": "Deville, Gabriel Pierre"
+        },
+        {
+          "canonical": "joaquin dicenta",
+          "name": "Dicenta, Joaquín"
+        },
+        {
+          "canonical": "charles dickens",
+          "name": "Dickens, Charles"
+        },
+        {
+          "canonical": "gonzalo de doblas",
+          "name": "Doblas, Gonzalo de"
+        },
+        {
+          "canonical": "fyodor dostoyevsky",
+          "name": "Dostoyevsky, Fyodor"
+        },
+        {
+          "canonical": "arthur dourliac",
+          "name": "Dourliac, Arthur"
+        },
+        {
+          "canonical": "arthur conan doyle",
+          "name": "Doyle, Arthur Conan"
+        },
+        {
+          "canonical": "luis maria drago",
+          "name": "Drago, Luis María"
+        },
+        {
+          "canonical": "alexandre dumas",
+          "name": "Dumas, Alexandre"
+        },
+        {
+          "canonical": "juan carlos davalos",
+          "name": "Dávalos, Juan Carlos"
+        },
+        {
+          "canonical": "bernal diaz del castillo",
+          "name": "Díaz del Castillo, Bernal"
+        },
+        {
+          "canonical": "porfirio diaz",
+          "name": "Díaz, Porfirio"
+        },
+        {
+          "canonical": "guillermo diaz caneja",
+          "name": "Díaz-Caneja, Guillermo"
+        },
+        {
+          "canonical": "jose echegaray",
+          "name": "Echegaray, José"
+        },
+        {
+          "canonical": "george eliot",
+          "name": "Eliot, George"
+        },
+        {
+          "canonical": "erckmann chatrian",
+          "name": "Erckmann-Chatrian"
+        },
+        {
+          "canonical": "patricio de la escosura",
+          "name": "Escosura, Patricio de la"
+        },
+        {
+          "canonical": "alexis espanet",
+          "name": "Espanet, Alexis"
+        },
+        {
+          "canonical": "vicente espinel",
+          "name": "Espinel, Vicente"
+        },
+        {
+          "canonical": "ramon j espinosa",
+          "name": "Espinosa, Ramón J."
+        },
+        {
+          "canonical": "jose de espronceda",
+          "name": "Espronceda, José de"
+        },
+        {
+          "canonical": "juan de active 17th century esquivel navarro",
+          "name": "Esquivel Navarro, Juan de, active 17th century"
+        },
+        {
+          "canonical": "euripides",
+          "name": "Euripides"
+        },
+        {
+          "canonical": "exposicion historico americana",
+          "name": "Exposición Histórico-Americana (1892 : Madrid, Spain)"
+        },
+        {
+          "canonical": "camilo fabra",
+          "name": "Fabra, Camilo"
+        },
+        {
+          "canonical": "nilo maria fabra",
+          "name": "Fabra, Nilo María"
+        },
+        {
+          "canonical": "thomas falkner",
+          "name": "Falkner, Thomas"
+        },
+        {
+          "canonical": "victor jose fernandez bolivar",
+          "name": "Fernández Bolívar, Víctor José"
+        },
+        {
+          "canonical": "cesareo fernandez duro",
+          "name": "Fernández Duro, Cesáreo"
+        },
+        {
+          "canonical": "manuel fernandez juncos",
+          "name": "Fernández Juncos, Manuel"
+        },
+        {
+          "canonical": "alonso fernandez de avellaneda",
+          "name": "Fernández de Avellaneda, Alonso"
+        },
+        {
+          "canonical": "leandro fernandez de moratin",
+          "name": "Fernández de Moratín, Leandro"
+        },
+        {
+          "canonical": "juan patricio fernandez",
+          "name": "Fernández, Juan Patricio"
+        },
+        {
+          "canonical": "enrico ferri",
+          "name": "Ferri, Enrico"
+        },
+        {
+          "canonical": "octave feuillet",
+          "name": "Feuillet, Octave"
+        },
+        {
+          "canonical": "jesse walter fewkes",
+          "name": "Fewkes, Jesse Walter"
+        },
+        {
+          "canonical": "gustave flaubert",
+          "name": "Flaubert, Gustave"
+        },
+        {
+          "canonical": "richard ford",
+          "name": "Ford, Richard"
+        },
+        {
+          "canonical": "carlo de fornaro",
+          "name": "Fornaro, Carlo de"
+        },
+        {
+          "canonical": "eugene fromentin",
+          "name": "Fromentin, Eugène"
+        },
+        {
+          "canonical": "juan felix de la encarnacion",
+          "name": "Félix de la Encarnación, Juan"
+        },
+        {
+          "canonical": "francois de salignac de la mothe fenelon",
+          "name": "Fénelon, François de Salignac de La Mothe-"
+        },
+        {
+          "canonical": "gutierrez gamero",
+          "name": "Gamero, Gutiérrez"
+        },
+        {
+          "canonical": "francisco garau",
+          "name": "Garau, Francisco"
+        },
+        {
+          "canonical": "manuel garcia gonzalez",
+          "name": "García González, Manuel"
+        },
+        {
+          "canonical": "antonio garcia gutierrez",
+          "name": "García Gutiérrez, Antonio"
+        },
+        {
+          "canonical": "federico garcia lorca",
+          "name": "García Lorca, Federico"
+        },
+        {
+          "canonical": "martin garcia merou",
+          "name": "García Mérou, Martín"
+        },
+        {
+          "canonical": "pedro andres garcia",
+          "name": "García, Pedro Andrés"
+        },
+        {
+          "canonical": "enrique gaspar",
+          "name": "Gaspar, Enrique"
+        },
+        {
+          "canonical": "jose gestoso y perez",
+          "name": "Gestoso y Pérez, José"
+        },
+        {
+          "canonical": "oliverio girondo",
+          "name": "Girondo, Oliverio"
+        },
+        {
+          "canonical": "mateo gisbert",
+          "name": "Gisbert, Mateo"
+        },
+        {
+          "canonical": "johann wolfgang von goethe",
+          "name": "Goethe, Johann Wolfgang von"
+        },
+        {
+          "canonical": "manuel b gonnet",
+          "name": "Gonnet, Manuel B."
+        },
+        {
+          "canonical": "manuel eduardo de gorostiza",
+          "name": "Gorostiza, Manuel Eduardo de"
+        },
+        {
+          "canonical": "juana manuela gorriti",
+          "name": "Gorriti, Juana Manuela"
+        },
+        {
+          "canonical": "francisco goya",
+          "name": "Goya, Francisco"
+        },
+        {
+          "canonical": "pedro goyena",
+          "name": "Goyena, Pedro"
+        },
+        {
+          "canonical": "baltasar gracian y morales",
+          "name": "Gracián y Morales, Baltasar"
+        },
+        {
+          "canonical": "paul groussac",
+          "name": "Groussac, Paul"
+        },
+        {
+          "canonical": "jose guevara",
+          "name": "Guevara, José"
+        },
+        {
+          "canonical": "amedee guillemin",
+          "name": "Guillemin, Amédée"
+        },
+        {
+          "canonical": "pedro jose guiteras",
+          "name": "Guiteras, Pedro José"
+        },
+        {
+          "canonical": "juan maria gutierrez",
+          "name": "Gutiérrez, Juan María"
+        },
+        {
+          "canonical": "manuel galvez",
+          "name": "Gálvez, Manuel"
+        },
+        {
+          "canonical": "gertrudis gomez de avellaneda",
+          "name": "Gómez de Avellaneda, Gertrudis"
+        },
+        {
+          "canonical": "ramon gomez de la serna",
+          "name": "Gómez de la Serna, Ramón"
+        },
+        {
+          "canonical": "edward everett hale",
+          "name": "Hale, Edward Everett"
+        },
+        {
+          "canonical": "ludovic halevy",
+          "name": "Halévy, Ludovic"
+        },
+        {
+          "canonical": "earl stanley harrison",
+          "name": "Harrison, Earl Stanley"
+        },
+        {
+          "canonical": "bret harte",
+          "name": "Harte, Bret"
+        },
+        {
+          "canonical": "juan eugenio hartzenbusch",
+          "name": "Hartzenbusch, Juan Eugenio"
+        },
+        {
+          "canonical": "nathaniel hawthorne",
+          "name": "Hawthorne, Nathaniel"
+        },
+        {
+          "canonical": "tadeas xavier henis",
+          "name": "Henis, Tadéas Xavier"
+        },
+        {
+          "canonical": "enrique martin hermitte",
+          "name": "Hermitte, Enrique Martín"
+        },
+        {
+          "canonical": "jose hernandez",
+          "name": "Hernández, José"
+        },
+        {
+          "canonical": "herodotus",
+          "name": "Herodotus"
+        },
+        {
+          "canonical": "eduardo de hinojosa",
+          "name": "Hinojosa, Eduardo de"
+        },
+        {
+          "canonical": "homer",
+          "name": "Homer"
+        },
+        {
+          "canonical": "anthony hope",
+          "name": "Hope, Anthony"
+        },
+        {
+          "canonical": "eugenio maria de hostos",
+          "name": "Hostos, Eugenio María de"
+        },
+        {
+          "canonical": "palemon huergo",
+          "name": "Huergo, Palemón"
+        },
+        {
+          "canonical": "victor hugo",
+          "name": "Hugo, Victor"
+        },
+        {
+          "canonical": "alexander von humboldt",
+          "name": "Humboldt, Alexander von"
+        },
+        {
+          "canonical": "diego hurtado de mendoza",
+          "name": "Hurtado de Mendoza, Diego"
+        },
+        {
+          "canonical": "jose ingenieros",
+          "name": "Ingenieros, José"
+        },
+        {
+          "canonical": "tomas de iriarte",
+          "name": "Iriarte, Tomás de"
+        },
+        {
+          "canonical": "washington irving",
+          "name": "Irving, Washington"
+        },
+        {
+          "canonical": "jose francisco de isla",
+          "name": "Isla, José Francisco de"
+        },
+        {
+          "canonical": "benjamin jarnes",
+          "name": "Jarnés, Benjamín"
+        },
+        {
+          "canonical": "infante of castile juan manuel",
+          "name": "Juan Manuel, Infante of Castile"
+        },
+        {
+          "canonical": "sister juana ines de la cruz",
+          "name": "Juana Inés de la Cruz, Sister"
+        },
+        {
+          "canonical": "franz kafka",
+          "name": "Kafka, Franz"
+        },
+        {
+          "canonical": "james kent",
+          "name": "Kent, James"
+        },
+        {
+          "canonical": "rudyard kipling",
+          "name": "Kipling, Rudyard"
+        },
+        {
+          "canonical": "jean de la brete",
+          "name": "La Brète, Jean de"
+        },
+        {
+          "canonical": "edouard laboulaye",
+          "name": "Laboulaye, Édouard"
+        },
+        {
+          "canonical": "rafael m de labra",
+          "name": "Labra, Rafael M. de (Rafael María)"
+        },
+        {
+          "canonical": "pedro lacasa",
+          "name": "Lacasa, Pedro"
+        },
+        {
+          "canonical": "alix de lamartine",
+          "name": "Lamartine, Alix de"
+        },
+        {
+          "canonical": "diego de landa",
+          "name": "Landa, Diego de"
+        },
+        {
+          "canonical": "luis mariano de larra",
+          "name": "Larra, Luis Mariano de"
+        },
+        {
+          "canonical": "ines e de larrain",
+          "name": "Larraín, Inés E. de (Inés Echeverría)"
+        },
+        {
+          "canonical": "ramon a laval",
+          "name": "Laval, Ramón A. (Ramón Arminio)"
+        },
+        {
+          "canonical": "william le queux",
+          "name": "Le Queux, William"
+        },
+        {
+          "canonical": "alain rene le sage",
+          "name": "Le Sage, Alain René"
+        },
+        {
+          "canonical": "marie lebert",
+          "name": "Lebert, Marie"
+        },
+        {
+          "canonical": "hermine oudinot lecomte du nouy",
+          "name": "Lecomte du Noüy, Hermine Oudinot"
+        },
+        {
+          "canonical": "joaquin lemoine",
+          "name": "Lemoine, Joaquín"
+        },
+        {
+          "canonical": "da vinci leonardo",
+          "name": "Leonardo, da Vinci"
+        },
+        {
+          "canonical": "carlos alberto leumann",
+          "name": "Leumann, Carlos Alberto"
+        },
+        {
+          "canonical": "luis de leon",
+          "name": "León, Luis de"
+        },
+        {
+          "canonical": "ricardo leon",
+          "name": "León, Ricardo"
+        },
+        {
+          "canonical": "reginaldo de lizarraga",
+          "name": "Lizárraga, Reginaldo de"
+        },
+        {
+          "canonical": "longus",
+          "name": "Longus"
+        },
+        {
+          "canonical": "pedro lozano",
+          "name": "Lozano, Pedro"
+        },
+        {
+          "canonical": "leopoldo lugones",
+          "name": "Lugones, Leopoldo"
+        },
+        {
+          "canonical": "charles fletcher lummis",
+          "name": "Lummis, Charles Fletcher"
+        },
+        {
+          "canonical": "max aaron luria",
+          "name": "Luria, Max Aaron"
+        },
+        {
+          "canonical": "mark lee luther",
+          "name": "Luther, Mark Lee"
+        },
+        {
+          "canonical": "vicente lopez y planes",
+          "name": "López y Planes, Vicente"
+        },
+        {
+          "canonical": "vicente fidel lopez",
+          "name": "López, Vicente Fidel"
+        },
+        {
+          "canonical": "apolinario mabini",
+          "name": "Mabini, Apolinario"
+        },
+        {
+          "canonical": "antonio machado",
+          "name": "Machado, Antonio"
+        },
+        {
+          "canonical": "pedro d madrazo",
+          "name": "Madrazo, Pedro D."
+        },
+        {
+          "canonical": "claude mancey",
+          "name": "Mancey, Claude"
+        },
+        {
+          "canonical": "jorge manrique",
+          "name": "Manrique, Jorge"
+        },
+        {
+          "canonical": "lucio v mansilla",
+          "name": "Mansilla, Lucio V."
+        },
+        {
+          "canonical": "alessandro manzoni",
+          "name": "Manzoni, Alessandro"
+        },
+        {
+          "canonical": "benjamin marcos",
+          "name": "Marcos, Benjamín"
+        },
+        {
+          "canonical": "jules marcou",
+          "name": "Marcou, Jules"
+        },
+        {
+          "canonical": "rafael martinez de la torre",
+          "name": "Martinez de la Torre, Rafael"
+        },
+        {
+          "canonical": "eduardo martin de la camara",
+          "name": "Martín de la Cámara, Eduardo"
+        },
+        {
+          "canonical": "karl marx",
+          "name": "Marx, Karl"
+        },
+        {
+          "canonical": "pedro mata",
+          "name": "Mata, Pedro"
+        },
+        {
+          "canonical": "juan a mateos",
+          "name": "Mateos, Juan A. (Juan Antonio)"
+        },
+        {
+          "canonical": "guy de maupassant",
+          "name": "Maupassant, Guy de"
+        },
+        {
+          "canonical": "gregorio mayans y siscar",
+          "name": "Mayans y Siscar, Gregorio"
+        },
+        {
+          "canonical": "thomas active 1595 maynarde",
+          "name": "Maynarde, Thomas, active 1595"
+        },
+        {
+          "canonical": "marcelino menendez y pelayo",
+          "name": "Menéndez y Pelayo, Marcelino"
+        },
+        {
+          "canonical": "jules michelet",
+          "name": "Michelet, Jules"
+        },
+        {
+          "canonical": "john milton",
+          "name": "Milton, John"
+        },
+        {
+          "canonical": "luis milan",
+          "name": "Milán, Luis"
+        },
+        {
+          "canonical": "bartolome mitre",
+          "name": "Mitre, Bartolomé"
+        },
+        {
+          "canonical": "enrique molina",
+          "name": "Molina, Enrique"
+        },
+        {
+          "canonical": "tirso de molina",
+          "name": "Molina, Tirso de"
+        },
+        {
+          "canonical": "w jaime molins",
+          "name": "Molins, W. Jaime (Wenceslao Jaime)"
+        },
+        {
+          "canonical": "moliere",
+          "name": "Molière"
+        },
+        {
+          "canonical": "theodor mommsen",
+          "name": "Mommsen, Theodor"
+        },
+        {
+          "canonical": "francisco de moncada",
+          "name": "Moncada, Francisco de"
+        },
+        {
+          "canonical": "eugenio montero rios",
+          "name": "Montero Ríos, Eugenio"
+        },
+        {
+          "canonical": "francisco montes",
+          "name": "Montes, Francisco"
+        },
+        {
+          "canonical": "francisco pascasio moreno",
+          "name": "Moreno, Francisco Pascasio"
+        },
+        {
+          "canonical": "agustin moreto",
+          "name": "Moreto, Agustín"
+        },
+        {
+          "canonical": "francisco morillo",
+          "name": "Morillo, Francisco"
+        },
+        {
+          "canonical": "pedro munoz seca",
+          "name": "Muñoz Seca, Pedro"
+        },
+        {
+          "canonical": "sancho de active 1542 munon",
+          "name": "Muñón, Sancho de, active 1542"
+        },
+        {
+          "canonical": "prosper merimee",
+          "name": "Mérimée, Prosper"
+        },
+        {
+          "canonical": "carlos navarro y lamarca",
+          "name": "Navarro y Lamarca, Carlos"
+        },
+        {
+          "canonical": "jose nebot perez",
+          "name": "Nebot Pérez, José"
+        },
+        {
+          "canonical": "ernesto nelson",
+          "name": "Nelson, Ernesto"
+        },
+        {
+          "canonical": "jose nieto aguilar",
+          "name": "Nieto Aguilar, José"
+        },
+        {
+          "canonical": "juan b nieves",
+          "name": "Nieves, Juan B."
+        },
+        {
+          "canonical": "charles nodier",
+          "name": "Nodier, Charles"
+        },
+        {
+          "canonical": "jose nogales",
+          "name": "Nogales, José"
+        },
+        {
+          "canonical": "mariano nougues secall",
+          "name": "Nougués Secall, Mariano"
+        },
+        {
+          "canonical": "bernardino nozaleda",
+          "name": "Nozaleda, Bernardino"
+        },
+        {
+          "canonical": "alvar active 16th century nunez cabeza de vaca",
+          "name": "Núñez Cabeza de Vaca, Alvar, active 16th century"
+        },
+        {
+          "canonical": "georges ohnet",
+          "name": "Ohnet, Georges"
+        },
+        {
+          "canonical": "alcide dessalines d orbigny",
+          "name": "Orbigny, Alcide Dessalines d'"
+        },
+        {
+          "canonical": "j ortega munilla",
+          "name": "Ortega Munilla, J. (José)"
+        },
+        {
+          "canonical": "juan ortega rubio",
+          "name": "Ortega Rubio, Juan"
+        },
+        {
+          "canonical": "jose ortega y gasset",
+          "name": "Ortega y Gasset, José"
+        },
+        {
+          "canonical": "ovid",
+          "name": "Ovid"
+        },
+        {
+          "canonical": "angelica palma",
+          "name": "Palma, Angélica"
+        },
+        {
+          "canonical": "paraguay",
+          "name": "Paraguay"
+        },
+        {
+          "canonical": "t h pardo de tavera",
+          "name": "Pardo de Tavera, T. H. (Trinidad Hermenegildo)"
+        },
+        {
+          "canonical": "m rigoberto paredes",
+          "name": "Paredes, M. Rigoberto (Manuel Rigoberto)"
+        },
+        {
+          "canonical": "manuel payno",
+          "name": "Payno, Manuel"
+        },
+        {
+          "canonical": "roberto jorge payro",
+          "name": "Payró, Roberto Jorge"
+        },
+        {
+          "canonical": "modesto perez",
+          "name": "Perez, Modesto"
+        },
+        {
+          "canonical": "gorgonio petano y mazariegos",
+          "name": "Petano y Mazariegos, Gorgonio"
+        },
+        {
+          "canonical": "helen phipps",
+          "name": "Phipps, Helen"
+        },
+        {
+          "canonical": "andres piquer",
+          "name": "Piquer, Andres"
+        },
+        {
+          "canonical": "enrique pineyro",
+          "name": "Piñeyro, Enrique"
+        },
+        {
+          "canonical": "edgar allan poe",
+          "name": "Poe, Edgar Allan"
+        },
+        {
+          "canonical": "ponson du terrail",
+          "name": "Ponson du Terrail"
+        },
+        {
+          "canonical": "andres portillo",
+          "name": "Portillo, Andrés"
+        },
+        {
+          "canonical": "guillermo prieto",
+          "name": "Prieto, Guillermo"
+        },
+        {
+          "canonical": "carlos prince",
+          "name": "Prince, Carlos"
+        },
+        {
+          "canonical": "abbe prevost",
+          "name": "Prévost, abbé"
+        },
+        {
+          "canonical": "rafael puig y valls",
+          "name": "Puig y Valls, Rafael"
+        },
+        {
+          "canonical": "fernando del pulgar",
+          "name": "Pulgar, Fernando del"
+        },
+        {
+          "canonical": "g perez gomar",
+          "name": "Pérez Gomar, G. (Gregorio)"
+        },
+        {
+          "canonical": "juan perez zuniga",
+          "name": "Pérez Zúñiga, Juan"
+        },
+        {
+          "canonical": "ramon perez de ayala",
+          "name": "Pérez de Ayala, Ramón"
+        },
+        {
+          "canonical": "gines perez de hita",
+          "name": "Pérez de Hita, Ginés"
+        },
+        {
+          "canonical": "miguel agustin perez",
+          "name": "Pérez, Miguel Agustin"
+        },
+        {
+          "canonical": "eca de queiros",
+          "name": "Queirós, Eça de"
+        },
+        {
+          "canonical": "adan quiroga",
+          "name": "Quiroga, Adán"
+        },
+        {
+          "canonical": "jose quiroga",
+          "name": "Quiroga, José"
+        },
+        {
+          "canonical": "miguel ramos carrion",
+          "name": "Ramos Carrión, Miguel"
+        },
+        {
+          "canonical": "santiago ramon y cajal",
+          "name": "Ramón y Cajal, Santiago"
+        },
+        {
+          "canonical": "real academia de la historia",
+          "name": "Real Academia de la Historia (Spain)"
+        },
+        {
+          "canonical": "elisee reclus",
+          "name": "Reclus, Elisée"
+        },
+        {
+          "canonical": "alfred remy",
+          "name": "Remy, Alfred"
+        },
+        {
+          "canonical": "ernest renan",
+          "name": "Renan, Ernest"
+        },
+        {
+          "canonical": "alvaro retana",
+          "name": "Retana, Alvaro"
+        },
+        {
+          "canonical": "isabelo de los reyes y florentino",
+          "name": "Reyes y Florentino, Isabelo de los"
+        },
+        {
+          "canonical": "arturo reyes",
+          "name": "Reyes, Arturo"
+        },
+        {
+          "canonical": "jose maria de los reyes",
+          "name": "Reyes, José Maria de los"
+        },
+        {
+          "canonical": "carlos reyles",
+          "name": "Reyles, Carlos"
+        },
+        {
+          "canonical": "vicente riva palacio",
+          "name": "Riva Palacio, Vicente"
+        },
+        {
+          "canonical": "horacio carlos rivarola",
+          "name": "Rivarola, Horacio Carlos"
+        },
+        {
+          "canonical": "angel de saavedra duque de rivas",
+          "name": "Rivas, Angel de Saavedra, duque de"
+        },
+        {
+          "canonical": "jose rizal",
+          "name": "Rizal, José"
+        },
+        {
+          "canonical": "jose enrique rodo",
+          "name": "Rodó, José Enrique"
+        },
+        {
+          "canonical": "erwin w roessler",
+          "name": "Roessler, Erwin W. (Erwin William)"
+        },
+        {
+          "canonical": "fernando de rojas",
+          "name": "Rojas, Fernando de"
+        },
+        {
+          "canonical": "romain rolland",
+          "name": "Rolland, Romain"
+        },
+        {
+          "canonical": "manuel marques de san francisco romero de terreros",
+          "name": "Romero de Terreros, Manuel, marqués de San Francisco"
+        },
+        {
+          "canonical": "joaquin rubio y ors",
+          "name": "Rubió y Ors, Joaquín"
+        },
+        {
+          "canonical": "luis ruiz contreras",
+          "name": "Ruiz Contreras, Luis"
+        },
+        {
+          "canonical": "juan ruiz de alarcon",
+          "name": "Ruiz de Alarcón, Juan"
+        },
+        {
+          "canonical": "juan ruiz",
+          "name": "Ruiz, Juan"
+        },
+        {
+          "canonical": "pedro de repide",
+          "name": "Répide, Pedro de"
+        },
+        {
+          "canonical": "jose maria salaverria",
+          "name": "Salaverría, José María"
+        },
+        {
+          "canonical": "emilio salgari",
+          "name": "Salgari, Emilio"
+        },
+        {
+          "canonical": "felix maria samaniego",
+          "name": "Samaniego, Félix María"
+        },
+        {
+          "canonical": "jose maria samper",
+          "name": "Samper, José María"
+        },
+        {
+          "canonical": "diego san jose",
+          "name": "San José, Diego"
+        },
+        {
+          "canonical": "bernardo morales san martin",
+          "name": "San Martín, Bernardo Morales"
+        },
+        {
+          "canonical": "eulogio florentino sanz",
+          "name": "Sanz, Eulogio Florentino"
+        },
+        {
+          "canonical": "victorien sardou",
+          "name": "Sardou, Victorien"
+        },
+        {
+          "canonical": "domingo faustino sarmiento",
+          "name": "Sarmiento, Domingo Faustino"
+        },
+        {
+          "canonical": "marcos sastre",
+          "name": "Sastre, Marcos"
+        },
+        {
+          "canonical": "manuel sauri",
+          "name": "Saurí, Manuel"
+        },
+        {
+          "canonical": "adolf friedrich von schack",
+          "name": "Schack, Adolf Friedrich von"
+        },
+        {
+          "canonical": "ulrich schmidel",
+          "name": "Schmidel, Ulrich"
+        },
+        {
+          "canonical": "eugene scribe",
+          "name": "Scribe, Eugène"
+        },
+        {
+          "canonical": "william shakespeare",
+          "name": "Shakespeare, William"
+        },
+        {
+          "canonical": "maria del pilar sinues de marco",
+          "name": "Sinués de Marco, María del Pilar"
+        },
+        {
+          "canonical": "sociedad abolicionista espanola",
+          "name": "Sociedad Abolicionista Española"
+        },
+        {
+          "canonical": "antonio de solis",
+          "name": "Solís, Antonio de"
+        },
+        {
+          "canonical": "sophocles",
+          "name": "Sophocles"
+        },
+        {
+          "canonical": "jose sourryere de souillac",
+          "name": "Sourryère de Souillac, José"
+        },
+        {
+          "canonical": "spain comision arqueologica ejecutiva",
+          "name": "Spain. Comisión arqueológica ejecutiva"
+        },
+        {
+          "canonical": "russell stendal",
+          "name": "Stendal, Russell"
+        },
+        {
+          "canonical": "robert louis stevenson",
+          "name": "Stevenson, Robert Louis"
+        },
+        {
+          "canonical": "felix stoerk",
+          "name": "Stoerk, Felix"
+        },
+        {
+          "canonical": "hermann sudermann",
+          "name": "Sudermann, Hermann"
+        },
+        {
+          "canonical": "eugene sue",
+          "name": "Sue, Eugène"
+        },
+        {
+          "canonical": "gustavo sanchez galarraga",
+          "name": "Sánchez Galarraga, Gustavo"
+        },
+        {
+          "canonical": "antonio sanchez moguel",
+          "name": "Sánchez Moguel, Antonio"
+        },
+        {
+          "canonical": "francisco sanchez",
+          "name": "Sánchez, Francisco"
+        },
+        {
+          "canonical": "manuel tamayo y baus",
+          "name": "Tamayo y Baus, Manuel"
+        },
+        {
+          "canonical": "andre theuriet",
+          "name": "Theuriet, André"
+        },
+        {
+          "canonical": "thucydides",
+          "name": "Thucydides"
+        },
+        {
+          "canonical": "c a toledano",
+          "name": "Toledano, C. A."
+        },
+        {
+          "canonical": "jose maria queipo de llano ruiz de saravia conde de toreno",
+          "name": "Toreno, José María Queipo de Llano Ruiz de Saravia, Conde de"
+        },
+        {
+          "canonical": "george fyler townsend",
+          "name": "Townsend, George Fyler"
+        },
+        {
+          "canonical": "sebastian undiano y gastelu",
+          "name": "Undiano y Gastelu, Sebastian"
+        },
+        {
+          "canonical": "united states army corps of engineers manhattan district",
+          "name": "United States. Army. Corps of Engineers. Manhattan District"
+        },
+        {
+          "canonical": "united states commission to the madrid exposition",
+          "name": "United States. Commission to the Madrid Exposition (1892- )"
+        },
+        {
+          "canonical": "luis g urbina",
+          "name": "Urbina, Luis G. (Luis Gonzaga)"
+        },
+        {
+          "canonical": "francisco del valle atiles",
+          "name": "Valle Atiles, Francisco del"
+        },
+        {
+          "canonical": "florencio varela",
+          "name": "Varela, Florencio"
+        },
+        {
+          "canonical": "various",
+          "name": "Various"
+        },
+        {
+          "canonical": "pierre veber",
+          "name": "Veber, Pierre"
+        },
+        {
+          "canonical": "enrique de vedia",
+          "name": "Vedia, Enrique de"
+        },
+        {
+          "canonical": "garcilaso de la vega",
+          "name": "Vega, Garcilaso de la"
+        },
+        {
+          "canonical": "lope de vega",
+          "name": "Vega, Lope de"
+        },
+        {
+          "canonical": "francisco verdugo",
+          "name": "Verdugo, Francisco"
+        },
+        {
+          "canonical": "giovanni verga",
+          "name": "Verga, Giovanni"
+        },
+        {
+          "canonical": "javier de viana",
+          "name": "Viana, Javier de"
+        },
+        {
+          "canonical": "francisco de viedma",
+          "name": "Viedma, Francisco de"
+        },
+        {
+          "canonical": "w r de villa urrutia",
+          "name": "Villa-Urrutia, W. R. de"
+        },
+        {
+          "canonical": "basilio villarino",
+          "name": "Villarino, Basilio"
+        },
+        {
+          "canonical": "antonio villarragut y aquiriano",
+          "name": "Villarragut y Aquiriano, Antonio"
+        },
+        {
+          "canonical": "carlos villarragut y estevan",
+          "name": "Villarragut y Estevan, Carlos"
+        },
+        {
+          "canonical": "cirilo villaverde",
+          "name": "Villaverde, Cirilo"
+        },
+        {
+          "canonical": "alonso de villegas",
+          "name": "Villegas, Alonso de"
+        },
+        {
+          "canonical": "virgil",
+          "name": "Virgil"
+        },
+        {
+          "canonical": "voltaire",
+          "name": "Voltaire"
+        },
+        {
+          "canonical": "luis velez de guevara",
+          "name": "Vélez de Guevara, Luis"
+        },
+        {
+          "canonical": "hugo wast",
+          "name": "Wast, Hugo"
+        },
+        {
+          "canonical": "lawrence a wilkins",
+          "name": "Wilkins, Lawrence A. (Lawrence Augustus)"
+        },
+        {
+          "canonical": "xenophon",
+          "name": "Xenophon"
+        },
+        {
+          "canonical": "eduardo zamacois",
+          "name": "Zamacois, Eduardo"
+        },
+        {
+          "canonical": "maria de zayas y sotomayor",
+          "name": "Zayas y Sotomayor, María de"
+        },
+        {
+          "canonical": "joaquin alvarez quintero",
+          "name": "Álvarez Quintero, Joaquín"
+        },
+        {
+          "canonical": "serafin alvarez quintero",
+          "name": "Álvarez Quintero, Serafín"
+        }
+      ],
+      "prior_exposure": [
+        {
+          "canonical": "pedro antonio de alarcon",
+          "name": "Alarcón, Pedro Antonio de"
+        },
+        {
+          "canonical": "leopoldo alas",
+          "name": "Alas, Leopoldo"
+        },
+        {
+          "canonical": "pio baroja",
+          "name": "Baroja, Pío"
+        },
+        {
+          "canonical": "vicente blasco ibanez",
+          "name": "Blasco Ibáñez, Vicente"
+        },
+        {
+          "canonical": "carlos o bunge",
+          "name": "Bunge, Carlos O. (Carlos Octavio)"
+        },
+        {
+          "canonical": "gustavo adolfo becquer",
+          "name": "Bécquer, Gustavo Adolfo"
+        },
+        {
+          "canonical": "fernan caballero",
+          "name": "Caballero, Fernán"
+        },
+        {
+          "canonical": "miguel cane",
+          "name": "Cané, Miguel"
+        },
+        {
+          "canonical": "miguel de cervantes",
+          "name": "Cervantes Saavedra, Miguel de"
+        },
+        {
+          "canonical": "luis coloma",
+          "name": "Coloma, Luis"
+        },
+        {
+          "canonical": "ruben dario",
+          "name": "Darío, Rubén"
+        },
+        {
+          "canonical": "rafael delgado",
+          "name": "Delgado, Rafael"
+        },
+        {
+          "canonical": "concha espina",
+          "name": "Espina, Concha"
+        },
+        {
+          "canonical": "serafin estebanez calderon",
+          "name": "Estébanez Calderón, Serafín"
+        },
+        {
+          "canonical": "manuel fernandez y gonzalez",
+          "name": "Fernández y González, Manuel"
+        },
+        {
+          "canonical": "wenceslao fernandez florez",
+          "name": "Fernández-Flórez, Wenceslao"
+        },
+        {
+          "canonical": "enrique gil y carrasco",
+          "name": "Gil y Carrasco, Enrique"
+        },
+        {
+          "canonical": "antonio de hoyos y vinent",
+          "name": "Hoyos y Vinent, Antonio de"
+        },
+        {
+          "canonical": "juan ramon jimenez",
+          "name": "Jiménez, Juan Ramón"
+        },
+        {
+          "canonical": "mariano jose de larra",
+          "name": "Larra, Mariano José de"
+        },
+        {
+          "canonical": "enrique larreta",
+          "name": "Larreta, Enrique"
+        },
+        {
+          "canonical": "jose victorino lastarria",
+          "name": "Lastarria, José Victorino"
+        },
+        {
+          "canonical": "lucio vicente lopez",
+          "name": "López, Lucio Vicente"
+        },
+        {
+          "canonical": "jose marti",
+          "name": "Martí, José"
+        },
+        {
+          "canonical": "carlos maria ocantos",
+          "name": "Ocantos, Carlos María"
+        },
+        {
+          "canonical": "ramon ortega y frias",
+          "name": "Ortega y Frías, Ramón"
+        },
+        {
+          "canonical": "armando palacio valdes",
+          "name": "Palacio Valdés, Armando"
+        },
+        {
+          "canonical": "ricardo palma",
+          "name": "Palma, Ricardo"
+        },
+        {
+          "canonical": "emilia pardo bazan",
+          "name": "Pardo Bazán, Emilia, condesa de"
+        },
+        {
+          "canonical": "jose maria de pereda",
+          "name": "Pereda, José María de"
+        },
+        {
+          "canonical": "jacinto octavio picon",
+          "name": "Picón, Jacinto Octavio"
+        },
+        {
+          "canonical": "enrique perez escrich",
+          "name": "Pérez Escrich, Enrique"
+        },
+        {
+          "canonical": "benito perez galdos",
+          "name": "Pérez Galdós, Benito"
+        },
+        {
+          "canonical": "francisco de quevedo",
+          "name": "Quevedo, Francisco de"
+        },
+        {
+          "canonical": "horacio quiroga",
+          "name": "Quiroga, Horacio"
+        },
+        {
+          "canonical": "felipe trigo",
+          "name": "Trigo, Felipe"
+        },
+        {
+          "canonical": "miguel de unamuno",
+          "name": "Unamuno, Miguel de"
+        },
+        {
+          "canonical": "juan valera",
+          "name": "Valera, Juan"
+        },
+        {
+          "canonical": "ramon del valle inclan",
+          "name": "Valle-Inclán, Ramón del"
+        },
+        {
+          "canonical": "jose zorrilla",
+          "name": "Zorrilla, José"
+        }
+      ],
+      "snapshot_file": "../../../corpus-scout/gutendex-es-all.json",
+      "snapshot_sha256": "1a77aef20110ab5188f3c561c25712ccf12680b6a3dc7a4fc10676b4524f005a",
+      "total_identities_raw": 429
+    }
+  }
+}

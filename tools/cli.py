@@ -201,7 +201,8 @@ def _construir_parser() -> argparse.ArgumentParser:
         description=(
             "Índice heurístico explicable (0-100) de señales de escritura"
             " típica de LLM en texto español. NO es una probabilidad ni una"
-            " prueba de autoría: usar solo como pre-filtro."
+            " prueba de autoría: usar solo como pre-filtro con revisión humana."
+            " La evaluación externa de F4 es limitada y registró falsos positivos."
         ),
     )
     sub = parser.add_subparsers(dest="comando", required=True)

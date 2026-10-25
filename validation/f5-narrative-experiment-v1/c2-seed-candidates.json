@@ -1,0 +1,368 @@
+{
+  "audited_prompt_ids_sha256": "2c415ea68506d52eacc51a42fe8316b9874428576a80f2a564c8d7f11f69bf26",
+  "candidate_rows": [
+    {
+      "checkpoint": "arcee-ai/Arcee-Blitz-AWQ",
+      "clean_bytes": 3453,
+      "family": "mistral",
+      "generation_type": "scene_continuation",
+      "id": "ai-09174ac444496a9ebf75",
+      "path": "development/texts/ai-09174ac444496a9ebf75.txt",
+      "priority": "0df1bca2eea0f05e8ebf369f8354dcdd8c8e4e78f9fc4f0f102173ad7d21ae32",
+      "prompt_id": "p3b19a6ab39",
+      "sha256": "5a3f9f69e92ab5898e3b928ed1143f662a049f2a43c4cf4a588db7e89659e1cf"
+    },
+    {
+      "checkpoint": "arcee-ai/Arcee-Blitz-AWQ",
+      "clean_bytes": 3653,
+      "family": "mistral",
+      "generation_type": "scene_continuation",
+      "id": "ai-590190ea2dd64d5315f8",
+      "path": "development/texts/ai-590190ea2dd64d5315f8.txt",
+      "priority": "102985407fe12aebe4da18907f961be3d1300617d0d728ec309fdab1a99e63ca",
+      "prompt_id": "pf578916ef8",
+      "sha256": "2bde295d02838932e055840a72d5399c5a04f4facc584611da97d7be3acec2ef"
+    },
+    {
+      "checkpoint": "arcee-ai/Arcee-Blitz-AWQ",
+      "clean_bytes": 2836,
+      "family": "mistral",
+      "generation_type": "scene_continuation",
+      "id": "ai-b6dab838feb0b2cd4306",
+      "path": "development/texts/ai-b6dab838feb0b2cd4306.txt",
+      "priority": "162aa0cd2435f9d9fac9597b06c2b88575bd19672eed272e22cb698eb6964c7a",
+      "prompt_id": "p7baaacb53f",
+      "sha256": "e0a455508d9bb0969f6c0a60fea7ff481d1269380c9720fe451c571009c7a031"
+    },
+    {
+      "checkpoint": "casperhansen/mistral-nemo-instruct-2407-awq",
+      "clean_bytes": 4790,
+      "family": "mistral",
+      "generation_type": "scene_continuation",
+      "id": "ai-5142ba3c0fe2e905f017",
+      "path": "development/texts/ai-5142ba3c0fe2e905f017.txt",
+      "priority": "2500352590d66db892fa450601113ff0135f13663d5f1790443c0838741a12fc",
+      "prompt_id": "p2e3ff981ab",
+      "sha256": "c90d06c2d0bd870f682e639cafca5f3ffaaf9ec10920dfe17099a109b1d07b3d"
+    },
+    {
+      "checkpoint": "casperhansen/mistral-nemo-instruct-2407-awq",
+      "clean_bytes": 3217,
+      "family": "mistral",
+      "generation_type": "scene_continuation",
+      "id": "ai-95872f0ece613546426f",
+      "path": "development/texts/ai-95872f0ece613546426f.txt",
+      "priority": "926678aea5e596ebd890495d64c493a6ede88b6e0c7d79bc83923cc36782d50a",
+      "prompt_id": "p5bd23985e7",
+      "sha256": "9132d8bd8f067cf4fa3640a54222679948969b468f08d188e1facfd003bfbd87"
+    },
+    {
+      "checkpoint": "casperhansen/mistral-nemo-instruct-2407-awq",
+      "clean_bytes": 4205,
+      "family": "mistral",
+      "generation_type": "scene_continuation",
+      "id": "ai-590f42933be9f48c3b1e",
+      "path": "development/texts/ai-590f42933be9f48c3b1e.txt",
+      "priority": "a8a9cd3e296a6f58b896b6e7e4e4afc9cd9eb8773c7e35f06498ffd68372f181",
+      "prompt_id": "p58e4704302",
+      "sha256": "bf7cb5ac4acb5dc7a13f644ae59a0f6d620d0d3bd6b7fd4e2568d70622efcba6"
+    },
+    {
+      "checkpoint": "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ",
+      "clean_bytes": 3120,
+      "family": "gemma2",
+      "generation_type": "scene_continuation",
+      "id": "ai-af618ad6d0285b6b0e9a",
+      "path": "development/texts/ai-af618ad6d0285b6b0e9a.txt",
+      "priority": "0a9b29f9f72222881ee12aa79e898423920aef5fd77be564813bed5dec3df8f3",
+      "prompt_id": "pcabd70149b",
+      "sha256": "d08a8baf82ae68a5ad31bc7231b40e70c3c2eb1b6ddd2a2dcccac276b8db672b"
+    },
+    {
+      "checkpoint": "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ",
+      "clean_bytes": 3004,
+      "family": "gemma2",
+      "generation_type": "scene_continuation",
+      "id": "ai-eb0cc7a0b1cb384fc5b8",
+      "path": "development/texts/ai-eb0cc7a0b1cb384fc5b8.txt",
+      "priority": "0e10991e69e1b1c7753007ca2115783a5e493c7bca18857fbed0271a00ccf568",
+      "prompt_id": "p6540bb273a",
+      "sha256": "a48aa2d040333049284d6e19dd5c83b04099a7207fd33eb2f49bd97ecbc00cbf"
+    },
+    {
+      "checkpoint": "harborwater/Gemma-2-9B-It-SPPO-Iter3-AWQ",
+      "clean_bytes": 3877,
+      "family": "gemma2",
+      "generation_type": "scene_continuation",
+      "id": "ai-f150b7efab7398e3c5a5",
+      "path": "development/texts/ai-f150b7efab7398e3c5a5.txt",
+      "priority": "1de8153f968d1cf8d5ce0c2edc3dded2b5a8a1c4219701b0570d5e449011b194",
+      "prompt_id": "p4d9e81639d",
+      "sha256": "028e35859d9895909af1ac11b3bc5ebd7a9d9815deb97761abdcc25f64a3317e"
+    },
+    {
+      "checkpoint": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+      "clean_bytes": 3314,
+      "family": "llama3.1",
+      "generation_type": "scene_continuation",
+      "id": "ai-1d4625c76cab419249a9",
+      "path": "development/texts/ai-1d4625c76cab419249a9.txt",
+      "priority": "0ad1f38b7b0af1c9658263e65fc494c7e7cc373721222abe6b855d7157ef68f1",
+      "prompt_id": "p5776ca4433",
+      "sha256": "929a9ef342fcdb37643e9b154d95685c768bf91b6545da1b01ac7c1073c07b33"
+    },
+    {
+      "checkpoint": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+      "clean_bytes": 3805,
+      "family": "llama3.1",
+      "generation_type": "scene_continuation",
+      "id": "ai-54132565aba69cab0962",
+      "path": "development/texts/ai-54132565aba69cab0962.txt",
+      "priority": "0b2d66d7d47fc9cbba8ecf35c1e5c23450e2c741e25323cafd39de20fd082958",
+      "prompt_id": "p8acd747bfe",
+      "sha256": "d1a6418cd8aba7a1e4df4f095abfb89a483f50848f791a625726f5235adc1732"
+    },
+    {
+      "checkpoint": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+      "clean_bytes": 2457,
+      "family": "llama3.1",
+      "generation_type": "scene_continuation",
+      "id": "ai-a4d565d9e8bab2a18d79",
+      "path": "development/texts/ai-a4d565d9e8bab2a18d79.txt",
+      "priority": "13544157fa1c1573df2cdfcf06499c2ae81f16983ccd28ed871deb1c10a3037e",
+      "prompt_id": "p24fe2b6a5f",
+      "sha256": "c5e0357a88cf1ea8b99bf6bac72fbb931ac2956b6c38669f1c9da2980f823294"
+    },
+    {
+      "checkpoint": "solidrust/Gemma-2-Ataraxy-9B-AWQ",
+      "clean_bytes": 4807,
+      "family": "gemma2",
+      "generation_type": "scene_continuation",
+      "id": "ai-7e7d575287fdef453a33",
+      "path": "development/texts/ai-7e7d575287fdef453a33.txt",
+      "priority": "0a72fb206ef6f05064a5f31263a661819672c2957b42a1f5c5665147f42ee360",
+      "prompt_id": "p3f93281497",
+      "sha256": "9889089894d6d3e48e9313d93cb81b219b90158cf67537ef9155d7ead7030d01"
+    },
+    {
+      "checkpoint": "solidrust/Gemma-2-Ataraxy-9B-AWQ",
+      "clean_bytes": 4567,
+      "family": "gemma2",
+      "generation_type": "scene_continuation",
+      "id": "ai-e047aca6a0184f5630a7",
+      "path": "development/texts/ai-e047aca6a0184f5630a7.txt",
+      "priority": "0bf0265742bc51ac26c17ae2c6dab73e8f9d8bdbe03cf7c13f610334afe050b2",
+      "prompt_id": "p256f205a1e",
+      "sha256": "6939b6ed86f9ae8bd901a4fca00d44286c239e037ed68a6c58fc99477ac055a6"
+    },
+    {
+      "checkpoint": "solidrust/Gemma-2-Ataraxy-9B-AWQ",
+      "clean_bytes": 3243,
+      "family": "gemma2",
+      "generation_type": "scene_continuation",
+      "id": "ai-886ad426a8899eb99671",
+      "path": "development/texts/ai-886ad426a8899eb99671.txt",
+      "priority": "0fbcd4106e87a356b3de9ab2114e95772c613dfa6916cdca7fa122c4bffd15ea",
+      "prompt_id": "p1453e77ca1",
+      "sha256": "d4104a4566b501da52a47ba0de307121e854750f1c2efcb1b65d0138e2b9feb4"
+    },
+    {
+      "checkpoint": "solidrust/Hermes-3-Llama-3.1-8B-AWQ",
+      "clean_bytes": 4368,
+      "family": "llama3.1",
+      "generation_type": "scene_continuation",
+      "id": "ai-43ddca0b6e0d6eea38b1",
+      "path": "development/texts/ai-43ddca0b6e0d6eea38b1.txt",
+      "priority": "0ce9074154f090e0a70d6e943fcbe59b097fb15597adc97f1bb05c503b511400",
+      "prompt_id": "p8f6d973ca7",
+      "sha256": "2ac107470a665104dbe8cf12c317cba90048b42afa93249096ad5bdcf2b43747"
+    },
+    {
+      "checkpoint": "solidrust/Hermes-3-Llama-3.1-8B-AWQ",
+      "clean_bytes": 2508,
+      "family": "llama3.1",
+      "generation_type": "scene_continuation",
+      "id": "ai-e05206e270d0690926d4",
+      "path": "development/texts/ai-e05206e270d0690926d4.txt",
+      "priority": "0f7f88591e1ccb04be6ce7b4a90f70f42b946e6192ceb94b575c5b0109c5d952",
+      "prompt_id": "p9c78097581",
+      "sha256": "d97b08c5a384817be788b20f7a19302dcfed06603d5ab39a8f6a92af50bcc5ea"
+    },
+    {
+      "checkpoint": "solidrust/Hermes-3-Llama-3.1-8B-AWQ",
+      "clean_bytes": 2423,
+      "family": "llama3.1",
+      "generation_type": "scene_continuation",
+      "id": "ai-9a37b3a75d14ded243ad",
+      "path": "development/texts/ai-9a37b3a75d14ded243ad.txt",
+      "priority": "0f99b2dcb15b0c052be063c3d35a63ab75cfa909955f7a29b981a4c24dcaa68d",
+      "prompt_id": "pc0febf6a5f",
+      "sha256": "f1ed2fa4b27d8a43cc5c96aaa344d3aa164e707e60d14c5ba0ba5935323431a8"
+    },
+    {
+      "checkpoint": "solidrust/gemma-2-9b-it-AWQ",
+      "clean_bytes": 2888,
+      "family": "gemma2",
+      "generation_type": "scene_continuation",
+      "id": "ai-f4bb242e54f046fe6390",
+      "path": "development/texts/ai-f4bb242e54f046fe6390.txt",
+      "priority": "09301c3e2caa1d6165c164eb2998349664d3c2b6f4f6144816df1ba57809ce6e",
+      "prompt_id": "pdd7b4d42e5",
+      "sha256": "3a2e9c222b4af84dbffd6b082e457e6271128b78d4e45b94f3bf6b6b5b9f620a"
+    },
+    {
+      "checkpoint": "solidrust/gemma-2-9b-it-AWQ",
+      "clean_bytes": 2404,
+      "family": "gemma2",
+      "generation_type": "scene_continuation",
+      "id": "ai-c7fa9d55eefd1556c372",
+      "path": "development/texts/ai-c7fa9d55eefd1556c372.txt",
+      "priority": "09dfc6b0c1476fb9901377cde52f4b89b42926768622dfbd00b02692beea020b",
+      "prompt_id": "p75157f1e88",
+      "sha256": "b4a398ac10b5717371f007823785c0e5091ae79f8084f89ebefa1db222c09805"
+    },
+    {
+      "checkpoint": "solidrust/gemma-2-9b-it-AWQ",
+      "clean_bytes": 3822,
+      "family": "gemma2",
+      "generation_type": "scene_continuation",
+      "id": "ai-7ae2f91b7ea256ac7328",
+      "path": "development/texts/ai-7ae2f91b7ea256ac7328.txt",
+      "priority": "12a264b53877e3b114ec0327185f110976f272d15fcfc1975872becb4bee03fd",
+      "prompt_id": "p5b19cfaab9",
+      "sha256": "aeb462d17a89993c8a9146d2e18333f6f3eee539f70f679030cbf703e77e9f7d"
+    },
+    {
+      "checkpoint": "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ",
+      "clean_bytes": 4787,
+      "family": "mistral",
+      "generation_type": "scene_continuation",
+      "id": "ai-6ff1e1d6d1de2cdda7fa",
+      "path": "development/texts/ai-6ff1e1d6d1de2cdda7fa.txt",
+      "priority": "268eca3328f7c457e2b219286691f4ac07706e172e9baa7cf2d4579375a013f9",
+      "prompt_id": "pd8b2b7360f",
+      "sha256": "686f137770c0ab74c6a9171e4843877f640e8e37f542fc2a198865c1ec77bfe0"
+    },
+    {
+      "checkpoint": "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ",
+      "clean_bytes": 3366,
+      "family": "mistral",
+      "generation_type": "scene_continuation",
+      "id": "ai-23f3f09bfde8e787354a",
+      "path": "development/texts/ai-23f3f09bfde8e787354a.txt",
+      "priority": "330e35df92c955735c3542b28484ef845f286a86e84255a0e044af5c6dec3f53",
+      "prompt_id": "p4e1e550610",
+      "sha256": "cf838dff074337587a209d6c0f94eb7459653c2cc97951187cafed5e3cfa503b"
+    },
+    {
+      "checkpoint": "stelterlab/Mistral-Small-24B-Instruct-2501-AWQ",
+      "clean_bytes": 4474,
+      "family": "mistral",
+      "generation_type": "scene_continuation",
+      "id": "ai-872a322d9b1a21dd5337",
+      "path": "development/texts/ai-872a322d9b1a21dd5337.txt",
+      "priority": "3784965f63702eebebfd7964609683296d952d73d831d915fb9ca8fa07cbbc15",
+      "prompt_id": "pd5c97508a1",
+      "sha256": "8a9f6509184c58a0cbd9704137cac7dbb6b0e91d00417c18f24fc0c5dcaa1764"
+    }
+  ],
+  "human_seed_rows": [
+    {
+      "author": "Francisco de Quevedo",
+      "clean_bytes": 3200,
+      "id": "h03",
+      "license": "dominio publico (redistribucion libre)",
+      "path": "corpus/human/h03.txt",
+      "sha256": "fe5e81f666c3bf997714647d4f55edb6efef895e390b5ea04bcb0f8f389953ea",
+      "source": "Project Gutenberg (pg32315)",
+      "work": "La vida del Buscon"
+    },
+    {
+      "author": "Ricardo Palma",
+      "clean_bytes": 3308,
+      "id": "h04",
+      "license": "dominio publico (redistribucion libre)",
+      "path": "corpus/human/h04.txt",
+      "sha256": "d534dfcf6d69a34a645d7466ace177d5287ad9450050efa2d0920035abf5507f",
+      "source": "Project Gutenberg (pg21282)",
+      "work": "Tradiciones peruanas"
+    },
+    {
+      "author": "Leopoldo Alas (Clarín)",
+      "clean_bytes": 3154,
+      "id": "h08",
+      "license": "dominio publico (redistribucion libre)",
+      "path": "corpus/human/h08.txt",
+      "sha256": "0a553201af81330c5d54bd1cc18cc3eedf5f6db76e9be0a8007e1945faabef54",
+      "source": "Project Gutenberg (pg17073)",
+      "work": "La Regenta"
+    },
+    {
+      "author": "P. A. de Alarcon",
+      "clean_bytes": 1445,
+      "id": "h11",
+      "license": "dominio publico (redistribucion libre)",
+      "path": "corpus/human/h11.txt",
+      "sha256": "ed03f43a567844a15d0185d1685ac0cc2d9ce4d379390de869ce1ed612ceaec7",
+      "source": "Project Gutenberg (pg15532)",
+      "work": "Novelas cortas"
+    },
+    {
+      "author": "J. M. de Pereda",
+      "clean_bytes": 3623,
+      "id": "h14",
+      "license": "dominio publico (redistribucion libre)",
+      "path": "corpus/human/h14.txt",
+      "sha256": "b8b7d0afb0990a629c18867246335dca4a137ee43e1514109c88198f5238153a",
+      "source": "Project Gutenberg (pg24127)",
+      "work": "Penas arriba"
+    },
+    {
+      "author": "J. Ruiz de Alarcon",
+      "clean_bytes": 1709,
+      "id": "h18",
+      "license": "dominio publico (redistribucion libre)",
+      "path": "corpus/human/h18.txt",
+      "sha256": "c71a1df10f874de7f9d7ffe9eedcd7f27356e7997b01eba708386006bbf75677",
+      "source": "Project Gutenberg (pg77445)",
+      "work": "Las paredes oyen"
+    },
+    {
+      "author": "Jose Zorrilla",
+      "clean_bytes": 4220,
+      "id": "h19",
+      "license": "dominio publico (redistribucion libre)",
+      "path": "corpus/human/h19.txt",
+      "sha256": "46045490feed705504616f93270dc6812b2d687608b5c62acce3ad1d9df9f71c",
+      "source": "Project Gutenberg (pg53294)",
+      "work": "Recuerdos del tiempo viejo"
+    },
+    {
+      "author": "P. de la Escosura",
+      "clean_bytes": 3165,
+      "id": "h20",
+      "license": "dominio publico (redistribucion libre)",
+      "path": "corpus/human/h20.txt",
+      "sha256": "feeb3ff8c5df98b575a2f39160854e07a8e6bf10287bcb9928d752b4544130dc",
+      "source": "Project Gutenberg (pg75133)",
+      "work": "El conde de Candespina"
+    }
+  ],
+  "manual_ai_labels_required_before_lock": 8,
+  "primary_length_clean_bytes": 1024,
+  "protocol": "f5-narrative-experiment-v1",
+  "selection_rule": "per checkpoint, stable SHA-256 rank; exclude audited IDs/prompts; require >=1280 clean UTF-8 bytes; review up to three candidates in rank order; no detector scores used",
+  "source_hashes": {
+    "current_seed_manifest": "69b87c326b3b2244224d04f89834fd8ac03229bd9bceb30480185b32d33201c1",
+    "development_ai_manifest": "2bd3fbf9e121fa3ebed26d77d7980bc7d05fd13cdeb4ab7c0657250d7ed578c5",
+    "development_human_manifest": "8dad22ab9735a6e860d7587b8f3810c1af130b7906731793915d634cfda67fdf",
+    "human_corpus_manifest": "01e2b08b2a9f8369c60c8b7207e3c2481f1500d7bb725758a7fe0add633a4473",
+    "manual-reviewed244.csv": "44b7e0fdfa05a3d583c173dec3399346718b1ad98947c8436a72fd83fd3cce8f",
+    "negative160-manual-reviewed.csv": "d4d6e861ab54ea68d3cc10339105337f5ea10a2c99fbd9be35a56d64be19d2ef"
+  },
+  "target_lengths_clean_bytes": [
+    512,
+    1024,
+    1280
+  ]
+}

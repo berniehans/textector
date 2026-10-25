@@ -27,4 +27,4 @@ jobs:
       - name: Construir wheel
         run: uv build --wheel
       - name: Wheel instalado fuera del checkout
-        run: uv run --python ${{ matrix.python }} python -B tests/verify_wheel.py dist/textector-0.3.0-py3-none-any.whl
+        run: uv run --python ${{ matrix.python }} python -B tests/verify_wheel.py dist/textector-0.3.1-py3-none-any.whl
