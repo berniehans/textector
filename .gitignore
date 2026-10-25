@@ -31,4 +31,7 @@ desktop.ini
 .idea/
 *.swp
 
+# Artefactos internos de proceso (planes/briefs del agente); no se publican
+.hermes/
+
 # NOTA: docs/, config/ y corpus/ NO se ignoran (contenido versionado).

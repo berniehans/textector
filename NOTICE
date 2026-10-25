@@ -35,3 +35,18 @@ obligación moral/legal de las licencias MIT de las fuentes.
    código, Brotli/numpy, su semilla EN (ai-generated.txt), ni la limpieza
    que borra tildes/ñ. En F2 las semillas son fixtures sintéticas
    deterministas (mecánica); las ES reales se construyen en F3.
+
+4) Corpus de noticias sintéticas en español — CC-BY-4.0 — Dataset Zenodo
+   DOI 10.5281/zenodo.19449815 (artículo de datos en MDPI *DATA* 11(2):29).
+   Uso: 10 piezas del split `corpus/news/b01..b10.txt` como clase IA no
+   narrativa. Se redistribuyen sin modificaciones de palabras bajo CC-BY-4.0;
+   la atribución se conserva en `corpus/manifest.csv` (columna `fuente`) y en
+   esta sección. Generadas con un pipeline SLM (RAG/no-RAG, temperaturas
+   1.0/0.75/0.5).
+
+5) Project Gutenberg — dominio público
+   Los textos de `corpus/human/h01..h20.txt` son extractos de obras en
+   dominio público descargadas del Proyecto Gutenberg (formato `pg<id>.txt`).
+   Se redistribuyen bajo dominio público; los identificadores de obra y
+   autor figuran en `corpus/manifest.csv`.
+

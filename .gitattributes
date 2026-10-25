@@ -1,0 +1,9 @@
+# Normalización de finales de línea (evita diffs ruidosos por CRLF en Windows)
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.txt text eol=lf
+*.csv text eol=lf
+uv.lock text eol=lf

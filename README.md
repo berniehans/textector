@@ -114,3 +114,17 @@ docs/                     # guía, arquitectura, checks, método, calibración, 
 
 Solo stdlib de Python 3.11. Gestión con uv (`pyproject.toml` + `uv.lock` +
 `.python-version`), pero uv no es dependencia en runtime.
+
+## Estado
+
+Experimental (`0.1.0`). Fases F1–F4 cerradas con suites verdes; calibración
+v1/v2 documentada **con sus límites**: el índice no generaliza (LOGO-CV
+TPR 0.04 / TNR 0.24) y se usa como **pre-filtro con abstención**, no como
+clasificador. El diagnóstico de dos ejes (`--diagnostico`) solo es concluyente
+en la categoría `plantilla_prosa_y_estructura`.
+
+## Licencia
+
+MIT — ver [`LICENSE`](LICENSE). Las ideas porteadas de proyectos MIT y los
+corpus de terceros se atribuyen en [`NOTICE`](NOTICE).
+
