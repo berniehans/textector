@@ -1,0 +1,34 @@
+{
+  "formato": 1,
+  "metodo_origen": "f3-semillas",
+  "separador": "\\n\\n",
+  "nota": "Subconjunto histórico congelado; no contiene todo TRAIN. Preservado sin cambiar bytes.",
+  "ia": {
+    "archivo": "seed_ia_es.txt",
+    "ids": [
+      "a01",
+      "a02",
+      "a03",
+      "a04",
+      "a06",
+      "a08",
+      "a10"
+    ],
+    "sha256": "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+    "bytes": 7476
+  },
+  "humana": {
+    "archivo": "seed_hum_es.txt",
+    "ids": [
+      "h01",
+      "h02",
+      "h05",
+      "h06",
+      "h07",
+      "h09",
+      "h10"
+    ],
+    "sha256": "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180",
+    "bytes": 28448
+  }
+}

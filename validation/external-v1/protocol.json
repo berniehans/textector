@@ -1,0 +1,58 @@
+{
+  "abstention": "inclusive [29,33]; insufficient also abstains",
+  "created_utc": "2026-10-25T17:08:20.660566+00:00",
+  "exclusions": "SHA exacto duplicado o solapamiento de 20 tokens contiguos con corpus/semillas anteriores; duplicados casi idénticos >=80% de shingles de 20 tokens del texto menor",
+  "frozen_detector": {
+    "config/cliches_es.yaml": "ecef4feda29531c3a4057170490837a34eab259029e1cc2b5edc5a274d739cc3",
+    "corpus/seeds/seed_hum_es.txt": "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180",
+    "corpus/seeds/seed_ia_es.txt": "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+    "tools/__init__.py": "2f1d201a176bdd4272515a4ddb4b484741f1cfd935df82324ec77a2259a6a4e3",
+    "tools/calibrate.py": "2dea26ae71ad66592a053dee4abcd7385bf7cbeabd688f865ee465bd6047c5d3",
+    "tools/checks/__init__.py": "3da20ff52d7a5338792c3a9c1c3fe599af3749a70d70a15bb34bd8abb2b02e51",
+    "tools/checks/burstiness.py": "8228dab6f8477c0388c31bb7fbe83f7c07cd79cad17c941036f9c07c6afc0f84",
+    "tools/checks/cliches_es.py": "7b6b2e650422248f52f1a8357239d80c53f87a82d890a6227a52f52976087d8f",
+    "tools/checks/compression.py": "ba753dbb2fbc0326e7f0b9f95c548fb7ffc8688025d090e85d704a9863e0b035",
+    "tools/checks/mattr.py": "3fe0cdbe01d759fc16fec65762b47d33e7d95fdf394eae8b9a13df8ee93c3205",
+    "tools/checks/registry.py": "6199e24cbbc15ad838e09959173b825131f539b0746367f128cb253251d79fb9",
+    "tools/checks/uniformity.py": "e61853314246646e9d041397705f76d9a3ebd71d4dc8964f6d29693013fb8b44",
+    "tools/cli.py": "fc570682b6b12cbcf71f2480ce50184f029bb6a15e77a8466ab508a5b48fe106",
+    "tools/decision.py": "ff027ed861713abe77b3df2eba2a508eae3277186ab825cf9a2912092d9b84fa",
+    "tools/diagnostico.py": "d289289d715ebd495359d50ecbab235a81ee8d150233c1b037badee561dcea1f",
+    "tools/estructura.py": "81087413ece38cf99b34c1ce0e9533d6d855588a988f10d32a6b91aad05d28d5",
+    "tools/lexicon.py": "0deaf7ce15b9c7928b70243865a65989dfa4839969d4c42b2442ef79d18896e4",
+    "tools/pipeline.py": "ce7820fba2cefab6d2867aa53ccba426b96bc34e720a28f4fe530a56c97e2167",
+    "tools/resources.py": "ecda18dfdeb724cacf5969f1c9c03fd4e30e4673402653ca87957df54cb6ada0",
+    "tools/scoring.py": "0aada3b7c4fdc423b56624ada31f22dd6521825b0665efe33f6a6a8370cf7e54",
+    "tools/textector_core.py": "cc786b4713373cce91b47c318a9e03870d4cb5402e472d5d5c26451bfdb0e569"
+  },
+  "human_rule": "9 obras/autores nuevos, commit antes de 2020; 10 fragmentos contiguos completos por obra, ~250 palabras, inicio en fracciones 0.15 + 0.07*i; sin selección por score o cobertura",
+  "iber_rule": "50 generaciones es/literary por código de modelo A..F; orden sha256(external-v1|id); un prompt por selección; sin editar formato ni filtrar por cobertura",
+  "id": "external-v1",
+  "licenses": {
+    "gitenberg": "Project Gutenberg: public domain in USA; retain source license",
+    "iber": "CC-BY-NC-ND-4.0 (dataset card); original records used locally, not redistributed",
+    "tiny": "Apache-2.0 (dataset card)"
+  },
+  "limitations": [
+    "humanos clásicos frente a relatos infantiles IA: géneros/épocas distintos",
+    "un shard/prefijo de TinyStories y un generador declarado; no muestra de todos los LLM",
+    "IberAuTexTification se publica aplanado; medir cobertura sin inventar párrafos",
+    "el nombre train del archivo del proveedor no significa entrenamiento de textector",
+    "los fragmentos de una misma obra/autor no son observaciones independientes"
+  ],
+  "margen": 2,
+  "method": "f4-integridad",
+  "new_data_role": "evaluación externa exclusivamente; ninguna pieza se añade a semillas o calibración",
+  "old_holdout": "no se puntúa",
+  "pre_score_quality_control": {
+    "book_18166": "novela desde última cabecera Amistad funesta; excluye larga introducción de Gonzalo de Quesada",
+    "book_52894": "solo prosa de Darío: desde EL REY BURGUÉS hasta PRIMAVERAL; excluye prólogo de Juan Valera y poesía",
+    "excluded_book_10825": "edición escolar con notas en inglés intercaladas; excluida antes de puntuar"
+  },
+  "source_shards": {
+    "iberautextification-train.tsv": "fedcbc7783b6c734a98e3a79086f1a5a3ec51658d78df77958f4b680536c7c3d",
+    "tiny-stories_01.prefix": "20494380825cd584ccb988a1b6e191faa042bf934ef63180c4c7eece235b297e"
+  },
+  "tiny_rule": "Primeros 1000 registros completos del prefijo de 4MiB de stories_01.json; 200 relatos por orden sha256(external-v1|id), sin filtro de score, párrafos o extensión",
+  "umbral": 31
+}

@@ -198,6 +198,8 @@ def check(
         }
         seed_ia_cruda = seed_ia
         seed_h_cruda = seed_hum
+    if not _limpiar(seed_ia_cruda) or not _limpiar(seed_h_cruda):
+        raise ValueError("las semillas deben contener tokens léxicos")
     sample = " ".join(tokenize(normalize_text(text)))
     n_bytes = len(sample.encode("utf-8"))
     coverage = min(1.0, n_bytes / MIN_BYTES_MUESTRA)

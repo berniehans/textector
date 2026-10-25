@@ -28,8 +28,9 @@ obligación moral/legal de las licencias MIT de las fuentes.
    entradas etiquetadas `aich::`, solo 3 tienen correspondencia verificable
    con un término del corpus; 8 no existen en él y 3 solo coinciden por
    parecido superficial. Por tanto la relación es INSPIRACIÓN TEMÁTICA, no
-   derivación entrada por entrada; el re-etiquetado fino queda como mejora
-   opcional (F8c). Los PESOS de cada frase son provisionales F2, no
+   derivación entrada por entrada; en f4 se renombraron todas esas etiquetas a
+   `inspiracion-tematica::`, manteniendo frases y pesos. El cotejo es histórico
+   y no se presenta como una verificación externa nueva. Los PESOS de cada frase son provisionales F2, no
    heredados del corpus, y no se recalibraron en F3 ni F6 (la calibración
    solo ajusta umbral y margen).
 

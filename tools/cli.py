@@ -30,19 +30,20 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from tools.checks import burstiness, cliches_es, compression, mattr, uniformity  # noqa: E402
+from tools.pipeline import MINIMO_CHECKS, puntuar as puntuar_pipeline  # noqa: E402
+from tools import f5 as f5_portable  # noqa: E402
+from tools.resources import CONFIG, SEED_IA, SEED_HUM  # noqa: E402
 from tools.checks.cliches_es import phrases_from_parsed  # noqa: E402
 from tools.diagnostico import diagnostico_hibrido  # noqa: E402
 from tools.estructura import eje_estructura  # noqa: E402
 from tools.lexicon import MarkerError, parse_yaml_min  # noqa: E402
-from tools.scoring import compute_indice  # noqa: E402
 from tools.textector_core import tokenize  # noqa: E402
 
-CONFIG_DEFECTO = ROOT / "config" / "cliches_es.yaml"
-SEED_IA_DEFECTO = ROOT / "corpus" / "seeds" / "seed_ia_es.txt"
-SEED_HUM_DEFECTO = ROOT / "corpus" / "seeds" / "seed_hum_es.txt"
+CONFIG_DEFECTO = CONFIG
+SEED_IA_DEFECTO = SEED_IA
+SEED_HUM_DEFECTO = SEED_HUM
 
-MINIMO_CONGELADO = 5  # los 5 checks del pipeline F2 congelado deben correr
+MINIMO_CONGELADO = MINIMO_CHECKS
 
 
 class ErrorCLI(Exception):
@@ -56,7 +57,10 @@ class ErrorCLI(Exception):
 def _leer_entrada(args: argparse.Namespace) -> str:
     """Texto crudo desde --archivo o --stdin. Errores: inexistente / vacia."""
     if getattr(args, "stdin", False):
-        texto = sys.stdin.read()
+        try:
+            texto = sys.stdin.read()
+        except (OSError, UnicodeError) as exc:
+            raise ErrorCLI("no se pudo leer stdin como texto") from exc
     else:
         path = Path(args.archivo)
         if not path.is_file():
@@ -69,7 +73,7 @@ def _leer_entrada(args: argparse.Namespace) -> str:
             raise ErrorCLI(f"no se pudo leer el archivo ({type(exc).__name__})") from exc
     if not texto.strip():
         raise ErrorCLI("entrada vacia: no hay texto que analizar")
-    return texto
+    return texto.replace("\r\n", "\n").replace("\r", "\n")
 
 
 def _cargar_lexicon(path: Path) -> list[Any]:
@@ -116,6 +120,8 @@ def _cargar_semillas(
                 f"semillas ({etiqueta}): archivo ilegible o no UTF-8 "
                 f"({type(exc).__name__}): {ruta}"
             ) from exc
+    if any(not tokenize(t) for t in textos):
+        raise ErrorCLI("semillas inválidas: se exige contenido léxico en ambas")
     return textos[0], textos[1]
 
 
@@ -128,22 +134,13 @@ def _puntuar(
     lexicon: list[Any],
     semillas: tuple[str, str],
 ) -> dict[str, Any]:
-    """Pipeline F2 congelado con el léxico completo y las semillas reales.
+    """Pipeline f4 compartido con el léxico completo y las semillas reales.
 
     ``compression`` recibe las semillas (seed_ia, seed_hum) cargadas una vez
     por proceso, igual que ``tools/calibrate.py:puntuar``: misma señal, mismo
     índice por pieza.
     """
-    seed_ia, seed_hum = semillas
-    return compute_indice(
-        {
-            "burstiness": burstiness.check(texto),
-            "mattr": mattr.check(texto),
-            "uniformity": uniformity.check(texto),
-            "cliches_es": cliches_es.check(texto, lexicon=lexicon),
-            "compression": compression.check(texto, seed_ia=seed_ia, seed_hum=seed_hum),
-        }
-    )
+    return puntuar_pipeline(texto, lexicon, semillas)
 
 
 # ---------------------------------------------------------------------------
@@ -151,10 +148,14 @@ def _puntuar(
 # ---------------------------------------------------------------------------
 
 def _resumen(informe: dict[str, Any]) -> str:
-    return (
+    base = (
         f"indice_llm={informe['indice_llm']} version={informe['version']} "
-        f"n_disponibles={informe['n_disponibles']}"
+        f"n_disponibles={informe['n_disponibles']} semillas={informe['semillas']}"
     )
+    if informe.get("version") == "f5-portable-v1":
+        return (base + f" predicho={informe['predicho']} umbral={informe['umbral']} "
+                f"banda_abstencion={informe['banda_abstencion']}")
+    return base
 
 
 def _detalle_check(nombre: str, r: dict[str, Any]) -> str:
@@ -168,6 +169,16 @@ def _detalle_check(nombre: str, r: dict[str, Any]) -> str:
 def _imprimir_humano(informe: dict[str, Any], detallado: bool) -> None:
     print(_resumen(informe))
     if not detallado:
+        return
+    if informe.get("version") == "f5-portable-v1":
+        for nombre, r in informe["checks_portables"].items():
+            print(f"{nombre}: q_bruto={informe['q_brutos'].get(nombre)} "
+                  f"q_efectivo={informe['q_efectivos'].get(nombre, informe['q_efectivos'].get('compression_positive_only'))} "
+                  f"contribucion={informe['contribuciones'].get(nombre, informe['contribuciones'].get('compression_positive_only'))}")
+        print("auxiliares fuera del índice: " + ", ".join(
+            informe["checks_auxiliares_fuera_del_indice"]))
+        if informe["checks_insuficientes"]:
+            print("insuficientes (F5 se abstiene): " + ", ".join(informe["checks_insuficientes"]))
         return
     for nombre, r in informe["resultado"].items():
         print(_detalle_check(nombre, r))
@@ -215,6 +226,10 @@ def _construir_parser() -> argparse.ArgumentParser:
         help="desglose por check (valor bruto, normalizado, peso, contribución, coverage)",
     )
     analyze.add_argument(
+        "--metodo", choices=("f4", "f5"), default="f4",
+        help="perfil a usar: f4 histórico (predeterminado) o f5 portable",
+    )
+    analyze.add_argument(
         "--diagnostico",
         action="store_true",
         help="diagnóstico de dos ejes (prosa vs estructura) con categoría y nota",
@@ -229,21 +244,25 @@ def main(argv: list[str] | None = None) -> int:
         texto = _leer_entrada(args)
         lexicon = _cargar_lexicon(args.config or CONFIG_DEFECTO)
         semillas = _cargar_semillas()  # carga ÚNICA por proceso
-        informe = _puntuar(texto, lexicon, semillas)
-        if (
-            informe["indice_llm"] is None
-            or informe["n_disponibles"] != MINIMO_CONGELADO
-        ):
-            raise ErrorCLI(
-                "texto muy corto: el pipeline congelado no alcanzó la cobertura "
-                "mínima para puntuar"
-            )
+        if args.metodo == "f5":
+            if args.diagnostico:
+                raise ErrorCLI("--diagnostico describe F4; F5 reporta sus auxiliares fuera del índice")
+            informe = f5_portable.puntuar(texto, lexicon, semillas)
+        else:
+            informe = _puntuar(texto, lexicon, semillas)
+            if (informe["indice_llm"] is None
+                    or informe["n_disponibles"] != MINIMO_CONGELADO):
+                raise ErrorCLI(
+                    "texto muy corto: el pipeline congelado no alcanzó la cobertura "
+                    "mínima para puntuar"
+                )
         informe = {**informe, "semillas": "reales-es"}
     except ErrorCLI as exc:
-        print(f"error: {exc}", file=sys.stderr)
+        mensaje = " ".join(str(exc).splitlines())
+        print(f"error: {mensaje}", file=sys.stderr)
         return 1
     diag = None
-    if getattr(args, "diagnostico", False):
+    if getattr(args, "diagnostico", False) and args.metodo == "f4":
         diag = diagnostico_hibrido(informe, eje_estructura(texto))
         informe = {**informe, "diagnostico": diag}
     if args.json:

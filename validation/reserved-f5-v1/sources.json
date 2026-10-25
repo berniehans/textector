@@ -1,0 +1,75 @@
+{
+  "books": [
+    {
+      "author": "D. Armando Palacio Valdés",
+      "book_id": "11529",
+      "encoding": "iso-8859-1",
+      "license": "Project Gutenberg; public domain in USA",
+      "raw_sha256": "e936131a635f1539dacf6b66fd1d5fead7c85eeeb5624445c55b84987fc513f5",
+      "source_date": "2018-10-20T04:01:45Z",
+      "url": "https://raw.githubusercontent.com/GITenberg/La-Espuma--13-Obras-completas-de-D.-Armando-Palacio-Vald-s-Tomo-7._11529/4a5e8ad02dc7db03519d999aac7f12746ffff4c4/11529-8.txt"
+    },
+    {
+      "author": "Rafael Delgado",
+      "book_id": "16082",
+      "encoding": "iso-8859-1",
+      "license": "Project Gutenberg; public domain in USA",
+      "raw_sha256": "86ff95632b5a3d7b7da586a9d8189f639deb355fe17d59b54632f8e30ff929a2",
+      "source_date": "2018-10-19T18:42:19Z",
+      "url": "https://raw.githubusercontent.com/GITenberg/Angelina-novela-mexicana-_16082/890d211ff67f718a141e7c228b2932544d1796e6/16082-8.txt"
+    },
+    {
+      "author": "D. Armando Palacio Valdés",
+      "book_id": "29831",
+      "encoding": "iso-8859-1",
+      "license": "Project Gutenberg; public domain in USA",
+      "raw_sha256": "a882c2eb69e6a054a78e6d1a7631502e2295be5cc873cb0e73e2ae8154390d54",
+      "source_date": "2018-10-18T03:41:38Z",
+      "url": "https://raw.githubusercontent.com/GITenberg/Riverita_29831/e86fc86b0f964b5d3865b5c0b8ccd117c42f3073/29831-8.txt"
+    },
+    {
+      "author": "Concha Espina",
+      "book_id": "44529",
+      "encoding": "iso-8859-1",
+      "license": "Project Gutenberg; public domain in USA",
+      "raw_sha256": "3a8521b6a84f80e5c4bf538ccab689cbb41c33fef86849d95030142ed286e7ab",
+      "source_date": "2018-10-08T15:28:56Z",
+      "url": "https://raw.githubusercontent.com/GITenberg/Dulce-Nombre_44529/a86dd6e42f790c5bca70c96b6364f9f01875f64a/44529-8.txt"
+    },
+    {
+      "author": "Felipe Trigo",
+      "book_id": "46000",
+      "encoding": "iso-8859-1",
+      "license": "Project Gutenberg; public domain in USA",
+      "raw_sha256": "2b7176bbc7c848658ac09fe088c348ae52cc2a958b3a25c3bbc415aa12776d3b",
+      "source_date": "2018-10-06T18:20:20Z",
+      "url": "https://raw.githubusercontent.com/GITenberg/Cuentos-ingenuos_46000/b6607b23b898fd51a8c89572f61d781fe7d02846/46000-8.txt"
+    },
+    {
+      "author": "Concha Espina",
+      "book_id": "51724",
+      "encoding": "utf-8-sig",
+      "license": "Project Gutenberg; public domain in USA",
+      "raw_sha256": "b6b69b93238897a66b00cde91ac65c94075c576a9b4e952092326be8fffd5c32",
+      "source_date": "2018-09-16T21:24:45Z",
+      "url": "https://raw.githubusercontent.com/GITenberg/La-Esfinge-Maragata-Novela_51724/f35e21d42b1b9df42bff1a2d261053ed90406266/51724-0.txt"
+    }
+  ],
+  "created_utc": "2026-10-25T18:44:03.165080+00:00",
+  "iber": {
+    "license": "CC-BY-NC-ND-4.0",
+    "path": "data/subtask_1/train.tsv",
+    "raw_sha256": "fedcbc7783b6c734a98e3a79086f1a5a3ec51658d78df77958f4b680536c7c3d",
+    "redistribution": "No se incluyen los textos originales en el repositorio.",
+    "revision": "5c1c380eb27b7a73bb75ee6239ff25db10c144ae",
+    "url": "https://huggingface.co/datasets/Genaios/iberautextification/resolve/5c1c380eb27b7a73bb75ee6239ff25db10c144ae/data/subtask_1/train.tsv"
+  },
+  "tiny": {
+    "license": "Apache-2.0",
+    "path": "stories_02.json",
+    "prefix_bytes": 4194304,
+    "prefix_sha256": "a08bad53ebe80f8c62ee3ed460cf9aa0348832f6fe12193cb644b005cee6a8e6",
+    "revision": "785db5c10f23ba13893cbe692943d656170dadb8",
+    "url": "https://huggingface.co/datasets/robrenaud/multilingual_tinystories/resolve/785db5c10f23ba13893cbe692943d656170dadb8/stories_02.json"
+  }
+}

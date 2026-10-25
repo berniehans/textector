@@ -1,0 +1,171 @@
+{
+  "books": [
+    {
+      "book_id": "49836",
+      "repo": "GITenberg/Niebla-Nivola_49836",
+      "commit": "b669cb60d852db11157f35fa3d7a81a55e44d4da",
+      "commit_date": "2018-10-06T04:09:16Z",
+      "path": "49836-0.txt",
+      "url": "https://raw.githubusercontent.com/GITenberg/Niebla-Nivola_49836/b669cb60d852db11157f35fa3d7a81a55e44d4da/49836-0.txt",
+      "catalog_url": "https://www.gutenberg.org/ebooks/49836",
+      "author": "Miguel de Unamuno",
+      "title": "Niebla",
+      "encoding": "utf-8-sig",
+      "raw_sha256": "b17870dc7639888cf9cb12700a907c1274c5586dc744b3ff4fd9f20c6ad0d95a",
+      "license": "Project Gutenberg; public domain in USA",
+      "content_start": 713,
+      "content_end": 320694
+    },
+    {
+      "book_id": "13507",
+      "repo": "GITenberg/Cuentos-de-Amor-de-Locura-y-de-Muerte_13507",
+      "commit": "50c370e17fd68100aeb11997169f05d925e8628c",
+      "commit_date": "2018-10-20T07:59:40Z",
+      "path": "13507-8.txt",
+      "url": "https://raw.githubusercontent.com/GITenberg/Cuentos-de-Amor-de-Locura-y-de-Muerte_13507/50c370e17fd68100aeb11997169f05d925e8628c/13507-8.txt",
+      "catalog_url": "https://www.gutenberg.org/ebooks/13507",
+      "author": "Horacio Quiroga",
+      "title": "Cuentos de Amor de Locura y de Muerte",
+      "encoding": "iso-8859-1",
+      "raw_sha256": "0b363864135effd35454dcc88ac2446a2f9f19f7498e7180c84bff919ec37f49",
+      "license": "Project Gutenberg; public domain in USA",
+      "content_start": 610,
+      "content_end": 294289
+    },
+    {
+      "book_id": "43017",
+      "repo": "GITenberg/Mala-Hierba_43017",
+      "commit": "fc9d3afd65f18ab9dded48b0b4d13583049377e3",
+      "commit_date": "2018-10-08T16:59:26Z",
+      "path": "43017-8.txt",
+      "url": "https://raw.githubusercontent.com/GITenberg/Mala-Hierba_43017/fc9d3afd65f18ab9dded48b0b4d13583049377e3/43017-8.txt",
+      "catalog_url": "https://www.gutenberg.org/ebooks/43017",
+      "author": "Pío Baroja",
+      "title": "Mala Hierba",
+      "encoding": "iso-8859-1",
+      "raw_sha256": "18794d544717361803d4dc7a02ee8416796575023746462f6ecd21676bad823d",
+      "license": "Project Gutenberg; public domain in USA",
+      "content_start": 506,
+      "content_end": 396319
+    },
+    {
+      "book_id": "23236",
+      "repo": "GITenberg/Mare-nostrum_23236",
+      "commit": "1281c5c89073f478241af622f957a860275815aa",
+      "commit_date": "2018-10-18T19:40:54Z",
+      "path": "23236-8.txt",
+      "url": "https://raw.githubusercontent.com/GITenberg/Mare-nostrum_23236/1281c5c89073f478241af622f957a860275815aa/23236-8.txt",
+      "catalog_url": "https://www.gutenberg.org/ebooks/23236",
+      "author": "Vicente Blasco Ibáñez",
+      "title": "Mare nostrum",
+      "encoding": "iso-8859-1",
+      "raw_sha256": "3382628236c307370b1fd94da32fbd68291210a905021a609dd316771fdc98c7",
+      "license": "Project Gutenberg; public domain in USA",
+      "content_start": 534,
+      "content_end": 874094
+    },
+    {
+      "book_id": "46182",
+      "repo": "GITenberg/Sonata-de-oto-o--Sonata-de-inviernomemorias-del-Marqu-s-de-Bradom-n_46182",
+      "commit": "5ffc11c298c3e2fc2bfb27bfdd31b283283900c0",
+      "commit_date": "2018-10-06T18:41:30Z",
+      "path": "46182-8.txt",
+      "url": "https://raw.githubusercontent.com/GITenberg/Sonata-de-oto-o--Sonata-de-inviernomemorias-del-Marqu-s-de-Bradom-n_46182/5ffc11c298c3e2fc2bfb27bfdd31b283283900c0/46182-8.txt",
+      "catalog_url": "https://www.gutenberg.org/ebooks/46182",
+      "author": "Ramón del Valle-Inclán",
+      "title": "Sonata de otoño; Sonata de invierno",
+      "encoding": "iso-8859-1",
+      "raw_sha256": "946fe8578436292036a49ba936e745d8e374d2db32e5659853bb7a1b7579b92d",
+      "license": "Project Gutenberg; public domain in USA",
+      "content_start": 630,
+      "content_end": 270605
+    },
+    {
+      "book_id": "52894",
+      "repo": "GITenberg/Azul-Obras-Completas-Vol-IV_52894",
+      "commit": "cfefa927c27518c569c74d2e0d41a9bf3f8467d3",
+      "commit_date": "2018-09-20T14:32:30Z",
+      "path": "52894-0.txt",
+      "url": "https://raw.githubusercontent.com/GITenberg/Azul-Obras-Completas-Vol-IV_52894/cfefa927c27518c569c74d2e0d41a9bf3f8467d3/52894-0.txt",
+      "catalog_url": "https://www.gutenberg.org/ebooks/52894",
+      "author": "Rubén Darío",
+      "title": "Azul...",
+      "encoding": "utf-8-sig",
+      "raw_sha256": "f881006a3965baeb766eac93f7d721330bcbf04e18c59e5b1d6b405d07edf0ce",
+      "license": "Project Gutenberg; public domain in USA",
+      "content_start": 36439,
+      "content_end": 161444
+    },
+    {
+      "book_id": "18166",
+      "repo": "GITenberg/Amistad-funestaNovela_18166",
+      "commit": "fa0ee4454d0d6f3c1013def46c5602bb14c20dfd",
+      "commit_date": "2018-10-19T08:03:55Z",
+      "path": "18166-8.txt",
+      "url": "https://raw.githubusercontent.com/GITenberg/Amistad-funestaNovela_18166/fa0ee4454d0d6f3c1013def46c5602bb14c20dfd/18166-8.txt",
+      "catalog_url": "https://www.gutenberg.org/ebooks/18166",
+      "author": "José Martí",
+      "title": "Amistad funesta",
+      "encoding": "iso-8859-1",
+      "raw_sha256": "aa4421343bf07e0bbd3ec7e895fac336b6735d3f92120b2f9f509cae22850dbe",
+      "license": "Project Gutenberg; public domain in USA",
+      "content_start": 146800,
+      "content_end": 346089
+    },
+    {
+      "book_id": "29920",
+      "repo": "GITenberg/La-gloria-de-don-Ramirouna-vida-en-tiempos-de-Felipe-segundo_29920",
+      "commit": "49ec09fb304a4a0203b5b3cc331ad06a25a944df",
+      "commit_date": "2018-10-18T03:52:30Z",
+      "path": "29920-8.txt",
+      "url": "https://raw.githubusercontent.com/GITenberg/La-gloria-de-don-Ramirouna-vida-en-tiempos-de-Felipe-segundo_29920/49ec09fb304a4a0203b5b3cc331ad06a25a944df/29920-8.txt",
+      "catalog_url": "https://www.gutenberg.org/ebooks/29920",
+      "author": "Enrique Larreta",
+      "title": "La gloria de don Ramiro",
+      "encoding": "iso-8859-1",
+      "raw_sha256": "022978fd5279a6d2a567e1390e05efacbfaaba6da184aa7b74b99299a1cce76b",
+      "license": "Project Gutenberg; public domain in USA",
+      "content_start": 601,
+      "content_end": 527721
+    },
+    {
+      "book_id": "39209",
+      "repo": "GITenberg/Platero-y-yo_39209",
+      "commit": "c0a1d3871f88ed43e5225ebb5ecad4f3b80224af",
+      "commit_date": "2018-10-16T03:14:12Z",
+      "path": "39209-8.txt",
+      "url": "https://raw.githubusercontent.com/GITenberg/Platero-y-yo_39209/c0a1d3871f88ed43e5225ebb5ecad4f3b80224af/39209-8.txt",
+      "catalog_url": "https://www.gutenberg.org/ebooks/39209",
+      "author": "Juan Ramón Jiménez",
+      "title": "Platero y yo",
+      "encoding": "iso-8859-1",
+      "raw_sha256": "bdd2a62d11e1b7c2871a9bdbe977852744cc4dbb9fe66f01b8af67cfd104164f",
+      "license": "Project Gutenberg; public domain in USA",
+      "content_start": 534,
+      "content_end": 70958
+    }
+  ],
+  "tiny": {
+    "url": "https://huggingface.co/datasets/robrenaud/multilingual_tinystories/resolve/785db5c10f23ba13893cbe692943d656170dadb8/stories_01.json",
+    "revision": "785db5c10f23ba13893cbe692943d656170dadb8",
+    "status": 206,
+    "content_range": "bytes 0-4194303/146245557",
+    "limit_bytes": 4194304
+  },
+  "iber": {
+    "revision": "5c1c380eb27b7a73bb75ee6239ff25db10c144ae",
+    "selected_from": "train.tsv",
+    "es_literary_generated_population": 2736
+  },
+  "protocol_sha256": "d51cbdf56f28b672e891c1d848f79f34191b1bf809982b113e39ba9f556e1403",
+  "exclusions": [
+    {
+      "id": "book-10825",
+      "reason": "mixed_english_editorial_notes_pre_score_qc"
+    },
+    {
+      "id": "ai-iber-126620",
+      "reason": "repeated_prompt"
+    }
+  ]
+}

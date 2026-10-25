@@ -1,0 +1,107 @@
+{
+  "books": [
+    {
+      "author": "Concha Espina",
+      "book_id": "44529",
+      "commit": "a86dd6e42f790c5bca70c96b6364f9f01875f64a",
+      "date": "2018-10-08T15:28:56Z",
+      "encoding": "iso-8859-1",
+      "path": "44529-8.txt",
+      "raw_sha256": "3a8521b6a84f80e5c4bf538ccab689cbb41c33fef86849d95030142ed286e7ab",
+      "repo": "GITenberg/Dulce-Nombre_44529",
+      "title": "Dulce Nombre",
+      "url": "https://raw.githubusercontent.com/GITenberg/Dulce-Nombre_44529/a86dd6e42f790c5bca70c96b6364f9f01875f64a/44529-8.txt"
+    },
+    {
+      "author": "Concha Espina",
+      "book_id": "51724",
+      "commit": "f35e21d42b1b9df42bff1a2d261053ed90406266",
+      "date": "2018-09-16T21:24:45Z",
+      "encoding": "utf-8-sig",
+      "path": "51724-0.txt",
+      "raw_sha256": "b6b69b93238897a66b00cde91ac65c94075c576a9b4e952092326be8fffd5c32",
+      "repo": "GITenberg/La-Esfinge-Maragata-Novela_51724",
+      "title": "La Esfinge Maragata",
+      "url": "https://raw.githubusercontent.com/GITenberg/La-Esfinge-Maragata-Novela_51724/f35e21d42b1b9df42bff1a2d261053ed90406266/51724-0.txt"
+    },
+    {
+      "author": "D. Armando Palacio Valdés",
+      "book_id": "11529",
+      "commit": "4a5e8ad02dc7db03519d999aac7f12746ffff4c4",
+      "date": "2018-10-20T04:01:45Z",
+      "encoding": "iso-8859-1",
+      "path": "11529-8.txt",
+      "raw_sha256": "e936131a635f1539dacf6b66fd1d5fead7c85eeeb5624445c55b84987fc513f5",
+      "repo": "GITenberg/La-Espuma--13-Obras-completas-de-D.-Armando-Palacio-Vald-s-Tomo-7._11529",
+      "title": "La Espuma",
+      "url": "https://raw.githubusercontent.com/GITenberg/La-Espuma--13-Obras-completas-de-D.-Armando-Palacio-Vald-s-Tomo-7._11529/4a5e8ad02dc7db03519d999aac7f12746ffff4c4/11529-8.txt"
+    },
+    {
+      "author": "D. Armando Palacio Valdés",
+      "book_id": "29831",
+      "commit": "e86fc86b0f964b5d3865b5c0b8ccd117c42f3073",
+      "date": "2018-10-18T03:41:38Z",
+      "encoding": "iso-8859-1",
+      "path": "29831-8.txt",
+      "raw_sha256": "a882c2eb69e6a054a78e6d1a7631502e2295be5cc873cb0e73e2ae8154390d54",
+      "repo": "GITenberg/Riverita_29831",
+      "title": "Riverita",
+      "url": "https://raw.githubusercontent.com/GITenberg/Riverita_29831/e86fc86b0f964b5d3865b5c0b8ccd117c42f3073/29831-8.txt"
+    },
+    {
+      "author": "Rafael Delgado",
+      "book_id": "16082",
+      "commit": "890d211ff67f718a141e7c228b2932544d1796e6",
+      "date": "2018-10-19T18:42:19Z",
+      "encoding": "iso-8859-1",
+      "path": "16082-8.txt",
+      "raw_sha256": "86ff95632b5a3d7b7da586a9d8189f639deb355fe17d59b54632f8e30ff929a2",
+      "repo": "GITenberg/Angelina-novela-mexicana-_16082",
+      "title": "Angelina",
+      "url": "https://raw.githubusercontent.com/GITenberg/Angelina-novela-mexicana-_16082/890d211ff67f718a141e7c228b2932544d1796e6/16082-8.txt"
+    },
+    {
+      "author": "Felipe Trigo",
+      "book_id": "46000",
+      "commit": "b6607b23b898fd51a8c89572f61d781fe7d02846",
+      "date": "2018-10-06T18:20:20Z",
+      "encoding": "iso-8859-1",
+      "path": "46000-8.txt",
+      "raw_sha256": "2b7176bbc7c848658ac09fe088c348ae52cc2a958b3a25c3bbc415aa12776d3b",
+      "repo": "GITenberg/Cuentos-ingenuos_46000",
+      "title": "Cuentos ingenuos",
+      "url": "https://raw.githubusercontent.com/GITenberg/Cuentos-ingenuos_46000/b6607b23b898fd51a8c89572f61d781fe7d02846/46000-8.txt"
+    }
+  ],
+  "created_utc": "2026-10-25T18:44:03.165080+00:00",
+  "excluded": [
+    {
+      "id": "aireserve-iber-102093",
+      "reason": "20_token_overlap_with_development_or_original"
+    }
+  ],
+  "human_authors_must_not_appear_in_development": true,
+  "id": "reserved-f5-v1",
+  "interpretation": "Gates decide whether F5 is promoted; failure is reported without retuning on this set. Comparison must report counts, band abstentions, insufficiency and per-panel coverage.",
+  "limitations": [
+    "cuatro autores humanos nuevos; textos agrupados por obra/autor",
+    "mismos proveedores IA que desarrollo, con textos y prompts nuevos; no demuestra generalización a modelos/proveedores desconocidos"
+  ],
+  "manifest_sha256": "b7d7de3896345dbb1f53d0ee7c49da88e1b6c6b74ac51f08b97d311c8404bce8",
+  "n": 536,
+  "no_scoring_performed": true,
+  "no_training_or_new_AI_generation": true,
+  "promotion_gates": {
+    "FP_on_all_humans_max": 0.05,
+    "decision_coverage_humans_min": 0.8,
+    "portable_score_coverage_on_iber_min": 0.9,
+    "tiny_TP_on_all_AI_min": 0.8
+  },
+  "role": "reserved-before-F5-design-and-calibration",
+  "selection": "16 fragmentos/obra ~250 palabras a fracciones .12+.047*i; Tiny200 de primeros1000 de otro shard; Iber40/código, por SHA256 de id con prefijo reserved-f5-v1",
+  "source_tiny": {
+    "bytes": 4194304,
+    "prefix_sha256": "a08bad53ebe80f8c62ee3ed460cf9aa0348832f6fe12193cb644b005cee6a8e6",
+    "url": "https://huggingface.co/datasets/robrenaud/multilingual_tinystories/resolve/785db5c10f23ba13893cbe692943d656170dadb8/stories_02.json"
+  }
+}

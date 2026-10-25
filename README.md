@@ -1,142 +1,110 @@
 # textector
 
-CLI stdlib que puntúa un texto en español con un **índice heurístico
-explicable de 0 a 100** (`indice_llm`): una suma ponderada de señales
-(checks) asociadas a estilos de escritura frecuentes en texto generado por
-LLM. Cada punto del índice se puede desglosar por check (valor bruto,
-normalizado, peso, contribución, coverage), de ahí el "explicable".
+CLI en español que calcula un **índice heurístico explicable de 0 a 100**
+(`indice_llm`) a partir de señales de estilo. Es un **pre-filtro para
+revisión humana**: no es una probabilidad ni una prueba de autoría. Un índice
+bajo tampoco demuestra que un texto sea humano.
 
-> **Límite fundamental**: `indice_llm` es un índice heurístico; es un
-> indicio, **no una probabilidad y no una prueba de autoría**. Nunca
-> usarlo para acusar a una persona de haber usado o no IA.
+## Estado actual
 
-## Uso
+Versión del paquete **0.3.0**; F4 **`f4-integridad`** se mantiene por compatibilidad y F5 **`f5-portable-v1`** es un perfil portable experimental. Python
+3.11 o posterior, biblioteca estándar en ejecución y sin llamadas de red.
+
+F4 es el perfil predeterminado y usa cinco checks. F5 (`--metodo f5`) usa tres
+checks léxicos con pesos fijos, se abstiene cuando falta cualquiera y deja el
+ritmo y los párrafos fuera del índice. No inventa segmentación cuando el texto
+está aplanado. Su validación independiente está documentada en
+[`docs/validacion-f5-portable.md`](docs/validacion-f5-portable.md).
+
+La reparación de integridad corrige recursos del wheel, segmentación, Unicode,
+entradas insuficientes, configuración, estructura, hashes y evaluación por folds.
+Los pesos y las transformaciones de los cinco checks se conservan. Las semillas
+históricas mantienen sus bytes; su composición exacta figura en
+[`corpus/seeds/manifest.json`](corpus/seeds/manifest.json).
+
+**f4 tiene una evaluación externa limitada**, documentada en
+[`docs/validacion-externa-v1.md`](docs/validacion-externa-v1.md): 8 falsos positivos
+en 90 fragmentos humanos y 190 señales IA en 200 relatos infantiles publicados.
+Otros 300 textos IA quedan sin puntuar por su formato. Esto no valida un detector
+general de autoría. Los índices no son comparables
+directamente con f3: corregir el preprocesado cambia la señal. El diagnóstico usa
+una referencia **provisional** de umbral 31 y margen 2, banda inclusiva 29..33.
+Todas las categorías llevan `no_concluyente=True`. Esta referencia histórica
+no se presenta como una calibración general validada para f4. El estado interno
+`provisional-sin-validacion-f4` se conserva en el código congelado: la evaluación
+externa limitada no habilita uso probatorio ni valida generalización.
+
+La auditoría detectó filtración de semillas y agregación incorrecta de tasas en
+la CV anterior. Sus números se conservan como registro afectado en
+[`docs/historico/calibracion-f3.md`](docs/historico/calibracion-f3.md).
+Nueva evidencia de generalización exige **corpus y holdout nuevos**, según el
+alcance adoptado en F8; el holdout histórico no se evalúa por defecto.
+
+## Uso desde el repositorio
 
 ```bash
 uv run python -B tools/cli.py analyze --archivo texto.txt --detallado
+uv run python -B tools/cli.py analyze --archivo texto.txt --metodo f5 --json
+uv run python -B tools/cli.py analyze --stdin --json --diagnostico
 ```
 
-(`--stdin` en lugar de `--archivo` lee de la entrada estándar; solo se
-admite una de las dos. `--json` emite el informe completo como JSON y
-`--detallado` añade el desglose por check.)
+Solo se admite una fuente: `--archivo` UTF-8 o `--stdin`. El JSON incluye versión,
+contribuciones, cobertura, huellas de semillas y del léxico; `--diagnostico` añade
+la lectura descriptiva de prosa y estructura. `--config` permite un léxico
+alternativo válido; cambiarlo también cambia la señal.
 
-Salida ilustrativa:
+Los errores de lectura, entrada vacía/insuficiente, configuración o semillas se
+reportan en una línea por stderr, exit 1, sin traceback ni volcado del texto.
+F4 exige sus cinco checks para emitir un índice. F5 se elige explícitamente y
+exige MATTR, densidad léxica y compresión; si falta cualquiera, entrega
+`indice_llm=null` y `predicho=abstencion`.
 
+## Paquete instalable
+
+```bash
+uv build --wheel
+python -m pip install dist/textector-0.3.0-py3-none-any.whl
+textector analyze --archivo texto.txt --json
 ```
-indice_llm=52 version=f2 n_disponibles=5
-burstiness: valor_bruto={'n_oraciones': 7, ...} normalizado=0.3100 peso=0.1656 contribucion=3.2725 coverage=1.0000
-...
-cliches_es: valor_bruto={'n_tokens': 84, 'n_hits_total': 1, ...} normalizado=0.0000 peso=0.2370 contribucion=0.0000 coverage=1.0000
-```
 
-Los errores (archivo inexistente, YAML del config invalido, entrada vacia,
-texto muy corto) se reportan en **una línea por stderr** con exit code 1:
-sin traceback y sin volcar el contenido del archivo leído.
+El wheel incluye el léxico y ambas semillas como recursos del paquete. Funciona
+fuera del checkout; el corpus completo solo es necesario para la evaluación.
 
-## Requisitos
-
-- Python **3.11** (solo stdlib en runtime).
-- `uv` solo para gestionar el entorno (`pyproject.toml` + `uv.lock` +
-  `.python-version`); no es dependencia del programa.
-
-## Cómo correr los tests
+## Verificación
 
 ```bash
 uv run python -B -m unittest discover -s tests -p "test_*.py" -v
+uv build --wheel
+uv run python -B tests/verify_wheel.py dist/textector-0.3.0-py3-none-any.whl
+uv run python -B -m tools.calibrate
 ```
 
-Los tests de la CLI usan subprocess y archivos temporales creados en
-`tempfile.mkdtemp()` (fuera del árbol del proyecto, con limpieza en
-`tearDown`).
+El último comando evalúa únicamente TRAIN: reconstruye las semillas sin el grupo
+excluido, recalcula los índices por fold y agrega predicciones fuera de muestra.
+Reporta matriz, tasas condicionadas a no abstención y cobertura por clase. No
+actualiza automáticamente los parámetros del CLI. Ver
+[`docs/calibration.md`](docs/calibration.md).
 
-## Estado por fase
+## Estructura y documentación
 
-- `[x]` **F1 — lista**: esqueleto del proyecto + núcleo de texto
-  (`tools/textector_core.py`), contrato de checks (`tools/checks/`), y el
-  formato YAML-min del léxico documentado en `docs/audit_aifingerprint.md`
-  y `docs/audit_zippy.md`.
-- `[x]` **F2 — lista**: los 5 checks concretos (`burstiness`, `mattr`,
-  `uniformity`, `cliches_es`, `compression`) con pesos y topes de grupo
-  congelados en `tools/scoring.py`; la suite pasó de 76 a **79 tests verdes**.
-- `[x]` **F3 — calibración contra corpus (resultado débil y honesto, dos rondas)**:
-  v1 (20 textos): 5 casos de holdout, **3 falsos positivos** en prosa clásica.
-  v2 (40 textos: 20 literatura PD + 10 narrativa IA + 10 noticias sintéticas
-  CC-BY): holdout nuevo `{h08,h16,h19,a05,a07,b03}` → **0 falsos positivos**,
-  pero **2 falsos negativos de narrativa IA + 1 abstención** y CV LOGO en TRAIN
-  TPR 0.04 / TNR 0.24. Conclusión: **pre-filtro de dominio/estilo, no detector
-  de autoría**; "humano" significa "sin señal suficiente", nunca exculpación.
-  Detalle en `docs/calibration.md`.
-- `[x]` **F4 — esta fase**: CLI `tools/cli.py analyze` con salida normal,
-  `--json` y `--detallado` (desglose por check), reutilizando el pipeline
-  congelado F2 (checks + `scoring.compute_indice`) y el parser YAML-min
-  (`tools/lexicon`) para cargar el léxico completo de
-  `config/cliches_es.yaml`.
+El historial de cambios está en [`CHANGELOG.md`](CHANGELOG.md).
 
-## Límites
-
-- **Sin red**: ninguna parte del código hace llamadas de red.
-- **Sin escritura**: el CLI no escribe archivos; sus únicas entradas son el
-  `--archivo`/`--stdin` y el config del léxico.
-- **Corpus**: `corpus/` con las piezas y su procedencia documentadas en
-  `corpus/manifest.csv`; la calibración F3 se hizo solo con ese corpus y el
-  holdout no aporta semillas.
-
-## Estructura
-
-```
-tools/textector_core.py   # normalize_text / tokenize / split_sentences (puras, sin I/O)
-tools/checks/             # CheckResult + protocolo Check + los 5 checks F2
-tools/scoring.py          # pesos, topes de grupo, compute_indice (congelado en F2)
-tools/lexicon.py          # parser YAML-min fail-closed
-tools/estructura.py       # eje estructural (secciones, párrafos, diálogo)
-tools/diagnostico.py      # categorías prosa × estructura (--diagnostico)
-tools/cli.py              # CLI F4: subcomando analyze
-tools/calibrate.py        # split por grupos + barrido + holdout (F3)
-config/cliches_es.yaml    # léxico YAML-min completo (fuente de la verdad)
-corpus/                   # corpus + manifest.csv (procedencia)
-docs/                     # guía, arquitectura, checks, método, calibración, corpus
-```
-
-## Documentación
-
-| Documento | Contenido |
+| Ruta | Contenido |
 |---|---|
-| [`docs/guia-uso.md`](docs/guia-uso.md) | Instalación, comandos, flags, códigos de error |
-| [`docs/arquitectura.md`](docs/arquitectura.md) | Módulos, flujo, contrato de checks, decisiones |
-| [`docs/checks.md`](docs/checks.md) | Qué mide cada check, pesos, fronteras, topes |
-| [`docs/methodology.md`](docs/methodology.md) | Método congelado F2 (rangos, orientación, límites) |
-| [`docs/calibration.md`](docs/calibration.md) | Corpus, split, matriz real v1/v2 y límites |
-| [`docs/corpus.md`](docs/corpus.md) | Composición, procedencia, licencias, semillas |
-| [`docs/diagnostico-hibrido.md`](docs/diagnostico-hibrido.md) | Dos ejes y tabla de categorías |
-| [`docs/analisis-manual-llm.md`](docs/analisis-manual-llm.md) | Análisis forense manual asistido por LLM |
-| [`docs/cotejo-aistoryhub.md`](docs/cotejo-aistoryhub.md) | Cotejo real del léxico contra el corpus AIStoryHub v1.7 (F8c) |
-| [`docs/audit_aifingerprint.md`](docs/audit_aifingerprint.md) · [`docs/audit_zippy.md`](docs/audit_zippy.md) | Auditoría de los ports MIT |
-| [`NOTICE`](NOTICE) | Atribuciones de licencia |
+| `tools/textector_core.py` | Normalización, tokens y spans sobre el original |
+| `tools/checks/`, `tools/scoring.py` | Cinco checks, pesos y contribuciones |
+| `tools/pipeline.py` | Pipeline común a CLI y evaluación |
+| `tools/decision.py` | Regla única de abstención, referencia provisional |
+| `tools/estructura.py`, `tools/diagnostico.py` | Estructura y lectura descriptiva |
+| `tools/resources.py` | Recursos del checkout y del paquete |
+| `tools/calibrate.py` | Integridad del corpus y LOGO-CV |
+| `tools/f5.py`, `tools/calibrate_f5.py` | Perfil portable y calibración solo en desarrollo |
+| [`docs/guia-uso.md`](docs/guia-uso.md) | Comandos, errores e interpretación |
+| [`docs/checks.md`](docs/checks.md) | Señales y constantes |
+| [`docs/corpus.md`](docs/corpus.md) | Procedencia, hashes y semillas |
+| [`docs/diagnostico-hibrido.md`](docs/diagnostico-hibrido.md) | Dos ejes y límites |
+| [`docs/integridad-f4.md`](docs/integridad-f4.md) | Cambios y alcance de la reparación |
+| [`NOTICE`](NOTICE) | Atribuciones y procedencia temática |
 
-Solo stdlib de Python 3.11. Gestión con uv (`pyproject.toml` + `uv.lock` +
-`.python-version`), pero uv no es dependencia en runtime.
-
-## Estado
-
-Experimental (`0.1.0`). Fases F1–F7 cerradas con suites verdes. Método vigente:
-**`f3-semillas`** (compresión sembrada contra las semillas ES reales de
-`corpus/seeds/`). Calibración v3: CV LOGO en TRAIN **TPR 0.24 / TNR 0.54**;
-holdout (apertura #2, última) **TP=0 / FN=3 / FP=0 / TN=2 / 1 abstención**.
-Conclusión sin spin: **no es un clasificador**; se usa como **pre-filtro
-heurístico con abstención**, y «humano» significa *sin señal suficiente*, no
-exculpación. El CLI **requiere `corpus/seeds/`** y es **fail-closed** si faltan
-(exit 1, sin emitir índice). La tabla v2 de `docs/calibration.md` corresponde a
-la señal f2 y **no es comparable** con v3. El diagnóstico de dos ejes
-(`--diagnostico`) solo es concluyente en `plantilla_prosa_y_estructura`.
-
-**Rol decidido (F8, 2026-10-25):** se adopta la opción **8a — aceptar el rol de
-pre-filtro heurístico**. Ampliar el corpus narrativo IA (8b) y recalibrar pesos
-(8d) quedan fuera de alcance hasta que exista un holdout **nuevo**; el cotejo
-del léxico contra AIStoryHub se ejecutó y se documenta en
-[`docs/cotejo-aistoryhub.md`](docs/cotejo-aistoryhub.md).
-
-## Licencia
-
-MIT — ver [`LICENSE`](LICENSE). Las ideas porteadas de proyectos MIT y los
-corpus de terceros se atribuyen en [`NOTICE`](NOTICE).
-
+Licencia MIT: [`LICENSE`](LICENSE). Las licencias de los corpus de terceros
+se identifican en el manifiesto y NOTICE.

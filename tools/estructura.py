@@ -29,7 +29,7 @@ __all__ = [
 # Cabecera: hasta 3 '#', luego ``S\d+`` y O BIEN la linea es solo ``S01``
 # O BIEN un separador [—,–,:,?] y el titulo.  ``S01`` a secas también cuenta.
 _CABECERA_RE = re.compile(
-    r"^#{0,3}[ \t]*S\d+(?:[ \t]*[—–:-][ \t]*(?P<titulo>.+?))?[ \t]*$"
+    r"^#{0,3}[ \t]*S(?P<numero>\d+)(?:[ \t]*[—–:-][ \t]*(?P<titulo>.+?))?[ \t]*$"
 )
 
 # Párrafos: bloques separados por al menos una línea en blanco.
@@ -48,9 +48,6 @@ CV_PARAFRAFOS_HI = 0.80
 CV_DIALOGO_LO = 0.10
 CV_DIALOGO_HI = 0.50
 BONUS_CABECERAS = 0.05
-
-REGLA_REFERENCIA = re.compile(r"S(\d+)")
-
 
 def _clamp(x: float, lo: float = 0.0, hi: float = 1.0) -> float:
     return max(lo, min(hi, x))
@@ -74,7 +71,7 @@ def detectar_secciones(texto: str) -> list[tuple[int, str, int]]:
     secciones: list[tuple[int, str, int]] = []
     offset = 0
     for linea in texto.split("\n"):
-        m = _CABECERA_RE.match(linea)
+        m = _CABECERA_RE.match(linea.rstrip("\r"))
         if m:
             titulo = m.group("titulo") or linea.strip()
             secciones.append((len(secciones), titulo, offset))
@@ -100,6 +97,7 @@ def metricas_estructura(texto: str) -> dict[str, Any]:
     """
     if not isinstance(texto, str):
         raise TypeError("metricas_estructura espera str")
+    texto = texto.replace("\r\n", "\n").replace("\r", "\n")
     secciones = detectar_secciones(texto)
     if not secciones:
         return {
@@ -129,7 +127,8 @@ def metricas_estructura(texto: str) -> dict[str, Any]:
         ratios.append(round(ratio, 4))
         titulos.append(titulo)
     return {
-        "insufficient": False,
+        "insufficient": len(secciones) < 2 or sum(n > 0 for n in n_parrafos) < 2,
+        "numeros": [int(_CABECERA_RE.match(texto[start:].split("\n", 1)[0]).group("numero")) for _, _, start in secciones],
         "n_secciones": len(secciones),
         "largos_secciones": largos,
         "parrafos_por_seccion": n_parrafos,
@@ -198,13 +197,7 @@ def regularidad(metricas: dict[str, Any]) -> float:
     ]
     bonus = 0.0
     if metricas["n_secciones"] >= 2:
-        numeros: list[int] = []
-        for titulo in metricas["titulos"]:
-            m = REGLA_REFERENCIA.search(titulo)
-            if not m:
-                numeros = []
-                break
-            numeros.append(int(m.group(1)))
+        numeros = metricas.get("numeros", [])
         if numeros and numeros[0] == 1 and all(
             b - a == 1 for a, b in zip(numeros, numeros[1:])
         ):
@@ -218,7 +211,7 @@ def eje_estructura(texto: str) -> dict[str, Any]:
     - ``valor``: 0..100 = round(regularidad*100) (0 si ``insufficient``).
     - ``regularidad``: 0..1, ver ``regularidad``.
     - ``n_secciones``: número de secciones detectadas.
-    - ``insufficient``: True si no hay cabeceras de sección.
+    - ``insufficient``: True sin al menos dos secciones con contenido.
     - ``hits``: líneas explicativas (una por sección + veredicto).
     """
     if not isinstance(texto, str):
@@ -228,9 +221,9 @@ def eje_estructura(texto: str) -> dict[str, Any]:
         return {
             "valor": 0,
             "regularidad": 0.0,
-            "n_secciones": 0,
+            "n_secciones": metricas["n_secciones"],
             "insufficient": True,
-            "hits": ["sin cabeceras 'S01...' detectadas: eje estructura sin base"],
+            "hits": ["se requieren al menos dos secciones con contenido: eje estructura sin base"],
         }
     reg = regularidad(metricas)
     hits: list[str] = []

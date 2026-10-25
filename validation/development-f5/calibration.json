@@ -1,0 +1,6633 @@
+{
+  "candidates": [
+    {
+      "counts": {
+        "abstain_human": 38,
+        "abstain_ia": 103,
+        "fn": 0,
+        "fp": 52,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 0,
+        "tp": 397
+      },
+      "fp_on_all_humans": 0.5777777777777777,
+      "human_decision_coverage": 0.5777777777777777,
+      "margin": 4,
+      "threshold": 0,
+      "tp_on_all_ai": 0.794
+    },
+    {
+      "counts": {
+        "abstain_human": 47,
+        "abstain_ia": 117,
+        "fn": 0,
+        "fp": 43,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 0,
+        "tp": 383
+      },
+      "fp_on_all_humans": 0.4777777777777778,
+      "human_decision_coverage": 0.4777777777777778,
+      "margin": 4,
+      "threshold": 1,
+      "tp_on_all_ai": 0.766
+    },
+    {
+      "counts": {
+        "abstain_human": 53,
+        "abstain_ia": 130,
+        "fn": 0,
+        "fp": 37,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 0,
+        "tp": 370
+      },
+      "fp_on_all_humans": 0.4111111111111111,
+      "human_decision_coverage": 0.4111111111111111,
+      "margin": 4,
+      "threshold": 2,
+      "tp_on_all_ai": 0.74
+    },
+    {
+      "counts": {
+        "abstain_human": 61,
+        "abstain_ia": 142,
+        "fn": 0,
+        "fp": 29,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 0,
+        "tp": 358
+      },
+      "fp_on_all_humans": 0.32222222222222224,
+      "human_decision_coverage": 0.32222222222222224,
+      "margin": 4,
+      "threshold": 3,
+      "tp_on_all_ai": 0.716
+    },
+    {
+      "counts": {
+        "abstain_human": 67,
+        "abstain_ia": 156,
+        "fn": 0,
+        "fp": 23,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 0,
+        "tp": 344
+      },
+      "fp_on_all_humans": 0.25555555555555554,
+      "human_decision_coverage": 0.25555555555555554,
+      "margin": 4,
+      "threshold": 4,
+      "tp_on_all_ai": 0.688
+    },
+    {
+      "counts": {
+        "abstain_human": 50,
+        "abstain_ia": 140,
+        "fn": 26,
+        "fp": 22,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 18,
+        "tp": 334
+      },
+      "fp_on_all_humans": 0.24444444444444444,
+      "human_decision_coverage": 0.4444444444444444,
+      "margin": 4,
+      "threshold": 5,
+      "tp_on_all_ai": 0.668
+    },
+    {
+      "counts": {
+        "abstain_human": 49,
+        "abstain_ia": 137,
+        "fn": 41,
+        "fp": 19,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 22,
+        "tp": 322
+      },
+      "fp_on_all_humans": 0.2111111111111111,
+      "human_decision_coverage": 0.45555555555555555,
+      "margin": 4,
+      "threshold": 6,
+      "tp_on_all_ai": 0.644
+    },
+    {
+      "counts": {
+        "abstain_human": 49,
+        "abstain_ia": 135,
+        "fn": 55,
+        "fp": 13,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 28,
+        "tp": 310
+      },
+      "fp_on_all_humans": 0.14444444444444443,
+      "human_decision_coverage": 0.45555555555555555,
+      "margin": 4,
+      "threshold": 7,
+      "tp_on_all_ai": 0.62
+    },
+    {
+      "counts": {
+        "abstain_human": 50,
+        "abstain_ia": 135,
+        "fn": 70,
+        "fp": 9,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 31,
+        "tp": 295
+      },
+      "fp_on_all_humans": 0.1,
+      "human_decision_coverage": 0.4444444444444444,
+      "margin": 4,
+      "threshold": 8,
+      "tp_on_all_ai": 0.59
+    },
+    {
+      "counts": {
+        "abstain_human": 43,
+        "abstain_ia": 133,
+        "fn": 87,
+        "fp": 9,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 38,
+        "tp": 280
+      },
+      "fp_on_all_humans": 0.1,
+      "human_decision_coverage": 0.5222222222222223,
+      "margin": 4,
+      "threshold": 9,
+      "tp_on_all_ai": 0.56
+    },
+    {
+      "counts": {
+        "abstain_human": 36,
+        "abstain_ia": 129,
+        "fn": 101,
+        "fp": 7,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 47,
+        "tp": 270
+      },
+      "fp_on_all_humans": 0.07777777777777778,
+      "human_decision_coverage": 0.6,
+      "margin": 4,
+      "threshold": 10,
+      "tp_on_all_ai": 0.54
+    },
+    {
+      "counts": {
+        "abstain_human": 32,
+        "abstain_ia": 127,
+        "fn": 114,
+        "fp": 5,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 53,
+        "tp": 259
+      },
+      "fp_on_all_humans": 0.05555555555555555,
+      "human_decision_coverage": 0.6444444444444445,
+      "margin": 4,
+      "threshold": 11,
+      "tp_on_all_ai": 0.518
+    },
+    {
+      "counts": {
+        "abstain_human": 25,
+        "abstain_ia": 122,
+        "fn": 126,
+        "fp": 4,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 61,
+        "tp": 252
+      },
+      "fp_on_all_humans": 0.044444444444444446,
+      "human_decision_coverage": 0.7222222222222222,
+      "margin": 4,
+      "threshold": 12,
+      "tp_on_all_ai": 0.504
+    },
+    {
+      "counts": {
+        "abstain_human": 20,
+        "abstain_ia": 116,
+        "fn": 140,
+        "fp": 3,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 67,
+        "tp": 244
+      },
+      "fp_on_all_humans": 0.03333333333333333,
+      "human_decision_coverage": 0.7777777777777778,
+      "margin": 4,
+      "threshold": 13,
+      "tp_on_all_ai": 0.488
+    },
+    {
+      "counts": {
+        "abstain_human": 20,
+        "abstain_ia": 115,
+        "fn": 150,
+        "fp": 2,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 68,
+        "tp": 235
+      },
+      "fp_on_all_humans": 0.022222222222222223,
+      "human_decision_coverage": 0.7777777777777778,
+      "margin": 4,
+      "threshold": 14,
+      "tp_on_all_ai": 0.47
+    },
+    {
+      "counts": {
+        "abstain_human": 17,
+        "abstain_ia": 120,
+        "fn": 162,
+        "fp": 2,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 71,
+        "tp": 218
+      },
+      "fp_on_all_humans": 0.022222222222222223,
+      "human_decision_coverage": 0.8111111111111111,
+      "margin": 4,
+      "threshold": 15,
+      "tp_on_all_ai": 0.436
+    },
+    {
+      "counts": {
+        "abstain_human": 12,
+        "abstain_ia": 115,
+        "fn": 174,
+        "fp": 1,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 77,
+        "tp": 211
+      },
+      "fp_on_all_humans": 0.011111111111111112,
+      "human_decision_coverage": 0.8666666666666667,
+      "margin": 4,
+      "threshold": 16,
+      "tp_on_all_ai": 0.422
+    },
+    {
+      "counts": {
+        "abstain_human": 8,
+        "abstain_ia": 111,
+        "fn": 189,
+        "fp": 1,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 81,
+        "tp": 200
+      },
+      "fp_on_all_humans": 0.011111111111111112,
+      "human_decision_coverage": 0.9111111111111111,
+      "margin": 4,
+      "threshold": 17,
+      "tp_on_all_ai": 0.4
+    },
+    {
+      "counts": {
+        "abstain_human": 8,
+        "abstain_ia": 104,
+        "fn": 204,
+        "fp": 1,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 81,
+        "tp": 192
+      },
+      "fp_on_all_humans": 0.011111111111111112,
+      "human_decision_coverage": 0.9111111111111111,
+      "margin": 4,
+      "threshold": 18,
+      "tp_on_all_ai": 0.384
+    },
+    {
+      "counts": {
+        "abstain_human": 6,
+        "abstain_ia": 100,
+        "fn": 214,
+        "fp": 1,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 83,
+        "tp": 186
+      },
+      "fp_on_all_humans": 0.011111111111111112,
+      "human_decision_coverage": 0.9333333333333333,
+      "margin": 4,
+      "threshold": 19,
+      "tp_on_all_ai": 0.372
+    },
+    {
+      "counts": {
+        "abstain_human": 4,
+        "abstain_ia": 97,
+        "fn": 225,
+        "fp": 1,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 85,
+        "tp": 178
+      },
+      "fp_on_all_humans": 0.011111111111111112,
+      "human_decision_coverage": 0.9555555555555556,
+      "margin": 4,
+      "threshold": 20,
+      "tp_on_all_ai": 0.356
+    },
+    {
+      "counts": {
+        "abstain_human": 4,
+        "abstain_ia": 96,
+        "fn": 232,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 86,
+        "tp": 172
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 0.9555555555555556,
+      "margin": 4,
+      "threshold": 21,
+      "tp_on_all_ai": 0.344
+    },
+    {
+      "counts": {
+        "abstain_human": 3,
+        "abstain_ia": 95,
+        "fn": 240,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 87,
+        "tp": 165
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 0.9666666666666667,
+      "margin": 4,
+      "threshold": 22,
+      "tp_on_all_ai": 0.33
+    },
+    {
+      "counts": {
+        "abstain_human": 2,
+        "abstain_ia": 92,
+        "fn": 249,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 88,
+        "tp": 159
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 0.9777777777777777,
+      "margin": 4,
+      "threshold": 23,
+      "tp_on_all_ai": 0.318
+    },
+    {
+      "counts": {
+        "abstain_human": 2,
+        "abstain_ia": 85,
+        "fn": 266,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 88,
+        "tp": 149
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 0.9777777777777777,
+      "margin": 4,
+      "threshold": 24,
+      "tp_on_all_ai": 0.298
+    },
+    {
+      "counts": {
+        "abstain_human": 1,
+        "abstain_ia": 86,
+        "fn": 273,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 89,
+        "tp": 141
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 0.9888888888888889,
+      "margin": 4,
+      "threshold": 25,
+      "tp_on_all_ai": 0.282
+    },
+    {
+      "counts": {
+        "abstain_human": 1,
+        "abstain_ia": 87,
+        "fn": 284,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 89,
+        "tp": 129
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 0.9888888888888889,
+      "margin": 4,
+      "threshold": 26,
+      "tp_on_all_ai": 0.258
+    },
+    {
+      "counts": {
+        "abstain_human": 1,
+        "abstain_ia": 84,
+        "fn": 292,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 89,
+        "tp": 124
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 0.9888888888888889,
+      "margin": 4,
+      "threshold": 27,
+      "tp_on_all_ai": 0.248
+    },
+    {
+      "counts": {
+        "abstain_human": 1,
+        "abstain_ia": 91,
+        "fn": 298,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 89,
+        "tp": 111
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 0.9888888888888889,
+      "margin": 4,
+      "threshold": 28,
+      "tp_on_all_ai": 0.222
+    },
+    {
+      "counts": {
+        "abstain_human": 1,
+        "abstain_ia": 92,
+        "fn": 306,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 89,
+        "tp": 102
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 0.9888888888888889,
+      "margin": 4,
+      "threshold": 29,
+      "tp_on_all_ai": 0.204
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 97,
+        "fn": 312,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 91
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 30,
+      "tp_on_all_ai": 0.182
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 98,
+        "fn": 319,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 83
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 31,
+      "tp_on_all_ai": 0.166
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 101,
+        "fn": 325,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 74
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 32,
+      "tp_on_all_ai": 0.148
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 100,
+        "fn": 335,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 65
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 33,
+      "tp_on_all_ai": 0.13
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 100,
+        "fn": 343,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 57
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 34,
+      "tp_on_all_ai": 0.114
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 96,
+        "fn": 355,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 49
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 35,
+      "tp_on_all_ai": 0.098
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 96,
+        "fn": 360,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 44
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 36,
+      "tp_on_all_ai": 0.088
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 84,
+        "fn": 373,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 43
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 37,
+      "tp_on_all_ai": 0.086
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 79,
+        "fn": 382,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 39
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 38,
+      "tp_on_all_ai": 0.078
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 71,
+        "fn": 393,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 36
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 39,
+      "tp_on_all_ai": 0.072
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 66,
+        "fn": 401,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 33
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 40,
+      "tp_on_all_ai": 0.066
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 85,
+        "fn": 410,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 5
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 41,
+      "tp_on_all_ai": 0.01
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 80,
+        "fn": 419,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 1
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 42,
+      "tp_on_all_ai": 0.002
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 73,
+        "fn": 427,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 43,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 65,
+        "fn": 435,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 44,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 60,
+        "fn": 440,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 45,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 59,
+        "fn": 441,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 46,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 55,
+        "fn": 445,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 47,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 52,
+        "fn": 448,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 48,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 49,
+        "fn": 451,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 49,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 21,
+        "fn": 479,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 50,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 17,
+        "fn": 483,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 51,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 52,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 53,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 54,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 55,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 56,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 57,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 58,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 59,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 60,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 61,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 62,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 63,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 64,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 65,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 66,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 67,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 68,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 69,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 70,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 71,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 72,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 73,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 74,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 75,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 76,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 77,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 78,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 79,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 80,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 81,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 82,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 83,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 84,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 85,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 86,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 87,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 88,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 89,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 90,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 91,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 92,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 93,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 94,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 95,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 96,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 97,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 98,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 99,
+      "tp_on_all_ai": 0.0
+    },
+    {
+      "counts": {
+        "abstain_human": 0,
+        "abstain_ia": 16,
+        "fn": 484,
+        "fp": 0,
+        "n": 590,
+        "n_human": 90,
+        "n_ia": 500,
+        "tn": 90,
+        "tp": 0
+      },
+      "fp_on_all_humans": 0.0,
+      "human_decision_coverage": 1.0,
+      "margin": 4,
+      "threshold": 100,
+      "tp_on_all_ai": 0.0
+    }
+  ],
+  "created_utc": "2026-10-25T18:56:05.083953+00:00",
+  "dataset": "validation/external-v1",
+  "dataset_role": "development_consumed",
+  "development_scores": [
+    {
+      "checks_insuficientes": [],
+      "group": "Miguel de Unamuno",
+      "id": "hnew-49836-00",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 15
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Miguel de Unamuno",
+      "id": "hnew-49836-01",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 14
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Miguel de Unamuno",
+      "id": "hnew-49836-02",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 14
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Miguel de Unamuno",
+      "id": "hnew-49836-03",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 9
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Miguel de Unamuno",
+      "id": "hnew-49836-04",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 18
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Miguel de Unamuno",
+      "id": "hnew-49836-05",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 11
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Miguel de Unamuno",
+      "id": "hnew-49836-06",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 16
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Miguel de Unamuno",
+      "id": "hnew-49836-07",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 10
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Miguel de Unamuno",
+      "id": "hnew-49836-08",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 17
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Miguel de Unamuno",
+      "id": "hnew-49836-09",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 6
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Horacio Quiroga",
+      "id": "hnew-13507-00",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 6
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Horacio Quiroga",
+      "id": "hnew-13507-01",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 2
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Horacio Quiroga",
+      "id": "hnew-13507-02",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 10
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Horacio Quiroga",
+      "id": "hnew-13507-03",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 3
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Horacio Quiroga",
+      "id": "hnew-13507-04",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Horacio Quiroga",
+      "id": "hnew-13507-05",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 1
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Horacio Quiroga",
+      "id": "hnew-13507-06",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Horacio Quiroga",
+      "id": "hnew-13507-07",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Horacio Quiroga",
+      "id": "hnew-13507-08",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Horacio Quiroga",
+      "id": "hnew-13507-09",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Pío Baroja",
+      "id": "hnew-43017-00",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 8
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Pío Baroja",
+      "id": "hnew-43017-01",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 8
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Pío Baroja",
+      "id": "hnew-43017-02",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 7
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Pío Baroja",
+      "id": "hnew-43017-03",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Pío Baroja",
+      "id": "hnew-43017-04",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 8
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Pío Baroja",
+      "id": "hnew-43017-05",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 12
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Pío Baroja",
+      "id": "hnew-43017-06",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Pío Baroja",
+      "id": "hnew-43017-07",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 7
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Pío Baroja",
+      "id": "hnew-43017-08",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Pío Baroja",
+      "id": "hnew-43017-09",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 8
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Vicente Blasco Ibáñez",
+      "id": "hnew-23236-00",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Vicente Blasco Ibáñez",
+      "id": "hnew-23236-01",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Vicente Blasco Ibáñez",
+      "id": "hnew-23236-02",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 2
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Vicente Blasco Ibáñez",
+      "id": "hnew-23236-03",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Vicente Blasco Ibáñez",
+      "id": "hnew-23236-04",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Vicente Blasco Ibáñez",
+      "id": "hnew-23236-05",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Vicente Blasco Ibáñez",
+      "id": "hnew-23236-06",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Vicente Blasco Ibáñez",
+      "id": "hnew-23236-07",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 1
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Vicente Blasco Ibáñez",
+      "id": "hnew-23236-08",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Vicente Blasco Ibáñez",
+      "id": "hnew-23236-09",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 3
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Ramón del Valle-Inclán",
+      "id": "hnew-46182-00",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 7
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Ramón del Valle-Inclán",
+      "id": "hnew-46182-01",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 3
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Ramón del Valle-Inclán",
+      "id": "hnew-46182-02",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 1
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Ramón del Valle-Inclán",
+      "id": "hnew-46182-03",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 6
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Ramón del Valle-Inclán",
+      "id": "hnew-46182-04",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 6
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Ramón del Valle-Inclán",
+      "id": "hnew-46182-05",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Ramón del Valle-Inclán",
+      "id": "hnew-46182-06",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 2
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Ramón del Valle-Inclán",
+      "id": "hnew-46182-07",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Ramón del Valle-Inclán",
+      "id": "hnew-46182-08",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Ramón del Valle-Inclán",
+      "id": "hnew-46182-09",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Rubén Darío",
+      "id": "hnew-52894-00",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 7
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Rubén Darío",
+      "id": "hnew-52894-01",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 6
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Rubén Darío",
+      "id": "hnew-52894-02",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 12
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Rubén Darío",
+      "id": "hnew-52894-03",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 20
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Rubén Darío",
+      "id": "hnew-52894-04",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Rubén Darío",
+      "id": "hnew-52894-05",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 7
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Rubén Darío",
+      "id": "hnew-52894-06",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 2
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Rubén Darío",
+      "id": "hnew-52894-07",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Rubén Darío",
+      "id": "hnew-52894-08",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 12
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Rubén Darío",
+      "id": "hnew-52894-09",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 25
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "José Martí",
+      "id": "hnew-18166-00",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 8
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "José Martí",
+      "id": "hnew-18166-01",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "José Martí",
+      "id": "hnew-18166-02",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "José Martí",
+      "id": "hnew-18166-03",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 8
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "José Martí",
+      "id": "hnew-18166-04",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 11
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "José Martí",
+      "id": "hnew-18166-05",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 7
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "José Martí",
+      "id": "hnew-18166-06",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 12
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "José Martí",
+      "id": "hnew-18166-07",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 11
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "José Martí",
+      "id": "hnew-18166-08",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 11
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "José Martí",
+      "id": "hnew-18166-09",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Enrique Larreta",
+      "id": "hnew-29920-00",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 1
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Enrique Larreta",
+      "id": "hnew-29920-01",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 2
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Enrique Larreta",
+      "id": "hnew-29920-02",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Enrique Larreta",
+      "id": "hnew-29920-03",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 6
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Enrique Larreta",
+      "id": "hnew-29920-04",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 11
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Enrique Larreta",
+      "id": "hnew-29920-05",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Enrique Larreta",
+      "id": "hnew-29920-06",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Enrique Larreta",
+      "id": "hnew-29920-07",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 2
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Enrique Larreta",
+      "id": "hnew-29920-08",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Enrique Larreta",
+      "id": "hnew-29920-09",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Juan Ramón Jiménez",
+      "id": "hnew-39209-00",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Juan Ramón Jiménez",
+      "id": "hnew-39209-01",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Juan Ramón Jiménez",
+      "id": "hnew-39209-02",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Juan Ramón Jiménez",
+      "id": "hnew-39209-03",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 15
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Juan Ramón Jiménez",
+      "id": "hnew-39209-04",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 10
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Juan Ramón Jiménez",
+      "id": "hnew-39209-05",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 11
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Juan Ramón Jiménez",
+      "id": "hnew-39209-06",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Juan Ramón Jiménez",
+      "id": "hnew-39209-07",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Juan Ramón Jiménez",
+      "id": "hnew-39209-08",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 7
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "Juan Ramón Jiménez",
+      "id": "hnew-39209-09",
+      "label": "human",
+      "panel": "libros_pre2020",
+      "score": 7
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00079",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 37
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00277",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 37
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00819",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 20
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00991",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 33
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00744",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 39
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00745",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 44
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00377",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 47
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00793",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 29
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00650",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 22
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00093",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 15
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00992",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 33
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00429",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 37
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00683",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00805",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 28
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00400",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00942",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 15
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00481",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 30
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00904",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 31
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00050",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 40
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00649",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 28
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00918",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 27
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00546",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 29
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00083",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 25
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00977",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 18
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00273",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 29
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00317",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00677",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 19
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00651",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 6
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00474",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 29
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00641",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 36
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00261",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 42
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00300",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 42
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00342",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 38
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00671",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 32
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00833",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 34
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00908",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 37
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00628",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 29
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00709",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 26
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00477",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 21
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00411",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 43
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00290",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 33
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00355",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 34
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00129",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 30
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00189",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 39
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00311",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 27
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00280",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 15
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00693",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 26
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00389",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 30
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00251",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 32
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00899",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 38
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00147",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 26
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00182",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00611",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 42
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00784",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 39
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00887",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 15
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00524",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 25
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00889",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 22
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00135",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 46
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00333",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 38
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00235",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 39
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00703",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 38
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00834",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 28
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00201",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 35
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00860",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 35
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00199",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 34
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00907",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 28
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00732",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 29
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00844",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 27
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00816",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 18
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00322",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00876",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 37
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00221",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 36
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00094",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 31
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00757",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 42
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00283",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 44
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00582",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 46
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00841",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 30
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00369",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 19
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00969",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 25
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00515",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 24
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00072",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 22
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00095",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 40
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00013",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 36
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00245",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 16
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00874",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 30
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00091",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00092",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 43
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00440",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00043",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 33
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00685",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 19
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00423",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 30
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00296",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 26
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00948",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 34
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00637",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 37
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00266",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 20
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00293",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 41
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00384",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00588",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 19
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00599",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 32
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00178",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 30
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00061",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 27
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00501",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 24
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00848",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00743",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 19
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00014",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 36
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00521",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 35
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00412",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 36
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00180",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00408",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 34
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00144",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 32
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00057",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 34
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00097",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 36
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00410",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 33
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00432",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 36
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00688",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 22
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00902",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 24
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00006",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 34
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00865",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 14
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00404",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 38
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00078",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 20
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00984",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 21
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00249",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 46
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00241",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 21
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00962",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 35
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00605",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 32
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00127",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 46
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00371",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 24
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00791",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 28
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00960",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 31
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00549",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 23
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00239",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 33
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00313",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 29
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00160",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 24
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00763",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00424",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 24
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00360",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 28
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00556",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 23
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00842",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 35
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00233",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 40
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00004",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 17
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00122",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 15
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00227",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 19
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00392",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 18
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00595",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 28
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00114",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 39
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00231",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 24
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00986",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 32
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00131",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00380",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 21
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00660",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 37
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00376",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 19
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00594",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 34
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00190",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 40
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00542",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 32
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00673",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 19
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00482",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 21
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00684",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 28
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00665",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 26
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00994",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 12
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00323",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00691",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 34
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00020",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00174",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 26
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00928",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 32
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00066",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 32
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00503",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 36
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00232",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 22
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00565",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 43
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00443",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 22
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00451",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 25
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00704",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 38
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00021",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 33
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00197",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 32
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00448",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 21
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00774",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 39
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00406",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00581",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 24
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00177",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00252",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 22
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00454",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 44
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00214",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 34
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00279",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 32
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00509",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 20
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00065",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 31
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00446",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 38
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00164",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 36
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00787",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 29
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00075",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 33
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00713",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 34
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00244",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 30
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00932",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 37
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00444",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00028",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 15
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00613",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 33
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00421",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 40
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00123",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 19
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00779",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 35
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00799",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 30
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00670",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "gemini-1.5-flash",
+      "id": "ai-tiny-01-00268",
+      "label": "ia",
+      "panel": "tiny_es",
+      "score": 32
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-21824",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 16
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-132979",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 12
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-122190",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 13
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-65797",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 11
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-25905",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 9
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-128154",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 26
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-42224",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 28
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-110361",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 16
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-106740",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 8
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-109033",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 9
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-109016",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 12
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-77447",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 12
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-3518",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 13
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-67927",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 15
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-40462",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 8
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-119015",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 9
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-103939",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 3
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-82418",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-127138",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 9
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-58851",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 8
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-16673",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 11
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-134984",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 9
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-88733",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 12
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-11890",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 14
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-1696",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 15
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-122064",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 9
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-56739",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 7
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-107833",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 3
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-63893",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 17
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-20394",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 8
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-46623",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 8
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-103353",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 18
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-141054",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 12
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-131139",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 23
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-123966",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 3
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-118717",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 21
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-97149",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 18
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-91679",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 22
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-19104",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 16
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-90297",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 10
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-31717",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 8
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-103954",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 14
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-26911",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 19
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-152226",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 18
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-85731",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 11
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-59351",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 17
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-80979",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 20
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-153012",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 14
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-64764",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 13
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-A",
+      "id": "ai-iber-123781",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 13
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-59093",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 7
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-1169",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 17
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-125823",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 9
+    },
+    {
+      "checks_insuficientes": [
+        "cliches_es",
+        "mattr"
+      ],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-125519",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": null
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-148016",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 19
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-50904",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 20
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-66245",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 8
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-50181",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 16
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-71248",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 27
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-45661",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 13
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-68827",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 8
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-49442",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 19
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-4870",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 14
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-148865",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 11
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-96321",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 18
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-82568",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 10
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-24003",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 8
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-22145",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 12
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-64628",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 21
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-53745",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 12
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-16997",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 15
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-141099",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 7
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-1647",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 13
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-101471",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 7
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-87835",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 6
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-133656",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-100375",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 14
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-152936",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 10
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-11630",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 11
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-119416",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 7
+    },
+    {
+      "checks_insuficientes": [
+        "cliches_es",
+        "compression",
+        "mattr"
+      ],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-78434",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": null
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-78312",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 15
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-54016",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-83409",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-57167",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 21
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-132662",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 10
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-40943",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 8
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-57562",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 11
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-106373",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 8
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-97945",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 10
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-82356",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 10
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-73142",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 12
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-27032",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-144598",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 8
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-48260",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 19
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-22967",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 19
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-126105",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 12
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-23515",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-80115",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-B",
+      "id": "ai-iber-46532",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 14
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-106045",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 17
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-68732",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 14
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-83170",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-86857",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 39
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-90369",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 25
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-47266",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 7
+    },
+    {
+      "checks_insuficientes": [
+        "cliches_es",
+        "mattr"
+      ],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-433",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": null
+    },
+    {
+      "checks_insuficientes": [
+        "cliches_es",
+        "mattr"
+      ],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-13080",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": null
+    },
+    {
+      "checks_insuficientes": [
+        "cliches_es",
+        "compression",
+        "mattr"
+      ],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-49170",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": null
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-144244",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 30
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-147442",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-125029",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 23
+    },
+    {
+      "checks_insuficientes": [
+        "cliches_es",
+        "mattr"
+      ],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-7935",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": null
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-132051",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 32
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-70310",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 19
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-45243",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 11
+    },
+    {
+      "checks_insuficientes": [
+        "cliches_es",
+        "compression",
+        "mattr"
+      ],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-57393",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": null
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-40451",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 7
+    },
+    {
+      "checks_insuficientes": [
+        "cliches_es",
+        "mattr"
+      ],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-1149",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": null
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-44436",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 35
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-6401",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-77490",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 16
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-66242",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 39
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-25330",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [
+        "cliches_es",
+        "mattr"
+      ],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-102541",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": null
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-120177",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 20
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-49365",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 30
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-71327",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 21
+    },
+    {
+      "checks_insuficientes": [
+        "cliches_es",
+        "mattr"
+      ],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-86600",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": null
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-54525",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-40794",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 16
+    },
+    {
+      "checks_insuficientes": [
+        "cliches_es",
+        "mattr"
+      ],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-56847",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": null
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-143839",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-52430",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 23
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-84415",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 18
+    },
+    {
+      "checks_insuficientes": [
+        "cliches_es",
+        "mattr"
+      ],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-52113",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": null
+    },
+    {
+      "checks_insuficientes": [
+        "cliches_es",
+        "mattr"
+      ],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-37129",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": null
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-124356",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 19
+    },
+    {
+      "checks_insuficientes": [
+        "cliches_es",
+        "mattr"
+      ],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-120667",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": null
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-138802",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 21
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-10649",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 27
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-123810",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 30
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-123310",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 25
+    },
+    {
+      "checks_insuficientes": [
+        "cliches_es",
+        "mattr"
+      ],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-149262",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": null
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-38278",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 13
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-64855",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-121721",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-48731",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 11
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-81869",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 18
+    },
+    {
+      "checks_insuficientes": [
+        "cliches_es",
+        "mattr"
+      ],
+      "group": "IberAuTexTification-C",
+      "id": "ai-iber-46866",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": null
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-149828",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 2
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-98433",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 3
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-830",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-88228",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-64651",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 3
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-60804",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 9
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-150401",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-2396",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-43123",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 6
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-152070",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 1
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-123300",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-1220",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 2
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-42432",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 8
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-136720",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 3
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-138646",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-94177",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-148083",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 1
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-113957",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 1
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-28382",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-44986",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-85882",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 3
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-107649",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 2
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-39411",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-16828",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 6
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-117813",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 11
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-58546",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 1
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-71381",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 7
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-133698",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 2
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-111572",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 2
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-66853",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 1
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-96057",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-115489",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 6
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-57951",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-9266",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-104031",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-61028",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-95090",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 3
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-30725",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-156",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 2
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-15471",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-50997",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-547",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-112747",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-15102",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 8
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-13154",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 2
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-111253",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 2
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-10605",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-114116",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 1
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-141915",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 1
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-D",
+      "id": "ai-iber-94500",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 1
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-34158",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-122397",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-44785",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 12
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-34978",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 14
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-135308",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 13
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-62103",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 13
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-10478",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 19
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-50074",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 23
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-49793",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 10
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-108673",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 12
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-3930",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-103730",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 14
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-49474",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-117727",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-62575",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 31
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-8395",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 17
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-35300",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 6
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-137763",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 28
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-135442",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 13
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-46684",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 13
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-90102",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 9
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-92259",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 6
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-122435",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-93219",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 37
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-145376",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 10
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-89539",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-135367",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 10
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-142271",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-126193",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 9
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-23541",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-10358",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 17
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-148990",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 13
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-85130",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 1
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-11792",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 45
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-75305",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 10
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-11448",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 17
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-35841",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 13
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-82944",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 15
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-92153",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 6
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-29381",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 10
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-79375",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 6
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-10070",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 2
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-56310",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 1
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-4596",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 13
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-138968",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 12
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-29228",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 35
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-23034",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-59127",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 38
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-76160",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 13
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-E",
+      "id": "ai-iber-3154",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 12
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-18968",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 3
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-24492",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 6
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-64603",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 7
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-6354",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 6
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-19858",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 6
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-110673",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-119152",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 3
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-115665",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 3
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-83692",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-57127",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 3
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-5361",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-711",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 1
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-9875",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 3
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-53695",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-104072",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-140741",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 2
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-128557",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-123663",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-74978",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 7
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-46763",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 3
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-145201",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-100917",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-121603",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-100839",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-115115",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-88275",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-107189",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 1
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-39058",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 12
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-84352",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 2
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-134203",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-129857",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 11
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-76295",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 2
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-70605",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 11
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-106497",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 6
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-39263",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 1
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-62104",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-26823",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 4
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-130904",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 10
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-143696",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 2
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-106256",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-102402",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-54163",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 2
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-123189",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 1
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-23028",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 11
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-77671",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 0
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-74869",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 7
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-33780",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 7
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-86651",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 5
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-143659",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 1
+    },
+    {
+      "checks_insuficientes": [],
+      "group": "IberAuTexTification-F",
+      "id": "ai-iber-40417",
+      "label": "ia",
+      "panel": "iber_literary_es",
+      "score": 3
+    }
+  ],
+  "fixed_margin": 4,
+  "fixed_weights": {
+    "cliches_es": 0.25,
+    "compression_positive_only": 0.3,
+    "mattr": 0.45
+  },
+  "gates": {
+    "fp_on_all_humans_max": 0.05,
+    "human_decision_coverage_min": 0.8
+  },
+  "id": "f5-development-calibration-v1",
+  "manifest_sha256": "3a9d90456ad8cb885c00a1ef812e2367c51243f8ad534320aff239671eb151ac",
+  "n": 590,
+  "profile_sha256_after_calibration": "fc1d828a825a0a4cb058b1080dc2c7c195f024610ea21d3e095fc3216bf9c797",
+  "reserved_set_read": false,
+  "selected_metrics": {
+    "counts": {
+      "abstain_human": 17,
+      "abstain_ia": 120,
+      "fn": 162,
+      "fp": 2,
+      "n": 590,
+      "n_human": 90,
+      "n_ia": 500,
+      "tn": 71,
+      "tp": 218
+    },
+    "fp_on_all_humans": 0.022222222222222223,
+    "human_decision_coverage": 0.8111111111111111,
+    "margin": 4,
+    "threshold": 15,
+    "tp_on_all_ai": 0.436
+  },
+  "selected_threshold": 15,
+  "status": "calibrado_en_desarrollo"
+}

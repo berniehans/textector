@@ -51,7 +51,8 @@ def check(text: str) -> CheckResult:
     """Señal combinada dispersión+repetición de párrafos en [0, 1]."""
     if not isinstance(text, str):
         raise TypeError("uniformity.check espera str")
-    parrafos = [p for p in _PAR_SPLIT_RE.split(text) if p.strip()]
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+    parrafos = [p for p in _PAR_SPLIT_RE.split(text) if tokenize(p)]
     n = len(parrafos)
     coverage = min(1.0, n / MIN_PARRAFOS)
     if n < MIN_PARRAFOS:

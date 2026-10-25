@@ -1,79 +1,32 @@
-# Arquitectura — textector
+# Arquitectura
 
-## Principios
+`tools/cli.py` lee texto y recursos y presenta el informe. `tools/pipeline.py`
+orquesta los cinco checks y aplica la misma política de cobertura para CLI y
+calibración. Con menos de cinco checks disponibles el pipeline se abstiene;
+`scoring.compute_indice` conserva su contrato general de renormalización.
 
-- **Solo stdlib en runtime**: el proyecto corre con Python 3.11 sin dependencias; `uv` gestiona el entorno, no forma parte del producto.
-- **Score congelado**: las transformaciones, pesos y umbral de la fase F2 están fijados por escrito (`docs/methodology.md`) y no se recalibran al añadir ejes nuevos.
-- **Determinismo**: sin red, sin aleatoriedad no sembrada, salida JSON ordenada (`sort_keys`).
-- **Honestidad por diseño**: abstención explícita, `no_concluyente` por defecto, y ningún texto crudo en la salida salvo petición.
+`textector_core.tokenize` aplica NFC, eliminación de invisibles y casefold antes
+de extraer tokens. `split_sentences` conserva spans sobre el original; descarta
+cabeceras y trata elipsis de forma conservadora. `uniformity` y `estructura`
+admiten saltos LF/CRLF. Cada check es puro, con métricas crudas y señal [0,1].
 
-## Módulos
+`scoring.py` conserva los pesos y topes históricos de `f4-integridad`. F5 se implementa en `tools/f5.py` con perfil separado `f5-portable-v1`, índice de denominador fijo y checks de ritmo/estructura fuera del score.
+Las reparaciones de preprocesado cambian la señal; no se reutilizan resultados
+históricos como validación independiente.
 
-```
-tools/
-  cli.py               CLI: analyze (--archivo/--stdin, --json, --detallado, --diagnostico)
-  textector_core.py    normalize_text · tokenize · split_sentences (spans al original)
-  lexicon.py           parser YAML-min fail-closed del léxico de clichés
-  checks/
-    __init__.py        CheckResult / Check (contrato común)
-    registry.py        registro de checks
-    burstiness.py      dispersión robusta de longitudes de oración
-    mattr.py           diversidad léxica en ventana fija (50 tokens)
-    uniformity.py      dispersión de párrafos + repetición de conectores/aperturas
-    cliches_es.py      hits del léxico ES (densidad por 1000 tokens)
-    compression.py     compresión sembrada (raw DEFLATE) vs semillas IA/humana
-  scoring.py           contribucion = 100·w·q/Σw_disponibles → indice_llm 0..100
-  estructura.py        eje estructural: secciones Sxx, largos, párrafos, diálogo
-  diagnostico.py       tabla de categorías prosa × estructura + no_concluyente
-  calibrate.py         split por grupos, LOGO-CV en train, holdout único
-config/cliches_es.yaml léxico editable (YAML-min)
-corpus/                human/ llm/ news/ seeds/ manifest.csv
-docs/                  guía, arquitectura, checks, método, calibración, corpus
-tests/                 unittest (sin red, temporales fuera del repo)
-```
+`decision.py` centraliza la referencia provisional 31/2 y la abstención centrada
+inclusiva. `diagnostico.py` cruza la prosa con el eje `estructura.py`; todas las
+categorías son descriptivas y no concluyentes.
 
-## Flujo de `analyze`
+`resources.py` resuelve el léxico y semillas desde el checkout o los recursos
+incluidos en el wheel mediante `importlib.resources`. Un checkout incompleto
+falla cerrado. El CLI acepta un léxico externo validado y registra su huella.
 
-```
-entrada (archivo/stdin)
-   │  normalize_text (NFC + casefold)
-   ▼
-split_sentences (spans) ──► tokenize
-   │
-   ├─ burstiness ─┐
-   ├─ mattr       │
-   ├─ uniformity  ├─► CheckResult(valor_bruto, normalizado, peso, contribucion, coverage)
-   ├─ cliches_es  │        │
-   └─ compression ┘        ▼
-                    scoring.compute_indice → indice_llm, contribuciones, coverage
-                           │
-   (opcional --diagnostico) estructura.eje_estructura(texto)
-                           ▼
-                    diagnostico.diagnostico_hibrido(informe, eje) → categoria, nota
-```
+`calibrate.py` valida el manifiesto real, reconstruye las semillas por fold sin
+el grupo evaluado y agrega matrices fuera de muestra. La elección del umbral
+se hace solo con calibración del fold. Su ejecución por defecto usa TRAIN y
+mantiene cerrado el holdout histórico. No modifica los parámetros del CLI.
 
-## Contrato de checks
-
-Cada check devuelve `CheckResult` con:
-
-- `valor_bruto`: métrica nativa (dict de apoyo explicativo).
-- `normalizado` ∈ [0,1]: transformación monótona documentada.
-- `peso`: fijo (congelado en F2; topes de grupo para checks correlacionados).
-- `contribucion`: `100·w·q / Σ w_disponibles`.
-- `coverage` y `insufficient`: si no hay material suficiente, el check queda fuera y el score renormaliza; con los 5 fuera, `insufficient_text` y exit ≠ 0.
-
-## Decisiones de diseño relevantes
-
-| Decisión | Motivo |
-|---|---|
-| YAML-min propio (no PyYAML) | Restricción stdlib; gramática deliberadamente mínima y fail-closed |
-| Segmentación ES conservadora | Rayas de diálogo, abreviaturas, `S01 —` como cabecera no-prosa |
-| Compresión sembrada (port de zippy, MIT) | Aproxima predecibilidad sin modelos; semillas ES del train |
-| Estructura separada del score | El caso «estructura humana + prosa IA» no debe contaminar el índice |
-| Diagnóstico por categorías | Evita binario falso: solo una categoría es concluyente |
-
-## Ejecución y empaquetado
-
-- Entorno: `uv sync` (lockfile real, sin deps runtime).
-- Tests: `uv run python -B -m unittest discover -s tests -p "test_*.py"`.
-- Sin commit/push automáticos; sin red en ejecución normal.
+Los módulos de ejecución usan solo stdlib. La construcción usa hatchling y el
+wheel distribuye todos los recursos necesarios para analizar textos. La CI prueba
+Python 3.11/3.13 en Windows/Linux, el checkout y la instalación independiente.

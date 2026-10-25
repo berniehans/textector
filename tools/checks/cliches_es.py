@@ -123,11 +123,23 @@ def decode_entries(scalares: Iterable[str]) -> list[ClicheEntry]:
 
 def phrases_from_parsed(parsed: dict[str, object]) -> list[ClicheEntry]:
     """Extrae las entradas desde el dict del ``parse_yaml_min``."""
+    if type(parsed.get("version")) is not int or parsed["version"] != 1:
+        raise ValueError("versión de léxico no admitida")
+    if set(parsed) - {"version", "cliches", "phrases"}:
+        raise ValueError("clave de léxico desconocida")
+    for key in ("cliches", "phrases"):
+        if key in parsed and not isinstance(parsed[key], list):
+            raise ValueError("el léxico debe ser una lista")
     escalares: list[str] = []
     if "cliches" in parsed and isinstance(parsed["cliches"], list):
         escalares.extend(t for t in parsed["cliches"] if isinstance(t, str))
     if not escalares and "phrases" in parsed and isinstance(parsed["phrases"], list):
         escalares.extend(t for t in parsed["phrases"] if isinstance(t, str))
+    if not escalares or any(
+        not isinstance(t, str)
+        for k in ("cliches", "phrases") for t in parsed.get(k, [])
+    ):
+        raise ValueError("se exige un léxico no vacío de escalares")
     return decode_entries(escalares)
 
 

@@ -1,3 +1,9 @@
+> **Lectura histórica del diseño F2.** Las constantes de checks y pesos siguen
+> vigentes, pero el preprocesado fue corregido en f4-integridad. La composición
+> exacta de las semillas está en corpus/seeds/manifest.json y el procedimiento
+> de evaluación vigente en [calibration.md](calibration.md). No interpretar las
+> referencias futuras a F3 de este diseño como el estado actual del proyecto.
+
 # Methodology — textector F2 (índice heurístico explicable, español)
 
 **Estado: experimental. Congelado en F2; F3 recalibra umbrales con corpus ES

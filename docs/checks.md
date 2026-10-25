@@ -76,9 +76,9 @@ Topes de peso conjunto (checks correlacionados, para que no dominen en bloque):
 - **Qué mide**: raw DEFLATE (`zlib.compressobj(level=6, wbits=-15)`) sobre el
   texto normalizado, comparando el **delta** de compresión con la semilla IA y
   con la semilla humana (método portado de `thinkst/zippy`, MIT).
-  `delta = m_ia − m_h` (positivo ⇒ comprime mejor contra la semilla IA).
-- **Semillas**: `corpus/seeds/seed_ia_es.txt` y `seed_hum_es.txt` (**solo
-  train**, nunca holdout; nunca semillas inglesas).
+  `delta = m_ia − m_h` (negativo ⇒ menor coste marginal contra la semilla IA).
+- **Semillas**: `corpus/seeds/seed_ia_es.txt` y `seed_hum_es.txt` (subconjunto histórico
+  de TRAIN enumerado en `corpus/seeds/manifest.json`, nunca holdout).
 - **Mínimo**: `MIN_BYTES_MUESTRA = 150`.
 - **Transformación**: `q = clamp(0.5 − delta / 0.40)`
   → delta 0 ⇒ q=0.5 (neutro); delta ≥ 0.20 ⇒ q=0.
@@ -96,16 +96,13 @@ No forma parte del score. `tools/estructura.py` mide el esqueleto del documento:
   Etiquetas: **regular ≥ 60**, **irregular ≤ 40**, intermedia en medio;
   sin secciones detectadas → `insufficient`.
 
-## Tabla de categorías del diagnóstico
+## Diagnóstico y versión vigente
 
-| Prosa | Estructura | Categoría | Concluyente |
-|---|---|---|---|
-| ≥ 26 | regular | `plantilla_prosa_y_estructura` | **Sí** |
-| ≥ 26 | irregular | `probable_hibrido_estructura_propia_prosa_ia` | No |
-| 18–26 (banda) | cualquiera | `prosa_no_concluyente` | No |
-| ≤ 18 | irregular | `sin_senal_suficiente` | No |
-| ≤ 18 | regular | `estructura_regular_prosa_no_marcada` | No |
+La tabla vigente está en [diagnóstico híbrido](diagnostico-hibrido.md): referencia
+provisional 31/2, banda inclusiva 29..33 y todas las categorías no concluyentes.
+Exige al menos dos secciones con contenido. Los números reales de cabecera,
+separados de los títulos, determinan el bonus.
 
-`no_concluyente=True` en todas salvo la primera. La nota del diagnóstico
-recuerda que «estructura regular» puede ser un formato de trabajo propio
-(escenas numeradas) y no una plantilla generada.
+Método `f4-integridad`: pesos y transformaciones conservados; preprocesado y
+segmentación corregidos. No comparar directamente sus índices con f3 ni usar
+los resultados de calibración anteriores como validación de f4.
