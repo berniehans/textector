@@ -22,13 +22,13 @@ a10,llm,Hermes Agent (textos generados para este corpus),La caja del agua,Hermes
 h11,human,Project Gutenberg (pg15532),Novelas cortas,P. A. de Alarcon,dominio publico (redistribucion libre),1646,ed03f43a567844a15d0185d1685ac0cc2d9ce4d379390de869ce1ed612ceaec7
 h12,human,Project Gutenberg (pg23600),La gaviota,Fernan Caballero,dominio publico (redistribucion libre),3794,3d6a0938afa33f92633642929836114fa6bb72c13aa68022e5614eed82403078
 h13,human,Project Gutenberg (pg20011),Pequeneces,Luis Coloma,dominio publico (redistribucion libre),3477,12b57880ea1f5814bc09ba766ffdf5a9af36ffb43bf98b4a8d2f15d8a195079f
-h14,human,Project Gutenberg (pg24127),Penas arriba,J. M. de Pereda,dominio publico (redistribucion libre),3647,a7299ef3476aac1bc3b931491859a13b5a7f20c7d03601fcf4203bb8293454af
-h15,human,Project Gutenberg (pg26929),Cuentos de mi tiempo,J. O. Picon,dominio publico (redistribucion libre),3218,4ca1a312285dc5295534b1a6f9d227baaef273d1be7aa2d63ac30079a91d47fa
-h16,human,Project Gutenberg (pg62361),El senor y los demas son cuentos,Leopoldo Alas,dominio publico (redistribucion libre),3858,262f6bef519d6b711c1931300a6fbefe6e216a54edf541b30283cfbe73cb49dc
-h17,human,Project Gutenberg (pg74981),Pedro Sanchez,J. M. de Pereda,dominio publico (redistribucion libre),3386,d1ec2597f1de105e2a893a893791fb54a7e5393d712bfa254c1656a081f36b73
-h18,human,Project Gutenberg (pg77445),Las paredes oyen,J. Ruiz de Alarcon,dominio publico (redistribucion libre),1831,a8f76ecbbe3d9d92dbbf5d4dc3821da240e9ccd451ec8f15b6478b81c6c7aab2
-h19,human,Project Gutenberg (pg53294),Recuerdos del tiempo viejo,Jose Zorrilla,dominio publico (redistribucion libre),4234,20ba8c261e80fefb84ef0c5d847df5b1227a96b9a4b858e2fb9a03be5e458902
-h20,human,Project Gutenberg (pg75133),El conde de Candespina,P. de la Escosura,dominio publico (redistribucion libre),3148,d0986896d7e383c0eaa3277c8d778079a0dc955cfd15c08b575136014cb6ef81
+h14,human,Project Gutenberg (pg24127),Penas arriba,J. M. de Pereda,dominio publico (redistribucion libre),3647,b8b7d0afb0990a629c18867246335dca4a137ee43e1514109c88198f5238153a
+h15,human,Project Gutenberg (pg26929),Cuentos de mi tiempo,J. O. Picon,dominio publico (redistribucion libre),3218,2db366063cc1b61c8013ff06264869d94bf389bbe54d6a98877e8d97925399f6
+h16,human,Project Gutenberg (pg62361),El senor y los demas son cuentos,Leopoldo Alas,dominio publico (redistribucion libre),3858,9383af0a13f9f08e484ae4f96848bf91e1ae3a7092fb96d1e1b0ac82c41ffb8c
+h17,human,Project Gutenberg (pg74981),Pedro Sanchez,J. M. de Pereda,dominio publico (redistribucion libre),3386,8a87dd8b36ce4f6dc685f1a079e0e25376790ad4e28aff7835fe265a1c3e971a
+h18,human,Project Gutenberg (pg77445),Las paredes oyen,J. Ruiz de Alarcon,dominio publico (redistribucion libre),1831,c71a1df10f874de7f9d7ffe9eedcd7f27356e7997b01eba708386006bbf75677
+h19,human,Project Gutenberg (pg53294),Recuerdos del tiempo viejo,Jose Zorrilla,dominio publico (redistribucion libre),4234,46045490feed705504616f93270dc6812b2d687608b5c62acce3ad1d9df9f71c
+h20,human,Project Gutenberg (pg75133),El conde de Candespina,P. de la Escosura,dominio publico (redistribucion libre),3148,feeb3ff8c5df98b575a2f39160854e07a8e6bf10287bcb9928d752b4544130dc
 b01,llm,Zenodo DOI 19449815 (SLM sintetico RAG/no-RAG; temp 1.0/0.75/0.5; bufers A/B; pipeline del articulo MDPI DATA 11(2):29),noticias sinteticas (bloque 1: 30 descripciones),modelo SLM del pipeline Zenodo,CC-BY-4.0,5497,647613401b4566c665d7602fa861b8cd9e0007c0e593db6ccabd1f82793db069
 b02,llm,Zenodo DOI 19449815 (SLM sintetico RAG/no-RAG; temp 1.0/0.75/0.5; bufers A/B; pipeline del articulo MDPI DATA 11(2):29),noticias sinteticas (bloque 2: 30 descripciones),modelo SLM del pipeline Zenodo,CC-BY-4.0,6289,aa9e929e0d1916705323061d68296944bbd477f6e62ea6514e1bf3fcab6ae858
 b03,llm,Zenodo DOI 19449815 (SLM sintetico RAG/no-RAG; temp 1.0/0.75/0.5; bufers A/B; pipeline del articulo MDPI DATA 11(2):29),noticias sinteticas (bloque 3: 30 descripciones),modelo SLM del pipeline Zenodo,CC-BY-4.0,7018,ca764d096423a7eda75faed83384b524dd84cea4b19bd17cbf7440a87f0c42ee

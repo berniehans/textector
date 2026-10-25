@@ -1,0 +1,649 @@
+[
+  {
+    "id": "hnew-49836-02",
+    "autor": "Miguel de Unamuno",
+    "indice": 40,
+    "checks": {
+      "burstiness": {
+        "q": 0.0,
+        "contribucion": 0.0,
+        "bruto": {
+          "n_oraciones": 11,
+          "n_dialogo": 3,
+          "mediana_len": 16,
+          "mad_len": 10,
+          "cv_robusto": 0.625
+        }
+      },
+      "cliches_es": {
+        "q": 1.0,
+        "contribucion": 24.060150375939852,
+        "bruto": {
+          "n_tokens": 275,
+          "n_hits_total": 1,
+          "densidad_ponderada_por_1000": 9.4545,
+          "unidades_totales": 2.6,
+          "por_cliche": [
+            {
+              "id": 8,
+              "conteo": 1,
+              "peso": 26.0,
+              "fuente": "inspiracion-tematica::fiction::at-heart"
+            }
+          ]
+        }
+      },
+      "compression": {
+        "q": 0.4588698140200287,
+        "contribucion": 11.109479707853327,
+        "bruto": {
+          "n_bytes_muestra": 1398,
+          "n_seed_ia": 7189,
+          "n_seed_h": 27496,
+          "m_ia": 0.3934,
+          "m_h": 0.377,
+          "delta": 0.0165,
+          "escala": 0.4,
+          "semillas": "reales-es",
+          "nivel": "mecanica",
+          "sha256_seed_ia": "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+          "sha256_seed_hum": "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+        }
+      },
+      "mattr": {
+        "q": 0.2516224188790588,
+        "contribucion": 4.116769800607759,
+        "bruto": {
+          "n_tokens": 275,
+          "ventana": 50,
+          "n_ventanas": 226,
+          "mattr": 0.7745
+        }
+      },
+      "uniformity": {
+        "q": 0.03636363636363632,
+        "contribucion": 0.6561859193438133,
+        "bruto": {
+          "n_paragrafos": 5,
+          "n_dialogo": 5,
+          "mediana_len_parrafo": 55,
+          "cv_parrafo": 0.3818,
+          "share_apertura_max": null,
+          "q_dispersion": 0.0727,
+          "q_repeticion": 0.0,
+          "sin_prosa": true
+        }
+      }
+    },
+    "cliches_detectados": [
+      {
+        "frase": "en el fondo",
+        "peso": 26.0,
+        "pos": 12
+      }
+    ],
+    "preview": "—Pues eso es, querido Augusto, que tu repuesto de amor dormía inerte\nen el fondo de tu alma, sin tener dónde meterse; llegó Eugenia, la\npianista, te sacudió y remejió con sus ojos esa charca en que tu amor\ndormía; se despertó éste, brotó de ella, y c"
+  },
+  {
+    "id": "hnew-13507-05",
+    "autor": "Horacio Quiroga",
+    "indice": 39,
+    "checks": {
+      "burstiness": {
+        "q": 0.935483870967742,
+        "contribucion": 16.205675479020133,
+        "bruto": {
+          "n_oraciones": 18,
+          "n_dialogo": 0,
+          "mediana_len": 15.5,
+          "mad_len": 3.5,
+          "cv_robusto": 0.2258
+        }
+      },
+      "cliches_es": {
+        "q": 0.0,
+        "contribucion": 0.0,
+        "bruto": {
+          "n_tokens": 312,
+          "n_hits_total": 0,
+          "densidad_ponderada_por_1000": 0.0,
+          "unidades_totales": 0.0,
+          "por_cliche": []
+        }
+      },
+      "compression": {
+        "q": 0.4437253798536861,
+        "contribucion": 10.742824985931348,
+        "bruto": {
+          "n_bytes_muestra": 1777,
+          "n_seed_ia": 7189,
+          "n_seed_h": 27496,
+          "m_ia": 0.4418,
+          "m_h": 0.4192,
+          "delta": 0.0225,
+          "escala": 0.4,
+          "semillas": "reales-es",
+          "nivel": "mecanica",
+          "sha256_seed_ia": "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+          "sha256_seed_hum": "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+        }
+      },
+      "mattr": {
+        "q": 0.015589353612160961,
+        "contribucion": 0.25505589067715984,
+        "bruto": {
+          "n_tokens": 312,
+          "ventana": 50,
+          "n_ventanas": 263,
+          "mattr": 0.8453
+        }
+      },
+      "uniformity": {
+        "q": 0.6473193473193473,
+        "contribucion": 11.68095062831905,
+        "bruto": {
+          "n_paragrafos": 4,
+          "n_dialogo": 0,
+          "mediana_len_parrafo": 78.0,
+          "cv_parrafo": 0.2885,
+          "share_apertura_max": 0.5,
+          "q_dispersion": 0.4462,
+          "q_repeticion": 0.8485
+        }
+      }
+    },
+    "cliches_detectados": [],
+    "preview": "Los perros le acompañaron, pero se detuvieron a la sombra del primer\nalgarrobo; hacía demasiado calor. Desde allí, firmes en las patas, el\nceño contraído y atento, lo veían alejarse. Al fin el temor a la\nsoledad pudo más, y con agobiado trote siguier"
+  },
+  {
+    "id": "hnew-23236-04",
+    "autor": "Vicente Blasco Ibáñez",
+    "indice": 36,
+    "checks": {
+      "burstiness": {
+        "q": 1.0,
+        "contribucion": 17.323308270676694,
+        "bruto": {
+          "n_oraciones": 19,
+          "n_dialogo": 0,
+          "mediana_len": 12,
+          "mad_len": 2,
+          "cv_robusto": 0.1667
+        }
+      },
+      "cliches_es": {
+        "q": 0.0,
+        "contribucion": 0.0,
+        "bruto": {
+          "n_tokens": 275,
+          "n_hits_total": 0,
+          "densidad_ponderada_por_1000": 0.0,
+          "unidades_totales": 0.0,
+          "por_cliche": []
+        }
+      },
+      "compression": {
+        "q": 0.4075757575757577,
+        "contribucion": 9.867623604465713,
+        "bruto": {
+          "n_bytes_muestra": 1650,
+          "n_seed_ia": 7189,
+          "n_seed_h": 27496,
+          "m_ia": 0.4461,
+          "m_h": 0.4091,
+          "delta": 0.037,
+          "escala": 0.4,
+          "semillas": "reales-es",
+          "nivel": "mecanica",
+          "sha256_seed_ia": "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+          "sha256_seed_hum": "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+        }
+      },
+      "mattr": {
+        "q": 0.0,
+        "contribucion": 0.0,
+        "bruto": {
+          "n_tokens": 275,
+          "ventana": 50,
+          "n_ventanas": 226,
+          "mattr": 0.8819
+        }
+      },
+      "uniformity": {
+        "q": 0.5,
+        "contribucion": 9.022556390977444,
+        "bruto": {
+          "n_paragrafos": 6,
+          "n_dialogo": 0,
+          "mediana_len_parrafo": 52.5,
+          "cv_parrafo": 0.1143,
+          "share_apertura_max": 0.1667,
+          "q_dispersion": 1.0,
+          "q_repeticion": 0.0
+        }
+      }
+    },
+    "cliches_detectados": [],
+    "preview": "Se detuvo en la calle para lanzar una última mirada al hotel. «¡Adiós,\nmaldito _albergo_!... Nunca volvería á verle. ¡Ojalá se quemase con\ntodos sus habitantes!»\n\nAl pisar la cubierta del _Mare nostrum_, su forzada satisfacción fué en\naumento. Sólo a"
+  },
+  {
+    "id": "hnew-46182-00",
+    "autor": "Ramón del Valle-Inclán",
+    "indice": 40,
+    "checks": {
+      "burstiness": {
+        "q": 0.0,
+        "contribucion": 0.0,
+        "bruto": {
+          "n_oraciones": 16,
+          "n_dialogo": 0,
+          "mediana_len": 14.0,
+          "mad_len": 9.0,
+          "cv_robusto": 0.6429
+        }
+      },
+      "cliches_es": {
+        "q": 1.0,
+        "contribucion": 24.060150375939852,
+        "bruto": {
+          "n_tokens": 271,
+          "n_hits_total": 1,
+          "densidad_ponderada_por_1000": 9.5941,
+          "unidades_totales": 2.6,
+          "por_cliche": [
+            {
+              "id": 8,
+              "conteo": 1,
+              "peso": 26.0,
+              "fuente": "inspiracion-tematica::fiction::at-heart"
+            }
+          ]
+        }
+      },
+      "compression": {
+        "q": 0.43959107806691444,
+        "contribucion": 10.642731363725298,
+        "bruto": {
+          "n_bytes_muestra": 1614,
+          "n_seed_ia": 7189,
+          "n_seed_h": 27496,
+          "m_ia": 0.4418,
+          "m_h": 0.4176,
+          "delta": 0.0242,
+          "escala": 0.4,
+          "semillas": "reales-es",
+          "nivel": "mecanica",
+          "sha256_seed_ia": "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+          "sha256_seed_hum": "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+        }
+      },
+      "mattr": {
+        "q": 0.0771771771771742,
+        "contribucion": 1.2626882521618878,
+        "bruto": {
+          "n_tokens": 271,
+          "ventana": 50,
+          "n_ventanas": 222,
+          "mattr": 0.8268
+        }
+      },
+      "uniformity": {
+        "q": 0.2285714285714286,
+        "contribucion": 4.1245972073039745,
+        "bruto": {
+          "n_paragrafos": 8,
+          "n_dialogo": 0,
+          "mediana_len_parrafo": 3.5,
+          "cv_parrafo": 0.2857,
+          "share_apertura_max": 0.125,
+          "q_dispersion": 0.4571,
+          "q_repeticion": 0.0
+        }
+      }
+    },
+    "cliches_detectados": [
+      {
+        "frase": "en el fondo",
+        "peso": 26.0,
+        "pos": 155
+      }
+    ],
+    "preview": "--¡Míralas qué lástima!\n\nY hundió en aquella frescura aterciopelada sus mejillas pálidas:\n\n--¡Ah, qué fragancia!\n\nYo le dije sonriendo:\n\n--¡Tu divina fragancia!\n\nAlzó la cabeza y respiró con delicia, cerrando los ojos y sonriendo,\ncubierto el rostro "
+  },
+  {
+    "id": "hnew-46182-01",
+    "autor": "Ramón del Valle-Inclán",
+    "indice": 44,
+    "checks": {
+      "burstiness": {
+        "q": 0.6176470588235293,
+        "contribucion": 10.69969040247678,
+        "bruto": {
+          "n_oraciones": 24,
+          "n_dialogo": 0,
+          "mediana_len": 8.5,
+          "mad_len": 3.0,
+          "cv_robusto": 0.3529
+        }
+      },
+      "cliches_es": {
+        "q": 1.0,
+        "contribucion": 24.060150375939852,
+        "bruto": {
+          "n_tokens": 257,
+          "n_hits_total": 1,
+          "densidad_ponderada_por_1000": 10.1167,
+          "unidades_totales": 2.6,
+          "por_cliche": [
+            {
+              "id": 8,
+              "conteo": 1,
+              "peso": 26.0,
+              "fuente": "inspiracion-tematica::fiction::at-heart"
+            }
+          ]
+        }
+      },
+      "compression": {
+        "q": 0.3972841225626741,
+        "contribucion": 9.618457704148952,
+        "bruto": {
+          "n_bytes_muestra": 1436,
+          "n_seed_ia": 7189,
+          "n_seed_h": 27496,
+          "m_ia": 0.4526,
+          "m_h": 0.4116,
+          "delta": 0.0411,
+          "escala": 0.4,
+          "semillas": "reales-es",
+          "nivel": "mecanica",
+          "sha256_seed_ia": "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+          "sha256_seed_hum": "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+        }
+      },
+      "mattr": {
+        "q": 0.0,
+        "contribucion": 0.0,
+        "bruto": {
+          "n_tokens": 257,
+          "ventana": 50,
+          "n_ventanas": 208,
+          "mattr": 0.8578
+        }
+      },
+      "uniformity": {
+        "q": 0.0,
+        "contribucion": 0.0,
+        "bruto": {
+          "n_paragrafos": 16,
+          "n_dialogo": 0,
+          "mediana_len_parrafo": 8.0,
+          "cv_parrafo": 0.625,
+          "share_apertura_max": 0.0625,
+          "q_dispersion": 0.0,
+          "q_repeticion": 0.0
+        }
+      }
+    },
+    "cliches_detectados": [
+      {
+        "frase": "en el fondo",
+        "peso": 26.0,
+        "pos": 178
+      }
+    ],
+    "preview": "--¿Y tú crees que engañaremos a Isabel?\n\n--No lo hago por Isabel, lo hago por mis pequeñas, que son unas\nmujercitas.\n\n--¿Y Don Juan Manuel?\n\n--Yo le hablaré. Ese no tiene escrúpulos. Es otro descendiente de los\nBorgias. ¿Tío tuyo, verdad?\n\n--No sé. T"
+  },
+  {
+    "id": "hnew-46182-04",
+    "autor": "Ramón del Valle-Inclán",
+    "indice": 52,
+    "checks": {
+      "burstiness": {
+        "q": 0.6346153846153846,
+        "contribucion": 10.993637941006362,
+        "bruto": {
+          "n_oraciones": 34,
+          "n_dialogo": 0,
+          "mediana_len": 13.0,
+          "mad_len": 4.5,
+          "cv_robusto": 0.3462
+        }
+      },
+      "cliches_es": {
+        "q": 1.0,
+        "contribucion": 24.060150375939852,
+        "bruto": {
+          "n_tokens": 523,
+          "n_hits_total": 1,
+          "densidad_ponderada_por_1000": 4.9713,
+          "unidades_totales": 2.6,
+          "por_cliche": [
+            {
+              "id": 8,
+              "conteo": 1,
+              "peso": 26.0,
+              "fuente": "inspiracion-tematica::fiction::at-heart"
+            }
+          ]
+        }
+      },
+      "compression": {
+        "q": 0.45152123035773994,
+        "contribucion": 10.931566629713704,
+        "bruto": {
+          "n_bytes_muestra": 2991,
+          "n_seed_ia": 7189,
+          "n_seed_h": 27496,
+          "m_ia": 0.4176,
+          "m_h": 0.3982,
+          "delta": 0.0194,
+          "escala": 0.4,
+          "semillas": "reales-es",
+          "nivel": "mecanica",
+          "sha256_seed_ia": "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+          "sha256_seed_hum": "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+        }
+      },
+      "mattr": {
+        "q": 0.10126582278481622,
+        "contribucion": 1.656800228419249,
+        "bruto": {
+          "n_tokens": 523,
+          "ventana": 50,
+          "n_ventanas": 474,
+          "mattr": 0.8196
+        }
+      },
+      "uniformity": {
+        "q": 0.2285714285714286,
+        "contribucion": 4.1245972073039745,
+        "bruto": {
+          "n_paragrafos": 13,
+          "n_dialogo": 0,
+          "mediana_len_parrafo": 7,
+          "cv_parrafo": 0.2857,
+          "share_apertura_max": 0.1538,
+          "q_dispersion": 0.4571,
+          "q_repeticion": 0.0
+        }
+      }
+    },
+    "cliches_detectados": [
+      {
+        "frase": "en el fondo",
+        "peso": 26.0,
+        "pos": 493
+      }
+    ],
+    "preview": "--¡No grites, que puede oir Concha!...\n\nMis ojos se llenaron de lágrimas, y murmuré inclinándome:\n\n--¡La pobre Concha ya no puede oirnos!\n\nUn rizo de mi prima Isabel me rozaba los labios, suave y tentador. Creo\nque lo besé. Yo soy un santo que ama si"
+  },
+  {
+    "id": "hnew-39209-05",
+    "autor": "Juan Ramón Jiménez",
+    "indice": 51,
+    "checks": {
+      "burstiness": {
+        "q": 0.6666666666666667,
+        "contribucion": 11.54887218045113,
+        "bruto": {
+          "n_oraciones": 19,
+          "n_dialogo": 0,
+          "mediana_len": 12,
+          "mad_len": 4,
+          "cv_robusto": 0.3333
+        }
+      },
+      "cliches_es": {
+        "q": 1.0,
+        "contribucion": 24.060150375939852,
+        "bruto": {
+          "n_tokens": 281,
+          "n_hits_total": 1,
+          "densidad_ponderada_por_1000": 9.2527,
+          "unidades_totales": 2.6,
+          "por_cliche": [
+            {
+              "id": 8,
+              "conteo": 1,
+              "peso": 26.0,
+              "fuente": "inspiracion-tematica::fiction::at-heart"
+            }
+          ]
+        }
+      },
+      "compression": {
+        "q": 0.456896551724138,
+        "contribucion": 11.06170598911071,
+        "bruto": {
+          "n_bytes_muestra": 1508,
+          "n_seed_ia": 7189,
+          "n_seed_h": 27496,
+          "m_ia": 0.4509,
+          "m_h": 0.4337,
+          "delta": 0.0172,
+          "escala": 0.4,
+          "semillas": "reales-es",
+          "nivel": "mecanica",
+          "sha256_seed_ia": "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+          "sha256_seed_hum": "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+        }
+      },
+      "mattr": {
+        "q": 0.17241379310345017,
+        "contribucion": 2.820845216489531,
+        "bruto": {
+          "n_tokens": 281,
+          "ventana": 50,
+          "n_ventanas": 232,
+          "mattr": 0.7983
+        }
+      },
+      "uniformity": {
+        "q": 0.09956709956709953,
+        "contribucion": 1.7966995410604427,
+        "bruto": {
+          "n_paragrafos": 7,
+          "n_dialogo": 0,
+          "mediana_len_parrafo": 36,
+          "cv_parrafo": 0.9444,
+          "share_apertura_max": 0.2857,
+          "q_dispersion": 0.0,
+          "q_repeticion": 0.1991
+        }
+      }
+    },
+    "cliches_detectados": [
+      {
+        "frase": "en el fondo",
+        "peso": 26.0,
+        "pos": 214
+      }
+    ],
+    "preview": "Platero, indeciso, yergue las orejas, alza la cabeza, y, como un alacrán\ncercado por el fuego, intenta, nervioso, huir por doquiera. Pero, como\nes tan pequeño, las locas no le temen y siguen girando, cantando y\nriendo á su alrededor. Los chiquillos, "
+  },
+  {
+    "id": "hnew-39209-09",
+    "autor": "Juan Ramón Jiménez",
+    "indice": 37,
+    "checks": {
+      "burstiness": {
+        "q": 0.0,
+        "contribucion": 0.0,
+        "bruto": {
+          "n_oraciones": 14,
+          "n_dialogo": 0,
+          "mediana_len": 18.0,
+          "mad_len": 11.0,
+          "cv_robusto": 0.6111
+        }
+      },
+      "cliches_es": {
+        "q": 1.0,
+        "contribucion": 24.060150375939852,
+        "bruto": {
+          "n_tokens": 289,
+          "n_hits_total": 1,
+          "densidad_ponderada_por_1000": 8.9965,
+          "unidades_totales": 2.6,
+          "por_cliche": [
+            {
+              "id": 8,
+              "conteo": 1,
+              "peso": 26.0,
+              "fuente": "inspiracion-tematica::fiction::at-heart"
+            }
+          ]
+        }
+      },
+      "compression": {
+        "q": 0.46226415094339623,
+        "contribucion": 11.191658391261173,
+        "bruto": {
+          "n_bytes_muestra": 1590,
+          "n_seed_ia": 7189,
+          "n_seed_h": 27496,
+          "m_ia": 0.4358,
+          "m_h": 0.4208,
+          "delta": 0.0151,
+          "escala": 0.4,
+          "semillas": "reales-es",
+          "nivel": "mecanica",
+          "sha256_seed_ia": "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+          "sha256_seed_hum": "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+        }
+      },
+      "mattr": {
+        "q": 0.09305555555554978,
+        "contribucion": 1.5224728487885442,
+        "bruto": {
+          "n_tokens": 289,
+          "ventana": 50,
+          "n_ventanas": 240,
+          "mattr": 0.8221
+        }
+      },
+      "uniformity": {
+        "q": 0.0,
+        "contribucion": 0.0,
+        "bruto": {
+          "n_paragrafos": 10,
+          "n_dialogo": 0,
+          "mediana_len_parrafo": 25.5,
+          "cv_parrafo": 0.6863,
+          "share_apertura_max": 0.1,
+          "q_dispersion": 0.0,
+          "q_repeticion": 0.0
+        }
+      }
+    },
+    "cliches_detectados": [
+      {
+        "frase": "en el fondo",
+        "peso": 26.0,
+        "pos": 10
+      }
+    ],
+    "preview": "El mayor de los niños, que lo cuidaba, viéndolo yerto en el fondo de la\njaula, se ha apresurado, lloroso, á decir:\n\n--¡Pues no le ha faltado nada; ni comida, ni agua!\n\nNo. No le ha faltado nada, Platero. Se ha muerto porque sí--diría\nCampoamor, otro "
+  }
+]

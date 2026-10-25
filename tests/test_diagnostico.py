@@ -35,7 +35,7 @@ class TablaCategorias(unittest.TestCase):
     def test_plantilla_pura(self) -> None:
         d = _caso(40, 75)
         self.assertEqual(d["categoria"], "plantilla_prosa_y_estructura")
-        self.assertFalse(d["no_concluyente"])
+        self.assertTrue(d["no_concluyente"])
 
     def test_hibrido_estructura_propia(self) -> None:
         d = _caso(40, 20)
@@ -45,7 +45,7 @@ class TablaCategorias(unittest.TestCase):
         self.assertTrue(d["no_concluyente"])
 
     def test_banda_abstencion_prosa(self) -> None:
-        d = _caso(22, 75)
+        d = _caso(31, 75)
         self.assertEqual(d["categoria"], "prosa_no_concluyente")
         self.assertTrue(d["no_concluyente"])
         self.assertIn("abstención", d["nota"])
@@ -63,13 +63,13 @@ class TablaCategorias(unittest.TestCase):
         self.assertTrue(d["no_concluyente"])
 
     def test_fronteras_exactas(self) -> None:
-        # prosa == 26 va al ramal marcado; prosa == 18 al ramal sin señal.
-        self.assertEqual(_caso(26, 75)["categoria"], "plantilla_prosa_y_estructura")
+        # Banda inclusiva 29..33; 34 marcada y 28 sin señal.
+        self.assertEqual(_caso(34, 75)["categoria"], "plantilla_prosa_y_estructura")
         self.assertEqual(
-            _caso(18, 20)["categoria"], "sin_senal_suficiente"
+            _caso(28, 20)["categoria"], "sin_senal_suficiente"
         )
 
-    def test_combinaciones_no_tabuladas_son_concluyentes(self) -> None:
+    def test_combinaciones_no_tabuladas_no_concluyentes(self) -> None:
         # estructura intermedia o insuficiente → nunca concluye
         d = _caso(40, 50)
         self.assertEqual(d["categoria"], "prosa_no_concluyente")
@@ -83,13 +83,12 @@ class TablaCategorias(unittest.TestCase):
             d2["estructura"]["etiqueta"], "insuficiente"
         )
 
-    def test_no_concluyente_salvo_plantilla(self) -> None:
-        casos = [(40, 75), (40, 20), (22, 75), (10, 20), (10, 75)]
+    def test_todas_categorias_no_concluyentes(self) -> None:
+        casos = [(40, 75), (40, 20), (31, 75), (10, 20), (10, 75)]
         for indice, valor in casos:
             with self.subTest(indice=indice, valor=valor):
                 d = _caso(indice, valor)
-                esperado = d["categoria"] == "plantilla_prosa_y_estructura"
-                self.assertEqual(d["no_concluyente"], not esperado)
+                self.assertTrue(d["no_concluyente"])
 
 
 class ContratoInjectivo(unittest.TestCase):
@@ -103,13 +102,13 @@ class ContratoInjectivo(unittest.TestCase):
         self.assertEqual(d["prosa"]["indice_llm"], 40)
 
     def test_salida_json_nativa_y_determinista(self) -> None:
-        json.dumps(_caso(22, 75), sort_keys=True, ensure_ascii=False)
-        self.assertEqual(_caso(22, 75), _caso(22, 75))
+        json.dumps(_caso(31, 75), sort_keys=True, ensure_ascii=False)
+        self.assertEqual(_caso(31, 75), _caso(31, 75))
 
     def test_banda_y_etiquetas(self) -> None:
         self.assertEqual(
             banda_abstencion(),
-            {"umbral": 26, "margen": 8, "cota_inferior": 18, "cota_superior": 26},
+            {"umbral": 31, "margen": 2, "cota_inferior": 29, "cota_superior": 33, "estado": "provisional-sin-validacion-f4"},
         )
         self.assertEqual(etiqueta_estructura(_eje(60)), "regular")
         self.assertEqual(etiqueta_estructura(_eje(59)), "intermedia")

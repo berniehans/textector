@@ -148,9 +148,9 @@ class TestDeterminismoYOrden(unittest.TestCase):
         self.assertEqual(
             list(informe["contribuciones"]), sorted(informe["contribuciones"])
         )
-        # F5.4: VERSION_METODO pasa a f3-semillas (la señal cambia con
+        # F5.4: VERSION_METODO pasa a f4-integridad (la señal cambia con
         # semillas reales); actualización autorizada por el plan 5.4.
-        self.assertEqual(VERSION_METODO, "f3-semillas")
+        self.assertEqual(VERSION_METODO, "f4-integridad")
 
     def test_q_fuera_de_rango_se_acota(self):
         # defensa: q>1 no debe romper la coherencia (se acota antes de pesar)
@@ -161,12 +161,12 @@ class TestDeterminismoYOrden(unittest.TestCase):
         with self.assertRaises(ValueError):
             compute_indice({"desconocido": _resultado(0.5)})
 
-    def test_version_metodo_f3_semillas(self):
+    def test_version_metodo_f4_integridad(self):
         # F5.4: la versión del método y el JSON de compute_indice reportan
-        # f3-semillas (los índices cambian de significado con semillas reales).
+        # f4-integridad (los índices cambian de significado con semillas reales).
         informe = compute_indice(_todos(CASOS_COMPLETOS))
-        self.assertEqual(VERSION_METODO, "f3-semillas")
-        self.assertEqual(informe["version"], "f3-semillas")
+        self.assertEqual(VERSION_METODO, "f4-integridad")
+        self.assertEqual(informe["version"], "f4-integridad")
 
 
 if __name__ == "__main__":

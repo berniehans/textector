@@ -13,7 +13,7 @@ Este documento es la versión de proyecto de la skill homónima del agente.
 
 ## Cuándo usarlo
 
-- Cuando `textector` devuelve **abstención** (`18 ≤ indice < 26`).
+- Cuando `textector` devuelve **abstención** (`29 ≤ indice ≤ 33`).
 - Cuando los detectores web dicen «humano» con 0 % y el texto *suena* a plantilla.
 - Cuando el flujo real es **híbrido** (persona estructura, IA redacta): el caso
   donde todos los detectores de superficie fallan.
@@ -55,7 +55,7 @@ Para cada señal, cita **una evidencia literal** (frase corta) o marca «ausente
 
 - Corre `textector` (`--diagnostico`) y, si aporta, un detector web.
 - Reporta en tres bloques: **evidencia** (citas), **señales ausentes**, y
-  **veredicto cualitativo con confianza** (baja/media/alta) + advertencia.
+  **lectura descriptiva no concluyente** + límites de la evidencia.
 - Si el usuario explica el flujo de producción (p. ej. «yo estructuro, la IA
   redacta»), **eso prevalece** sobre cualquier score: los detectores no ven el
   proceso, solo la superficie.

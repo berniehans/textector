@@ -1,97 +1,56 @@
-# Guía de uso — textector
+# Guía de uso
 
-CLI local (Python 3.11 + stdlib) que calcula un **índice heurístico explicable 0–100** de señales de prosa típica de LLM en español, con un diagnóstico de dos ejes (prosa vs estructura). **No es una probabilidad ni una prueba de autoría**: es un pre-filtro; fuera de la banda el resultado es un indicio a revisar.
-
-## Requisitos
-
-- Python 3.11 (el proyecto fija `.python-version` = 3.11).
-- `uv` para el entorno (runtime **sin dependencias**).
-- **Semillas de compresión**: `corpus/seeds/seed_ia_es.txt` y
-  `corpus/seeds/seed_hum_es.txt`. El análisis las usa siempre (señal
-  `f3-semillas`) y es **fail-closed**: si faltan o no son legibles, el CLI
-  aborta con exit 1 y **no emite índice**.
+Requiere Python >=3.11. Runtime sin dependencias externas. Desde el checkout:
 
 ```bash
-cd workspace/textector
-uv sync                      # crea/actualiza .venv desde uv.lock
+uv run python -B tools/cli.py analyze --archivo texto.txt
+uv run python -B tools/cli.py analyze --archivo texto.txt --json --diagnostico
+uv run python -B tools/cli.py analyze --stdin --detallado
 ```
 
-## Uso básico
+Tras instalar el wheel: `textector analyze --archivo texto.txt --json`.
+No requiere el checkout ni el corpus completo: los recursos están incluidos.
 
-```bash
-uv run python tools/cli.py analyze --archivo ruta/al/texto.txt
-uv run python tools/cli.py analyze --stdin < texto.txt
-```
+## Opciones
 
-Salida por defecto (una línea):
-
-```
-indice_llm=24 version=f2 n_disponibles=5
-```
-
-## Flags
-
-| Flag | Qué hace |
+| Opción | Efecto |
 |---|---|
-| `--archivo RUTA` / `--stdin` | Entrada (mutuamente excluyentes, obligatorio uno) |
-| `--json` | Informe completo en JSON ordenado (contribuciones, pesos, coverage) |
-| `--detallado` | Desglose por check: valor bruto, normalizado, peso, contribución, coverage |
-| `--diagnostico` | Bloque de dos ejes (prosa vs estructura) con categoría y nota |
-| `--config RUTA` | Léxico YAML-min alternativo (por defecto `config/cliches_es.yaml`) |
+| `--archivo RUTA` | Lee UTF-8; excluyente con stdin |
+| `--stdin` | Lee la entrada estándar |
+| `--json` | Informe completo serializable |
+| `--detallado` | Contribución, peso, normalizado y métricas de cada check |
+| `--diagnostico` | Añade descripción de prosa y estructura |
+| `--config RUTA` | Léxico YAML-min alternativo, con esquema válido |
+| `--metodo f4` | Perfil histórico (predeterminado) |
+| `--metodo f5` | Perfil portable experimental, con abstención explícita |
 
-## Ejemplo real
+## Interpretación
 
-```bash
-uv run python tools/cli.py analyze --archivo mi_texto.txt --diagnostico
-# indice_llm=24 version=f2 n_disponibles=5
-# diagnostico: categoria=prosa_no_concluyente prosa=24 estructura=67 no_concluyente=True
-# nota: El índice de prosa (24) cae en la banda de abstención [18, 26): decisión no
-#       concluyente. Estructura: regular (valor 67). Ojo: 'estructura regular' no
-#       distingue una plantilla generada de un formato de trabajo propio.
-```
+`indice_llm` es un índice de estilo 0..100, no probabilidad ni prueba de autoría.
+`version=f4-integridad` conserva la señal histórica. Para el perfil portable experimental, elija `--metodo f5`; el CLI sigue usando F4 si no se especifica.
+El JSON incluye SHA256 de las semillas y una huella del contenido del léxico.
 
-## Cómo leer el resultado
+F5 pondera MATTR (0,45), densidad de clichés (0,25) y evidencia positiva de
+compresión (0,30), con denominador fijo 1. Los checks de ritmo y párrafos se
+devuelven como auxiliares fuera del índice. Si cualquiera de los tres checks
+principales resulta insuficiente, F5 no renormaliza y se abstiene.
 
-1. **Umbral congelado**: 26, margen 8 → **banda de abstención `[18, 26)`**.
-2. `indice_llm >= 26` → señal de prosa marcada (no veredicto).
-3. `18 <= indice < 26` → **no concluyente** (banda).
-4. `indice <= 18` → sin señal de prosa por estos checks (tampoco exculpa).
-5. `--diagnostico` añade la lectura estructural: solo la categoría
-   `plantilla_prosa_y_estructura` es concluyente; el resto son
-   `no_concluyente=True`.
+La referencia provisional del diagnóstico es umbral 31/margen 2: banda inclusiva
+29..33. Menor que 29 significa sin señal suficiente; mayor que 33 indica estilo
+marcado bajo esa referencia. Ningún caso determina autoría. Todas las categorías
+son `no_concluyente=True`; el eje estructural no está calibrado empíricamente.
+F4 requiere un corpus y holdout nuevos para validación independiente.
 
-## Errores y códigos
+## Errores
 
-| Situación | Comportamiento |
-|---|---|
-| Archivo inexistente / no UTF-8 | `error: …` en stderr, **exit 1**, sin volcar contenido |
-| YAML inválido o con claves no permitidas | `error: config YAML invalido (línea N): …`, exit 1 |
-| Entrada vacía | `error: entrada vacia…`, exit 1 |
-| Texto demasiado corto (cobertura < 5 checks) | `error: texto muy corto…`, exit 1, **sin número** |
-| Semillas de compresión ausentes o ilegibles | `error: …` de una línea, **exit 1**, sin emitir índice (fail-closed) |
+Los errores de lectura/UTF-8, entrada vacía, falta de cobertura de alguno de los
+cinco checks, YAML/esquema inválido o semillas ausentes/vacías se reportan en una
+línea por stderr, exit 1, sin índice ni traceback. Errores de argumentos los
+gestiona argparse con exit 2 y su ayuda de uso.
 
-### Campos de versión en la salida
+El esquema exige versión 1, listas de escalares `frase|peso|fuente`, pesos 0..100
+y léxico no vacío. Solo admite `version`, `cliches` y `phrases` (legacy).
+Saltos CRLF y LF y variantes Unicode NFC/NFD se procesan de forma equivalente.
+Los spans de evidencia conservan los offsets del texto original.
 
-Toda salida (`--json` y humana) declara el método y la señal:
-
-- `"version": "f3-semillas"` — versión del método (los índices **no** son
-  comparables con los de `f2`).
-- `"semillas": "reales-es"` — la compresión sembada usó las semillas ES reales
-  del corpus (no las fixtures sintéticas de F2).
-
-## Tests
-
-```bash
-uv run python -B -m unittest discover -s tests -p "test_*.py" -v
-```
-
-## Documentos relacionados
-
-- `docs/arquitectura.md` — módulos y flujo.
-- `docs/checks.md` — qué mide cada check y sus pesos.
-- `docs/calibration.md` — matriz real de calibración (v1 y v2) y límites.
-- `docs/diagnostico-hibrido.md` — los dos ejes y la tabla de categorías.
-- `docs/corpus.md` — corpus, procedencia/licencias y semillas.
-- `docs/analisis-manual-llm.md` — análisis forense manual asistido por LLM.
-- `docs/methodology.md` — decisiones de método congeladas (F2).
-- `NOTICE` — atribuciones MIT de los ports.
+Ver [evaluación](calibration.md), [checks](checks.md) e [integridad](integridad-f4.md).

@@ -83,8 +83,8 @@ class TestSegmentacion(unittest.TestCase):
         text = "Y luego todo se detuvo... Algo cambió."
         spans = split_sentences(text)
         # elipsis no corta: la primera oración contiene la elipsis y sigue
-        self.assertTrue(spans[0].text.startswith("Y luego"))
-        self.assertIn("...", spans[0].text)
+        self.assertEqual([s.text for s in spans], [text])
+        self._assert_spans_back(text, spans)
 
     def test_abreviatura_sr_no_corta(self):
         text = "Sr. López volvió ayer. Fue tarde."

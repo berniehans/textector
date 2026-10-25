@@ -1,3 +1,11 @@
+> **Estado tras f4-integridad:** el cotejo que sigue es un registro histórico.
+> Todas las antiguas etiquetas `aich::` se renombraron a
+> `inspiracion-tematica::`, sin cambiar frases ni pesos. No se afirma derivación
+> 1:1 ni se volvió a verificar el corpus externo. En el resumen histórico, las
+> 3 espurias son los dos “No” con match descartado y la fila “Dudoso”; las 8
+> inexistentes son las otras filas “No”. Una de las 3 correspondencias
+> reportadas es aproximada, como indica su fila.
+
 # Cotejo AIStoryHub (F8c) — resultado real
 
 Fuente descargada: `AIStoryHub/AIStoryHub_LLM_Cliche_Corpus`,

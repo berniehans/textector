@@ -1,0 +1,1522 @@
+{
+  "hashes": {
+    "codigo": {
+      "tools/__init__.py": "2f1d201a176bdd4272515a4ddb4b484741f1cfd935df82324ec77a2259a6a4e3",
+      "tools/calibrate.py": "2dea26ae71ad66592a053dee4abcd7385bf7cbeabd688f865ee465bd6047c5d3",
+      "tools/checks/__init__.py": "3da20ff52d7a5338792c3a9c1c3fe599af3749a70d70a15bb34bd8abb2b02e51",
+      "tools/checks/burstiness.py": "8228dab6f8477c0388c31bb7fbe83f7c07cd79cad17c941036f9c07c6afc0f84",
+      "tools/checks/cliches_es.py": "7b6b2e650422248f52f1a8357239d80c53f87a82d890a6227a52f52976087d8f",
+      "tools/checks/compression.py": "ba753dbb2fbc0326e7f0b9f95c548fb7ffc8688025d090e85d704a9863e0b035",
+      "tools/checks/mattr.py": "3fe0cdbe01d759fc16fec65762b47d33e7d95fdf394eae8b9a13df8ee93c3205",
+      "tools/checks/registry.py": "6199e24cbbc15ad838e09959173b825131f539b0746367f128cb253251d79fb9",
+      "tools/checks/uniformity.py": "e61853314246646e9d041397705f76d9a3ebd71d4dc8964f6d29693013fb8b44",
+      "tools/cli.py": "fc570682b6b12cbcf71f2480ce50184f029bb6a15e77a8466ab508a5b48fe106",
+      "tools/decision.py": "ff027ed861713abe77b3df2eba2a508eae3277186ab825cf9a2912092d9b84fa",
+      "tools/diagnostico.py": "d289289d715ebd495359d50ecbab235a81ee8d150233c1b037badee561dcea1f",
+      "tools/estructura.py": "81087413ece38cf99b34c1ce0e9533d6d855588a988f10d32a6b91aad05d28d5",
+      "tools/lexicon.py": "0deaf7ce15b9c7928b70243865a65989dfa4839969d4c42b2442ef79d18896e4",
+      "tools/pipeline.py": "ce7820fba2cefab6d2867aa53ccba426b96bc34e720a28f4fe530a56c97e2167",
+      "tools/resources.py": "ecda18dfdeb724cacf5969f1c9c03fd4e30e4673402653ca87957df54cb6ada0",
+      "tools/scoring.py": "0aada3b7c4fdc423b56624ada31f22dd6521825b0665efe33f6a6a8370cf7e54",
+      "tools/textector_core.py": "cc786b4713373cce91b47c318a9e03870d4cb5402e472d5d5c26451bfdb0e569"
+    },
+    "lexicon": "ecef4feda29531c3a4057170490837a34eab259029e1cc2b5edc5a274d739cc3",
+    "manifest": "01e2b08b2a9f8369c60c8b7207e3c2481f1500d7bb725758a7fe0add633a4473",
+    "receta_semillas": "69b87c326b3b2244224d04f89834fd8ac03229bd9bceb30480185b32d33201c1",
+    "semillas": [
+      "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+      "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+    ]
+  },
+  "holdout": "no evaluado",
+  "train": {
+    "aviso": "Evaluación interna exploratoria; requiere corpus y holdout nuevos. La elección final no actualiza la referencia provisional del CLI.",
+    "cv": {
+      "folds": [
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h05",
+              "h06",
+              "h07",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a02",
+              "a03",
+              "a04",
+              "a06",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "a01",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 0,
+            "abstenciones_ia": 0,
+            "fn": 1,
+            "fp": 0,
+            "tn": 0,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 1.0,
+            "cobertura_humano": null,
+            "cobertura_ia": 1.0,
+            "tnr": null,
+            "tpr": 0.0
+          },
+          "piezas": [
+            "a01"
+          ],
+          "sha256_semillas": [
+            "720aa614787a48541c5a9becf5016b9b2d6c13c234dd256ceaaa69538c39271f",
+            "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+          ],
+          "umbral": 32
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h05",
+              "h06",
+              "h07",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a03",
+              "a04",
+              "a06",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "a02",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 0,
+            "abstenciones_ia": 1,
+            "fn": 0,
+            "fp": 0,
+            "tn": 0,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 0.0,
+            "cobertura_humano": null,
+            "cobertura_ia": 0.0,
+            "tnr": null,
+            "tpr": null
+          },
+          "piezas": [
+            "a02"
+          ],
+          "sha256_semillas": [
+            "d0ef68c53bc6b620bf766c39660020db37a7bf5edce348f87c46727254a364ba",
+            "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+          ],
+          "umbral": 31
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h05",
+              "h06",
+              "h07",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a04",
+              "a06",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "a03",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 0,
+            "abstenciones_ia": 0,
+            "fn": 1,
+            "fp": 0,
+            "tn": 0,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 1.0,
+            "cobertura_humano": null,
+            "cobertura_ia": 1.0,
+            "tnr": null,
+            "tpr": 0.0
+          },
+          "piezas": [
+            "a03"
+          ],
+          "sha256_semillas": [
+            "b69893090699a683b18efaa0707b9a616a25f14ae47484849488a3a858371bf8",
+            "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+          ],
+          "umbral": 33
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h05",
+              "h06",
+              "h07",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a03",
+              "a06",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "a04",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 0,
+            "abstenciones_ia": 1,
+            "fn": 0,
+            "fp": 0,
+            "tn": 0,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 0.0,
+            "cobertura_humano": null,
+            "cobertura_ia": 0.0,
+            "tnr": null,
+            "tpr": null
+          },
+          "piezas": [
+            "a04"
+          ],
+          "sha256_semillas": [
+            "85530009ff6a596436abe90ba73294da519bf444ac700f9712a147db9de370e9",
+            "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+          ],
+          "umbral": 33
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h05",
+              "h06",
+              "h07",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a03",
+              "a04",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "a06",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 0,
+            "abstenciones_ia": 1,
+            "fn": 0,
+            "fp": 0,
+            "tn": 0,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 0.0,
+            "cobertura_humano": null,
+            "cobertura_ia": 0.0,
+            "tnr": null,
+            "tpr": null
+          },
+          "piezas": [
+            "a06"
+          ],
+          "sha256_semillas": [
+            "c7c50c41cef83d069981857b11c01481a376f2a3943ed4da49b3284226f5cdd9",
+            "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+          ],
+          "umbral": 32
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h05",
+              "h06",
+              "h07",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a03",
+              "a04",
+              "a06",
+              "a10"
+            ]
+          },
+          "grupo": "a08",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 0,
+            "abstenciones_ia": 1,
+            "fn": 0,
+            "fp": 0,
+            "tn": 0,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 0.0,
+            "cobertura_humano": null,
+            "cobertura_ia": 0.0,
+            "tnr": null,
+            "tpr": null
+          },
+          "piezas": [
+            "a08"
+          ],
+          "sha256_semillas": [
+            "6a1dfb914abab3b1a9907878bb35f35dd3caf4e8a402a7232e4e861290c47bbe",
+            "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+          ],
+          "umbral": 33
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h05",
+              "h06",
+              "h07",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a03",
+              "a04",
+              "a06",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "a09",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 0,
+            "abstenciones_ia": 1,
+            "fn": 0,
+            "fp": 0,
+            "tn": 0,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 0.0,
+            "cobertura_humano": null,
+            "cobertura_ia": 0.0,
+            "tnr": null,
+            "tpr": null
+          },
+          "piezas": [
+            "a09"
+          ],
+          "sha256_semillas": [
+            "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+            "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+          ],
+          "umbral": 33
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h05",
+              "h06",
+              "h07",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a03",
+              "a04",
+              "a06",
+              "a08"
+            ]
+          },
+          "grupo": "a10",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 0,
+            "abstenciones_ia": 1,
+            "fn": 0,
+            "fp": 0,
+            "tn": 0,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 0.0,
+            "cobertura_humano": null,
+            "cobertura_ia": 0.0,
+            "tnr": null,
+            "tpr": null
+          },
+          "piezas": [
+            "a10"
+          ],
+          "sha256_semillas": [
+            "bacb7da41af17ba73f11df6794ca5313dbed21c0510fd97c028feb213b633de2",
+            "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+          ],
+          "umbral": 33
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h05",
+              "h06",
+              "h07",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a03",
+              "a04",
+              "a06",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "anonimo_lazarillo",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 0,
+            "abstenciones_ia": 0,
+            "fn": 0,
+            "fp": 0,
+            "tn": 1,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 1.0,
+            "cobertura_humano": 1.0,
+            "cobertura_ia": null,
+            "tnr": 1.0,
+            "tpr": null
+          },
+          "piezas": [
+            "h02"
+          ],
+          "sha256_semillas": [
+            "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+            "7ec03d85d68428cade2bfeb2867de8dde40db0fa085e6b8b9ab02d2647a5ae8c"
+          ],
+          "umbral": 33
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h05",
+              "h06",
+              "h07",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a03",
+              "a04",
+              "a06",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "becquer",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 0,
+            "abstenciones_ia": 0,
+            "fn": 0,
+            "fp": 0,
+            "tn": 1,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 1.0,
+            "cobertura_humano": 1.0,
+            "cobertura_ia": null,
+            "tnr": 1.0,
+            "tpr": null
+          },
+          "piezas": [
+            "h09"
+          ],
+          "sha256_semillas": [
+            "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+            "2d5792437805a4d93dcf3489cde30c05505d619e9a980ec7498ea18d07960099"
+          ],
+          "umbral": 33
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h02",
+              "h05",
+              "h06",
+              "h07",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a03",
+              "a04",
+              "a06",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "cervantes",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 0,
+            "abstenciones_ia": 0,
+            "fn": 0,
+            "fp": 0,
+            "tn": 1,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 1.0,
+            "cobertura_humano": 1.0,
+            "cobertura_ia": null,
+            "tnr": 1.0,
+            "tpr": null
+          },
+          "piezas": [
+            "h01"
+          ],
+          "sha256_semillas": [
+            "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+            "18bee6bc5dbe48d54c2bcd288a02447145d0f336edf0dd2a21b4b877943f1b52"
+          ],
+          "umbral": 33
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h05",
+              "h06",
+              "h07",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a03",
+              "a04",
+              "a06",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "coloma",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 1,
+            "abstenciones_ia": 0,
+            "fn": 0,
+            "fp": 0,
+            "tn": 0,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 0.0,
+            "cobertura_humano": 0.0,
+            "cobertura_ia": null,
+            "tnr": null,
+            "tpr": null
+          },
+          "piezas": [
+            "h13"
+          ],
+          "sha256_semillas": [
+            "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+            "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+          ],
+          "umbral": 31
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h05",
+              "h06",
+              "h07",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a03",
+              "a04",
+              "a06",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "escosura",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 1,
+            "abstenciones_ia": 0,
+            "fn": 0,
+            "fp": 0,
+            "tn": 0,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 0.0,
+            "cobertura_humano": 0.0,
+            "cobertura_ia": null,
+            "tnr": null,
+            "tpr": null
+          },
+          "piezas": [
+            "h20"
+          ],
+          "sha256_semillas": [
+            "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+            "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+          ],
+          "umbral": 33
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h05",
+              "h06",
+              "h07",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a03",
+              "a04",
+              "a06",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "fernan_caballero",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 0,
+            "abstenciones_ia": 0,
+            "fn": 0,
+            "fp": 0,
+            "tn": 1,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 1.0,
+            "cobertura_humano": 1.0,
+            "cobertura_ia": null,
+            "tnr": 1.0,
+            "tpr": null
+          },
+          "piezas": [
+            "h12"
+          ],
+          "sha256_semillas": [
+            "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+            "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+          ],
+          "umbral": 33
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h05",
+              "h07",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a03",
+              "a04",
+              "a06",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "galdos",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 0,
+            "abstenciones_ia": 0,
+            "fn": 0,
+            "fp": 0,
+            "tn": 1,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 1.0,
+            "cobertura_humano": 1.0,
+            "cobertura_ia": null,
+            "tnr": 1.0,
+            "tpr": null
+          },
+          "piezas": [
+            "h06"
+          ],
+          "sha256_semillas": [
+            "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+            "6a11229f4cf855e02b9f62417e7e477167ab86a2bb20498959e8f1cca559b3a4"
+          ],
+          "umbral": 33
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h05",
+              "h06",
+              "h07",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a03",
+              "a04",
+              "a06",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "j_ruiz_de_alarcon",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 0,
+            "abstenciones_ia": 0,
+            "fn": 0,
+            "fp": 0,
+            "tn": 1,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 1.0,
+            "cobertura_humano": 1.0,
+            "cobertura_ia": null,
+            "tnr": 1.0,
+            "tpr": null
+          },
+          "piezas": [
+            "h18"
+          ],
+          "sha256_semillas": [
+            "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+            "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+          ],
+          "umbral": 33
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h05",
+              "h06",
+              "h07",
+              "h09"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a03",
+              "a04",
+              "a06",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "larra",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 1,
+            "abstenciones_ia": 0,
+            "fn": 0,
+            "fp": 0,
+            "tn": 0,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 0.0,
+            "cobertura_humano": 0.0,
+            "cobertura_ia": null,
+            "tnr": null,
+            "tpr": null
+          },
+          "piezas": [
+            "h10"
+          ],
+          "sha256_semillas": [
+            "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+            "73d9b51f30230b41f50f5ac8d17bcd7172009484e9c5074701bc2251f7786163"
+          ],
+          "umbral": 33
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h05",
+              "h06",
+              "h07",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a03",
+              "a04",
+              "a06",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "p_a_alarcon",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 0,
+            "abstenciones_ia": 0,
+            "fn": 0,
+            "fp": 0,
+            "tn": 1,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 1.0,
+            "cobertura_humano": 1.0,
+            "cobertura_ia": null,
+            "tnr": 1.0,
+            "tpr": null
+          },
+          "piezas": [
+            "h11"
+          ],
+          "sha256_semillas": [
+            "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+            "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+          ],
+          "umbral": 33
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h05",
+              "h06",
+              "h07",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a03",
+              "a04",
+              "a06",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "palma",
+          "margen": 0,
+          "matriz": {
+            "abstenciones_humano": 0,
+            "abstenciones_ia": 0,
+            "fn": 0,
+            "fp": 1,
+            "tn": 0,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 1.0,
+            "cobertura_humano": 1.0,
+            "cobertura_ia": null,
+            "tnr": 0.0,
+            "tpr": null
+          },
+          "piezas": [
+            "h04"
+          ],
+          "sha256_semillas": [
+            "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+            "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+          ],
+          "umbral": 31
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h06",
+              "h07",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a03",
+              "a04",
+              "a06",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "pardo_bazan",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 0,
+            "abstenciones_ia": 0,
+            "fn": 0,
+            "fp": 0,
+            "tn": 1,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 1.0,
+            "cobertura_humano": 1.0,
+            "cobertura_ia": null,
+            "tnr": 1.0,
+            "tpr": null
+          },
+          "piezas": [
+            "h05"
+          ],
+          "sha256_semillas": [
+            "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+            "64706907334d47c34a283c19c649370749a94b3444eb74ba2a248a1d84cd22c7"
+          ],
+          "umbral": 33
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h05",
+              "h06",
+              "h07",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a03",
+              "a04",
+              "a06",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "pereda",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 0,
+            "abstenciones_ia": 0,
+            "fn": 0,
+            "fp": 1,
+            "tn": 1,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 1.0,
+            "cobertura_humano": 1.0,
+            "cobertura_ia": null,
+            "tnr": 0.5,
+            "tpr": null
+          },
+          "piezas": [
+            "h14",
+            "h17"
+          ],
+          "sha256_semillas": [
+            "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+            "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+          ],
+          "umbral": 31
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h05",
+              "h06",
+              "h07",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a03",
+              "a04",
+              "a06",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "picon",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 0,
+            "abstenciones_ia": 0,
+            "fn": 0,
+            "fp": 0,
+            "tn": 1,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 1.0,
+            "cobertura_humano": 1.0,
+            "cobertura_ia": null,
+            "tnr": 1.0,
+            "tpr": null
+          },
+          "piezas": [
+            "h15"
+          ],
+          "sha256_semillas": [
+            "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+            "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+          ],
+          "umbral": 33
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h05",
+              "h06",
+              "h07",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a03",
+              "a04",
+              "a06",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "quevedo",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 0,
+            "abstenciones_ia": 0,
+            "fn": 0,
+            "fp": 0,
+            "tn": 1,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 1.0,
+            "cobertura_humano": 1.0,
+            "cobertura_ia": null,
+            "tnr": 1.0,
+            "tpr": null
+          },
+          "piezas": [
+            "h03"
+          ],
+          "sha256_semillas": [
+            "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+            "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+          ],
+          "umbral": 33
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h05",
+              "h06",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a03",
+              "a04",
+              "a06",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "valera",
+          "margen": 2,
+          "matriz": {
+            "abstenciones_humano": 0,
+            "abstenciones_ia": 0,
+            "fn": 0,
+            "fp": 0,
+            "tn": 1,
+            "tp": 0
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 1.0,
+            "cobertura_humano": 1.0,
+            "cobertura_ia": null,
+            "tnr": 1.0,
+            "tpr": null
+          },
+          "piezas": [
+            "h07"
+          ],
+          "sha256_semillas": [
+            "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+            "7f1a175e87d8092f6e8bff814b0c3ea8ae8c06f61ddda3bb6547605508ddfbfd"
+          ],
+          "umbral": 33
+        },
+        {
+          "fuentes_semillas": {
+            "humana": [
+              "h01",
+              "h02",
+              "h05",
+              "h06",
+              "h07",
+              "h09",
+              "h10"
+            ],
+            "ia": [
+              "a01",
+              "a02",
+              "a03",
+              "a04",
+              "a06",
+              "a08",
+              "a10"
+            ]
+          },
+          "grupo": "zenodo",
+          "margen": 0,
+          "matriz": {
+            "abstenciones_humano": 0,
+            "abstenciones_ia": 1,
+            "fn": 1,
+            "fp": 0,
+            "tn": 0,
+            "tp": 7
+          },
+          "metricas": {
+            "balanced": null,
+            "cobertura": 0.8888888888888888,
+            "cobertura_humano": null,
+            "cobertura_ia": 0.8888888888888888,
+            "tnr": null,
+            "tpr": 0.875
+          },
+          "piezas": [
+            "b01",
+            "b02",
+            "b04",
+            "b05",
+            "b06",
+            "b07",
+            "b08",
+            "b09",
+            "b10"
+          ],
+          "sha256_semillas": [
+            "bdf14aa17eeadba97707ae6edb99297a54d33e5b1ac380f81d6b2c6fec99b52a",
+            "f2af66ad46831fc7772c4ad2b449adf59ec6e5a4b17859050d48a7dad3ce4180"
+          ],
+          "umbral": 33
+        }
+      ],
+      "matriz": {
+        "abstenciones_humano": 3,
+        "abstenciones_ia": 7,
+        "fn": 3,
+        "fp": 2,
+        "tn": 12,
+        "tp": 7
+      },
+      "metricas": {
+        "balanced": 0.7785714285714285,
+        "cobertura": 0.7058823529411765,
+        "cobertura_humano": 0.8235294117647058,
+        "cobertura_ia": 0.5882352941176471,
+        "tnr": 0.8571428571428571,
+        "tpr": 0.7
+      },
+      "predicciones": [
+        {
+          "esperado": "ia",
+          "id": "a01",
+          "indice": 20,
+          "predicho": "humano"
+        },
+        {
+          "esperado": "ia",
+          "id": "a02",
+          "indice": null,
+          "predicho": "abstencion"
+        },
+        {
+          "esperado": "ia",
+          "id": "a03",
+          "indice": 28,
+          "predicho": "humano"
+        },
+        {
+          "esperado": "ia",
+          "id": "a04",
+          "indice": null,
+          "predicho": "abstencion"
+        },
+        {
+          "esperado": "ia",
+          "id": "a06",
+          "indice": null,
+          "predicho": "abstencion"
+        },
+        {
+          "esperado": "ia",
+          "id": "a08",
+          "indice": null,
+          "predicho": "abstencion"
+        },
+        {
+          "esperado": "ia",
+          "id": "a09",
+          "indice": null,
+          "predicho": "abstencion"
+        },
+        {
+          "esperado": "ia",
+          "id": "a10",
+          "indice": null,
+          "predicho": "abstencion"
+        },
+        {
+          "esperado": "humano",
+          "id": "h02",
+          "indice": 17,
+          "predicho": "humano"
+        },
+        {
+          "esperado": "humano",
+          "id": "h09",
+          "indice": 13,
+          "predicho": "humano"
+        },
+        {
+          "esperado": "humano",
+          "id": "h01",
+          "indice": 26,
+          "predicho": "humano"
+        },
+        {
+          "esperado": "humano",
+          "id": "h13",
+          "indice": 30,
+          "predicho": "abstencion"
+        },
+        {
+          "esperado": "humano",
+          "id": "h20",
+          "indice": null,
+          "predicho": "abstencion"
+        },
+        {
+          "esperado": "humano",
+          "id": "h12",
+          "indice": 22,
+          "predicho": "humano"
+        },
+        {
+          "esperado": "humano",
+          "id": "h06",
+          "indice": 26,
+          "predicho": "humano"
+        },
+        {
+          "esperado": "humano",
+          "id": "h18",
+          "indice": 22,
+          "predicho": "humano"
+        },
+        {
+          "esperado": "humano",
+          "id": "h10",
+          "indice": null,
+          "predicho": "abstencion"
+        },
+        {
+          "esperado": "humano",
+          "id": "h11",
+          "indice": 16,
+          "predicho": "humano"
+        },
+        {
+          "esperado": "humano",
+          "id": "h04",
+          "indice": 33,
+          "predicho": "ia"
+        },
+        {
+          "esperado": "humano",
+          "id": "h05",
+          "indice": 14,
+          "predicho": "humano"
+        },
+        {
+          "esperado": "humano",
+          "id": "h14",
+          "indice": 54,
+          "predicho": "ia"
+        },
+        {
+          "esperado": "humano",
+          "id": "h17",
+          "indice": 22,
+          "predicho": "humano"
+        },
+        {
+          "esperado": "humano",
+          "id": "h15",
+          "indice": 11,
+          "predicho": "humano"
+        },
+        {
+          "esperado": "humano",
+          "id": "h03",
+          "indice": 28,
+          "predicho": "humano"
+        },
+        {
+          "esperado": "humano",
+          "id": "h07",
+          "indice": 18,
+          "predicho": "humano"
+        },
+        {
+          "esperado": "ia",
+          "id": "b01",
+          "indice": 34,
+          "predicho": "ia"
+        },
+        {
+          "esperado": "ia",
+          "id": "b02",
+          "indice": 33,
+          "predicho": "abstencion"
+        },
+        {
+          "esperado": "ia",
+          "id": "b04",
+          "indice": 34,
+          "predicho": "ia"
+        },
+        {
+          "esperado": "ia",
+          "id": "b05",
+          "indice": 36,
+          "predicho": "ia"
+        },
+        {
+          "esperado": "ia",
+          "id": "b06",
+          "indice": 35,
+          "predicho": "ia"
+        },
+        {
+          "esperado": "ia",
+          "id": "b07",
+          "indice": 36,
+          "predicho": "ia"
+        },
+        {
+          "esperado": "ia",
+          "id": "b08",
+          "indice": 34,
+          "predicho": "ia"
+        },
+        {
+          "esperado": "ia",
+          "id": "b09",
+          "indice": 31,
+          "predicho": "humano"
+        },
+        {
+          "esperado": "ia",
+          "id": "b10",
+          "indice": 37,
+          "predicho": "ia"
+        }
+      ]
+    },
+    "final": {
+      "bal": 0.9642857142857143,
+      "cobertura": 0.5294117647058824,
+      "margen": 2,
+      "tnr": 0.9285714285714286,
+      "tpr": 1.0,
+      "umbral": 33
+    },
+    "fuentes_semillas": {
+      "humana": [
+        "h01",
+        "h02",
+        "h05",
+        "h06",
+        "h07",
+        "h09",
+        "h10"
+      ],
+      "ia": [
+        "a01",
+        "a02",
+        "a03",
+        "a04",
+        "a06",
+        "a08",
+        "a10"
+      ]
+    },
+    "idx_train": {
+      "a01": 33,
+      "a02": null,
+      "a03": 40,
+      "a04": null,
+      "a06": null,
+      "a08": null,
+      "a09": null,
+      "a10": null,
+      "b01": 34,
+      "b02": 33,
+      "b04": 34,
+      "b05": 36,
+      "b06": 35,
+      "b07": 36,
+      "b08": 34,
+      "b09": 31,
+      "b10": 37,
+      "h01": 15,
+      "h02": 5,
+      "h03": 28,
+      "h04": 33,
+      "h05": 3,
+      "h06": 15,
+      "h07": 7,
+      "h09": 2,
+      "h10": null,
+      "h11": 16,
+      "h12": 22,
+      "h13": 30,
+      "h14": 54,
+      "h15": 11,
+      "h17": 22,
+      "h18": 22,
+      "h20": null
+    },
+    "version": "f4-integridad"
+  },
+  "version": "f4-integridad"
+}

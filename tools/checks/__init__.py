@@ -39,7 +39,7 @@ class CheckResult:
     contribucion: float = 0.0
     coverage: float = 0.0
     insufficient: bool = False
-    hits: list[str] = field(default_factory=list)
+    hits: list[str | dict[str, Any]] = field(default_factory=list)
 
 
 @runtime_checkable

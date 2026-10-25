@@ -1,0 +1,16 @@
+{
+  "abstention_margin": 4,
+  "cliche_density_max_per_1000": 25.0,
+  "cliche_evidence_hits": 3,
+  "compression_neutral_q": 0.5,
+  "minimum_clean_bytes": 150,
+  "minimum_tokens": 50,
+  "paragraph_dependent_checks_in_index": false,
+  "threshold": 15,
+  "version": "f5-portable-v1",
+  "weights": {
+    "cliches_es": 0.25,
+    "compression_positive_only": 0.3,
+    "mattr": 0.45
+  }
+}

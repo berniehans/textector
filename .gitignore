@@ -35,3 +35,8 @@ desktop.ini
 .hermes/
 
 # NOTA: docs/, config/ y corpus/ NO se ignoran (contenido versionado).
+
+# Corpus externo: metadatos/resultados públicos; textos y descargas solo locales.
+/validation/external-v1/texts/
+/validation/external-v1/cache/
+/validation/reserved-f5-v1/texts/

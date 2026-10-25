@@ -19,8 +19,12 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - name: Entorno
-        run: uv sync
+        run: uv sync --python ${{ matrix.python }}
       - name: Tests (stdlib unittest)
-        run: uv run python -B -m unittest discover -s tests -p "test_*.py" -v
+        run: uv run --python ${{ matrix.python }} python -B -m unittest discover -s tests -p "test_*.py" -v
       - name: CLI smoke
-        run: uv run python tools/cli.py analyze --archivo corpus/human/h01.txt --diagnostico
+        run: uv run --python ${{ matrix.python }} python -B tools/cli.py analyze --archivo corpus/human/h01.txt --diagnostico
+      - name: Construir wheel
+        run: uv build --wheel
+      - name: Wheel instalado fuera del checkout
+        run: uv run --python ${{ matrix.python }} python -B tests/verify_wheel.py dist/textector-0.3.0-py3-none-any.whl

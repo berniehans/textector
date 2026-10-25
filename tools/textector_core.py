@@ -70,7 +70,7 @@ def tokenize(text: str) -> list[str]:
     se tokenizan de forma estándar; la puntuación y los espacios separan tokens.
     Números y tokens alfanuméricos se devuelven tal cual (casefold).
     """
-    return [m.group(0) for m in _TOKEN_RE.finditer(text.casefold())]
+    return [m.group(0) for m in _TOKEN_RE.finditer(normalize_text(text))]
 
 
 # ---------------------------------------------------------------------------
@@ -106,10 +106,10 @@ _PALABRAS_CORTE = frozenset({"no"})
 
 _ABBREV_RANGE = (
     # compuestos con punto interno en minúscula: "p. ej.", "s. f.", "n. del a."
-    {"p", "ej"},
-    {"s", "f"},
-    {"n", "del", "a"},
-    {"m", "e", "c"},
+    ("p", "ej"),
+    ("s", "f"),
+    ("n", "del", "a"),
+    ("m", "e", "c"),
 )
 # Sentinel: token genérico (una o dos letras más punto) es abreviatura dudosa;
 # en proveedor conservador vale: NO cortar.
@@ -143,11 +143,10 @@ def _is_abbrev_breakage(text: str, end: int) -> bool:
 
 
 _TERMINAL_RE = re.compile(r"([.!?…])([\u00bb\u201d\"')\]]*)")
-_CLOSERS = "\u00bb\u201d\"')\]"
 _OPENERS = "\u00ab\u201c\"([('¿¡"
 
 # Línea de encabezado tipo «S01 — Escena inicial»: no es prosa.
-_HEADER_RE = re.compile(r"^\s*[Ss]\d{1,3}\s*[—–]\s*[^\n]*$")
+_HEADER_RE = re.compile(r"^#{0,3}[ \t]*[Ss]\d+(?:[ \t]*[—–:-][ \t]*[^\n]+)?[ \t]*$")
 
 
 def _next_nonspace(text: str, start: int) -> tuple[str, bool]:
@@ -185,12 +184,15 @@ def split_sentences(text: str) -> list[Span]:
     spans: list[tuple[int, int]] = []
     start = 0
     for m in _TERMINAL_RE.finditer(text):
-        term, closers_len = m.group(1), len(m.group(2))
         end_idx = m.end()
         ch = m.group(1)
         if ch == "…":
             continue  # elipsis: nunca corta (conservador)
         if ch == ".":
+            if (m.start() > 0 and text[m.start() - 1] == ".") or (
+                m.start() + 1 < len(text) and text[m.start() + 1] == "."
+            ):
+                continue  # elipsis ASCII: ninguno de sus puntos corta
             # decimal: dígito '.' dígito inmediato en el texto original
             if m.start() > 0 and text[m.start() - 1].isdigit():
                 window = text[m.start() - 1 : m.end()]
@@ -208,7 +210,7 @@ def split_sentences(text: str) -> list[Span]:
         if not (is_upper or is_opener):
             continue
         spans.append((start, end_idx))
-        start = end_idx + closers_len
+        start = end_idx
     if start < len(text):
         spans.append((start, len(text)))
 
