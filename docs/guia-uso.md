@@ -6,6 +6,10 @@ CLI local (Python 3.11 + stdlib) que calcula un **índice heurístico explicable
 
 - Python 3.11 (el proyecto fija `.python-version` = 3.11).
 - `uv` para el entorno (runtime **sin dependencias**).
+- **Semillas de compresión**: `corpus/seeds/seed_ia_es.txt` y
+  `corpus/seeds/seed_hum_es.txt`. El análisis las usa siempre (señal
+  `f3-semillas`) y es **fail-closed**: si faltan o no son legibles, el CLI
+  aborta con exit 1 y **no emite índice**.
 
 ```bash
 cd workspace/textector
@@ -64,6 +68,16 @@ uv run python tools/cli.py analyze --archivo mi_texto.txt --diagnostico
 | YAML inválido o con claves no permitidas | `error: config YAML invalido (línea N): …`, exit 1 |
 | Entrada vacía | `error: entrada vacia…`, exit 1 |
 | Texto demasiado corto (cobertura < 5 checks) | `error: texto muy corto…`, exit 1, **sin número** |
+| Semillas de compresión ausentes o ilegibles | `error: …` de una línea, **exit 1**, sin emitir índice (fail-closed) |
+
+### Campos de versión en la salida
+
+Toda salida (`--json` y humana) declara el método y la señal:
+
+- `"version": "f3-semillas"` — versión del método (los índices **no** son
+  comparables con los de `f2`).
+- `"semillas": "reales-es"` — la compresión sembada usó las semillas ES reales
+  del corpus (no las fixtures sintéticas de F2).
 
 ## Tests
 

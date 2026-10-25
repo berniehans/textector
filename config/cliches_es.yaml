@@ -5,8 +5,10 @@
 #   del esqueleto (test_config_real_parsea) fija ese contrato y el léxico
 #   poblado de F2 vive en la clave raíz `cliches` (ver docs/methodology.md).
 # - cliches: entradas "frase|peso|fuente" (escalar double-quoted estilo JSON).
-#   peso 0..100 estilo corpus AIStoryHub (provisional; congelado en F2 y
-#   recalibrado en F3 con corpus). "__" = comodín: coincide con EXACTAMENTE
+#   peso 0..100 estilo corpus AIStoryHub (provisional: congelado en F2;
+#   ni F3 ni F6 recalibran pesos — la calibración solo ajusta umbral y
+#   margen. Recalibrar pesos exige decisión explícita (F8d) y holdout
+#   nuevo). "__" = comodín: coincide con EXACTAMENTE
 #   un token cualquiera.
 # Fuentes citadas por entrada:
 #   aich::<slug> = derivada/adaptada de la categoría ficción de

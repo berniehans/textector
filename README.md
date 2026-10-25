@@ -117,11 +117,16 @@ Solo stdlib de Python 3.11. Gestión con uv (`pyproject.toml` + `uv.lock` +
 
 ## Estado
 
-Experimental (`0.1.0`). Fases F1–F4 cerradas con suites verdes; calibración
-v1/v2 documentada **con sus límites**: el índice no generaliza (LOGO-CV
-TPR 0.04 / TNR 0.24) y se usa como **pre-filtro con abstención**, no como
-clasificador. El diagnóstico de dos ejes (`--diagnostico`) solo es concluyente
-en la categoría `plantilla_prosa_y_estructura`.
+Experimental (`0.1.0`). Fases F1–F7 cerradas con suites verdes. Método vigente:
+**`f3-semillas`** (compresión sembrada contra las semillas ES reales de
+`corpus/seeds/`). Calibración v3: CV LOGO en TRAIN **TPR 0.24 / TNR 0.54**;
+holdout (apertura #2, última) **TP=0 / FN=3 / FP=0 / TN=2 / 1 abstención**.
+Conclusión sin spin: **no es un clasificador**; se usa como **pre-filtro
+heurístico con abstención**, y «humano» significa *sin señal suficiente*, no
+exculpación. El CLI **requiere `corpus/seeds/`** y es **fail-closed** si faltan
+(exit 1, sin emitir índice). La tabla v2 de `docs/calibration.md` corresponde a
+la señal f2 y **no es comparable** con v3. El diagnóstico de dos ejes
+(`--diagnostico`) solo es concluyente en `plantilla_prosa_y_estructura`.
 
 ## Licencia
 
