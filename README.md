@@ -129,6 +129,12 @@ exculpación. El CLI **requiere `corpus/seeds/`** y es **fail-closed** si faltan
 la señal f2 y **no es comparable** con v3. El diagnóstico de dos ejes
 (`--diagnostico`) solo es concluyente en `plantilla_prosa_y_estructura`.
 
+**Rol decidido (F8, 2026-10-25):** se adopta la opción **8a — aceptar el rol de
+pre-filtro heurístico**. Ampliar el corpus narrativo IA (8b) y recalibrar pesos
+(8d) quedan fuera de alcance hasta que exista un holdout **nuevo**; el cotejo
+del léxico contra AIStoryHub se ejecutó y se documenta en
+[`docs/cotejo-aistoryhub.md`](docs/cotejo-aistoryhub.md).
+
 ## Licencia
 
 MIT — ver [`LICENSE`](LICENSE). Las ideas porteadas de proyectos MIT y los
