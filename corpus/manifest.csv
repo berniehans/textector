@@ -1,0 +1,21 @@
+id,clase,fuente,obra_o_tema,autor_o_modelo,licencia,chars,SHA256
+h01,human,Project Gutenberg (pg2000),Don Quijote de la Mancha (parte I),Miguel de Cervantes,dominio publico (redistribucion libre),5103,7aac990d1063618acfc3a4427bdc0db8ea6da5626ef507fd69bfb6c43e4863ff
+h02,human,Project Gutenberg (pg320),Lazarillo de Tormes,Anonimo,dominio publico (redistribucion libre),3527,f5e36fa63062dbb8919313b6b39abf118f7731aa1bba4d147d2dd17882dc4d61
+h03,human,Project Gutenberg (pg32315),La vida del Buscon,Francisco de Quevedo,dominio publico (redistribucion libre),3268,fe5e81f666c3bf997714647d4f55edb6efef895e390b5ea04bcb0f8f389953ea
+h04,human,Project Gutenberg (pg21282),Tradiciones peruanas,Ricardo Palma,dominio publico (redistribucion libre),3305,d534dfcf6d69a34a645d7466ace177d5287ad9450050efa2d0920035abf5507f
+h05,human,Project Gutenberg (pg17491),La Tribuna,Emilia Pardo Bazan,dominio publico (redistribucion libre),3439,0d294194bd73b30c46b0b9899114dd2b51a1c2b65188e15076e37584ff575e50
+h06,human,Project Gutenberg (pg52392),Miau,Benito Perez Galdos,dominio publico (redistribucion libre),5252,d9308212e677e47e0c5ba376d5706c60d793493142346bf2d0291fb03a9e553d
+h07,human,Project Gutenberg (pg17223),Pepita Jimenez,Juan Valera,dominio publico (redistribucion libre),3619,0d5bb1f6fb8c0f4868e6d00ad4bd3ea64a97550c808dfff91d5751141d0bf364
+h08,human,Project Gutenberg (pg17073),La Regenta,Leopoldo Alas (Clarín),dominio publico (redistribucion libre),3228,0a553201af81330c5d54bd1cc18cc3eedf5f6db76e9be0a8007e1945faabef54
+h09,human,Project Gutenberg (pg10814),Leyendas,Gustavo Adolfo Becquer,dominio publico (redistribucion libre),3472,8aeec5f40891fde50ddbe0baf4ffdc765f68dbba3fa0f28dfd7051b883d67490
+h10,human,Project Gutenberg (pg59244),Si yo fuera rico,Mariano Jose de Larra,dominio publico (redistribucion libre),3385,9c9aa8ed2bb494596335f46ae06f8d8713cd6fc4f4b6a62825194faab7e4a0f2
+a01,llm,Hermes Agent (textos generados para este corpus),Los relojes de la estación,Hermes Agent (modelo glm-5.3-flash via opencode-go),libre (sin restricciones de redistribucion),2381,82afc74f949b59168206f5ce154fc7141f58db4d89999b38195cbb0010c1a3ae
+a02,llm,Hermes Agent (textos generados para este corpus),El inventario de la panadería,Hermes Agent (modelo glm-5.3-flash via opencode-go),libre (sin restricciones de redistribucion),822,37bd4bb83f71c0bb182309714c25359ec4b55225b7da450abaad7d18e4f7dd74
+a03,llm,Hermes Agent (textos generados para este corpus),La carta del mensajero,Hermes Agent (modelo glm-5.3-flash via opencode-go),libre (sin restricciones de redistribucion),898,d627e417090bbb33d5d93df5b8ef45f4bb5a6d1910adea77a1e1f3f37905aeaf
+a04,llm,Hermes Agent (textos generados para este corpus),El relevo en la noche,Hermes Agent (modelo glm-5.3-flash via opencode-go),libre (sin restricciones de redistribucion),886,a2a30f64f163cde5e45a424ce5917c2f173e6bd8fafb2ad5225d878241595341
+a05,llm,Hermes Agent (textos generados para este corpus),La escuela de las tres coronas,Hermes Agent (modelo glm-5.3-flash via opencode-go),libre (sin restricciones de redistribucion),1023,fd8da8becc637e12be1cbccdea07ff95da58f0ca09a44448b61f6d35831aedba
+a06,llm,Hermes Agent (textos generados para este corpus),El palco de la panadería del mercado,Hermes Agent (modelo glm-5.3-flash via opencode-go),libre (sin restricciones de redistribucion),744,ea2a93c77362f4f27217c81beda9d923859b2b5ee584d39b4da8d3a25c8b4661
+a07,llm,Hermes Agent (textos generados para este corpus),Los libros de la caja fuerte,Hermes Agent (modelo glm-5.3-flash via opencode-go),libre (sin restricciones de redistribucion),829,7d12ce21b3cdece72fa01c360f675e659e408780e4620a4485656d1e25ff05fe
+a08,llm,Hermes Agent (textos generados para este corpus),El semáforo de la 5 y la 8,Hermes Agent (modelo glm-5.3-flash via opencode-go),libre (sin restricciones de redistribucion),554,204c988caf0b50d8d5b615bf39608acda14cced4be30b5c3549958c9c47e2fef
+a09,llm,Hermes Agent (textos generados para este corpus),El reloj del poste,Hermes Agent (modelo glm-5.3-flash via opencode-go),libre (sin restricciones de redistribucion),624,993fe0f642860958bc6b3a609444be010900b9d0c94e4e7c760183d931ab14d2
+a10,llm,Hermes Agent (textos generados para este corpus),La caja del agua,Hermes Agent (modelo glm-5.3-flash via opencode-go),libre (sin restricciones de redistribucion),969,0b1b87d985d6c7e9cc4f59dc16a7a1dd93c4931d4d0a104d018cb80317447363

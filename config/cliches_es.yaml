@@ -1,0 +1,47 @@
+# Léxico de clichés IA en español — textector F2.
+# Formato YAML-min fail-closed (parser: tools/lexicon.py; spec: tests/test_yaml_lexicon.py).
+# - version: entero de formato del archivo.
+# - phrases: clave legacy del esqueleto F1; se conserva VACÍA porque el test
+#   del esqueleto (test_config_real_parsea) fija ese contrato y el léxico
+#   poblado de F2 vive en la clave raíz `cliches` (ver docs/methodology.md).
+# - cliches: entradas "frase|peso|fuente" (escalar double-quoted estilo JSON).
+#   peso 0..100 estilo corpus AIStoryHub (provisional; congelado en F2 y
+#   recalibrado en F3 con corpus). "__" = comodín: coincide con EXACTAMENTE
+#   un token cualquiera.
+# Fuentes citadas por entrada:
+#   aich::<slug> = derivada/adaptada de la categoría ficción de
+#                  AStoryHub Corpus of AI Cliches v1.7 (Jean-Philippe
+#                  LeBlanc, 2025; MIT). Adaptación manual al ES: NO es
+#                  traducción 1:1 ni cotejo entrada por entrada (el mapping
+#                  exacto se fija en F3).
+#   es-nativo    = señal narrativa española propia, revisión manual F2.
+version: 1
+
+phrases: []
+
+cliches:
+  - "en un mundo donde|45|aich::fiction::world-of"
+  - "sumérgete en|40|aich::fiction::immerse"
+  - "no es solo __, es __|38|aich::fiction::not-only-is"
+  - "una __ que parecía|32|es-nativo"
+  - "una chica de quien|28|es-nativo"
+  - "una niña de quien|24|es-nativo"
+  - "en conclusión|22|es-nativo"
+  - "al fin y al cabo|18|aich::fiction::at-the-end-of-the-day"
+  - "en el fondo|26|aich::fiction::at-heart"
+  - "más importante que nunca|30|aich::fiction::more-important-than-ever"
+  - "sin lugar a dudas|20|es-nativo"
+  - "no cabía duda|20|es-nativo"
+  - "la puerta se abrió de par en par|15|aich::fiction::door-swing-open"
+  - "sus labios se curvaron|30|aich::fiction::lips-curve"
+  - "una mezcla de __ y __|20|aich::fiction::mixture-of-fear-love"
+  - "el destino estaba sellado|30|aich::fiction::destiny-sealed"
+  - "se marcó un antes y un después|28|es-nativo"
+  - "todo cambió en ese momento|26|aich::fiction::everything-changed"
+  - "no sabía qué decir|18|es-nativo"
+  - "soltó una risa|22|aich::fiction::chuckle-release"
+  - "tomó una decisión|14|es-nativo"
+  - "con el corazón en la mano|20|es-nativo"
+  - "como una conspiración|35|aich::fiction::like-conspiracy"
+  - "pequeños detalles que|22|aich::fiction::small-details"
+  - "el peso de la|12|es-nativo"

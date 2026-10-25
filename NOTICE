@@ -1,0 +1,37 @@
+NOTICE — Atribución de ideas porteadas desde fuentes MIT (textector F2)
+=======================================================================
+
+textector no copia código de terceros: porte CONCEPTOS re-implementados
+desde especificación, tras auditoría (docs/audit_aifingerprint.md,
+docs/audit_zippy.md). Este NOTICE registra qué se porteró/adaptó y la
+obligación moral/legal de las licencias MIT de las fuentes.
+
+1) aifingerprint 1.6.0 — MIT — Copyright (c) 2026 Sander Buruma
+   Porte (contrato y concepto, no código):
+   - Contrato de checks explicable: cheque puro valor_bruto + señal
+     [0,1] agregada con pesos, score 0..100 acotado (CheckResult /
+     scoring.compute_indice; el referencial usa tupla (hits, raw) y
+     CATEGORY_WEIGHTS).
+   - Concepto del check de variabilidad de longitud de oraciones
+     (burstiness) y sus datos de referencia (CV AI ~0.45 vs humano ~0.72)
+     como hipótesis; textector usa mediana/MAD y umbrales provisionales.
+   Adaptado a ES: no se portean listas EN (BANNED_*, patterns.py) ni el
+   pre-proceso que elimina diacríticos (NFD+drop); textector usa NFC+casefold
+   (ver tools/textector_core.py). Se descartan: homoglyph fold, etiquetas
+   CLEAN/BLATANT, formatting check con peso 0, y su corpus de semillas.
+
+2) AStoryHub Corpus of AI Cliches (v1.7, 758 entradas EN) — MIT —
+   Semilla TEMÁTICA del léxico ES de clichés (config/cliches_es.yaml):
+   frases narrativas de ficción derivadas/adaptadas manualmente al
+   español (no traducción 1:1; el cotejo entrada por entrada del corpus
+   llega en F3). Los PESOS de cada frase son provisionales F2, no
+   heredados del corpus.
+
+3) thinkst/zippy 0.1.3 — MIT — Thinkst Applied Research, 2023
+   Porte: concepto de "LLM-detect por compresión sembrada" — delta con
+   signo entre el coste marginal de comprimir la muestra según una semilla
+   tipo-IA vs no-IA, normalizado por bytes. Re-implementación stdlib con
+   raw DEFLATE (zlib.compressobj(level=6, wbits=-15)). NO se porte: su
+   código, Brotli/numpy, su semilla EN (ai-generated.txt), ni la limpieza
+   que borra tildes/ñ. En F2 las semillas son fixtures sintéticas
+   deterministas (mecánica); las ES reales se construyen en F3.
