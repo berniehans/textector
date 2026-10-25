@@ -58,12 +58,14 @@ Los tests de la CLI usan subprocess y archivos temporales creados en
 - `[x]` **F2 — lista**: los 5 checks concretos (`burstiness`, `mattr`,
   `uniformity`, `cliches_es`, `compression`) con pesos y topes de grupo
   congelados en `tools/scoring.py`; la suite pasó de 76 a **79 tests verdes**.
-- `[x]` **F3 — calibración contra corpus (resultado débil y honesto)**:
-  matriz de holdout con **5 casos y 3 falsos positivos** en prosa clásica
-  de España; el umbral elegido solo con TRAIN no generaliza bien al
-  holdout. Estado: **experimental**. Recomendado usarlo únicamente como
-  **pre-filtro con abstención** (la banda de abstención rodea al umbral;
-  fuera de banda el resultado es un indicio a revisar, no un veredicto).
+- `[x]` **F3 — calibración contra corpus (resultado débil y honesto, dos rondas)**:
+  v1 (20 textos): 5 casos de holdout, **3 falsos positivos** en prosa clásica.
+  v2 (40 textos: 20 literatura PD + 10 narrativa IA + 10 noticias sintéticas
+  CC-BY): holdout nuevo `{h08,h16,h19,a05,a07,b03}` → **0 falsos positivos**,
+  pero **2 falsos negativos de narrativa IA + 1 abstención** y CV LOGO en TRAIN
+  TPR 0.04 / TNR 0.24. Conclusión: **pre-filtro de dominio/estilo, no detector
+  de autoría**; "humano" significa "sin señal suficiente", nunca exculpación.
+  Detalle en `docs/calibration.md`.
 - `[x]` **F4 — esta fase**: CLI `tools/cli.py analyze` con salida normal,
   `--json` y `--detallado` (desglose por check), reutilizando el pipeline
   congelado F2 (checks + `scoring.compute_indice`) y el parser YAML-min

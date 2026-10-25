@@ -71,39 +71,50 @@ de este documento fue producido por una ejecución real. NO fabricarlos.
 Predicción con abstención: banda centrada en el umbral de ancho
 `margen`; `|indice − umbral| <= margen` ⇒ abstención.
 
-## Resultados v2 (placeholders; rellenar tras ejecutar `python -m tools.calibrate`)
+## Resultados v2 (ejecutados una sola vez el 24-oct-2026, 23:0x)
 
 | Métrica | Valor |
 |---|---|
-| Umbral final | POR EJECUTAR |
-| Margen final | POR EJECUTAR |
-| CV TPR media (LOGO) | POR EJECUTAR |
-| CV TNR media (LOGO) | POR EJECUTAR |
+| Umbral final | 26 |
+| Margen final | 8 |
+| CV TPR media (LOGO, TRAIN) | 0.04 |
+| CV TNR media (LOGO, TRAIN) | 0.24 |
+
+> **Nota honesta:** la elección in-sample del umbral reportó TPR 0.857 / TNR 1.0,
+> pero la validación leave-one-group-out en TRAIN —la señal honesta de
+> generalización— da TPR 0.04 y TNR 0.24. El índice apenas separa en español.
 
 Matriz del HOLDOUT_V2 (UNA apertura):
 
 | | Predicho IA | Predicho humano | Abstención |
 |---|---|---|---|
-| **Real IA (a05, a07, b03)** | POR EJECUTAR | POR EJECUTAR | POR EJECUTAR |
-| **Real humano (h08, h16, h19)** | POR EJECUTAR | POR EJECUTAR | POR EJECUTAR |
+| **Real IA (a05, a07, b03)** | 0 | 2 | 1 |
+| **Real humano (h08, h16, h19)** | 0 | 1 | 2 |
 
 Desglose de FP por subtipo humano:
 
 | Subtipo | FPs del holdout_v2 |
 |---|---|
-| clasicos (h01/h02/h03/h18) | POR EJECUTAR |
-| modernos (resto) | POR EJECUTAR |
+| clasicos (h01/h02/h03/h18) | 0 |
+| modernos (h08/h16/h19) | 0 |
 
 Desglose de FN por dominio IA:
 
 | Dominio | FNs del holdout_v2 |
 |---|---|
-| narrativa_propia (a*) | POR EJECUTAR |
-| noticias_sinteticas (b*) | POR EJECUTAR |
+| narrativa_propia (a*) | 2 (a05 índice 16, a07 índice 17 → "humano") |
+| noticias_sinteticas (b*) | 0 (b03 índice 29 → abstención) |
 
-Tasas condicionadas (FP/humano no abstención; FN/IA): POR EJECUTAR.
-Abstenciones del holdout_v2 (ids, visibles en el reporte JSON bajo
-`abstenciones_ids`): POR EJECUTAR.
+Tasas: FP/humano-no-abstención = 0/1 = 0.0; FN/IA = 2/3 ≈ 0.67.
+Abstenciones del holdout_v2: `b03`, `h08`, `h19`.
+
+**Lectura del resultado:** cero falsos positivos en literatura clásica (el fallo
+de v1 desapareció), pero **el índice no detecta la narrativa IA**: los dos FNs son
+textos IA de la clase narrativa propia, y la única pieza de noticias sintéticas cae
+en abstención. El patrón de índices del TRAIN lo confirma: noticias `b*` puntúan
+32–38 y la narrativa IA `a*` 16–27, solapándose con la literatura humana.
+Conclusión de rol: **pre-filtro de dominio/estilo, no detector de autoría**;
+cualquier uso debe tratar "humano" como "sin señal suficiente", no como exculpación.
 
 ## Histórico v1 (declarado como tal; NO es el método activo)
 
