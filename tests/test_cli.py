@@ -51,7 +51,7 @@ equivocada que nos dejó, a todos, la leña doble.
 
 —¿Y si vuelve el frío? —preguntó mi madre, y nadie contestó, porque el frío,
 como la leña, y como el exceso, también tiene su dueño en otras temporadas.
-Y eso, envejecido ya, es la única respuesta que el depósito dejó.
+Nadie supo qué contestar, y el depósito siguió cerrado hasta la primavera.
 """
 
 
