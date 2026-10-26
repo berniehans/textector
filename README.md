@@ -1,119 +1,150 @@
-# textector
+<p align="center"><img src="assets/textector-header.svg" width="100%" alt="textector — Explainable signals for human review of Spanish text" /></p>
 
-CLI en español que calcula un **índice heurístico explicable de 0 a 100**
-(`indice_llm`) a partir de señales de estilo. Es un **pre-filtro para
-revisión humana**: no es una probabilidad ni una prueba de autoría. Un índice
-bajo tampoco demuestra que un texto sea humano.
+<p align="center"><b>English</b> · <a href="README.es.md">Español</a></p>
 
-## Estado actual
+<p align="center">
+  <a href="https://github.com/berniehans/textector/actions/workflows/tests.yml"><img src="https://github.com/berniehans/textector/actions/workflows/tests.yml/badge.svg?branch=master" alt="Tests on Windows and Linux" /></a>
+  <a href="https://github.com/berniehans/textector/releases/latest"><img src="https://img.shields.io/github/v/release/berniehans/textector" alt="Latest GitHub release" /></a>
+  <img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&amp;logoColor=white" alt="Python 3.11 or later" />
+  <img src="https://img.shields.io/badge/runtime-standard_library-0f766e" alt="Standard library runtime" />
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-a78bfa" alt="MIT license" /></a>
+</p>
 
-Versión del paquete **0.3.1**; F4 **`f4-integridad`** se mantiene por compatibilidad y F5 **`f5-portable-v1`** es un perfil portable experimental. Python
-3.11 o posterior, biblioteca estándar en ejecución y sin llamadas de red.
+<p align="center"><a href="#quick-start">Quick start</a> · <a href="#how-it-works">Architecture</a> · <a href="#evidence-and-limits">Evidence</a> · <a href="docs/README.md">Documentation</a> · <a href="https://github.com/berniehans/textector/releases/tag/v0.3.1">Download 0.3.1</a></p>
 
-F4 es el perfil predeterminado y usa cinco checks. F5 (`--metodo f5`) usa tres
-checks léxicos con pesos fijos, se abstiene cuando falta cualquiera y deja el
-ritmo y los párrafos fuera del índice. No inventa segmentación cuando el texto
-está aplanado. Su validación independiente está documentada en
-[`docs/validacion-f5-portable.md`](docs/validacion-f5-portable.md).
+**textector** is a local, Spanish-language CLI that turns text style features into an explainable **0–100 heuristic index** (`indice_llm`). It exposes each signal's contribution, reports insufficient evidence, and supports human review of Spanish prose.
 
-La línea de investigación de F5 para narrativa española se cerró sin promoción:
-el cribado de desarrollo no encontró una variante que cumpla todas las puertas,
-y no se encontró un corpus nuevo apto para confirmación independiente. F5 se
-conserva congelado y optativo, solo experimental; estos resultados no validan
-autoría ni cambian el perfil, el umbral 15 o el margen 4. Véanse el
-[`informe factorial`](validation/f5-narrative-experiment-v1/factorial-report.md)
-y la [auditoría de corpus confirmatorio](docs/auditoria-busqueda-corpus-confirmatorio-f5.md).
+> The index describes style. It is **not a probability or proof of authorship**. A low score does not establish human authorship. Version **0.3.1** is published as an experimental prefilter; its external evaluation has substantial limits.
 
-La reparación de integridad corrige recursos del wheel, segmentación, Unicode,
-entradas insuficientes, configuración, estructura, hashes y evaluación por folds.
-Los pesos y las transformaciones de los cinco checks se conservan. Las semillas
-históricas mantienen sus bytes; su composición exacta figura en
-[`corpus/seeds/manifest.json`](corpus/seeds/manifest.json).
+## What you can inspect
 
-**f4 tiene una evaluación externa limitada**, documentada en
-[`docs/validacion-externa-v1.md`](docs/validacion-externa-v1.md): 8 falsos positivos
-en 90 fragmentos humanos y 190 señales IA en 200 relatos infantiles publicados.
-Otros 300 textos IA quedan sin puntuar por su formato. Esto no valida un detector
-general de autoría. Los índices no son comparables
-directamente con f3: corregir el preprocesado cambia la señal. El diagnóstico usa
-una referencia **provisional** de umbral 31 y margen 2, banda inclusiva 29..33.
-Todas las categorías llevan `no_concluyente=True`. Esta referencia histórica
-no se presenta como una calibración general validada para f4. El estado interno
-`provisional-sin-validacion-f4` se conserva en el código congelado: la evaluación
-externa limitada no habilita uso probatorio ni valida generalización.
+| Capability | What it provides |
+|---|---|
+| **Explainable scoring** | Raw metrics, normalized signals, weights and individual contributions. |
+| **Local analysis** | Standard library runtime, no API keys, model downloads or network calls during analysis. |
+| **Explicit coverage** | F4 requires all five checks; F5 abstains if any of its three core checks is unavailable. |
+| **Two profiles** | Historical F4 by default; an opt-in, frozen experimental F5 profile. |
+| **Auditable inputs** | Seed hashes, lexicon fingerprints, corpus provenance and versioned evaluation reports. |
+| **Portable package** | A wheel with the lexicon, profile configuration and both seeds included. |
 
-La auditoría detectó filtración de semillas y agregación incorrecta de tasas en
-la CV anterior. Sus números se conservan como registro afectado en
-[`docs/historico/calibracion-f3.md`](docs/historico/calibracion-f3.md).
-Nueva evidencia de generalización exige **corpus y holdout nuevos**, según el
-alcance adoptado en F8; el holdout histórico no se evalúa por defecto.
+## Quick start
 
-## Uso desde el repositorio
+Requires **Python 3.11+**. Install the published wheel directly from GitHub Releases:
 
 ```bash
-uv run python -B tools/cli.py analyze --archivo texto.txt --detallado
-uv run python -B tools/cli.py analyze --archivo texto.txt --metodo f5 --json
-uv run python -B tools/cli.py analyze --stdin --json --diagnostico
+python -m pip install "https://github.com/berniehans/textector/releases/download/v0.3.1/textector-0.3.1-py3-none-any.whl"
+textector analyze --archivo texto.txt --detallado
+textector analyze --archivo texto.txt --json --diagnostico
 ```
 
-Solo se admite una fuente: `--archivo` UTF-8 o `--stdin`. El JSON incluye versión,
-contribuciones, cobertura, huellas de semillas y del léxico; `--diagnostico` añade
-la lectura descriptiva de prosa y estructura. `--config` permite un léxico
-alternativo válido; cambiarlo también cambia la señal.
+Use a UTF-8 file and preserve its original paragraphs and punctuation. F4 needs at least 10 eligible sentences, 3 paragraphs, 50 tokens and 150 clean bytes, with all five checks available. See the [usage guide](docs/guia-uso.md) for requirements and errors. Distribution is through GitHub Releases; these commands do not assume a PyPI package.
 
-Los errores de lectura, entrada vacía/insuficiente, configuración o semillas se
-reportan en una línea por stderr, exit 1, sin traceback ni volcado del texto.
-F4 exige sus cinco checks para emitir un índice. F5 se elige explícitamente y
-exige MATTR, densidad léxica y compresión; si falta cualquiera, entrega
-`indice_llm=null` y `predicho=abstencion`.
-
-## Paquete instalable
+### Run from source
 
 ```bash
-uv build --wheel
-python -m pip install dist/textector-0.3.1-py3-none-any.whl
-textector analyze --archivo texto.txt --json
+git clone https://github.com/berniehans/textector.git
+cd textector
+uv sync --locked
+uv run python -B tools/cli.py analyze --archivo corpus/human/h01.txt
 ```
 
-El wheel incluye el léxico y ambas semillas como recursos del paquete. Funciona
-fuera del checkout; el corpus completo solo es necesario para la evaluación.
+Actual output for the repository's `h01.txt` sample:
 
-## Verificación
+```text
+indice_llm=15 version=f4-integridad n_disponibles=5 semillas=reales-es
+```
+
+This demonstrates the report format, not classifier accuracy. `--detallado` expands contributions; `--json` returns the full machine-readable report.
+
+### Other input and profile options
+
+```bash
+# Standard input (UTF-8 shell)
+cat texto.txt | textector analyze --stdin --json
+
+# Frozen experimental profile; select it explicitly
+textector analyze --archivo texto.txt --metodo f5 --json
+```
+
+Choose one input source: `--archivo` or `--stdin`. `--diagnostico` describes F4 only and cannot be combined with F5. See the [complete option reference](docs/guia-uso.md#opciones).
+
+## How it works
+
+```mermaid
+flowchart LR
+    A[UTF-8 text] --> B[Unicode normalization and original spans]
+    R[Packaged lexicon and seeds] --> C[Style checks]
+    B --> C
+    C --> D{Profile}
+    D --> E[F4: five checks and coverage gate]
+    D --> F[F5: three core checks and fixed weights]
+    E --> G[Index or insufficient-input error]
+    F --> H[Index or explicit abstention]
+    G --> I[Text or JSON report]
+    H --> I
+    I --> J[Human review]
+```
+
+F4 measures **lexical diversity (MATTR), cliché density, seeded compression, sentence-length variation and paragraph uniformity**. F5 uses the first three with its own fixed weighting; rhythm and paragraph checks remain descriptive auxiliaries.
+
+| Profile | Signal version | Coverage and interpretation |
+|---|---|---|
+| **F4 · default** | `f4-integridad` | Requires 5/5 checks. Historical provisional reference: 31 ± 2; inclusive abstention band 29–33. |
+| **F5 · opt-in** | `f5-portable-v1` | Requires 3/3 core checks. Frozen development threshold: 15 ± 4; inclusive abstention band 11–19. Experimental. |
+
+Package version `0.3.1` and signal versions identify different things. Scores are not interchangeable across F3, F4 and F5. Diagnostic categories remain `no_concluyente=True`. Internal `humano`/`ia` labels are evaluation categories, not authorship verdicts.
+
+Read the [architecture](docs/arquitectura.md), [F4 checks](docs/checks.md) and [F5 definition](docs/validacion-f5-portable.md).
+
+## Evidence and limits
+
+The external F4 evaluation kept its parameters fixed and used existing public texts. No new AI samples were generated for it.
+
+| F4 external panel | Total | AI-style signal | Abstentions |
+|---|---:|---:|---:|
+| Human books with digital snapshots before 2020 | 90 fragments, 9 authors | **8 false positives (8.9% of all fragments)** | 19 |
+| Published Spanish children's stories attributed to Gemini 1.5 Flash | 200 | 190 | 9 |
+| Spanish literary generations from IberAuTexTification | 300 | No cases scored | **300: insufficient input structure** |
+
+The panels differ in genre, length and formatting. The human fragments are not 90 independent authors. The result on children's stories does not establish performance on other generators or adult narrative. See [denominators, coverage, provenance and confounders](docs/validacion-externa-v1.md).
+
+**The F5 Spanish narrative research line is closed without promotion.** Development screening found no variant meeting all declared gates, and the corpus audit found no suitable new independent confirmation set. F5 remains a frozen experiment. See the [experimental plan and closeout](docs/plan-experimental-f5-narrativa.md) and [confirmation-corpus audit](docs/auditoria-busqueda-corpus-confirmatorio-f5.md).
+
+## Verification
+
+Release 0.3.1 passed **159 unit tests in each CI matrix job** on Windows and Ubuntu with Python 3.11 and 3.13. The matrix also exercises the CLI, builds the wheel, and verifies its resources, F4/F5 behavior and parity outside the checkout.
 
 ```bash
 uv run python -B -m unittest discover -s tests -p "test_*.py" -v
 uv build --wheel
 uv run python -B tests/verify_wheel.py dist/textector-0.3.1-py3-none-any.whl
-uv run python -B -m tools.calibrate
 ```
 
-El último comando evalúa únicamente TRAIN: reconstruye las semillas sin el grupo
-excluido, recalcula los índices por fold y agrega predicciones fuera de muestra.
-Reporta matriz, tasas condicionadas a no abstención y cobertura por clase. No
-actualiza automáticamente los parámetros del CLI. Ver
-[`docs/calibration.md`](docs/calibration.md).
+Software checks verify implementation and packaging. They do not establish statistical validity for authorship detection. [CI workflow](.github/workflows/tests.yml) · [release review](docs/revision-lanzamiento-0.3.1.md).
 
-## Estructura y documentación
+## Repository map
 
-El historial de cambios está en [`CHANGELOG.md`](CHANGELOG.md).
+```text
+textector/
+├── tools/              CLI, text processing, checks and evaluation tools
+├── config/             Lexicon and frozen F5 configuration
+├── corpus/             Historical manifest, samples and seed provenance
+├── validation/         Versioned protocols, reports and permitted metadata
+├── tests/              Unit tests and installed-wheel verification
+├── docs/               Usage, architecture, evidence and research history
+└── assets/             README artwork
+```
 
-| Ruta | Contenido |
-|---|---|
-| `tools/textector_core.py` | Normalización, tokens y spans sobre el original |
-| `tools/checks/`, `tools/scoring.py` | Cinco checks, pesos y contribuciones |
-| `tools/pipeline.py` | Pipeline común a CLI y evaluación |
-| `tools/decision.py` | Regla única de abstención, referencia provisional |
-| `tools/estructura.py`, `tools/diagnostico.py` | Estructura y lectura descriptiva |
-| `tools/resources.py` | Recursos del checkout y del paquete |
-| `tools/calibrate.py` | Integridad del corpus y LOGO-CV |
-| `tools/f5.py`, `tools/calibrate_f5.py` | Perfil portable y calibración solo en desarrollo |
-| [`docs/guia-uso.md`](docs/guia-uso.md) | Comandos, errores e interpretación |
-| [`docs/revision-lanzamiento-0.3.1.md`](docs/revision-lanzamiento-0.3.1.md) | Alcance y preparación de lanzamiento |
-| [`docs/checks.md`](docs/checks.md) | Señales y constantes |
-| [`docs/corpus.md`](docs/corpus.md) | Procedencia, hashes y semillas |
-| [`docs/diagnostico-hibrido.md`](docs/diagnostico-hibrido.md) | Dos ejes y límites |
-| [`docs/integridad-f4.md`](docs/integridad-f4.md) | Cambios y alcance de la reparación |
-| [`NOTICE`](NOTICE) | Atribuciones y procedencia temática |
+Third-party texts, downloads and reserved local material are not all distributed in Git or the wheel. Follow the relevant protocol rather than assuming a repository download contains every evaluation corpus.
 
-Licencia MIT: [`LICENSE`](LICENSE). Las licencias de los corpus de terceros
-se identifican en el manifiesto y NOTICE.
+## Documentation and development
+
+Start with the [documentation index](docs/README.md), [usage guide](docs/guia-uso.md), [architecture](docs/arquitectura.md) and [changelog](CHANGELOG.md). Technical documentation is in Spanish.
+
+For a proposed change, report the profile, package version, input requirements and reproduction steps. Signal or threshold changes require a new signal version and new independent validation data; previously inspected sets cannot serve as fresh confirmation. F3 calibration is retained as an [affected historical record](docs/historico/calibracion-f3.md).
+
+## License and attribution
+
+Code: [MIT](LICENSE). Third-party datasets retain their own licenses and restrictions; see [NOTICE](NOTICE), [corpus provenance](docs/corpus.md) and the corresponding manifests.
+
+Built by [Bernie Hans](https://github.com/berniehans) · [Portfolio](https://berniehans.pages.dev/).

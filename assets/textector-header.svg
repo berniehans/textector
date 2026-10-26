@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">textector · Explainable text signals</title>
+<desc id="desc">A document feeds five style signals into a report for human review. Conceptual illustration, not measured results.</desc>
+<defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1324"/><stop offset="1" stop-color="#152b32"/></linearGradient>
+<linearGradient id="accent"><stop stop-color="#67e8f9"/><stop offset="1" stop-color="#a7f3d0"/></linearGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#7dd3fc" stroke-opacity=".045"/></pattern>
+</defs>
+<rect width="1200" height="360" rx="22" fill="url(#bg)"/>
+<rect width="1200" height="360" rx="22" fill="url(#grid)"/>
+<path d="M48 52H102" stroke="url(#accent)" stroke-width="4" stroke-linecap="round"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="48" y="92" font-size="13" letter-spacing="3" fill="#8bced0">TEXT ANALYSIS / HUMAN REVIEW</text>
+<text x="44" y="178" font-size="78" font-weight="700" letter-spacing="-3" fill="#f1f5f9">textector<tspan fill="#67e8f9">.</tspan></text>
+<text x="48" y="222" font-size="23" fill="#cbd5e1">Explainable signals for Spanish text.</text>
+<text x="48" y="256" font-size="18" fill="#92a9b8">Local analysis. Visible evidence. Human judgment.</text>
+<text x="48" y="316" font-size="13" letter-spacing="1" fill="#90d5bd">PYTHON 3.11+  /  STDLIB  /  MIT</text>
+</g>
+<g transform="translate(708 65)">
+<rect x="0" y="12" width="154" height="198" rx="13" fill="#111f30" stroke="#42616e"/>
+<path d="M27 50H99M27 76H125M27 101H116M27 126H125M27 151H88M27 176H114" stroke="#99b5c5" stroke-width="6" stroke-linecap="round" opacity=".65"/>
+<path d="M27 101H80M27 151H66" stroke="#67e8f9" stroke-width="6" stroke-linecap="round"/>
+<path d="M166 109H201M194 103L201 109L194 115" fill="none" stroke="#76c9bf" stroke-width="2"/>
+<rect x="216" width="204" height="224" rx="14" fill="#122830" stroke="#42616e"/>
+<g fill="#9de4ce"><circle cx="244" cy="42" r="4"/><circle cx="244" cy="76" r="4"/><circle cx="244" cy="110" r="4"/><circle cx="244" cy="144" r="4"/><circle cx="244" cy="178" r="4"/></g>
+<g stroke="#6e9298" stroke-width="5" stroke-linecap="round"><path d="M261 42H387M261 76H387M261 110H387M261 144H387M261 178H387"/></g>
+<g stroke="url(#accent)" stroke-width="5" stroke-linecap="round"><path d="M261 42H323M261 76H360M261 110H304M261 144H341M261 178H319"/></g>
+<text x="216" y="258" font-family="Segoe UI,Arial,sans-serif" font-size="11" letter-spacing="1.5" fill="#91a9b5">CONCEPTUAL SIGNALS / NO SCALE</text>
+</g>
+</svg>

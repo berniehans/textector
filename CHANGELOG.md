@@ -1,5 +1,11 @@
 # Cambios
 
+## Sin publicar
+
+- Documentación: README bilingüe con portada, inicio rápido, arquitectura y evidencia.
+- Añade índice documental y amplía la guía con requisitos, errores y diferencias F4/F5.
+- Actualiza la revisión de lanzamiento con CI completado y release 0.3.1 publicada.
+
 ## 0.3.1 — 2026-10-25
 
 - Cierre de la investigación de F5 para narrativa española: no se promueve una

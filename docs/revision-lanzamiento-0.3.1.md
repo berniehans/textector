@@ -1,38 +1,40 @@
-# Revisión de preparación de lanzamiento — textector 0.3.1
+# Revisión de lanzamiento — textector 0.3.1
 
-**Fecha:** 25 de octubre de 2026
+**Fecha de publicación:** 25 de octubre de 2026. **Estado documental actualizado:** 26 de octubre de 2026.
 
-**Alcance:** afirmaciones públicas, guía, ayuda del CLI y metadatos del paquete.
+**Resultado:** publicado como **prefiltro heurístico experimental con revisión humana**. El índice no establece autoría ni constituye una probabilidad.
 
-**Resultado:** **apto solo como prefiltro heurístico experimental con revisión humana**; no apto para presentar como detector probado ni para decisiones automáticas de autoría.
+## Alcance de la decisión
 
-## Decisión
+La publicación presenta una herramienta local y explicable que calcula señales de estilo para apoyar revisión humana. Los resultados de software y de corpus tienen alcances distintos.
 
-La publicación puede describir `textector` como una herramienta local y explicable que calcula señales de estilo para apoyar una revisión humana. Debe indicar que sus índices no son probabilidades y no establecen quién escribió el texto.
+La evaluación externa F4 registró **8 falsos positivos en 90 fragmentos humanos (8,9%)**, procedentes de nueve grupos de autor. F4 produjo señal en **190 de 200** cuentos infantiles publicados atribuidos a Gemini y se abstuvo en **300 de 300** textos de narrativa española aplanados por insuficiencia de formato. Los paneles difieren en género, longitud y formato. Véase [la evaluación externa](validacion-externa-v1.md).
 
-La evaluación externa disponible para el perfil predeterminado F4 registró **8 falsos positivos en 90 fragmentos humanos (8,9%)**. Los fragmentos corresponden a nueve grupos de autor, por lo que 90 no equivale a 90 autores independientes. F4 produjo señal en **190 de 200** relatos infantiles publicados de Gemini y se abstuvo en **300 de 300** textos de narrativa española aplanados por insuficiencia de formato. Son paneles de géneros y formatos distintos, no una estimación representativa de uso general. La evaluación tampoco autoriza decisiones de alto impacto ni conclusiones por persona. Véase [la evaluación externa](validacion-externa-v1.md).
+F4 conserva la referencia provisional **31/2**, banda inclusiva 29–33. Las categorías del diagnóstico llevan `no_concluyente=True`. F5 sigue disponible por selección explícita, experimental y congelado en **15/4**; la investigación narrativa se cerró sin promoción. Véase [el informe de cierre](plan-experimental-f5-narrativa.md).
 
-F4 mantiene la referencia provisional **31/2** (banda de abstención inclusiva 29–33), y las categorías del diagnóstico llevan `no_concluyente=True`. Ese estado debe seguir visible junto con el resultado. El perfil F5 continúa disponible solo por selección explícita, experimental y congelado; la investigación narrativa de F5 se cerró sin promoción. Véase [el informe de cierre](plan-experimental-f5-narrativa.md).
+## Comprobaciones completadas
 
-## Revisión realizada
+| Comprobación | Resultado |
+|---|---|
+| Windows local, Python 3.11 y 3.13 | 159 pruebas por versión, CLI y wheel correctos. |
+| GitHub Actions: Ubuntu/Windows × Python 3.11/3.13 | Cuatro trabajos completados correctamente: pruebas, CLI, construcción e instalación independiente del wheel. |
+| Recursos del wheel | Léxico, configuración F5 y ambas semillas presentes; comportamiento F4/F5 y paridad verificados. |
+| Metadatos | Versión del paquete 0.3.1 y descripción alineada con prefiltro humano. |
+| Documentación pública | Evidencia limitada F4 y condición experimental F5 visibles. |
+| Publicación | PR fusionado, etiqueta v0.3.1 y release pública con wheel adjunto. |
 
-- README y guía de uso: presentan la herramienta como prefiltro humano, declaran límites y enlazan las evaluaciones.
-- Ayuda del CLI: se reforzó la advertencia de revisión humana y evaluación externa limitada.
-- Metadatos: se retiraron las palabras clave `forense` y `deteccion-ia`; `tools.__version__` y el proyecto quedaron alineados en `0.3.1`.
-- F5: queda optativo y experimental; no se alteraron los pesos, el perfil, el umbral 15 ni el margen 4.
-- Scoring F4, regla provisional 31/2 y nombres de campos/salidas: no se cambiaron.
+[CI del PR de lanzamiento](https://github.com/berniehans/textector/actions/runs/40247018585) · [PR #2 fusionado](https://github.com/berniehans/textector/pull/2) · [Release 0.3.1](https://github.com/berniehans/textector/releases/tag/v0.3.1).
 
-## Condiciones antes de anunciar un lanzamiento público
+## Artefacto publicado
 
-1. La matriz local de Windows pasó en Python 3.11 y 3.13: 159 pruebas por versión, smoke del CLI, wheel construido e instalado/verificado fuera del checkout. Falta que el workflow remoto ejecute Linux en ambas versiones.
-2. Confirmar que el paquete que se publique contiene los recursos F4/F5 y que la versión del artefacto es 0.3.1.
-3. Mantener en la página de distribución el alcance de prefiltro y los límites de evaluación descritos aquí; no usar frases como “detecta autoría” o “identifica texto IA con fiabilidad”.
-4. Si se modifica F4 tras revisar esta evidencia, asignar una versión de señal nueva y validar con datos nuevos; no recalibrar mirando `external-v1` ni reabrir reservas consumidas.
+- Commit de lanzamiento: `e84aadefbe1f9f31bd27a83a800d78b8c6e10a61`.
+- Etiqueta: `v0.3.1`.
+- Wheel: `textector-0.3.1-py3-none-any.whl`, 135.974 bytes.
+- SHA-256 del wheel: `71524dd4733892d9219e133f0df154792123de7907e2dc8eb73b78d266d13db2`.
+- Distribución: GitHub Releases. No se publicó en PyPI.
 
-## Estado
+## Condiciones para una evolución futura
 
-**Preparación documental y validación local: completadas.**
+Cambiar F4 o F5 requiere identificar una nueva versión de señal y definir una evaluación independiente antes de puntuar. No se recalibra mirando `external-v1` ni se reabren reservas consumidas como si fueran confirmación nueva. Los informes históricos se conservan con su procedencia y sus limitaciones.
 
-**Lanzamiento del artefacto: pendiente del CI remoto Linux y la publicación en GitHub.**
-
-**Uso permitido por la evidencia: apoyo experimental a revisión humana.**
+La actualización de presentación del 26 de octubre añade README bilingüe, índice documental y guías revisadas. Es documentación posterior al lanzamiento: no modifica el artefacto 0.3.1 publicado ni los pesos, el preprocesado o los umbrales de sus perfiles.
